@@ -13,6 +13,14 @@ module.exports = {
       },
     },
     {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "docs",
+        path: `${__dirname}/content/data/`,
+      },
+    },
+    `gatsby-transformer-yaml`,
+    {
       resolve: `gatsby-mdx`,
       options: {
         extensions: [".mdx", ".md"],
