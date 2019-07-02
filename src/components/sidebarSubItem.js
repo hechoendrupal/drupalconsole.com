@@ -7,7 +7,7 @@ const SidebarSubItem = ({ item, activePage }) => {
         <ul id="manual-guide-toc-child" className="manual-guide-toc child">
           {item.items.map(item => {
             return (
-              <li key={`${item.link}-li-key`} id={`${item.link}-li`}>
+              <li key={item.link} id={item.link}>
                 <Link to={`/docs/en/${item.link}`}>{item.title}</Link>
               </li>
             )
