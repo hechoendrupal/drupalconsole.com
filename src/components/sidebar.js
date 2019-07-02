@@ -2,7 +2,7 @@
 
 import React from "react"
 
-import SidebarSubItem from "./sidebarSubItem";
+import SidebarItem from "./sidebarItem";
 import {Link} from "gatsby";
 
 // @TODO 
@@ -19,10 +19,10 @@ const Sidebar = ({ items, activePage }) => {
             items.map(item => {
               return (
                 <li className="nav-item">
-                  <Link className="nav-link" to={`/docs/en/${item.link}`}>{item.title}<i className="nav-angle"></i></Link>
+                  <Link className="nav-link active" to={`/docs/en/${item.link}`}>{item.title}<i className="nav-angle"></i></Link>
                   {item.items && (
                     <div className="nav">
-                        <SidebarSubItem
+                        <SidebarItem
                           item={item}
                         />
                     </div>
