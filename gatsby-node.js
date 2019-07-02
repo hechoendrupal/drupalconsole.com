@@ -1,7 +1,52 @@
-/**
- * Implement Gatsby's Node APIs in this file.
- *
- * See: https://www.gatsbyjs.org/docs/node-apis/
- */
+const path = require(`path`)
 
-// You can delete this file if you're not using it
+exports.onCreateNode = ({ node, getNode, actions }) => {
+  const { createNode, createNodeField } = actions
+  // MDX content
+  if (node.internal.type === `Mdx`) {
+    // Add slug field
+    const slug = getNode(node.parent).relativePath.replace(".md", "")
+    createNodeField({
+      name: `slug`,
+      node,
+      value: slug.startsWith("docs")?slug:`docs/${slug}`
+    })
+  }
+}
+
+exports.createPages = ({ graphql, actions }) => {
+  const { createPage } = actions
+
+  return graphql(`
+    {
+      allDocs: allMdx {
+        edges {
+          node {
+            fields {
+              slug
+            }
+          }
+        }
+      }
+
+    }
+    `).then(result => {
+      if (result.errors) {
+        throw result.errors
+      }
+  
+      // Create doc pages.
+      const docs = result.data.allDocs.edges
+      docs.forEach(doc => {
+        createPage({
+          path: doc.node.fields.slug,
+          component: path.resolve(`./src/templates/doc.js`),
+          context: {
+            slug: doc.node.fields.slug,
+          },
+        })
+      })
+
+      return null
+    })
+}
