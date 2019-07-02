@@ -1,0 +1,26 @@
+- id: en
+  name: English
+- id: es
+  name: Español
+- id: ca
+  name: Català
+- id: fr
+  name: Français
+- id: hi
+  name: हिन्दी
+- id: hu
+  name: Magyar
+- id: ja
+  name: 日本語
+- id: mr
+  name: मराठी
+- id: Português brasileiro
+  name: pt-br
+- id: ru
+  name: Romanian
+- id:  ru
+  name: pусский язык
+- id: vn 
+  name: Vietnamese
+- id: zh-hans
+  name: 简体中文
