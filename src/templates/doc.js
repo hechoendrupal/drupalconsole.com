@@ -8,7 +8,7 @@ import Sidebar from "../components/sidebar"
 
 const items = [
   {
-    link: "what-is-the-drupal-console",
+    link: "about/what-is-the-drupal-console",
     title: "What is the Drupal Console?",
     items: [
       {
