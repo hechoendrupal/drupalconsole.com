@@ -1,26 +1,39 @@
 - id: en
+  slug: english
   name: English
 - id: es
+  slug: spanish
   name: Español
 - id: ca
+  slug: catalan
   name: Català
 - id: fr
+  slug: french
   name: Français
 - id: hi
+  slug: hindi
   name: हिन्दी
 - id: hu
+  slug: hungarian
   name: Magyar
 - id: ja
+  slug: japanese
   name: 日本語
 - id: mr
+  slug: marathi
   name: मराठी
-- id: Português brasileiro
-  name: pt-br
-- id: ru
+- id: pt-br
+  slug: portuguese
+  name: Português brasileiro
+- id: ro
+  slug: romanian
   name: Romanian
 - id:  ru
+  slug: russian
   name: pусский язык
 - id: vn 
+  slug: vietnamese
   name: Vietnamese
 - id: zh-hans
+  slug: chinese
   name: 简体中文

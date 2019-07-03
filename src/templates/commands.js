@@ -1,14 +1,14 @@
 import React from "react"
 import { graphql } from "gatsby"
-import MDXRenderer from "gatsby-mdx/mdx-renderer"
-import { MDXProvider } from "@mdx-js/react"
 
 import Layout from "../components/layout"
 import Sidebar from "../components/sidebar"
+import Commands from "../components/commands"
 
-const DocTemplate = (props) =>  {
-  const post = props.data.mdx
+const Doc = (props) =>  {
+  const commands = props.data.allCommands.edges[0].node.commands
   const items = props.data.allNavigationItems.edges[0].node.items
+
   return (
     <Layout>
       <main className="main-content">
@@ -21,9 +21,8 @@ const DocTemplate = (props) =>  {
                 />
             </div>
             <div className="col-md-7 col-xl-8 ml-md-auto py-8">
-              <MDXProvider>
-                <MDXRenderer>{post.code.body}</MDXRenderer>
-              </MDXProvider>
+              <h1>Available Commands</h1>
+              <Commands data={commands} />
             </div>
           </div>
         </div>
@@ -32,13 +31,22 @@ const DocTemplate = (props) =>  {
   )
 }
 
-export default DocTemplate
+export default Doc
 
 export const pageQuery = graphql`
-  query($slug: String!, $language: String!) {
-    mdx(fields: { slug: { eq: $slug } }) {
-      code {
-        body
+  query ($language: String!) {
+    allCommands: allDataJson(filter: {language: {eq: $language}, type: {eq: "commands"}}) {
+      edges {
+        node {
+          commands {
+            name
+            description
+            dashed
+            examples {
+              execution
+            }
+          }
+        }
       }
     }
 
@@ -52,7 +60,7 @@ export const pageQuery = graphql`
               link
               title
             }
-          }
+          }					
         }
       }
     }

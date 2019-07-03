@@ -1,5 +1,6 @@
 {
     "language": "es",
+    "type": "commands",
     "commands": [
         {
             "name": "about",

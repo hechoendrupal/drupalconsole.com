@@ -18,12 +18,15 @@ const Sidebar = ({ items, activePage }) => {
           {items && (
             items.map(item => {
               return (
-                <li className="nav-item">
-                  <Link className="nav-link active" to={`/docs/en/${item.link}`}>{item.title}<i className="nav-angle"></i></Link>
+                <li key={`${item.link}-li}`} className="nav-item">
+                  <Link className="nav-link active" to={`/docs/en/${item.link}`}>{item.title}
+                    {/* <i className="nav-angle"></i> */}
+                  </Link>
                   {item.items && (
-                    <div className="nav">
+                    <div key={`${item.link}-div-item}`} className="nav">
                         <SidebarItem
                           item={item}
+                          activePage={activePage}
                         />
                     </div>
                   )}
