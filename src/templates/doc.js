@@ -5,6 +5,12 @@ import { MDXProvider } from "@mdx-js/react"
 
 import Layout from "../components/layout"
 import Sidebar from "../components/sidebar"
+import Commands from "../components/commands"
+
+const shortcodes = {
+  Commands
+}
+
 
 const items = [
   {
@@ -199,7 +205,7 @@ const Doc = (props) =>  {
                 />
             </div>
             <div className="col-md-7 col-xl-8 ml-md-auto py-8">
-              <MDXProvider>
+              <MDXProvider components={shortcodes}>
                 <MDXRenderer>{post.code.body}</MDXRenderer>
               </MDXProvider>
             </div>
