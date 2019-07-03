@@ -53,8 +53,30 @@ exports.createPages = ({ graphql, actions }) => {
             language
             commands {
               name
-              dashed
               description
+              dashed
+              aliases
+              options {
+                description
+                name
+              }
+              arguments {
+                description
+                name
+              }
+              examples {
+                description
+                execution
+              }
+              messages {
+                arguments
+                details
+                options
+                usage
+                examples
+                argument
+                option
+              }
             }
           }
         }

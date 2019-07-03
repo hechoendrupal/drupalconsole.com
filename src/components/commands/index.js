@@ -1,7 +1,8 @@
 import React, { useState } from "react"
 import './style.css';
+import {Link} from "gatsby";
 
-const Commands = ({ data }) => {
+const Commands = ({ data, language }) => {
 
   const [search, setSearch] = useState("")
 
@@ -46,7 +47,9 @@ const Commands = ({ data }) => {
               return (
                 <tr className="d-flex" key={i}>
                   <td className="col-md-6 col-xl-6">
-                    <strong className="command-name">{command.name}</strong>
+                    <strong className="command-name">
+                      <Link to={`/docs/${language}/commands/${command.dashed}`}>{command.name}</Link>
+                    </strong>
                     <br />
                     <small>{command.description}</small>
                   </td>
