@@ -22,7 +22,7 @@ const CommandsTemplate = (props) =>  {
             </div>
             <div className="col-md-7 col-xl-8 ml-md-auto py-8">
               <h1>Available Commands</h1>
-              <Commands data={commands} />
+              <Commands data={commands} language={props.pageContext.language}/>
             </div>
           </div>
         </div>

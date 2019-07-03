@@ -3,11 +3,14 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import Sidebar from "../components/sidebar"
+import Table from "../components/table"
+
+import _isEmpty from "lodash/isEmpty"
 
 const CommandTemplate = (props) =>  {
   const command = props.pageContext.command
   const items = props.data.allNavigationItems.edges[0].node.items
-  console.log(command)
+
   return (
     <Layout>
       <main className="main-content">
@@ -21,7 +24,55 @@ const CommandTemplate = (props) =>  {
             </div>
             <div className="col-md-7 col-xl-8 ml-md-auto py-8">
               <h1>{command.name}</h1>
-              <small>{command.description}</small>
+              <p className="lead">{command.description}</p>
+              <React.Fragment>
+                <h4>{command.messages.usage}:</h4> 
+                <pre>
+                  <code>
+                    {`drupal ${command.name} ${!_isEmpty(command.arguments) ? '[arguments]' : ''} ${!_isEmpty(command.options) ? '[options]' : ''}`}
+                    {command.aliases && (
+                      command.aliases.map((alias, i) => {
+                        return (
+                          <React.Fragment key={i}>
+                            {`\n${alias}`}
+                          </React.Fragment>
+                        )
+                      })
+                    )}
+                  </code>
+                </pre>
+              </React.Fragment> 
+              {!_isEmpty(command.options) && (
+                <React.Fragment>
+                  <h3>{command.messages.options}</h3> 
+                  <Table messages={command.messages} data={command.options} isOption={true}/>
+                </React.Fragment>
+              )}
+              {!_isEmpty(command.arguments) && (
+                <React.Fragment>
+                  <h3>{command.messages.arguments}</h3> 
+                  <Table messages={command.messages} data={command.arguments} isOption={false}/>
+                </React.Fragment>
+              )}
+              {!_isEmpty(command.examples) && (
+                <React.Fragment>
+                  <h3>{command.messages.examples}</h3> 
+                  {command.examples && (
+                    command.examples.map((example, i) => {
+                      return (
+                        <React.Fragment key={i}>
+                          <p className="lead">{example.description}</p>
+                          <pre>
+                            <code>
+                              {example.execution}
+                            </code>
+                          </pre>
+                        </React.Fragment>
+                      ) 
+                    })
+                  )}
+                </React.Fragment>
+              )}
             </div>
           </div>
         </div>
