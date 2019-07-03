@@ -1,7 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-import MDXRenderer from "gatsby-mdx/mdx-renderer"
-import { MDXProvider } from "@mdx-js/react"
 
 import Layout from "../components/layout"
 import Sidebar from "../components/sidebar"
