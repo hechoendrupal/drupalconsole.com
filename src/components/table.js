@@ -3,7 +3,7 @@ import React from "react"
 const Table = ({ messages, data, isOption }) => {
 
   return (
-    <table className="table table-responsive table-bordered table-striped">
+    <table className="table table-bordered table-striped">
       <thead>
         <tr className="d-flex">
           <th className="col-md-6 col-xl-6"><strong>{isOption ? messages.option : messages.argument}</strong></th>

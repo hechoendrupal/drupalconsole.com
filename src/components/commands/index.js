@@ -32,7 +32,7 @@ const Commands = ({ data, language }) => {
         </div>
       </div>
 
-      <table className="table table-commands table-responsive table-bordered table-striped">
+      <table className="table table-commands table-bordered table-striped">
         <thead>
           <tr className="d-flex">
             <th className="col-md-6 col-xl-6">Command</th>
