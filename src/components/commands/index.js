@@ -1,37 +1,37 @@
 import React, { useState } from "react"
-import { StaticQuery, graphql } from "gatsby"
 import './style.css';
 
-const CommandsTable = ({ data }) => {
+const Commands = ({ data }) => {
+
   const [search, setSearch] = useState("")
 
   return (
     <div className="container col-md-12">
       <div className="form-group">
         <div className="input-group">
-          <div className="input-group-addon">
+          {/* <div className="input-group-addon">
             <i className="fa fa-search" />
-          </div>
+          </div> */}
           <input
             type="text"
             id="command-search"
             className="form-control"
-            placeholder="Search Terminus Commands"
+            placeholder="Search DrupalConsole Commands"
             onChange={e => setSearch(e.target.value)}
             value={search}
           />
-          <div
+          {/* <div
             style={{ background: "#fff; cursor:pointer" }}
             className="input-group-addon"
             id="clear-filter"
             onClick={e => setSearch("")}
           >
             <span className="fa fa-times" />
-          </div>
+          </div> */}
         </div>
       </div>
 
-      <table className="table table-commands table-responsive table-striped">
+      <table className="table table-commands table-responsive table-bordered table-striped">
         <thead>
           <tr className="d-flex">
             <th className="col-md-6 col-xl-6">Command</th>
@@ -39,8 +39,7 @@ const CommandsTable = ({ data }) => {
           </tr>
         </thead>
         <tbody>
-          {data.dataJson.commands
-            .filter(command => {
+          {data.filter(command => {
               return command.name.indexOf(search) >= 0
             })
             .map((command, i) => {
@@ -53,13 +52,18 @@ const CommandsTable = ({ data }) => {
                   </td>
                   <td className="col-md-6 col-xl-6">
                     <li className="command-usage">
+
                       <span style={{ whiteSpace: "pre-line" }}>
                         <small />
                         <br />
                         {command.examples && (
-                          command.examples.map(example => {
-                            return <div><small>{example.execution}</small></div>
-                         }) 
+                          command.examples.map((example, i) => {
+                            return (
+                              <div key={i}>
+                                <small>{example.execution}</small>
+                              </div>
+                            )
+                          })
                         )}
                       </span>
                     </li>
@@ -73,22 +77,4 @@ const CommandsTable = ({ data }) => {
   )
 }
 
-export default Commands => (
-  <StaticQuery
-    query={graphql`
-      query {
-        dataJson {
-          commands {
-            name
-            description
-            dashed
-            examples {
-              execution
-            }
-          }
-        }
-      }
-    `}
-    render={data => <CommandsTable data={data} />}
-  />
-)
+export default Commands;

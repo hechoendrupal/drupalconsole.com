@@ -11,6 +11,13 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       node,
       value: slug.startsWith("docs")?slug:`docs/${slug}`
     })
+
+    // Add language field
+    createNodeField({
+      name: `language`,
+      node,
+      value: slug.substring(0, slug.indexOf('/'))
+    })
   }
 }
 
@@ -24,7 +31,18 @@ exports.createPages = ({ graphql, actions }) => {
           node {
             fields {
               slug
+              language
             }
+          }
+        }
+      }
+
+      allLanguagesYaml {
+        edges {
+          node {
+            id
+            slug
+            name
           }
         }
       }
@@ -43,6 +61,22 @@ exports.createPages = ({ graphql, actions }) => {
           component: path.resolve(`./src/templates/doc.js`),
           context: {
             slug: doc.node.fields.slug,
+            language: doc.node.fields.language
+          },
+        })
+      })
+
+      // Create languag pages.
+      const languages = result.data.allLanguagesYaml.edges
+      languages.forEach(item => {
+        const language = item.node.id
+        const slug = `docs/${language}/commands/available-commands`
+        createPage({
+          path: slug,
+          component: path.resolve(`./src/templates/commands.js`),
+          context: {
+            slug: slug,
+            language: language
           },
         })
       })
