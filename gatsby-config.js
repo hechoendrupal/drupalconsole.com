@@ -4,6 +4,9 @@ module.exports = {
     description: `DrupalConsole site, docs, cheatsheet`,
     author: `@drupalconsole`,
   },
+  mapping: {
+    "LanguagesYaml.authors": `AuthorsYaml`,
+  },
   plugins: [
     {
       resolve: "gatsby-source-filesystem",
@@ -15,8 +18,15 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "docs",
+        name: "data",
         path: `${__dirname}/content/data/`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "assets",
+        path: `${__dirname}/content/assets/`,
       },
     },
     `gatsby-transformer-yaml`,
