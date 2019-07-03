@@ -47,6 +47,19 @@ exports.createPages = ({ graphql, actions }) => {
         }
       }
 
+      allCommands: allDataJson(filter: {type: {eq: "commands"}}) {
+        edges {
+          node {
+            language
+            commands {
+              name
+              dashed
+              description
+            }
+          }
+        }
+      }
+
     }
     `).then(result => {
       if (result.errors) {
@@ -78,6 +91,23 @@ exports.createPages = ({ graphql, actions }) => {
             slug: slug,
             language: language
           },
+        })
+      })
+
+      // Create command pages.
+      const commands = result.data.allCommands.edges
+      commands.forEach(item => {
+        const language = item.node.language
+        item.node.commands.forEach(command => {
+          const slug = `docs/${language}/commands/${command.dashed}`
+          createPage({
+            path: slug,
+            component: path.resolve(`./src/templates/command.js`),
+            context: {
+              command: command,
+              language: language
+            },
+          })
         })
       })
 

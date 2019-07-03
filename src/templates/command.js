@@ -1,14 +1,15 @@
 import React from "react"
 import { graphql } from "gatsby"
+import MDXRenderer from "gatsby-mdx/mdx-renderer"
+import { MDXProvider } from "@mdx-js/react"
 
 import Layout from "../components/layout"
 import Sidebar from "../components/sidebar"
-import Commands from "../components/commands"
 
-const CommandsTemplate = (props) =>  {
-  const commands = props.data.allCommands.edges[0].node.commands
+const CommandTemplate = (props) =>  {
+  const command = props.pageContext.command
   const items = props.data.allNavigationItems.edges[0].node.items
-
+  console.log(command)
   return (
     <Layout>
       <main className="main-content">
@@ -21,8 +22,8 @@ const CommandsTemplate = (props) =>  {
                 />
             </div>
             <div className="col-md-7 col-xl-8 ml-md-auto py-8">
-              <h1>Available Commands</h1>
-              <Commands data={commands} />
+              <h1>{command.name}</h1>
+              <small>{command.description}</small>
             </div>
           </div>
         </div>
@@ -31,25 +32,10 @@ const CommandsTemplate = (props) =>  {
   )
 }
 
-export default CommandsTemplate
+export default CommandTemplate
 
 export const pageQuery = graphql`
-  query ($language: String!) {
-    allCommands: allDataJson(filter: {language: {eq: $language}, type: {eq: "commands"}}) {
-      edges {
-        node {
-          commands {
-            name
-            description
-            dashed
-            examples {
-              execution
-            }
-          }
-        }
-      }
-    }
-
+  query($language: String!) {
     allNavigationItems: allDataJson(filter: {language: {eq: $language}, type: {eq: "navigation"}}) {
       edges {
         node {
@@ -60,7 +46,7 @@ export const pageQuery = graphql`
               link
               title
             }
-          }					
+          }
         }
       }
     }
