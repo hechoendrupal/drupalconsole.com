@@ -1,0 +1,127 @@
+- id: druprompt
+  user_picture: ../assets/pictures/2015-12/drupal-console-avatar.png
+- id: omers
+  name: 'Omar Aguirre'
+  twitter: https://twitter.com/omers
+  github: https://github.com/omero
+  github_avatar: https://avatars.githubusercontent.com/u/1909779?v=3&s=140
+  user_picture: ../assets/pictures/2015-11/profile.jpg
+- id: jmolivas
+  name: 'Jesus Manuel Olivas'
+  website: http://jmolivas.com/
+  twitter: https://twitter.com/jmolivas
+  github: https://github.com/jmolivas
+  github_avatar: https://avatars.githubusercontent.com/u/366275?v=3&s=140
+  user_picture: ../assets/pictures/2015-12/avatar-medium.jpg
+- id: enzo
+  name: 'Eduardo Garcia'
+  website: http://enzolutions.com/
+  twitter: https://twitter.com/enzolutions
+  github: https://github.com/enzolutions
+  github_avatar: https://avatars.githubusercontent.com/u/907914?v=3&s=140
+- id: vmartins
+  name: 'Vanessa Martins'
+  website: http://vmartinsweb.com
+  twitter: https://twitter.com/vmartinsweb
+  github: https://github.com/vmartinsweb
+  user_drupal: https://www.drupal.org/u/vmartins
+  user_picture: ../assets/pictures/2016-01/10805568_913046168735629_5840393207494353114_n_0.jpg
+- id: lnunesbr
+  name: 'Leandro Nunes'
+  website: https://nunesweb.com
+  facebook: https://facebook.com/lnunesbr
+  twitter: https://twitter.com/lnunesbr
+  github: https://github.com/lnunesbr
+  user_drupal: https://www.drupal.org/u/lnunesbr
+  user_picture: ../assets/pictures/2016-01/lnunes.jpg
+- id: webtom
+  name: 'Tom Tran'
+- id: vietcuonghn
+  name: 'Cường Nguyễn'
+  user_picture: ../assets/pictures/2016-01/avatar.png
+- id: jungle
+  name: 'Qiangjun Ran'
+  website: http://ranqiangjun.com
+  facebook: http://facebook.com/ranqiangjun
+  twitter: http://twitter.com/ranqiangjun
+  github: http://github.com/ranqiangjun
+  user_drupal: http://drupal.org/u/jungle
+  user_picture: ../assets/pictures/2016-02/XcKrcX61.jpg
+- id: darol100
+  name: 'daryl norris'
+- id: leandro
+  name: 'Leandro Vázquez Cervantes'
+  website: http://leandro.vc
+  twitter: http://twitter.com/novia713
+  github: https://github.com/novia713/
+  user_drupal: https://www.drupal.org/u/leandro713
+  user_picture: ../assets/pictures/2016-01/AAEAAQAAAAAAAAOJAAAAJDQwOWYyZWU5LTFkOTQtNDMzYi04MDk2LTlhMWQzYzdhMDVhZA.jpg
+- id: davinder
+  name: 'Davinder Kumar'
+  website: http://davinder.in
+  facebook: https://www.facebook.com/dsnehi
+  twitter: https://twitter.com/dkgndec
+  github: https://github.com/dkgndec
+  user_drupal: https://www.drupal.org/u/snehi
+  user_picture: ../assets/pictures/2016-01/947323_4127051193661_1602176838_n.jpg
+- id: aniela
+  name: 'Aniela Răileanu'
+  facebook: https://www.facebook.com/aniela.raileanu.9
+  twitter: https://twitter.com/raileanuaniela
+  github: https://github.com/raileanuaniela
+  user_drupal: https://www.drupal.org/u/raileanuaniela
+  user_picture: ../assets/pictures/2016-01/ani2.jpg
+- id: znagy
+  name: 'Zsolt Nagy'
+  twitter: https://twitter.com/balagan1973
+  github: https://github.com/balagan73
+  user_drupal: https://www.drupal.org/u/balagan
+  user_picture: ../assets/pictures/2016-04/zsnagy-220x220.jpg
+- id: durgeshs
+  name: 'Durgesh Srivastava'
+  website: http://www.srijan.net
+  facebook: https://www.facebook.com/durgesh0029
+  twitter: https://twitter.com/durgesh29
+  github: https://github.com/durgeshs
+  user_drupal: https://www.drupal.org/u/durgeshs
+  user_picture: ../assets/pictures/2016-02/durgesh.jpg
+- id: dmouse
+  name: 'David Flores'
+- id: kabarca
+  name: 'Kenny Abarca'
+- id: kgaut
+  name: 'Kevin  Gautreau'
+  website: https://kgaut.net/
+  twitter: https://twitter.com/kgaut
+  github: https://github.com/kgaut
+  user_drupal: https://www.drupal.org/u/kgaut
+  user_picture: ../assets/pictures/2016-06/photo-profil.jpeg
+- id: blauerberg
+  name: 'Yoshikazu Aoyama'
+  website: https://annai.co.jp
+  facebook: https://www.facebook.com/yoshikazu.aoyama
+  twitter: https://twitter.com/blauerberg
+  github: https://github.com/blauerberg
+  user_drupal: https://www.drupal.org/u/blauerberg
+  user_picture: ../assets/pictures/2016-07/198602_191419430893295_7107984_n.jpg
+- id: michael
+  name: 'Michael Kinyanjui'
+- id: andres
+  name: 'Andres Avila'
+- id: yogeshmpawar
+  name: 'Yogesh Pawar'
+  facebook: https://www.facebook.com/yogeshmpawar
+  twitter: https://twitter.com/yogeshmpawar
+  github: https://github.com/yogeshmpawar
+  user_drupal: https://www.drupal.org/u/yogesh-pawar
+  github_avatar: https://github.com/yogeshmpawar
+  user_picture: ../assets/pictures/2018-04/IMG_20170307_120602980.jpg
+- id: nikolay
+  name: 'Nikolay Lobachev'
+  github: https://github.com/LOBsTerr
+  user_drupal: https://www.drupal.org/u/lobsterr
+  github_avatar: https://avatars1.githubusercontent.com/u/537500?s=460&v=4
+  user_picture: ../assets/pictures/2018-04/lob_0.jpg
+- id: marketing
+  name: 'Veronica Wheelock'
+  github_avatar: https://avatars0.githubusercontent.com/u/537500?s=400&v=4

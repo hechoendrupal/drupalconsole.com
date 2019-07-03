@@ -1,9 +1,11 @@
 - id: en
   slug: english
   name: English
+  authors: [enzo]
 - id: es
   slug: spanish
   name: Español
+  authors: [leandro]
 - id: ca
   slug: catalan
   name: Català
@@ -25,6 +27,7 @@
 - id: pt-br
   slug: portuguese
   name: Português brasileiro
+  authors: [vmartins, lnunesbr]
 - id: ro
   slug: romanian
   name: Romanian

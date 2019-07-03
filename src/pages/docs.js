@@ -13,6 +13,17 @@ const DocsPage = () => {
               id
               slug
               name
+              authors {
+                id
+                name
+                user_drupal
+                twitter
+                facebook
+                github
+                github_avatar
+                user_picture
+                website
+              }
             }
           }
         }
