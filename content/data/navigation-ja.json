@@ -1,0 +1,190 @@
+{
+  "language": "ja",
+  "type": "navigation",
+  "items": [
+    {
+      "link": "README",
+      "title": "Drupal Console ドキュメント"
+    },
+    {
+      "link": "about/what-is-the-drupal-console",
+      "title": "Drupal Consoleとは?",
+      "items": [
+        {
+          "link": "about/why-should-you-care-about",
+          "title": "なぜDrupal Consoleに注目するのか？"
+        },
+        {
+          "link": "about/how-does-drupal-console-help",
+          "title": "Drupal Consoleでどんなことができますか？"
+        },
+        {
+          "link": "about/where-do-i-find-the-project",
+          "title": "どこでプロジェクトを見つけることができますか？"
+        }
+      ]
+    },
+    {
+      "link": "getting/project",
+      "title": "プロジェクトを取得する",
+      "items": [
+        {
+          "link": "getting/installer",
+          "title": "インストーラーを使う"
+        },
+        {
+          "link": "getting/composer",
+          "title": "Composerを使う"
+        },
+        {
+          "link": "getting/download",
+          "title": "pharファイルをダウンロードする"
+        },
+        {
+          "link": "getting/update",
+          "title": "プロジェクトを更新する"
+        },
+        {
+          "link": "getting/windows",
+          "title": "Windows上にインストールする"
+        }
+      ]
+    },
+    {
+      "link": "using/project",
+      "title": "プロジェクトを使う",
+      "items": [
+        {
+          "link": "using/how-to-copy-configuration-files",
+          "title": "設定ファイルのコピー方法"
+        },
+        {
+          "link": "using/how-to-download-install-and-serve-drupal8",
+          "title": "drupal 8をダウンロード、インストールして起動する"
+        },
+        {
+          "link": "using/how-to-use-drupal-console-in-a-multisite-installation",
+          "title": "Drupal Consoleをマルチサイト環境で使う"
+        },
+        {
+          "link": "using/how-to-use-drupal-console-in-a-remote-installation",
+          "title": "Drupal Consoleでリモートサイトに接続する"
+        }
+      ]
+    },
+    {
+      "link": "alias/using-site-alias",
+      "title": "Using site alias",
+      "items": [
+        {
+          "link": "alias/setting-up-your-local-machine",
+          "title": "Setting up your local machine"
+        },
+        {
+          "link": "alias/how-to-use-drupal-console-in-a-remote-installation",
+          "title": "How to use Drupal Console in a remote installation"
+        },
+        {
+          "link": "alias/connecting-to-a-virtual-environment",
+          "title": "Connecting to a virtual environment"
+        }
+      ]
+    },
+    {
+      "link": "chains/what-is-a-chain-command",
+      "title": "What is a chain command",
+      "items": [
+        {
+          "link": "chains/registering",
+          "title": "Registering chain commands as regular commands"
+        },
+        {
+          "link": "chains/listing-registered-commands",
+          "title": "Listing registered commands"
+        }
+      ]
+    },
+    {
+      "link": "extending/creating-custom-commands",
+      "title": "カスタムコマンドを作る",
+      "items": [
+        {
+          "link": "extending/configuring-the-command",
+          "title": "コマンドを設定する"
+        },
+        {
+          "link": "extending/command-lifecycle",
+          "title": "コマンドのライフサイクル"
+        },
+        {
+          "link": "extending/getting-services-from-the-service-container",
+          "title": "サービスコンテナからサービスを取得する"
+        },
+        {
+          "link": "extending/registering-commands-automatically",
+          "title": "コマンドを自動的に登録する"
+        }
+      ]
+    },
+    {
+      "link": "contributing/new-features",
+      "title": "新機能の追加に貢献する",
+      "items": [
+        {
+          "link": "contributing/project-requirements",
+          "title": "プロジェクトの必要条件"
+        },
+        {
+          "link": "contributing/getting-the-project",
+          "title": "プロジェクトを取得する"
+        },
+        {
+          "link": "contributing/running-the-project",
+          "title": "プロジェクトを実行する"
+        },
+        {
+          "link": "contributing/keeping-your-fork-up-to-date",
+          "title": "フォークを最新の状態に保つ"
+        },
+        {
+          "link": "contributing/creating-issues-and-pull-requests",
+          "title": "イシューとプルリクエストを作成する"
+        },
+        {
+          "link": "contributing/documentation",
+          "title": "このドキュメントに貢献する"
+        }
+      ]
+    },
+    {
+      "link": "commands/available-commands",
+      "title": "利用可能なコマンド"
+    },
+    {
+      "link": "drupal_console_faq/faq",
+      "title": "Drupal ConsoleについてのFAQ (Frequently Asked Questions)",
+      "items": [
+        {
+          "link": "drupal_console_faq/installation-problems",
+          "title": "インストールの問題"
+        },
+        {
+          "link": "drupal_console_faq/permissions",
+          "title": "権限"
+        },
+        {
+          "link": "drupal_console_faq/commands-not-listed",
+          "title": "コマンドが表示されない"
+        },
+        {
+          "link": "drupal_console_faq/interactive-mode",
+          "title": "対話モード"
+        }
+      ]
+    },
+    {
+      "link": "references/links",
+      "title": "リファレンス"
+    }
+  ]
+}

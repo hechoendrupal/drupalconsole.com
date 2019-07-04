@@ -1,0 +1,182 @@
+{
+  "language": "ru",
+  "type": "navigation",
+  "items": [
+    {
+      "link": "README",
+      "title": "О документации Drupal Console"
+    },
+    {
+      "link": "about/what-is-the-drupal-console",
+      "title": "Что такое Drupal Console?",
+      "items": [
+        {
+          "link": "about/why-should-you-care-about",
+          "title": "Зачем нужна Drupal Console?"
+        },
+        {
+          "link": "about/how-does-drupal-console-help",
+          "title": "Как поможет Drupal Console?"
+        },
+        {
+          "link": "about/where-do-i-find-the-project",
+          "title": "Где найти Drupal Console?"
+        }
+      ]
+    },
+    {
+      "link": "getting/project",
+      "title": "Установка",
+      "items": [
+        {
+          "link": "getting/composer",
+          "title": "С помощью Composer"
+        },
+        {
+          "link": "getting/launcher",
+          "title": "Установка пускового файла Drupal Console"
+        },
+        {
+          "link": "getting/windows",
+          "title": "Установка на Windows ОС"
+        }
+      ]
+    },
+    {
+      "link": "using/project",
+      "title": "Использование проекта",
+      "items": [
+        {
+          "link": "using/how-to-copy-configuration-files",
+          "title": "Как скопировать конфигурационные файлы"
+        },
+        {
+          "link": "using/how-to-download-install-and-serve-drupal8",
+          "title": "Как скачать, установить и запустить Drupal 8"
+        },
+        {
+          "link": "using/how-to-use-drupal-console-in-a-multisite-installation",
+          "title": "Использование в мульти-сайтовом режиме"
+        },
+        {
+          "link": "using/how-to-use-drupal-console-in-a-remote-installation",
+          "title": "Использование при удаленной установке"
+        }
+      ]
+    },
+    {
+      "link": "alias/using-site-alias",
+      "title": "Using site alias",
+      "items": [
+        {
+          "link": "alias/setting-up-your-local-machine",
+          "title": "Setting up your local machine"
+        },
+        {
+          "link": "alias/how-to-use-drupal-console-in-a-remote-installation",
+          "title": "How to use Drupal Console in a remote installation"
+        },
+        {
+          "link": "alias/connecting-to-a-virtual-environment",
+          "title": "Connecting to a virtual environment"
+        }
+      ]
+    },
+    {
+      "link": "chains/what-is-a-chain-command",
+      "title": "What is a chain command",
+      "items": [
+        {
+          "link": "chains/registering",
+          "title": "Registering chain commands as regular commands"
+        },
+        {
+          "link": "chains/listing-registered-commands",
+          "title": "Listing registered commands"
+        }
+      ]
+    },
+    {
+      "link": "extending/creating-custom-commands",
+      "title": "Создание новых комманд",
+      "items": [
+        {
+          "link": "extending/configuring-the-command",
+          "title": "Конфигурация комманды"
+        },
+        {
+          "link": "extending/command-lifecycle",
+          "title": "Жизненный цикл комманды"
+        },
+        {
+          "link": "extending/getting-services-from-the-service-container",
+          "title": "Использование сервисов из сервисного контейнера"
+        },
+        {
+          "link": "extending/registering-commands-automatically",
+          "title": "Автоматическая регистрация комманды"
+        }
+      ]
+    },
+    {
+      "link": "contributing/new-features",
+      "title": "Как помочь в разработке новых функций",
+      "items": [
+        {
+          "link": "contributing/project-requirements",
+          "title": "Минимальные требования"
+        },
+        {
+          "link": "contributing/getting-the-project",
+          "title": "Установка проекта"
+        },
+        {
+          "link": "contributing/running-the-project",
+          "title": "Использование проекта"
+        },
+        {
+          "link": "contributing/keeping-your-fork-up-to-date",
+          "title": "Использование последней версии кода"
+        },
+        {
+          "link": "contributing/creating-issues-and-pull-requests",
+          "title": "Новые проблемы и запросы на включение (pull request)"
+        },
+        {
+          "link": "contributing/documentation",
+          "title": "Как помочь в переводе документации?"
+        }
+      ]
+    },
+    {
+      "link": "commands/available-commands",
+      "title": "Команды консоли"
+    },
+    {
+      "link": "drupal_console_faq/faq",
+      "title": "Вопросы-Ответы о Drupal Console",
+      "items": [
+        {
+          "link": "drupal_console_faq/installation-problems",
+          "title": "Проблемы при установке"
+        },
+        {
+          "link": "drupal_console_faq/permissions",
+          "title": "Права доступа"
+        },
+        {
+          "link": "drupal_console_faq/commands-not-listed",
+          "title": "Недокументированные возможности"
+        },
+        {
+          "link": "drupal_console_faq/interactive-mode",
+          "title": "Интерактивный режим"
+        }
+      ]
+    },
+    {
+      "link": "references/links",
+      "title": "Ссылки"
+    }
+  ]
+}

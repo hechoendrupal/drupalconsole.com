@@ -1,0 +1,194 @@
+{
+  "language": "zh-hans",
+  "type": "navigation",
+  "items": [
+    {
+      "link": "README",
+      "title": "Drupal Console 文档"
+    },
+    {
+      "link": "about/what-is-the-drupal-console",
+      "title": "什么是 Drupal Console",
+      "items": [
+        {
+          "link": "about/why-should-you-care-about",
+          "title": "为什么你应该关注?"
+        },
+        {
+          "link": "about/how-does-drupal-console-help",
+          "title": "Drupal Console 是怎样提供帮助的?"
+        },
+        {
+          "link": "about/where-do-i-find-the-project",
+          "title": "Drupal Console 项目相关链接"
+        }
+      ]
+    },
+    {
+      "link": "getting/project",
+      "title": "安装 Drupal Console",
+      "items": [
+        {
+          "link": "getting/installer",
+          "title": "使用 Drupal Console 安装器"
+        },
+        {
+          "link": "getting/composer",
+          "title": "使用 Composer"
+        },
+        {
+          "link": "getting/download",
+          "title": "下载 phar 文件"
+        },
+        {
+          "link": "getting/update",
+          "title": "如何更新"
+        },
+        {
+          "link": "getting/windows",
+          "title": "Installing on Windows"
+        }
+      ]
+    },
+    {
+      "link": "using/project",
+      "title": "使用 Drupal Console",
+      "items": [
+        {
+          "link": "using/how-to-copy-configuration-files",
+          "title": "如何拷贝配置文件"
+        },
+        {
+          "link": "using/how-to-download-install-and-serve-drupal8",
+          "title": "如何下载，安装并运行 Drupal 8"
+        },
+        {
+          "link": "using/how-to-use-drupal-console-in-a-multisite-installation",
+          "title": "如何在多站点环境下使用 Drupal Console"
+        },
+        {
+          "link": "using/how-to-use-drupal-console-in-a-remote-installation",
+          "title": "Drupal Console 用于非本地网站"
+        }
+      ]
+    },
+    {
+      "link": "alias/using-site-alias",
+      "title": "Using site alias",
+      "items": [
+        {
+          "link": "alias/setting-up-your-local-machine",
+          "title": "Setting up your local machine"
+        },
+        {
+          "link": "alias/how-to-use-drupal-console-in-a-remote-installation",
+          "title": "How to use Drupal Console in a remote installation"
+        },
+        {
+          "link": "alias/connecting-to-a-virtual-environment",
+          "title": "Connecting to a virtual environment"
+        }
+      ]
+    },
+    {
+      "link": "chains/what-is-a-chain-command",
+      "title": "What is a chain command",
+      "items": [
+        {
+          "link": "chains/registering",
+          "title": "Registering chain commands as regular commands"
+        },
+        {
+          "link": "chains/listing-registered-commands",
+          "title": "Listing registered commands"
+        }
+      ]
+    },
+    {
+      "link": "extending/creating-custom-commands",
+      "title": "Creating custom Commands",
+      "items": [
+        {
+          "link": "extending/configuring-the-command",
+          "title": "Configuring the Command"
+        },
+        {
+          "link": "extending/command-lifecycle",
+          "title": "Command Lifecycle"
+        },
+        {
+          "link": "extending/getting-services-from-the-service-container",
+          "title": "Getting Services from the Service Container"
+        },
+        {
+          "link": "extending/generating-code",
+          "title": "Generating Code with a Command"
+        },
+        {
+          "link": "extending/registering-commands-automatically",
+          "title": "Registering Commands Automatically"
+        }
+      ]
+    },
+    {
+      "link": "contributing/new-features",
+      "title": "参与贡献",
+      "items": [
+        {
+          "link": "contributing/project-requirements",
+          "title": "最低要求"
+        },
+        {
+          "link": "contributing/getting-the-project",
+          "title": "获取项目"
+        },
+        {
+          "link": "contributing/running-the-project",
+          "title": "如何运行"
+        },
+        {
+          "link": "contributing/keeping-your-fork-up-to-date",
+          "title": "保持更新"
+        },
+        {
+          "link": "contributing/creating-issues-and-pull-requests",
+          "title": "创建一个 Issue 和 Pull 请求"
+        },
+        {
+          "link": "contributing/documentation",
+          "title": "文档编写"
+        }
+      ]
+    },
+    {
+      "link": "commands/available-commands",
+      "title": "可用命令"
+    },
+    {
+      "link": "drupal_console_faq/faq",
+      "title": "常见问题",
+      "items": [
+        {
+          "link": "drupal_console_faq/installation-problems",
+          "title": "安装问题"
+        },
+        {
+          "link": "drupal_console_faq/permissions",
+          "title": "权限"
+        },
+        {
+          "link": "drupal_console_faq/commands-not-listed",
+          "title": "没有列出的命令"
+        },
+        {
+          "link": "drupal_console_faq/interactive-mode",
+          "title": "交互模式"
+        }
+      ]
+    },
+    {
+      "link": "references/links",
+      "title": "参考资料"
+    }
+  ]
+}
