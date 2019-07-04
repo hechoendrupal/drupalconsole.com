@@ -6,7 +6,6 @@ import SidebarItem from "./sidebarItem";
 import {Link} from "gatsby";
 
 // @TODO 
-// Generate markup ul > li > a from items
 // Set active class from activePage
 // Remove eslint-disable
 // Add useEffect and update state and expand / collapse elements
@@ -19,7 +18,7 @@ const Sidebar = ({ items, activePage, language }) => {
             items.map(item => {
               return (
                 <li key={`${item.link}-li}`} className="nav-item">
-                  <Link className="nav-link active" to={`/docs/${language}/${item.link}`}>
+                  <Link className="nav-link active font-size-16" to={`/docs/${language}/${item.link}`}>
                     {item.title}
                     {/* <i className="nav-angle"></i> */}
                   </Link>

@@ -5,7 +5,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   // MDX content
   if (node.internal.type === `Mdx`) {
     // Add slug field
-    const slug = getNode(node.parent).relativePath.replace(".md", "").toLowerCase()
+    const slug = getNode(node.parent).relativePath.replace("/README.md", "").replace(".md", "").toLowerCase()
     createNodeField({
       name: `slug`,
       node,
@@ -16,7 +16,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     createNodeField({
       name: `language`,
       node,
-      value: slug.substring(0, slug.indexOf('/'))
+      value: slug.indexOf('/') > 0 ? slug.substring(0, slug.indexOf('/')) : slug
     })
   }
 }

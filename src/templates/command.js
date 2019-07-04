@@ -9,7 +9,7 @@ import _isEmpty from "lodash/isEmpty"
 
 const CommandTemplate = (props) =>  {
   const command = props.pageContext.command
-  const items = props.data.allNavigationItems.edges[0].node.items
+  const items = props.data.allNavigationItems.edges[0] ? props.data.allNavigationItems.edges[0].node.items : []
 
   return (
     <Layout>

@@ -8,7 +8,7 @@ import Sidebar from "../components/sidebar"
 
 const DocTemplate = (props) =>  {
   const post = props.data.mdx
-  const items = props.data.allNavigationItems.edges[0].node.items
+  const items = props.data.allNavigationItems.edges[0] ? props.data.allNavigationItems.edges[0].node.items : []
   return (
     <Layout>
       <main className="main-content">

@@ -6,8 +6,8 @@ import Sidebar from "../components/sidebar"
 import Commands from "../components/commands"
 
 const CommandsTemplate = (props) =>  {
-  const commands = props.data.allCommands.edges[0].node.commands
-  const items = props.data.allNavigationItems.edges[0].node.items
+  const commands = props.data.allCommands.edges[0] ? props.data.allCommands.edges[0].node.commands : []
+  const items = props.data.allNavigationItems.edges[0] ? props.data.allNavigationItems.edges[0].node.items : []
 
   return (
     <Layout>
