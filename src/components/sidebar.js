@@ -10,7 +10,7 @@ import {Link} from "gatsby";
 // Set active class from activePage
 // Remove eslint-disable
 // Add useEffect and update state and expand / collapse elements
-const Sidebar = ({ items, activePage }) => {
+const Sidebar = ({ items, activePage, language }) => {
   return (
     <>
       <aside className="sidebar sidebar-sticky sidebar-stick-shadow pr-md-5 br-1">
@@ -19,7 +19,8 @@ const Sidebar = ({ items, activePage }) => {
             items.map(item => {
               return (
                 <li key={`${item.link}-li}`} className="nav-item">
-                  <Link className="nav-link active" to={`/docs/en/${item.link}`}>{item.title}
+                  <Link className="nav-link active" to={`/docs/${language}/${item.link}`}>
+                    {item.title}
                     {/* <i className="nav-angle"></i> */}
                   </Link>
                   {item.items && (
@@ -27,6 +28,7 @@ const Sidebar = ({ items, activePage }) => {
                         <SidebarItem
                           item={item}
                           activePage={activePage}
+                          language={language}
                         />
                     </div>
                   )}
