@@ -1,0 +1,186 @@
+{
+  "language": "pt-br",
+  "type": "navigation",
+  "items": [
+    {
+      "link": "README",
+      "title": "Documentação do Drupal Console"
+    },
+    {
+      "link": "what-is-the-drupal-console",
+      "title": "O que é o Drupal Console",
+      "items": [
+        {
+          "link": "about/why-should-you-care-about",
+          "title": "Porque você deveria se importar?"
+        },
+        {
+          "link": "about/how-does-drupal-console-help",
+          "title": "Como o Drupal Console ajuda?"
+        },
+        {
+          "link": "about/where-do-i-find-the-project",
+          "title": "Onde eu encontro o projeto?"
+        }
+      ]
+    },
+    {
+      "link": "getting/project",
+      "title": "Obtendo o projeto",
+      "items": [
+        {
+          "link": "getting/installer",
+          "title": "Utilizando o instalador"
+        },
+        {
+          "link": "getting/composer",
+          "title": "Utilizando o Composer"
+        },
+        {
+          "link": "getting/download",
+          "title": "Baixar o arquivo phar"
+        },
+        {
+          "link": "getting/update",
+          "title": "Atualizar o projeto"
+        }
+      ]
+    },
+    {
+      "link": "using/project",
+      "title": "Utilizando o projeto",
+      "items": [
+        {
+          "link": "using/how-to-copy-configuration-files",
+          "title": "Como copiar arquivos de configuração"
+        },
+        {
+          "link": "using/how-to-download-install-and-serve-drupal8",
+          "title": "Como baixar, instalar e servir Drupal 8"
+        },
+        {
+          "link": "using/how-to-use-drupal-console-in-a-multisite-installation",
+          "title": "Como usar o Drupal Console em uma instalação multi-site"
+        },
+        {
+          "link": "using/how-to-use-drupal-console-in-a-remote-installation",
+          "title": "Como usar o Drupal Console em uma instalação remota"
+        }
+      ]
+    },
+    {
+      "link": "alias/using-site-alias",
+      "title": "Using site alias",
+      "items": [
+        {
+          "link": "alias/setting-up-your-local-machine",
+          "title": "Setting up your local machine"
+        },
+        {
+          "link": "alias/how-to-use-drupal-console-in-a-remote-installation",
+          "title": "How to use Drupal Console in a remote installation"
+        },
+        {
+          "link": "alias/connecting-to-a-virtual-environment",
+          "title": "Connecting to a virtual environment"
+        }
+      ]
+    },
+    {
+      "link": "chains/what-is-a-chain-command",
+      "title": "What is a chain command",
+      "items": [
+        {
+          "link": "chains/registering",
+          "title": "Registering chain commands as regular commands"
+        },
+        {
+          "link": "chains/listing-registered-commands",
+          "title": "Listing registered commands"
+        }
+      ]
+    },
+    {
+      "link": "extending/creating-custom-commands",
+      "title": "Creating custom Commands",
+      "items": [
+        {
+          "link": "extending/configuring-the-command",
+          "title": "Configuring the Command"
+        },
+        {
+          "link": "extending/command-lifecycle",
+          "title": "Command Lifecycle"
+        },
+        {
+          "link": "extending/getting-services-from-the-service-container",
+          "title": "Getting Services from the Service Container"
+        },
+        {
+          "link": "extending/registering-commands-automatically",
+          "title": "Registering Commands Automatically"
+        }
+      ]
+    },
+    {
+      "link": "contributing/new-features",
+      "title": "Contribuindo para o Drupal Console",
+      "items": [
+        {
+          "link": "contributing/project-requirements",
+          "title": "Requisitos de projeto"
+        },
+        {
+          "link": "contributing/getting-the-project",
+          "title": "Obtendo o projeto"
+        },
+        {
+          "link": "contributing/running-the-project",
+          "title": "Executando o projeto"
+        },
+        {
+          "link": "contributing/keeping-your-fork-up-to-date",
+          "title": "Mantendo o seu fork atualizado"
+        },
+        {
+          "link": "contributing/creating-issues-and-pull-requests",
+          "title": "Criando issues e pull requests"
+        },
+        {
+          "link": "contributing/documentation",
+          "title": "Contribuir para essa documentação"
+        }
+      ]
+    },
+    {
+      "link": "commands/available-commands",
+      "title": "Comandos disponíveis"
+    },
+    {
+      "link": "drupal_console_faq/faq",
+      "title": "FAQ (Perguntas mais frequentes) sobre o Drupal Console",
+      "items": [
+        {
+          "link": "drupal_console_faq/installation-problems",
+          "title": "Problemas de instalação"
+        },
+        {
+          "link": "drupal_console_faq/permissions",
+          "title": "Permissões"
+        },
+        {
+          "link": "drupal_console_faq/commands-not-listed",
+          "title": "Comandos não listados"
+        },
+        {
+          "link": "drupal_console_faq/interactive-mode",
+          "title": "Modo interativo"
+        }
+      ]
+    },
+    {
+      "link": "references/links",
+      "title": "Referências"
+    }
+  ]
+}
