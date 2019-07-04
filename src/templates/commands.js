@@ -17,6 +17,7 @@ const CommandsTemplate = (props) =>  {
             <div className="col-md-4 col-xl-3">
               <Sidebar
                   items={items}
+                  language={props.pageContext.language}
                   activePage={props.pageContext.slug}
                 />
             </div>
