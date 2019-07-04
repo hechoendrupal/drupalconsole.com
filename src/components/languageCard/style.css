@@ -1,0 +1,33 @@
+img.author-avatar {
+  width: 30px;
+  height: 30px;
+  margin-top: 15px;
+}
+
+div.card{
+  width: 200px;
+  height: 225px;
+  border: 1px solid #eeeeee;
+  background-color: #ffffff;
+  background-size: cover;
+
+  margin-bottom: 30px;
+  margin-left: 30px;
+
+}
+
+div.card:hover{
+  box-shadow: 0px 0px 12px rgba(0,0,0,0.08);
+}
+
+div.card-body{
+  text-align: center;
+}
+
+div.card-text{
+  line-height: 10px;
+  margin-top: 10px;
+  font-size: 15px;
+  color: #666666;
+  text-decoration: none solid rgb(102, 102, 102);
+}

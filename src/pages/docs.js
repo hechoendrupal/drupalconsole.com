@@ -1,6 +1,7 @@
 import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../components/layout"
+import LanguageCard from "../components/languageCard"
 
 const DocsPage = () => {
 
@@ -38,17 +39,7 @@ const DocsPage = () => {
             <div className="row">
               <div className="col-md-12 col-xl-12">
                 <h1>Documentation</h1>
-                <ul>
-                  {allLanguagesYaml.edges.map(item => {
-                    return (
-                      <li key={item.node.id}>
-                        <Link to={`/docs/${item.node.id}/`}>
-                          {item.node.slug} | {item.node.name}
-                        </Link>
-                      </li>
-                    )
-                  })}
-                </ul>
+                <LanguageCard data={allLanguagesYaml.edges}/>
               </div>
             </div>
           </div>
