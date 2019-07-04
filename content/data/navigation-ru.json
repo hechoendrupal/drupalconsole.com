@@ -3,8 +3,8 @@
   "type": "navigation",
   "items": [
     {
-      "link": "README",
-      "title": "О документации Drupal Console"
+      "link": "/",
+      "title": "Welcome"
     },
     {
       "link": "about/what-is-the-drupal-console",

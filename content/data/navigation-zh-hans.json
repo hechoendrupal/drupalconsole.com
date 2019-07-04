@@ -3,8 +3,8 @@
   "type": "navigation",
   "items": [
     {
-      "link": "README",
-      "title": "Drupal Console 文档"
+      "link": "/",
+      "title": "Welcome"
     },
     {
       "link": "about/what-is-the-drupal-console",

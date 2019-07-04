@@ -13,7 +13,7 @@ export default function HTML(props) {
         />
         {props.headComponents}
         <link href="/assets/css/page.min.css" rel="stylesheet" />
-        {/* <link href="/assets/css/style.css" rel="stylesheet" /> */}
+        <link href="/assets/css/style.css" rel="stylesheet" />
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}

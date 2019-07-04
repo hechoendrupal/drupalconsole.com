@@ -42,7 +42,7 @@ const DocsPage = () => {
                   {allLanguagesYaml.edges.map(item => {
                     return (
                       <li key={item.node.id}>
-                        <Link to={`/docs/${item.node.id}/readme`}>
+                        <Link to={`/docs/${item.node.id}/`}>
                           {item.node.slug} | {item.node.name}
                         </Link>
                       </li>
