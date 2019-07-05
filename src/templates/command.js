@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import Sidebar from "../components/sidebar"
 import Table from "../components/table"
+import SwitchLanguage from "../components/switch"
 
 import _isEmpty from "lodash/isEmpty"
 
@@ -15,6 +16,9 @@ const CommandTemplate = (props) =>  {
     <Layout>
       <main className="main-content">
         <div className="container">
+          <div className="row">
+            <SwitchLanguage language={props.pageContext.language} />
+          </div>
           <div className="row">
             <div className="col-md-4 col-xl-3">
               <Sidebar
