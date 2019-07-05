@@ -2,6 +2,7 @@ import React from "react"
 import './style.css';
 import { Link, useStaticQuery, graphql } from "gatsby"
 
+import Image from "../../layout/image"
 import _find from "lodash/find"
 import _isEqual from "lodash/isEqual"
 
@@ -29,7 +30,7 @@ const LanguageSwitcher = ({ language }) => {
     <div className="container">
       <div className="dropdown float-right">
         <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            {defaultLangaugeName.node.slug} ({defaultLangaugeName.node.id})
+          <Image path={`flags/${defaultLangaugeName.node.slug}.png`} className="rounded-circle w-20px" alt={defaultLangaugeName.node.slug} /> {` ${defaultLangaugeName.node.slug} (${defaultLangaugeName.node.id})`}
         </button>
         <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
           {allLanguagesYaml.edges.map(item => {
