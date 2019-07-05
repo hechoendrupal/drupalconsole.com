@@ -105,7 +105,7 @@ exports.createPages = ({ graphql, actions }) => {
       const languages = result.data.allLanguagesYaml.edges
       languages.forEach(item => {
         const language = item.node.id
-        const slug = `docs/${language}/commands/available-commands`
+        const slug = `docs/${language}/commands/`
         createPage({
           path: slug,
           component: path.resolve(`./src/templates/commands.js`),
