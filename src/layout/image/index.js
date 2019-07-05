@@ -3,10 +3,11 @@ import PropTypes from 'prop-types';
 import { StaticQuery, graphql } from "gatsby"
 
 const Image = (props) => (
+
   <StaticQuery
     query={graphql`
       query {
-        allFile(filter:{sourceInstanceName:{eq:"images"}}) {
+        allFile(filter: {sourceInstanceName: {in: ["images", "assets"]}}) {
           edges {
             node {
               publicURL
@@ -16,6 +17,7 @@ const Image = (props) => (
         }
       }
     `}
+
     render={data => {
       const image = data.allFile.edges.find(
         edge => edge.node.relativePath === props.path
