@@ -12,6 +12,10 @@ const LanguageSwitcher = ({ language, activePage }) => {
     return (<></>)
   }
 
+  if (activePage.charAt(activePage.length-1) !== '/') {
+    activePage = activePage + '/'
+  }
+
   const { allLanguagesYaml } = useStaticQuery(
     graphql`
       query {
