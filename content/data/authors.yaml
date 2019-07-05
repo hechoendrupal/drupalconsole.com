@@ -11,20 +11,21 @@
   website: http://jmolivas.com/
   twitter: https://twitter.com/jmolivas
   github: https://github.com/jmolivas
-  github_avatar: https://avatars.githubusercontent.com/u/366275?v=3&s=140
+  github_avatar: https://avatars.githubusercontent.com/u/366275
   user_picture: ../assets/pictures/2015-12/avatar-medium.jpg
 - id: enzo
   name: 'Eduardo Garcia'
   website: http://enzolutions.com/
   twitter: https://twitter.com/enzolutions
   github: https://github.com/enzolutions
-  github_avatar: https://avatars.githubusercontent.com/u/907914?v=3&s=140
+  github_avatar: https://avatars.githubusercontent.com/u/907914
 - id: vmartins
   name: 'Vanessa Martins'
   website: http://vmartinsweb.com
   twitter: https://twitter.com/vmartinsweb
   github: https://github.com/vmartinsweb
   user_drupal: https://www.drupal.org/u/vmartins
+  github_avatar: https://avatars3.githubusercontent.com/u/1421406
   user_picture: ../assets/pictures/2016-01/10805568_913046168735629_5840393207494353114_n_0.jpg
 - id: lnunesbr
   name: 'Leandro Nunes'
@@ -33,6 +34,7 @@
   twitter: https://twitter.com/lnunesbr
   github: https://github.com/lnunesbr
   user_drupal: https://www.drupal.org/u/lnunesbr
+  github_avatar: https://avatars3.githubusercontent.com/u/569107
   user_picture: ../assets/pictures/2016-01/lnunes.jpg
 - id: webtom
   name: 'Tom Tran'
@@ -56,6 +58,7 @@
   github: https://github.com/novia713/
   user_drupal: https://www.drupal.org/u/leandro713
   user_picture: ../assets/pictures/2016-01/AAEAAQAAAAAAAAOJAAAAJDQwOWYyZWU5LTFkOTQtNDMzYi04MDk2LTlhMWQzYzdhMDVhZA.jpg
+  github_avatar: https://avatars1.githubusercontent.com/u/423279
 - id: davinder
   name: 'Davinder Kumar'
   website: http://davinder.in

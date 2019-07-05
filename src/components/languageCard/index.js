@@ -2,6 +2,7 @@ import React from "react"
 import './style.css';
 import {Link} from "gatsby";
 import _capitalize from "lodash/capitalize"
+import Image from "../../layout/image"
 
 const LanguageCard = ({ data }) => {
   return (
@@ -12,10 +13,11 @@ const LanguageCard = ({ data }) => {
             <div className="card">
               <Link key={item.node.id} to={`/docs/${item.node.id}/`}>
                 <div className="card-body">
-                  <img src={`/content/assets/flags/${item.node.slug}.png`} className="card-title rounded-circle" alt={item.node.slug}/>
+                  <div className="card-image">
+                    <Image path={`flags/${item.node.slug}.png`} className="card-title rounded-circle w-100px" alt={item.node.slug} />
+                  </div>
                   <div className="card-text">
-                    <p>{_capitalize(item.node.slug)}</p>
-                    <p><strong>{item.node.name}</strong></p>
+                    <span>{_capitalize(item.node.name)} ({item.node.id})</span>
                   </div>
                   {item.node.authors && (
                     item.node.authors.map(author => {
