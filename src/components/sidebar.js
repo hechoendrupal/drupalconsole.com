@@ -30,7 +30,7 @@ const Sidebar = ({ items, activePage, language }) => {
                     {
                       activePage === link ? <strong>{item.title}</strong> : item.title
                     }
-                    {/* <i className="nav-angle"></i> */}
+                    <i className="nav-angle"></i>
                   </Link>
                   {item.items && (
                     <div key={`${item.link}-div-item}`} className="nav">
