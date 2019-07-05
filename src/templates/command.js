@@ -17,7 +17,10 @@ const CommandTemplate = (props) =>  {
       <main className="main-content">
         <div className="container">
           <div className="row">
-            <LanguageSwitcher language={props.pageContext.language} />
+            <LanguageSwitcher
+              language={props.pageContext.language}
+              activePage={props.pageContext.slug}
+            />
           </div>
           <div className="row">
             <div className="col-md-4 col-xl-3">

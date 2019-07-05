@@ -6,7 +6,11 @@ import Image from "../../layout/image"
 import _find from "lodash/find"
 import _isEqual from "lodash/isEqual"
 
-const LanguageSwitcher = ({ language }) => {
+const LanguageSwitcher = ({ language, activePage }) => {
+
+  if (!activePage || !language) {
+    return (<></>)
+  }
 
   const { allLanguagesYaml } = useStaticQuery(
     graphql`
@@ -29,13 +33,22 @@ const LanguageSwitcher = ({ language }) => {
   return (
     <div className="container">
       <div className="dropdown float-right">
-        <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <Image path={`flags/${defaultLangaugeName.node.slug}.png`} className="rounded-circle w-20px" alt={defaultLangaugeName.node.slug} /> {` ${defaultLangaugeName.node.slug} (${defaultLangaugeName.node.id})`}
-        </button>
+        {defaultLangaugeName &&
+          <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <Image path={`flags/${defaultLangaugeName.node.slug}.png`} className="rounded-circle w-20px" alt={defaultLangaugeName.node.slug} /> {` ${defaultLangaugeName.node.slug} (${defaultLangaugeName.node.id})`}
+          </button>
+        }
         <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
-          {allLanguagesYaml.edges.map(item => {
+          {defaultLangaugeName && allLanguagesYaml.edges && allLanguagesYaml.edges.map(item => {
+
+            if (!item) {
+              return <></>
+            }
+
+            const toPage = activePage.replace(`/${defaultLangaugeName.node.id}/`, `/${item.node.id}/`)
+
             return (
-              <Link key={item.node.id} className="dropdown-item" to={`/docs/${item.node.id}/`}>
+              <Link key={item.node.id} className="dropdown-item" to={toPage}>
                 {item.node.name} ({item.node.id})
               </Link>
             )
