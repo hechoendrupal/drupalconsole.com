@@ -12,7 +12,7 @@ const LanguageCard = ({ data }) => {
             <div className="card">
               <Link key={item.node.id} to={`/docs/${item.node.id}/`}>
                 <div className="card-body">
-                  <img src={`/content/assets/flags/${item.node.slug}.png`} className="card-title rounded-circle" alt="Circle image"/>
+                  <img src={`/content/assets/flags/${item.node.slug}.png`} className="card-title rounded-circle" alt={item.node.slug}/>
                   <div className="card-text">
                     <p>{_capitalize(item.node.slug)}</p>
                     <p><strong>{item.node.name}</strong></p>
@@ -21,7 +21,7 @@ const LanguageCard = ({ data }) => {
                     item.node.authors.map(author => {
                       return (
                         <React.Fragment key={author.id}>
-                          {author.github_avatar && <img src={author.github_avatar} className="author-avatar rounded-circle" alt="Circle image"/>}
+                          {author.github_avatar && <img src={author.github_avatar} className="author-avatar rounded-circle" alt={author.name}/>}
                         </React.Fragment>
                       )
                     })
