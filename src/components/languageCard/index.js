@@ -10,8 +10,8 @@ const LanguageCard = ({ data }) => {
       <div className="row">
         {data.map(item => {
           return (
-            <div className="card">
-              <Link key={item.node.id} to={`/docs/${item.node.id}/`}>
+            <div key={item.node.id} className="card">
+              <Link to={`/docs/${item.node.id}/`}>
                 <div className="card-body">
                   <div className="card-image">
                     <Image path={`flags/${item.node.slug}.png`} className="card-title rounded-circle w-100px" alt={item.node.slug} />
