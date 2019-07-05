@@ -25,7 +25,7 @@ const Image = (props) => (
       if (!image) {
         return null
       }
-      return <img src={image.node.publicURL} {...props} />
+      return <img src={image.node.publicURL} className={props.className} alt={props.alt}/>
     }}
   />
 )
