@@ -73,6 +73,10 @@
       ]
     },
     {
+      "link": "commands/available-commands",
+      "title": "可用命令"
+    },
+    {
       "link": "alias/using-site-alias",
       "title": "Using site alias",
       "items": [
@@ -159,10 +163,6 @@
           "title": "文档编写"
         }
       ]
-    },
-    {
-      "link": "commands/available-commands",
-      "title": "可用命令"
     },
     {
       "link": "drupal_console_faq/faq",
