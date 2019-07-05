@@ -65,6 +65,10 @@
       ]
     },
     {
+      "link": "commands/available-commands",
+      "title": "Команды консоли"
+    },
+    {
       "link": "alias/using-site-alias",
       "title": "Using site alias",
       "items": [
@@ -147,10 +151,6 @@
           "title": "Как помочь в переводе документации?"
         }
       ]
-    },
-    {
-      "link": "commands/available-commands",
-      "title": "Команды консоли"
     },
     {
       "link": "drupal_console_faq/faq",

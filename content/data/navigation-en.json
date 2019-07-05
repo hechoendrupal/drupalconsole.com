@@ -61,6 +61,10 @@
       ]
     },
     {
+      "link": "commands/available-commands",
+      "title": "Available commands"
+    },
+    {
       "link": "alias/using-site-alias",
       "title": "Using site alias",
       "items": [
@@ -151,10 +155,6 @@
           "title": "Contribute to this documentation"
         }
       ]
-    },
-    {
-      "link": "commands/available-commands",
-      "title": "Available commands"
     },
     {
       "link": "drupal_console_faq/faq",

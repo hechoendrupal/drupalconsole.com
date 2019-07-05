@@ -73,6 +73,10 @@
       ]
     },
     {
+      "link": "commands/available-commands",
+      "title": "利用可能なコマンド"
+    },
+    {
       "link": "alias/using-site-alias",
       "title": "Using site alias",
       "items": [
@@ -155,10 +159,6 @@
           "title": "このドキュメントに貢献する"
         }
       ]
-    },
-    {
-      "link": "commands/available-commands",
-      "title": "利用可能なコマンド"
     },
     {
       "link": "drupal_console_faq/faq",
