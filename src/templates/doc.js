@@ -5,7 +5,7 @@ import { MDXProvider } from "@mdx-js/react"
 
 import Layout from "../components/layout"
 import Sidebar from "../components/sidebar"
-import SwitchLanguage from "../components/switch"
+import LanguageSwitcher from "../components/languageSwitcher"
 
 const DocTemplate = (props) =>  {
   const post = props.data.mdx
@@ -15,7 +15,7 @@ const DocTemplate = (props) =>  {
       <main className="main-content">
         <div className="container">
           <div className="row">
-            <SwitchLanguage language={props.pageContext.language} />
+            <LanguageSwitcher language={props.pageContext.language} />
           </div>
           <div className="row">
             <div className="col-md-4 col-xl-3">
