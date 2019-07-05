@@ -26,8 +26,8 @@ div.card-body{
 }
 
 div.card-text{
-  line-height: 10px;
-  margin-top: 10px;
+  line-height: 16px;
+  margin-top: 5px;
   font-size: 15px;
   color: #666666;
   text-decoration: none solid rgb(102, 102, 102);
