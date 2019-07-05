@@ -1,18 +1,16 @@
 - id: druprompt
-  user_picture: ../assets/pictures/2015-12/drupal-console-avatar.png
+  github_avatar: https://avatars0.githubusercontent.com/u/537500
 - id: omers
   name: 'Omar Aguirre'
   twitter: https://twitter.com/omers
   github: https://github.com/omero
-  github_avatar: https://avatars.githubusercontent.com/u/1909779?v=3&s=140
-  user_picture: ../assets/pictures/2015-11/profile.jpg
+  github_avatar: https://avatars.githubusercontent.com/u/1909779
 - id: jmolivas
   name: 'Jesus Manuel Olivas'
   website: http://jmolivas.com/
   twitter: https://twitter.com/jmolivas
   github: https://github.com/jmolivas
   github_avatar: https://avatars.githubusercontent.com/u/366275
-  user_picture: ../assets/pictures/2015-12/avatar-medium.jpg
 - id: enzo
   name: 'Eduardo Garcia'
   website: http://enzolutions.com/
@@ -26,7 +24,6 @@
   github: https://github.com/vmartinsweb
   user_drupal: https://www.drupal.org/u/vmartins
   github_avatar: https://avatars3.githubusercontent.com/u/1421406
-  user_picture: ../assets/pictures/2016-01/10805568_913046168735629_5840393207494353114_n_0.jpg
 - id: lnunesbr
   name: 'Leandro Nunes'
   website: https://nunesweb.com
@@ -35,7 +32,6 @@
   github: https://github.com/lnunesbr
   user_drupal: https://www.drupal.org/u/lnunesbr
   github_avatar: https://avatars3.githubusercontent.com/u/569107
-  user_picture: ../assets/pictures/2016-01/lnunes.jpg
 - id: webtom
   name: 'Tom Tran'
 - id: vietcuonghn
@@ -46,18 +42,20 @@
   website: http://ranqiangjun.com
   facebook: http://facebook.com/ranqiangjun
   twitter: http://twitter.com/ranqiangjun
-  github: http://github.com/ranqiangjun
+  github: https://github.com/jungleran
   user_drupal: http://drupal.org/u/jungle
-  user_picture: ../assets/pictures/2016-02/XcKrcX61.jpg
+  github_avatar: https://avatars1.githubusercontent.com/u/5101533
 - id: darol100
   name: 'daryl norris'
+  website: https://www.darrylnorris.com/
+  github: https://github.com/darol100
+  github_avatar: https://avatars3.githubusercontent.com/u/6808460
 - id: leandro
   name: 'Leandro Vázquez Cervantes'
   website: http://leandro.vc
   twitter: http://twitter.com/novia713
   github: https://github.com/novia713/
   user_drupal: https://www.drupal.org/u/leandro713
-  user_picture: ../assets/pictures/2016-01/AAEAAQAAAAAAAAOJAAAAJDQwOWYyZWU5LTFkOTQtNDMzYi04MDk2LTlhMWQzYzdhMDVhZA.jpg
   github_avatar: https://avatars1.githubusercontent.com/u/423279
 - id: davinder
   name: 'Davinder Kumar'
@@ -66,20 +64,20 @@
   twitter: https://twitter.com/dkgndec
   github: https://github.com/dkgndec
   user_drupal: https://www.drupal.org/u/snehi
-  user_picture: ../assets/pictures/2016-01/947323_4127051193661_1602176838_n.jpg
+  github_avatar: https://avatars3.githubusercontent.com/u/694611
 - id: aniela
   name: 'Aniela Răileanu'
   facebook: https://www.facebook.com/aniela.raileanu.9
   twitter: https://twitter.com/raileanuaniela
   github: https://github.com/raileanuaniela
   user_drupal: https://www.drupal.org/u/raileanuaniela
-  user_picture: ../assets/pictures/2016-01/ani2.jpg
+  github_avatar: https://avatars3.githubusercontent.com/u/15009684
 - id: znagy
   name: 'Zsolt Nagy'
   twitter: https://twitter.com/balagan1973
   github: https://github.com/balagan73
   user_drupal: https://www.drupal.org/u/balagan
-  user_picture: ../assets/pictures/2016-04/zsnagy-220x220.jpg
+  github_avatar: https://avatars2.githubusercontent.com/u/3536805
 - id: durgeshs
   name: 'Durgesh Srivastava'
   website: http://www.srijan.net
@@ -87,18 +85,26 @@
   twitter: https://twitter.com/durgesh29
   github: https://github.com/durgeshs
   user_drupal: https://www.drupal.org/u/durgeshs
-  user_picture: ../assets/pictures/2016-02/durgesh.jpg
+  github_avatar: https://avatars1.githubusercontent.com/u/1736125
 - id: dmouse
   name: 'David Flores'
+  twitter: https://twitter.com/dmouse
+  user_drupal: https://www.drupal.org/u/dmouse
+  github: https://github.com/dmouse
+  github_avatar: https://avatars1.githubusercontent.com/u/198571
 - id: kabarca
   name: 'Kenny Abarca'
+  user_drupal: https://www.drupal.org/u/kabarca
+  twitter: https://twitter.com/kabarca
+  github: https://github.com/kabarca
+  github_avatar: https://avatars1.githubusercontent.com/u/889027
 - id: kgaut
   name: 'Kevin  Gautreau'
   website: https://kgaut.net/
   twitter: https://twitter.com/kgaut
   github: https://github.com/kgaut
   user_drupal: https://www.drupal.org/u/kgaut
-  user_picture: ../assets/pictures/2016-06/photo-profil.jpeg
+  github_avatar: https://avatars0.githubusercontent.com/u/736910
 - id: blauerberg
   name: 'Yoshikazu Aoyama'
   website: https://annai.co.jp
@@ -106,25 +112,39 @@
   twitter: https://twitter.com/blauerberg
   github: https://github.com/blauerberg
   user_drupal: https://www.drupal.org/u/blauerberg
-  user_picture: ../assets/pictures/2016-07/198602_191419430893295_7107984_n.jpg
+  github_avatar: https://avatars0.githubusercontent.com/u/175681
 - id: michael
   name: 'Michael Kinyanjui'
 - id: andres
   name: 'Andres Avila'
+  twitter: https://twitter.com/AndresAvila97
+  user_drupal: https://www.drupal.org/u/andresavila
 - id: yogeshmpawar
   name: 'Yogesh Pawar'
   facebook: https://www.facebook.com/yogeshmpawar
   twitter: https://twitter.com/yogeshmpawar
   github: https://github.com/yogeshmpawar
   user_drupal: https://www.drupal.org/u/yogesh-pawar
-  github_avatar: https://github.com/yogeshmpawar
-  user_picture: ../assets/pictures/2018-04/IMG_20170307_120602980.jpg
+  github_avatar: https://avatars1.githubusercontent.com/u/19403203
 - id: nikolay
   name: 'Nikolay Lobachev'
   github: https://github.com/LOBsTerr
   user_drupal: https://www.drupal.org/u/lobsterr
-  github_avatar: https://avatars1.githubusercontent.com/u/537500?s=460&v=4
-  user_picture: ../assets/pictures/2018-04/lob_0.jpg
+  github_avatar: https://avatars1.githubusercontent.com/u/537500
 - id: marketing
   name: 'Veronica Wheelock'
-  github_avatar: https://avatars0.githubusercontent.com/u/537500?s=400&v=4
+  github_avatar: https://avatars0.githubusercontent.com/u/537500
+- id: harold20
+  name: 'Harold Juarez'
+  twitter: https://twitter.com/hjuarez202
+  github: https://github.com/harold20
+  user_drupal: https://www.drupal.org/u/harold20
+  github_avatar: https://avatars2.githubusercontent.com/u/8105777
+- id: natashachanto
+  name: 'Natasha Chanto'
+  github_avatar: https://avatars0.githubusercontent.com/u/537500
+- id: gcadau
+  name: 'Gerardo Cadau'
+  github: https://github.com/juanramonperez
+  user_drupal: https://www.drupal.org/u/juanramonperez
+  github_avatar: https://avatars0.githubusercontent.com/u/1731367

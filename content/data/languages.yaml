@@ -15,15 +15,19 @@
 - id: hi
   slug: hindi
   name: हिन्दी
+  authors: [durgeshs, davinder]
 - id: hu
   slug: hungarian
   name: Magyar
+  authors: [znagy]
 - id: ja
   slug: japanese
   name: 日本語
+  authors: [blauerberg]
 - id: mr
   slug: marathi
   name: मराठी
+  authors: [yogeshmpawar]
 - id: pt-br
   slug: portuguese
   name: Português brasileiro
@@ -31,12 +35,15 @@
 - id: ro
   slug: romanian
   name: Romanian
+  authors: [aniela]
 - id:  ru
   slug: russian
   name: pусский язык
+  authors: [nikolay]
 - id: vn 
   slug: vietnamese
   name: Vietnamese
 - id: zh-hans
   slug: chinese
   name: 简体中文
+  authors: [jungle]
