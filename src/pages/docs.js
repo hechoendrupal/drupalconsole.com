@@ -38,7 +38,7 @@ const DocsPage = () => {
           <div className="container">
             <div className="row">
               <div className="col-md-12 col-xl-12">
-                <h1>Documentation</h1>
+                <h1 className="text-center" >Documentation</h1>
                 <LanguageCard data={allLanguagesYaml.edges}/>
               </div>
             </div>
