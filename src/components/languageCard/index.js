@@ -7,16 +7,16 @@ import Image from "../../layout/image"
 const LanguageCard = ({ data }) => {
   return (
     <div className="container">
-      <div className="row">
+      <div className="row justify-content-center">
         {data.map(item => {
           return (
-            <div key={item.node.id} className="card">
+            <div key={item.node.id} className="card bl-1 br-1 bt-1 bb-1 hover-shadow-9">
               <Link to={`/docs/${item.node.id}/`}>
-                <div className="card-body">
+                <div className="card-body text-center">
                   <div className="card-image">
                     <Image path={`flags/${item.node.slug}.png`} className="card-title rounded-circle w-100px" alt={item.node.slug} />
                   </div>
-                  <div className="card-text">
+                  <div className="card-text fs-15 lh-1">
                     <span>{_capitalize(item.node.name)} ({item.node.id})</span>
                   </div>
                   {item.node.authors && (
