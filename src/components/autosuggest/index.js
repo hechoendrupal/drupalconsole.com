@@ -17,7 +17,43 @@ function getSuggestions(value, commands) {
 
   const regex = new RegExp('^' + escapedValue, 'i');
 
-  return commands.filter(command => regex.test(command.name));
+  // return commands.filter(command => regex.test(command.name));
+
+  // @TODO read namespaces from commands.json
+  const namespaces = [
+    { name: 'cache' },
+    { name: 'config' },
+    { name: 'create' },
+    { name: 'cron' },
+    { name: 'database' },
+    { name: 'debug' },
+    { name: 'devel' },
+    { name: 'docker' },
+    { name: 'dotenv' },
+    { name: 'entity' },
+    { name: 'features' },
+    { name: 'fields' },
+    { name: 'generate' },
+    { name: 'image' },
+    { name: 'locale' },
+    { name: 'migrate' },
+    { name: 'module' },
+    { name: 'multisite' },
+    { name: 'node' },
+    { name: 'queue' },
+    { name: 'rest' },
+    { name: 'role' },
+    { name: 'router' },
+    { name: 'site' },
+    { name: 'state' },
+    { name: 'taxonomy' },
+    { name: 'theme' },
+    { name: 'update' },
+    { name: 'user' },
+    { name: 'views' },
+  ];
+
+  return namespaces.concat(commands).filter(command => regex.test(command.name));
 }
 
 const getSuggestionValue= suggestion =>  suggestion.name
