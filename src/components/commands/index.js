@@ -1,6 +1,7 @@
 import React, { useState } from "react"
 import './style.css';
 import {Link} from "gatsby";
+import Autosuggest from "../autosuggest"
 
 const Commands = ({ data, language }) => {
 
@@ -9,18 +10,19 @@ const Commands = ({ data, language }) => {
   return (
     <div className="container col-md-12">
       <div className="form-group">
-        <div className="input-group">
+        {/* <div className="input-group"> */}
           {/* <div className="input-group-addon">
             <i className="fa fa-search" />
           </div> */}
-          <input
+          {/* <input
             type="text"
             id="command-search"
             className="form-control"
             placeholder="Search DrupalConsole Commands"
             onChange={e => setSearch(e.target.value)}
             value={search}
-          />
+          /> */}
+          <Autosuggest commands={data} setSearch={setSearch} />
           {/* <div
             style={{ background: "#fff; cursor:pointer" }}
             className="input-group-addon"
@@ -29,7 +31,7 @@ const Commands = ({ data, language }) => {
           >
             <span className="fa fa-times" />
           </div> */}
-        </div>
+        {/* </div> */}
       </div>
 
       <table className="table table-commands table-bordered table-striped">
@@ -41,7 +43,8 @@ const Commands = ({ data, language }) => {
         </thead>
         <tbody>
           {data.filter(command => {
-              return command.name.indexOf(search) >= 0
+              return search ? command.name === search : true
+              // return command.name.indexOf(search) >= 0
             })
             .map((command, i) => {
               return (
