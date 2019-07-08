@@ -18,7 +18,7 @@ const Commands = ({ data, namespaces, language }) => {
           <thead>
             <tr className="d-flex">
               <th className="col-md-6 col-xl-6">Command</th>
-              <th className="col-md-6 col-xl-6">{command.messages.usage}</th>
+              <th className="col-md-6 col-xl-6">{_isEmpty(data) ? 'Usage' : data[0].messages.usage}</th>
             </tr>
           </thead>
           <tbody>
@@ -47,7 +47,7 @@ const Commands = ({ data, namespaces, language }) => {
                               aria-expanded="false"
                               aria-controls={command.dashed}
                             >
-                              <span class="badge badge-primary">
+                              <span className="badge badge-secondary">
                                 <i className="fa fa-expand" aria-hidden="true"></i>
                                 {command.messages.examples}
                                 </span>
