@@ -14,7 +14,7 @@ li.command-usage {
 }
 
 li.command-usage > span {
-  white-space: pre-line;
+  white-space: pre-wrap;
 }
 
 li.command-usage .btn-link {
