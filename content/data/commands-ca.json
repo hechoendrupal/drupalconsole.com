@@ -2113,6 +2113,30 @@
             }
         },
         {
+            "name": "debug:features",
+            "description": "List registered features.",
+            "options": [],
+            "arguments": [
+                {
+                    "name": "bundle",
+                    "description": "Bundle name"
+                }
+            ],
+            "examples": [],
+            "aliases": [],
+            "key": "debug.features",
+            "dashed": "debug-features",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
             "name": "debug:hook",
             "description": "commands.debug.hook.description",
             "options": [],
@@ -2184,6 +2208,37 @@
             ],
             "key": "debug.libraries",
             "dashed": "debug-libraries",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "debug:migrate",
+            "description": "Mostrar les migracions disponibles per l'aplicaci\u00f3",
+            "options": [],
+            "arguments": [
+                {
+                    "name": "tag",
+                    "description": "Etiqueta de la migraci\u00f3"
+                }
+            ],
+            "examples": [
+                {
+                    "description": "Displays current migration",
+                    "execution": "drupal debug:migrate\n"
+                }
+            ],
+            "aliases": [
+                "mid"
+            ],
+            "key": "debug.migrate",
+            "dashed": "debug-migrate",
             "messages": {
                 "usage": "Usage",
                 "options": "Available options",
@@ -2355,6 +2410,42 @@
             ],
             "key": "debug.queue",
             "dashed": "debug-queue",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "debug:rest",
+            "description": "Mostrar l'actual recurs Rest de l'aplicaci\u00f3",
+            "options": [
+                {
+                    "name": "authorization",
+                    "description": "Rest resource status habilitat | deshabilitat"
+                }
+            ],
+            "arguments": [
+                {
+                    "name": "resource-id",
+                    "description": "Identificador Rest"
+                }
+            ],
+            "examples": [
+                {
+                    "description": "Displays rest hooks",
+                    "execution": "drupal debug:rest\n"
+                }
+            ],
+            "aliases": [
+                "rede"
+            ],
+            "key": "debug.rest",
+            "dashed": "debug-rest",
             "messages": {
                 "usage": "Usage",
                 "options": "Available options",
@@ -2757,30 +2848,6 @@
             }
         },
         {
-            "name": "demo:harold",
-            "description": "Download Drupal + Drupal Console to contribute.",
-            "options": [
-                {
-                    "name": "file",
-                    "description": ""
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [],
-            "key": "demo.harold",
-            "dashed": "demo-harold",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
             "name": "devel:dumper",
             "description": "commands.devel.dumper.messages.change-devel-dumper-plugin",
             "options": [],
@@ -2796,476 +2863,6 @@
             ],
             "key": "devel.dumper",
             "dashed": "devel-dumper",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:contribute",
-            "description": "Download Drupal + Drupal Console to contribute.",
-            "options": [
-                {
-                    "name": "file",
-                    "description": ""
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [],
-            "key": "develop.contribute",
-            "dashed": "develop-contribute",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:create:symlinks",
-            "description": "Create symlinks between Drupal site and cloned repositories.",
-            "options": [
-                {
-                    "name": "code-directory",
-                    "description": "The directory where the projects were cloned"
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [],
-            "key": "develop.create.symlinks",
-            "dashed": "develop-create-symlinks",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:doc:cheatsheet",
-            "description": "Generate a printable cheatsheet for Commands",
-            "options": [
-                {
-                    "name": "path",
-                    "description": "The path to generate the pdf for the documentation"
-                },
-                {
-                    "name": "wkhtmltopdf",
-                    "description": "The path for the wkhtmltopdf binary in your system"
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [
-                "gdc"
-            ],
-            "key": "develop.doc.cheatsheet",
-            "dashed": "develop-doc-cheatsheet",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:doc:dash",
-            "description": "Generar la documentaci\u00f3 per els comandaments",
-            "options": [
-                {
-                    "name": "path",
-                    "description": "Cam\u00ed on exportar la documentaci\u00f3"
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [
-                "gdd"
-            ],
-            "key": "develop.doc.dash",
-            "dashed": "develop-doc-dash",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:doc:data",
-            "description": "Generate documentations for Commands.",
-            "options": [
-                {
-                    "name": "file",
-                    "description": "The file to render the command data"
-                },
-                {
-                    "name": "help",
-                    "description": "Display this help message"
-                },
-                {
-                    "name": "quiet",
-                    "description": "Do not output any message"
-                },
-                {
-                    "name": "verbose",
-                    "description": "Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug"
-                },
-                {
-                    "name": "version",
-                    "description": "Display this application version"
-                },
-                {
-                    "name": "ansi",
-                    "description": "Force ANSI output"
-                },
-                {
-                    "name": "no-ansi",
-                    "description": "Disable ANSI output"
-                },
-                {
-                    "name": "no-interaction",
-                    "description": "Do not ask any interactive question"
-                },
-                {
-                    "name": "env",
-                    "description": "Nom de l'entorn"
-                },
-                {
-                    "name": "root",
-                    "description": "Definir el cam\u00ed arrel de Drupal on s'executaran els comandaments"
-                },
-                {
-                    "name": "debug",
-                    "description": "application.options.debug"
-                },
-                {
-                    "name": "learning",
-                    "description": "Generar codi detallat."
-                },
-                {
-                    "name": "generate-chain",
-                    "description": "Imprimir les opcions d'execuci\u00f3 i els arguments com una sortida YAML per ser utilitzats amb el comandament \"chain\"."
-                },
-                {
-                    "name": "generate-inline",
-                    "description": "Imprimir les opcions d'execuci\u00f3 i els arguments com inserits per ser utilitzats en un futur."
-                },
-                {
-                    "name": "generate-doc",
-                    "description": "Mostrar les opcions i arguments dels comandaments com a \"markdown\""
-                },
-                {
-                    "name": "target",
-                    "description": "El nom del lloc web amb el qual vols interactuar (locals o remot)"
-                },
-                {
-                    "name": "uri",
-                    "description": "URI del lloc web Drupal que s'utilitzar\u00e0 (per entorns \"multisite\" o quan s'utilitza un port alternatiu)"
-                },
-                {
-                    "name": "yes",
-                    "description": "Ometre la confirmaci\u00f3"
-                }
-            ],
-            "arguments": [
-                {
-                    "name": "command",
-                    "description": "The command to execute"
-                }
-            ],
-            "examples": [],
-            "aliases": [
-                "gdda"
-            ],
-            "key": "develop.doc.data",
-            "dashed": "develop-doc-data",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:doc:gitbook",
-            "description": "Generar la documentaci\u00f3 per els comandaments",
-            "options": [
-                {
-                    "name": "path",
-                    "description": "Cam\u00ed on renderitzar la documentaci\u00f3"
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [
-                "gdg"
-            ],
-            "key": "develop.doc.gitbook",
-            "dashed": "develop-doc-gitbook",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:example",
-            "description": null,
-            "options": [],
-            "arguments": [],
-            "examples": [],
-            "aliases": [],
-            "key": "develop.example",
-            "dashed": "develop-example",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:example:container:aware",
-            "description": null,
-            "options": [],
-            "arguments": [],
-            "examples": [],
-            "aliases": [],
-            "key": "develop.example.container.aware",
-            "dashed": "develop-example-container-aware",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:translation:cleanup",
-            "description": "Netejar el fitxer de traduccions",
-            "options": [],
-            "arguments": [
-                {
-                    "name": "language",
-                    "description": "Fitxers de l'idioma a netejar contra l'angl\u00e8s"
-                },
-                {
-                    "name": "library",
-                    "description": "Library to clean up files against English i.e console-yaml"
-                }
-            ],
-            "examples": [
-                {
-                    "description": "Delete all unnecessary files in all languages.",
-                    "execution": "drupal translation:cleanup"
-                },
-                {
-                    "description": "Delete all unnecessary files in Spanish language",
-                    "execution": "drupal translation:cleanup es"
-                },
-                {
-                    "description": "Delete all unnecessary files in all languages in console-develop library",
-                    "execution": "drupal translation:cleanup all console-develop"
-                },
-                {
-                    "description": "Delete all unnecessary files in Spanish language in console-develop library",
-                    "execution": "drupal translation:cleanup es console-develop"
-                }
-            ],
-            "aliases": [
-                "tc"
-            ],
-            "key": "develop.translation.cleanup",
-            "dashed": "develop-translation-cleanup",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:translation:pending",
-            "description": "Determinar cadena de traduccions pendent en un idioma o en un fitxer especific d'un idioma",
-            "options": [
-                {
-                    "name": "file",
-                    "description": "Determinar idioma pendent de traduccions contra l'angl\u00e8s"
-                }
-            ],
-            "arguments": [
-                {
-                    "name": "language",
-                    "description": "Determinar idioma pendent de traduccions contra l'angl\u00e8s"
-                },
-                {
-                    "name": "library",
-                    "description": "Library to determine pending translations against English i.e console-yaml"
-                }
-            ],
-            "examples": [
-                {
-                    "description": "Determine pending translation strings in all languages.",
-                    "execution": "drupal translation:pending"
-                },
-                {
-                    "description": "Determine pending translation strings in Spanish language",
-                    "execution": "drupal translation:pending es"
-                },
-                {
-                    "description": "Determine pending translation strings in all languages in console-develop library",
-                    "execution": "drupal translation:pending all console-develop"
-                },
-                {
-                    "description": "Determine pending translation strings in Spanish language in console-develop library",
-                    "execution": "drupal translation:pending es console-develop"
-                }
-            ],
-            "aliases": [
-                "tp"
-            ],
-            "key": "develop.translation.pending",
-            "dashed": "develop-translation-pending",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:translation:stats",
-            "description": "Generar estad\u00edstiques de traduccions",
-            "options": [
-                {
-                    "name": "format",
-                    "description": "Defineix el format de sortida table|markdown"
-                }
-            ],
-            "arguments": [
-                {
-                    "name": "language",
-                    "description": "Idioma per generar estad\u00edstiques de traduccions contra l'angl\u00e8s"
-                },
-                {
-                    "name": "library",
-                    "description": "Library to calculate translation stats against English i.e console-yaml"
-                }
-            ],
-            "examples": [
-                {
-                    "description": "Calculate translation stats in all languages.",
-                    "execution": "drupal translation:stats"
-                },
-                {
-                    "description": "Calculate translation stats in Spanish language",
-                    "execution": "drupal translation:stats es"
-                },
-                {
-                    "description": "Calculate translation stats in all languages in console-develop library",
-                    "execution": "drupal translation:stats all console-develop"
-                },
-                {
-                    "description": "Calculate translation stats in Spanish language in console-develop library",
-                    "execution": "drupal translation:stats es console-develop"
-                }
-            ],
-            "aliases": [
-                "ts"
-            ],
-            "key": "develop.translation.stats",
-            "dashed": "develop-translation-stats",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:translation:sync",
-            "description": "Sincronitzar fitxer de traduccions",
-            "options": [
-                {
-                    "name": "file",
-                    "description": "commands.develop.translation.stats.options.file"
-                }
-            ],
-            "arguments": [
-                {
-                    "name": "language",
-                    "description": "Idioma a sincronitzar con els fitxers font d'angl\u00e8s"
-                },
-                {
-                    "name": "library",
-                    "description": "Library to syncronize against English i.e console-yaml"
-                }
-            ],
-            "examples": [
-                {
-                    "description": "Syncronize translation files in all languages.",
-                    "execution": "drupal translation:sync"
-                },
-                {
-                    "description": "Syncronize translation files in Spanish language",
-                    "execution": "drupal translation:sync es"
-                },
-                {
-                    "description": "Syncronize translation files in all languages in console-develop library",
-                    "execution": "drupal translation:sync all console-develop"
-                },
-                {
-                    "description": "Syncronize translation files in Spanish language in console-develop library",
-                    "execution": "drupal translation:sync es console-develop"
-                }
-            ],
-            "aliases": [
-                "tsy"
-            ],
-            "key": "develop.translation.sync",
-            "dashed": "develop-translation-sync",
             "messages": {
                 "usage": "Usage",
                 "options": "Available options",
@@ -3353,6 +2950,37 @@
             ],
             "key": "entity.delete",
             "dashed": "entity-delete",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "features:import",
+            "description": "Import module config.",
+            "options": [
+                {
+                    "name": "bundle",
+                    "description": "Bundle name"
+                }
+            ],
+            "arguments": [
+                {
+                    "name": "packages",
+                    "description": "Package name"
+                }
+            ],
+            "examples": [],
+            "aliases": [
+                "fei"
+            ],
+            "key": "features.import",
+            "dashed": "features-import",
             "messages": {
                 "usage": "Usage",
                 "options": "Available options",
@@ -5845,6 +5473,230 @@
             }
         },
         {
+            "name": "locale:language:add",
+            "description": "Afegir un idioma per el teu lloc web",
+            "options": [],
+            "arguments": [
+                {
+                    "name": "language",
+                    "description": "Idioma (p.e. ca o Catal\u00e0)"
+                }
+            ],
+            "examples": [],
+            "aliases": [],
+            "key": "locale.language.add",
+            "dashed": "locale-language-add",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "locale:language:delete",
+            "description": "Esborrar un idioma del teu lloc web",
+            "options": [],
+            "arguments": [
+                {
+                    "name": "language",
+                    "description": "Idioma (p.e. ca o Catal\u00e0)"
+                }
+            ],
+            "examples": [],
+            "aliases": [],
+            "key": "locale.language.delete",
+            "dashed": "locale-language-delete",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "locale:translation:status",
+            "description": "LListar les actualitzacions de les traduccions disponibles",
+            "options": [],
+            "arguments": [
+                {
+                    "name": "language",
+                    "description": "Idioma (p.e. ca o Catal\u00e0)"
+                }
+            ],
+            "examples": [],
+            "aliases": [],
+            "key": "locale.translation.status",
+            "dashed": "locale-translation-status",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "migrate:execute",
+            "description": "Executar les migracions disponibles per l'aplicaci\u00f3",
+            "options": [
+                {
+                    "name": "site-url",
+                    "description": "URL de lloc d'origen"
+                },
+                {
+                    "name": "db-type",
+                    "description": "commands.migrate.execute.migrations.options.db-type"
+                },
+                {
+                    "name": "db-host",
+                    "description": "Nom de l'amfitri\u00f3"
+                },
+                {
+                    "name": "db-name",
+                    "description": "Nom de la base de dades"
+                },
+                {
+                    "name": "db-user",
+                    "description": "Usuari de la base de dades"
+                },
+                {
+                    "name": "db-pass",
+                    "description": "Contrasenya de la base de dades"
+                },
+                {
+                    "name": "db-prefix",
+                    "description": "Prefix de la base de dades"
+                },
+                {
+                    "name": "db-port",
+                    "description": "Por de la base de dades"
+                },
+                {
+                    "name": "exclude",
+                    "description": "Identificadors(s) a excluir de la migraci\u00f3"
+                },
+                {
+                    "name": "source-base_path",
+                    "description": "Local file directory containing your source site (e.g. \/var\/www\/docroot), or your site address (for example http:\/\/example.com)"
+                }
+            ],
+            "arguments": [
+                {
+                    "name": "migration-ids",
+                    "description": "Identificador(s) de la migraci\u00f3"
+                }
+            ],
+            "examples": [],
+            "aliases": [
+                "mie"
+            ],
+            "key": "migrate.execute",
+            "dashed": "migrate-execute",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "migrate:rollback",
+            "description": "Rollback one or multiple migrations",
+            "options": [
+                {
+                    "name": "source-base_path",
+                    "description": "commands.migrate.setup.options.source-base-path"
+                }
+            ],
+            "arguments": [
+                {
+                    "name": "migration-ids",
+                    "description": "Migration id(s)"
+                }
+            ],
+            "examples": [],
+            "aliases": [
+                "mir"
+            ],
+            "key": "migrate.rollback",
+            "dashed": "migrate-rollback",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "migrate:setup",
+            "description": "Carregar i crear migracions prove\u00efdes per una base de dades heretada",
+            "options": [
+                {
+                    "name": "db-type",
+                    "description": "Tipus de base de dades Drupal"
+                },
+                {
+                    "name": "db-host",
+                    "description": "Nom de l'amfitri\u00f3"
+                },
+                {
+                    "name": "db-name",
+                    "description": "Nom de la base de dades"
+                },
+                {
+                    "name": "db-user",
+                    "description": "Usuari de la base de dades"
+                },
+                {
+                    "name": "db-pass",
+                    "description": "Contrasenya de la base de dades"
+                },
+                {
+                    "name": "db-prefix",
+                    "description": "Prefix de la base de dades"
+                },
+                {
+                    "name": "db-port",
+                    "description": "Port de la base de dades"
+                },
+                {
+                    "name": "source-base_path",
+                    "description": "commands.migrate.setup.options.source-base-path"
+                }
+            ],
+            "arguments": [],
+            "examples": [],
+            "aliases": [
+                "mis"
+            ],
+            "key": "migrate.setup",
+            "dashed": "migrate-setup",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
             "name": "module:dependency:install",
             "description": "Install dependencies module in the application",
             "options": [],
@@ -6217,6 +6069,58 @@
             "aliases": [],
             "key": "quick.start",
             "dashed": "quick-start",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "rest:disable",
+            "description": "Deshabilitar el recurs Rest per l'aplicaci\u00f3",
+            "options": [],
+            "arguments": [
+                {
+                    "name": "resource-id",
+                    "description": "Rest ID"
+                }
+            ],
+            "examples": [],
+            "aliases": [
+                "red"
+            ],
+            "key": "rest.disable",
+            "dashed": "rest-disable",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "rest:enable",
+            "description": "Habilitar un recurs Rest per l'aplicaci\u00f3",
+            "options": [],
+            "arguments": [
+                {
+                    "name": "resource-id",
+                    "description": "Identificador Rest"
+                }
+            ],
+            "examples": [],
+            "aliases": [
+                "ree"
+            ],
+            "key": "rest.enable",
+            "dashed": "rest-enable",
             "messages": {
                 "usage": "Usage",
                 "options": "Available options",
@@ -7217,54 +7121,6 @@
             }
         },
         {
-            "name": "version:new",
-            "description": "Create new Drupal Console version",
-            "options": [
-                {
-                    "name": "file",
-                    "description": ""
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [],
-            "key": "version.new",
-            "dashed": "version-new",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "version:tag:release",
-            "description": "Create new Drupal Console tag and release",
-            "options": [
-                {
-                    "name": "file",
-                    "description": ""
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [],
-            "key": "version.tag.release",
-            "dashed": "version-tag-release",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
             "name": "views:disable",
             "description": "Deshabilitar les vistes",
             "options": [],
@@ -7334,6 +7190,104 @@
                 "argument": "Argument",
                 "examples": "Examples"
             }
+        }
+    ],
+    "namespaces": [
+        {
+            "name": "cache"
+        },
+        {
+            "name": "config"
+        },
+        {
+            "name": "create"
+        },
+        {
+            "name": "cron"
+        },
+        {
+            "name": "database"
+        },
+        {
+            "name": "debug"
+        },
+        {
+            "name": "devel"
+        },
+        {
+            "name": "docker"
+        },
+        {
+            "name": "dotenv"
+        },
+        {
+            "name": "entity"
+        },
+        {
+            "name": "features"
+        },
+        {
+            "name": "field"
+        },
+        {
+            "name": "generate"
+        },
+        {
+            "name": "image"
+        },
+        {
+            "name": "locale"
+        },
+        {
+            "name": "migrate"
+        },
+        {
+            "name": "module"
+        },
+        {
+            "name": "multisite"
+        },
+        {
+            "name": "node"
+        },
+        {
+            "name": "queue"
+        },
+        {
+            "name": "quick"
+        },
+        {
+            "name": "rest"
+        },
+        {
+            "name": "role"
+        },
+        {
+            "name": "router"
+        },
+        {
+            "name": "settings"
+        },
+        {
+            "name": "site"
+        },
+        {
+            "name": "state"
+        },
+        {
+            "name": "taxonomy"
+        },
+        {
+            "name": "theme"
+        },
+        {
+            "name": "update"
+        },
+        {
+            "name": "user"
+        },
+        {
+            "name": "views"
         }
     ]
 }
