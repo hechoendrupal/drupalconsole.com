@@ -12,3 +12,15 @@ input.form-control:focus {
 li.command-usage {
   list-style: none !important;
 }
+
+li.command-usage > span {
+  white-space: pre-line;
+}
+
+li.command-usage .btn-link {
+  padding-left: 0px;
+}
+
+li.command-usage .badge  {
+  font-size: 100%;
+}

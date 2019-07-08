@@ -1,7 +1,8 @@
 import React, { useState } from "react"
 import './style.css';
 import {Link} from "gatsby";
-import Autosuggest from "../autosuggest"
+import Autosuggest from "../autosuggest";
+import _isEmpty from "lodash/isEmpty";
 
 const Commands = ({ data, namespaces, language }) => {
   const [search, setSearch] = useState("")
@@ -17,13 +18,12 @@ const Commands = ({ data, namespaces, language }) => {
           <thead>
             <tr className="d-flex">
               <th className="col-md-6 col-xl-6">Command</th>
-              <th className="col-md-6 col-xl-6">Usage</th>
+              <th className="col-md-6 col-xl-6">{command.messages.usage}</th>
             </tr>
           </thead>
           <tbody>
             {data.filter(command => {
-                // return search ? command.name === search : true
-                return command.name.indexOf(search) >= 0
+                return command.name.indexOf(search) === 0
               })
               .map((command, i) => {
                 return (
@@ -37,14 +37,26 @@ const Commands = ({ data, namespaces, language }) => {
                     </td>
                     <td className="col-md-6 col-xl-6">
                       <li className="command-usage">
-
-                        <span style={{ whiteSpace: "pre-line" }}>
-                          <small />
-                          <br />
+                        <span>
+                          {!_isEmpty(command.examples) && (
+                            <button 
+                              className="btn btn-link font-weight-bold" 
+                              type="button"
+                              data-toggle="collapse"
+                              data-target={`#${command.dashed}`}
+                              aria-expanded="false"
+                              aria-controls={command.dashed}
+                            >
+                              <span class="badge badge-primary">
+                                <i className="fa fa-expand" aria-hidden="true"></i>
+                                {command.messages.examples}
+                                </span>
+                            </button>
+                          )}
                           {command.examples && (
                             command.examples.map((example, i) => {
                               return (
-                                <div key={i}>
+                                <div key={i} className="collapse" id={command.dashed}>
                                   <small>{example.execution}</small>
                                 </div>
                               )
