@@ -2113,6 +2113,30 @@
             }
         },
         {
+            "name": "debug:features",
+            "description": "List registered features.",
+            "options": [],
+            "arguments": [
+                {
+                    "name": "bundle",
+                    "description": "Bundle name"
+                }
+            ],
+            "examples": [],
+            "aliases": [],
+            "key": "debug.features",
+            "dashed": "debug-features",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
             "name": "debug:hook",
             "description": "commands.debug.hook.description",
             "options": [],
@@ -2184,6 +2208,37 @@
             ],
             "key": "debug.libraries",
             "dashed": "debug-libraries",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "debug:migrate",
+            "description": "\u0905\u0928\u0941\u092a\u094d\u0930\u092f\u094b\u0917 \u0915\u0947 \u092e\u094c\u091c\u0942\u0926\u093e \u092a\u094d\u0930\u0935\u0938\u0928 \u0915\u094b \u0926\u093f\u0916\u093e\u090f\u0901",
+            "options": [],
+            "arguments": [
+                {
+                    "name": "tag",
+                    "description": "\u092e\u093e\u0907\u0917\u094d\u0930\u0947\u091f \u091f\u0948\u0917"
+                }
+            ],
+            "examples": [
+                {
+                    "description": "Displays current migration",
+                    "execution": "drupal debug:migrate\n"
+                }
+            ],
+            "aliases": [
+                "mid"
+            ],
+            "key": "debug.migrate",
+            "dashed": "debug-migrate",
             "messages": {
                 "usage": "Usage",
                 "options": "Available options",
@@ -2355,6 +2410,42 @@
             ],
             "key": "debug.queue",
             "dashed": "debug-queue",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "debug:rest",
+            "description": "\u0906\u0935\u0947\u0926\u0928 \u0915\u0947 \u0932\u093f\u090f \u092e\u094c\u091c\u0942\u0926\u093e REST \u0938\u0902\u0938\u093e\u0927\u0928 \u0915\u094b \u092a\u094d\u0930\u0926\u0930\u094d\u0936\u093f\u0924 \u0915\u0930\u0947\u0902",
+            "options": [
+                {
+                    "name": "authorization",
+                    "description": "REST \u0938\u093e\u0927\u0928 \u0915\u0940 \u0938\u094d\u0925\u093f\u0924\u093f (\u091a\u093e\u0932\u0942 \u0939\u0948 \u0964 \u092c\u0902\u0926 \u0939\u0948 )"
+                }
+            ],
+            "arguments": [
+                {
+                    "name": "resource-id",
+                    "description": "Rest \u0915\u094d\u0930\u092e\u093e\u0902\u0915"
+                }
+            ],
+            "examples": [
+                {
+                    "description": "Displays rest hooks",
+                    "execution": "drupal debug:rest\n"
+                }
+            ],
+            "aliases": [
+                "rede"
+            ],
+            "key": "debug.rest",
+            "dashed": "debug-rest",
             "messages": {
                 "usage": "Usage",
                 "options": "Available options",
@@ -2757,30 +2848,6 @@
             }
         },
         {
-            "name": "demo:harold",
-            "description": "Download Drupal + Drupal Console to contribute.",
-            "options": [
-                {
-                    "name": "file",
-                    "description": ""
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [],
-            "key": "demo.harold",
-            "dashed": "demo-harold",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
             "name": "devel:dumper",
             "description": "commands.devel.dumper.messages.change-devel-dumper-plugin",
             "options": [],
@@ -2796,476 +2863,6 @@
             ],
             "key": "devel.dumper",
             "dashed": "devel-dumper",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:contribute",
-            "description": "Download Drupal + Drupal Console to contribute.",
-            "options": [
-                {
-                    "name": "file",
-                    "description": ""
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [],
-            "key": "develop.contribute",
-            "dashed": "develop-contribute",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:create:symlinks",
-            "description": "Create symlinks between Drupal site and cloned repositories.",
-            "options": [
-                {
-                    "name": "code-directory",
-                    "description": "The directory where the projects were cloned"
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [],
-            "key": "develop.create.symlinks",
-            "dashed": "develop-create-symlinks",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:doc:cheatsheet",
-            "description": "\u0915\u092e\u093e\u0902\u0921\u094d\u0938 \u0915\u0947 \u0932\u093f\u090f \u090f\u0915 \u092a\u094d\u0930\u093f\u0902\u091f\u0947\u092c\u0932 \u091a\u0940\u091f \u0936\u0940\u091f \u0909\u0924\u094d\u092a\u0928\u094d\u0928 \u0915\u0930\u0947\u0902",
-            "options": [
-                {
-                    "name": "path",
-                    "description": "\u0921\u0949\u0915\u094d\u092f\u0941\u092e\u0947\u0902\u091f\u0947\u0936\u0928\u094d\u0938 \u0915\u0947 \u0932\u093f\u090f \u092a\u0940\u0921\u0940\u090f\u092b \u0909\u0924\u094d\u092a\u0928\u094d\u0928 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u092a\u0925"
-                },
-                {
-                    "name": "wkhtmltopdf",
-                    "description": "\u0905\u092a\u0928\u0947 \u0938\u093f\u0938\u094d\u091f\u092e \u092e\u0947\u0902 wkhtmltopdf \u0926\u094d\u0935\u093f\u0906\u0927\u093e\u0930\u0940 \u0915\u0947 \u0932\u093f\u090f \u092a\u0925"
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [
-                "gdc"
-            ],
-            "key": "develop.doc.cheatsheet",
-            "dashed": "develop-doc-cheatsheet",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:doc:dash",
-            "description": "\u0921\u0948\u0936 \u0915\u0947 \u0932\u093f\u090f  DrupalConsole.docset \u092a\u0948\u0915\u0947\u091c \u0909\u0924\u094d\u092a\u0928\u094d\u0928 \u0915\u0930\u0947\u0902",
-            "options": [
-                {
-                    "name": "path",
-                    "description": "\u0921\u093e\u092f\u0930\u0947\u0915\u094d\u091f\u094d\u0930\u0940 \u0915\u093e \u092a\u0925 \u091c\u0939\u093e\u0902 Docset \u0938\u0941\u0930\u0915\u094d\u0937\u093f\u0924 \u0915\u093f\u092f\u093e \u091c\u093e\u092f\u0947\u0917\u093e |"
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [
-                "gdd"
-            ],
-            "key": "develop.doc.dash",
-            "dashed": "develop-doc-dash",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:doc:data",
-            "description": "Generate documentations for Commands.",
-            "options": [
-                {
-                    "name": "file",
-                    "description": "The file to render the command data"
-                },
-                {
-                    "name": "help",
-                    "description": "Display this help message"
-                },
-                {
-                    "name": "quiet",
-                    "description": "Do not output any message"
-                },
-                {
-                    "name": "verbose",
-                    "description": "Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug"
-                },
-                {
-                    "name": "version",
-                    "description": "Display this application version"
-                },
-                {
-                    "name": "ansi",
-                    "description": "Force ANSI output"
-                },
-                {
-                    "name": "no-ansi",
-                    "description": "Disable ANSI output"
-                },
-                {
-                    "name": "no-interaction",
-                    "description": "Do not ask any interactive question"
-                },
-                {
-                    "name": "env",
-                    "description": "\u092a\u0930\u094d\u092f\u093e\u0935\u0930\u0923 \u0915\u093e \u0928\u093e\u092e\u0964"
-                },
-                {
-                    "name": "root",
-                    "description": "\u0915\u092e\u093e\u0923\u094d\u0921 \u091a\u0932\u093e\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f Drupal \u0930\u0942\u091f \u092a\u0930\u093f\u092d\u093e\u0937\u093f\u0924 \u0915\u0930\u0947\u0902"
-                },
-                {
-                    "name": "debug",
-                    "description": "application.options.debug"
-                },
-                {
-                    "name": "learning",
-                    "description": "\u0936\u092c\u094d\u0926\u092c\u0939\u0941\u0932 \u0915\u094b\u0921 \u0909\u0924\u094d\u092a\u0928\u094d\u0928 \u0915\u0930\u0947\u0902\u0964"
-                },
-                {
-                    "name": "generate-chain",
-                    "description": "\u0928\u093f\u0937\u094d\u092a\u093e\u0926\u0928 \u0935\u093f\u0915\u0932\u094d\u092a \u092e\u0947\u0902 \u092a\u094d\u0930\u093f\u0902\u091f \u0914\u0930 \u0924\u0930\u094d\u0915 \u0915\u094b YAML \u0906\u0909\u091f\u092a\u0941\u091f \u0915\u0947 \u0930\u0942\u092a \u092e\u0947\u0902 \u0936\u094d\u0930\u0943\u0902\u0916\u0932\u093e \u0915\u092e\u093e\u0902\u0921 \u092e\u0947\u0902 \u0907\u0938\u094d\u0924\u0947\u092e\u093e\u0932 \u0915\u093f\u092f\u093e \u091c\u093e\u090f\u0917\u093e"
-                },
-                {
-                    "name": "generate-inline",
-                    "description": "\u0928\u093f\u0937\u094d\u092a\u093e\u0926\u0928 \u0935\u093f\u0915\u0932\u094d\u092a \u092e\u0947\u0902 \u092a\u094d\u0930\u093f\u0902\u091f \u0914\u0930 \u0924\u0930\u094d\u0915 \u0915\u094b \u0907\u0928\u0932\u093e\u0907\u0928 \u0915\u0949\u0932 \u0915\u0947 \u0930\u0942\u092a \u092e\u0947\u0902 \u092d\u0935\u093f\u0937\u094d\u092f \u092e\u0947\u0902 \u0909\u092a\u092f\u094b\u0917 \u0915\u093f\u092f\u093e \u091c\u093e\u090f\u0917\u093e"
-                },
-                {
-                    "name": "generate-doc",
-                    "description": "\u0915\u092e\u093e\u0923\u094d\u0921 \u0935\u093f\u0915\u0932\u094d\u092a\u094b\u0902 \u0914\u0930 \u0924\u0930\u094d\u0915 \u091c\u0948\u0938\u093e \u0928\u0940\u091a\u0947 \u0928\u093f\u0936\u093e\u0928"
-                },
-                {
-                    "name": "target",
-                    "description": "\u0938\u093e\u0907\u091f \u0915\u093e \u0928\u093e\u092e \u0906\u092a (\u0938\u094d\u0925\u093e\u0928\u0940\u092f \u092f\u093e \u0926\u0942\u0930\u0938\u094d\u0925 \u0938\u093e\u0907\u091f\u094b\u0902 \u0915\u0947 \u0932\u093f\u090f ) \u0915\u0947 \u0938\u093e\u0925 \u092c\u093e\u0924\u091a\u0940\u0924 \u0915\u0930\u0928\u093e \u091a\u093e\u0939\u0924\u0947 \u0939\u0948\u0902"
-                },
-                {
-                    "name": "uri",
-                    "description": "Drupal \u092f\u0942\u0906\u0930\u0906\u0908 \u0938\u093e\u0907\u091f \u0915\u093e(\u090f\u0915\u093e\u0927\u093f\u0915 \u0935\u093e\u0924\u093e\u0935\u0930\u0923 \u0915\u0947 \u0932\u093f\u090f \u092f\u093e \u090f\u0915 \u0935\u0948\u0915\u0932\u094d\u092a\u093f\u0915 port \u092a\u0930 \u091a\u0932\u0924\u0947 \u0938\u092e\u092f ) \u0915\u093e \u0909\u092a\u092f\u094b\u0917 \u0915\u0930\u0947"
-                },
-                {
-                    "name": "yes",
-                    "description": "\u0938\u094d\u0915\u093f\u092a \u0915\u0928\u094d\u092b\u0930\u094d\u092e\u0947\u0936\u0928 \u0914\u0930 \u0906\u0917\u0947 \u092c\u0922\u093c\u0947\u0902"
-                }
-            ],
-            "arguments": [
-                {
-                    "name": "command",
-                    "description": "The command to execute"
-                }
-            ],
-            "examples": [],
-            "aliases": [
-                "gdda"
-            ],
-            "key": "develop.doc.data",
-            "dashed": "develop-doc-data",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:doc:gitbook",
-            "description": "\u0915\u092e\u093e\u0923\u094d\u0921\u094b \u0915\u0947 \u0932\u093f\u090f \u0921\u0949\u0915\u094d\u092f\u0941\u092e\u0947\u0902\u091f\u0947\u0936\u0928\u094d\u0938 \u0909\u0924\u094d\u092a\u0928\u094d\u0928 \u0915\u0930\u0947\u0902",
-            "options": [
-                {
-                    "name": "path",
-                    "description": "\u0921\u0949\u0915\u094d\u092f\u0941\u092e\u0947\u0902\u091f\u0947\u0936\u0928\u094d\u0938 \u0915\u094b  \u092a\u094d\u0930\u0938\u094d\u0924\u0941\u0924 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u092a\u093e\u0925"
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [
-                "gdg"
-            ],
-            "key": "develop.doc.gitbook",
-            "dashed": "develop-doc-gitbook",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:example",
-            "description": null,
-            "options": [],
-            "arguments": [],
-            "examples": [],
-            "aliases": [],
-            "key": "develop.example",
-            "dashed": "develop-example",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:example:container:aware",
-            "description": null,
-            "options": [],
-            "arguments": [],
-            "examples": [],
-            "aliases": [],
-            "key": "develop.example.container.aware",
-            "dashed": "develop-example-container-aware",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:translation:cleanup",
-            "description": "\u0915\u094d\u0932\u0940\u0928\u0905\u092a \u091f\u094d\u0930\u093e\u0902\u0938\u0932\u0947\u0936\u0928 \u092b\u093e\u0907\u0932\u094d\u0938",
-            "options": [],
-            "arguments": [
-                {
-                    "name": "language",
-                    "description": "\u0907\u0902\u0917\u094d\u0932\u093f\u0936 \u0915\u0947 \u0916\u093f\u0932\u093e\u092b \u0915\u094d\u0932\u0940\u0928\u0905\u092a \u092b\u093e\u0907\u0932 \u0915\u0947 \u0932\u093f\u090f \u092d\u093e\u0937\u093e"
-                },
-                {
-                    "name": "library",
-                    "description": "Library to clean up files against English i.e console-yaml"
-                }
-            ],
-            "examples": [
-                {
-                    "description": "Delete all unnecessary files in all languages.",
-                    "execution": "drupal translation:cleanup"
-                },
-                {
-                    "description": "Delete all unnecessary files in Spanish language",
-                    "execution": "drupal translation:cleanup es"
-                },
-                {
-                    "description": "Delete all unnecessary files in all languages in console-develop library",
-                    "execution": "drupal translation:cleanup all console-develop"
-                },
-                {
-                    "description": "Delete all unnecessary files in Spanish language in console-develop library",
-                    "execution": "drupal translation:cleanup es console-develop"
-                }
-            ],
-            "aliases": [
-                "tc"
-            ],
-            "key": "develop.translation.cleanup",
-            "dashed": "develop-translation-cleanup",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:translation:pending",
-            "description": "\u092a\u0947\u0902\u0921\u093f\u0902\u0917 \u091f\u094d\u0930\u093e\u0902\u0938\u0932\u0947\u0936\u0928 \u0938\u094d\u091f\u094d\u0930\u093f\u0902\u0917 \u0915\u094b \u090f\u0915 \u092d\u093e\u0937\u093e \u092e\u0947\u0902 \u092f\u093e \u090f\u0915 \u0938\u094d\u092a\u0947\u0938\u093f\u092b\u093f\u0915 \u092b\u093e\u0907\u0932 \u0915\u094b \u090f\u0915 \u092d\u093e\u0937\u093e \u092e\u0947\u0902 \u0928\u093f\u0930\u094d\u0927\u093e\u0930\u0923 \u0915\u0930\u0947\u0902",
-            "options": [
-                {
-                    "name": "file",
-                    "description": "\u0907\u0902\u0917\u094d\u0932\u093f\u0936 \u0915\u0947 \u0916\u093f\u0932\u093e\u092b \u092a\u0947\u0902\u0921\u093f\u0902\u0917 \u091f\u094d\u0930\u093e\u0902\u0938\u0932\u0947\u0936\u0928\u094d\u0938 \u0928\u093f\u0930\u094d\u0927\u093e\u0930\u093f\u0924 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0935\u093f\u0936\u093f\u0937\u094d\u091f \u092b\u093c\u093e\u0907\u0932"
-                }
-            ],
-            "arguments": [
-                {
-                    "name": "language",
-                    "description": "\u0907\u0902\u0917\u094d\u0932\u093f\u0936 \u0915\u0947 \u0916\u093f\u0932\u093e\u092b \u092a\u0947\u0902\u0921\u093f\u0902\u0917 \u091f\u094d\u0930\u093e\u0902\u0938\u0932\u0947\u0936\u0928\u094d\u0938 \u0928\u093f\u0930\u094d\u0927\u093e\u0930\u093f\u0924 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f \u0935\u093f\u0936\u093f\u0937\u094d\u091f \u092b\u093c\u093e\u0907\u0932"
-                },
-                {
-                    "name": "library",
-                    "description": "Library to determine pending translations against English i.e console-yaml"
-                }
-            ],
-            "examples": [
-                {
-                    "description": "Determine pending translation strings in all languages.",
-                    "execution": "drupal translation:pending"
-                },
-                {
-                    "description": "Determine pending translation strings in Spanish language",
-                    "execution": "drupal translation:pending es"
-                },
-                {
-                    "description": "Determine pending translation strings in all languages in console-develop library",
-                    "execution": "drupal translation:pending all console-develop"
-                },
-                {
-                    "description": "Determine pending translation strings in Spanish language in console-develop library",
-                    "execution": "drupal translation:pending es console-develop"
-                }
-            ],
-            "aliases": [
-                "tp"
-            ],
-            "key": "develop.translation.pending",
-            "dashed": "develop-translation-pending",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:translation:stats",
-            "description": "\u091f\u094d\u0930\u093e\u0902\u0938\u0932\u0947\u091f \u0938\u094d\u091f\u0948\u091f\u094d\u0938 \u0909\u0924\u094d\u092a\u0928\u094d\u0928",
-            "options": [
-                {
-                    "name": "format",
-                    "description": "\u0906\u0909\u091f\u092a\u0941\u091f \u0938\u094d\u0935\u0930\u0942\u092a \u0915\u094b \u092a\u0930\u093f\u092d\u093e\u0937\u093f\u0924 \u0915\u0930\u0947\u0902 table|markdown"
-                }
-            ],
-            "arguments": [
-                {
-                    "name": "language",
-                    "description": "\u0907\u0902\u0917\u094d\u0932\u093f\u0936 \u0915\u0947 \u0916\u093f\u0932\u093e\u092b \u092d\u093e\u0937\u093e \u0915\u093e \u091f\u094d\u0930\u093e\u0902\u0938\u0932\u0947\u0936\u0928 \u0938\u094d\u091f\u0948\u091f\u094d\u0938 \u0909\u0924\u094d\u092a\u0928\u094d\u0928 \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f"
-                },
-                {
-                    "name": "library",
-                    "description": "Library to calculate translation stats against English i.e console-yaml"
-                }
-            ],
-            "examples": [
-                {
-                    "description": "Calculate translation stats in all languages.",
-                    "execution": "drupal translation:stats"
-                },
-                {
-                    "description": "Calculate translation stats in Spanish language",
-                    "execution": "drupal translation:stats es"
-                },
-                {
-                    "description": "Calculate translation stats in all languages in console-develop library",
-                    "execution": "drupal translation:stats all console-develop"
-                },
-                {
-                    "description": "Calculate translation stats in Spanish language in console-develop library",
-                    "execution": "drupal translation:stats es console-develop"
-                }
-            ],
-            "aliases": [
-                "ts"
-            ],
-            "key": "develop.translation.stats",
-            "dashed": "develop-translation-stats",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:translation:sync",
-            "description": "\u0938\u0940\u0902\u0915 \u091f\u094d\u0930\u093e\u0902\u0938\u0932\u0947\u0936\u0928 \u092b\u093e\u0907\u0932\u094d\u0938",
-            "options": [
-                {
-                    "name": "file",
-                    "description": "commands.develop.translation.stats.options.file"
-                }
-            ],
-            "arguments": [
-                {
-                    "name": "language",
-                    "description": "\u0905\u0902\u0917\u094d\u0930\u0947\u091c\u0940 \u0938\u094d\u0930\u094b\u0924 \u092b\u093c\u093e\u0907\u0932\u094b\u0902 \u0915\u0947 \u0916\u093f\u0932\u093e\u092b \u092d\u093e\u0937\u093e \u0938\u093f\u0902\u0915\u094d\u0930\u0928\u093e\u0907\u091c\u093c \u0915\u0930\u0928\u0947 \u0915\u0947 \u0932\u093f\u090f"
-                },
-                {
-                    "name": "library",
-                    "description": "Library to syncronize against English i.e console-yaml"
-                }
-            ],
-            "examples": [
-                {
-                    "description": "Syncronize translation files in all languages.",
-                    "execution": "drupal translation:sync"
-                },
-                {
-                    "description": "Syncronize translation files in Spanish language",
-                    "execution": "drupal translation:sync es"
-                },
-                {
-                    "description": "Syncronize translation files in all languages in console-develop library",
-                    "execution": "drupal translation:sync all console-develop"
-                },
-                {
-                    "description": "Syncronize translation files in Spanish language in console-develop library",
-                    "execution": "drupal translation:sync es console-develop"
-                }
-            ],
-            "aliases": [
-                "tsy"
-            ],
-            "key": "develop.translation.sync",
-            "dashed": "develop-translation-sync",
             "messages": {
                 "usage": "Usage",
                 "options": "Available options",
@@ -3353,6 +2950,37 @@
             ],
             "key": "entity.delete",
             "dashed": "entity-delete",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "features:import",
+            "description": "Import module config.",
+            "options": [
+                {
+                    "name": "bundle",
+                    "description": "Bundle name"
+                }
+            ],
+            "arguments": [
+                {
+                    "name": "packages",
+                    "description": "Package name"
+                }
+            ],
+            "examples": [],
+            "aliases": [
+                "fei"
+            ],
+            "key": "features.import",
+            "dashed": "features-import",
             "messages": {
                 "usage": "Usage",
                 "options": "Available options",
@@ -5845,6 +5473,230 @@
             }
         },
         {
+            "name": "locale:language:add",
+            "description": "\u090f\u0915 \u092d\u093e\u0937\u093e \u0915\u094b \u091c\u094b\u095c\u0947 \u091c\u094b \u0906\u092a \u0915\u0947 \u0938\u093e\u0907\u091f \u0926\u094d\u0935\u093e\u0930\u093e \u0938\u092a\u094b\u0930\u094d\u091f \u0939\u094b\u0928\u093e \u0939\u0948",
+            "options": [],
+            "arguments": [
+                {
+                    "name": "language",
+                    "description": "\u092d\u093e\u0937\u093e \u0909\u0926\u093e\u0939\u0930\u0923 es \u092f\u093e Spanish"
+                }
+            ],
+            "examples": [],
+            "aliases": [],
+            "key": "locale.language.add",
+            "dashed": "locale-language-add",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "locale:language:delete",
+            "description": "\u0906\u092a\u0915\u0940 \u0938\u093e\u0907\u091f \u0915\u0947 \u0926\u094d\u0935\u093e\u0930\u093e \u0938\u092e\u0930\u094d\u0925\u093f\u0924 \u090f\u0915 \u092d\u093e\u0937\u093e \u0915\u094b \u0939\u091f\u093e\u090f\u0901",
+            "options": [],
+            "arguments": [
+                {
+                    "name": "language",
+                    "description": "\u092d\u093e\u0937\u093e \u0909\u0926\u093e\u0939\u0930\u0923 es \u092f\u093e Spanish"
+                }
+            ],
+            "examples": [],
+            "aliases": [],
+            "key": "locale.language.delete",
+            "dashed": "locale-language-delete",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "locale:translation:status",
+            "description": "\u0938\u0942\u091a\u0940 \u0909\u092a\u0932\u092c\u094d\u0927 \u0905\u0928\u0941\u0935\u093e\u0926 \u0905\u092a\u0921\u0947\u091f",
+            "options": [],
+            "arguments": [
+                {
+                    "name": "language",
+                    "description": "\u092d\u093e\u0937\u093e \u0909\u0926\u093e\u0939\u0930\u0923 es \u092f\u093e Spanish"
+                }
+            ],
+            "examples": [],
+            "aliases": [],
+            "key": "locale.translation.status",
+            "dashed": "locale-translation-status",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "migrate:execute",
+            "description": "\u0905\u0928\u0941\u092a\u094d\u0930\u092f\u094b\u0917 \u0915\u0947 \u0909\u092a\u0932\u092c\u094d\u0927 \u092e\u093e\u0907\u0917\u094d\u0930\u0947\u0936\u0928 \u0915\u094b \u091a\u0932\u093e\u090f\u0902",
+            "options": [
+                {
+                    "name": "site-url",
+                    "description": "\u0938\u093e\u0907\u091f \u0938\u094d\u0930\u094b\u0924 URL"
+                },
+                {
+                    "name": "db-type",
+                    "description": "commands.migrate.execute.migrations.options.db-type"
+                },
+                {
+                    "name": "db-host",
+                    "description": "\u092e\u0947\u091c\u092c\u093e\u0928 \u0921\u0947\u091f\u093e\u092c\u0947\u0938"
+                },
+                {
+                    "name": "db-name",
+                    "description": "\u0921\u0947\u091f\u093e\u092c\u0947\u0938 \u0915\u093e \u0928\u093e\u092e"
+                },
+                {
+                    "name": "db-user",
+                    "description": "\u0921\u0947\u091f\u093e\u092c\u0947\u0938 \u0909\u092a\u092f\u094b\u0917\u0915\u0930\u094d\u0924\u093e"
+                },
+                {
+                    "name": "db-pass",
+                    "description": "\u0921\u0947\u091f\u093e\u092c\u0947\u0938 \u092a\u093e\u0938\u0935\u0930\u094d\u0921"
+                },
+                {
+                    "name": "db-prefix",
+                    "description": "\u0921\u0947\u091f\u093e\u092c\u0947\u0938 \u0909\u092a\u0938\u0930\u094d\u0917"
+                },
+                {
+                    "name": "db-port",
+                    "description": "\u0921\u0947\u091f\u093e\u092c\u0947\u0938 \u092a\u094b\u0930\u094d\u091f"
+                },
+                {
+                    "name": "exclude",
+                    "description": "\u0935\u0930\u094d\u091c\u093f\u0924 \u0915\u093f\u092f\u0947 \u0917\u090f \u092e\u093e\u0907\u0917\u094d\u0930\u0947\u0936\u0928 \u0915\u094d\u0930\u092e\u093e\u0902\u0915"
+                },
+                {
+                    "name": "source-base_path",
+                    "description": "Local file directory containing your source site (e.g. \/var\/www\/docroot), or your site address (for example http:\/\/example.com)"
+                }
+            ],
+            "arguments": [
+                {
+                    "name": "migration-ids",
+                    "description": "\u092e\u093e\u0907\u0917\u094d\u0930\u0947\u0936\u0928 \u0915\u094d\u0930\u092e\u093e\u0902\u0915"
+                }
+            ],
+            "examples": [],
+            "aliases": [
+                "mie"
+            ],
+            "key": "migrate.execute",
+            "dashed": "migrate-execute",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "migrate:rollback",
+            "description": "Rollback one or multiple migrations",
+            "options": [
+                {
+                    "name": "source-base_path",
+                    "description": "commands.migrate.setup.options.source-base-path"
+                }
+            ],
+            "arguments": [
+                {
+                    "name": "migration-ids",
+                    "description": "Migration id(s)"
+                }
+            ],
+            "examples": [],
+            "aliases": [
+                "mir"
+            ],
+            "key": "migrate.rollback",
+            "dashed": "migrate-rollback",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "migrate:setup",
+            "description": "\u0935\u093f\u0930\u093e\u0938\u0924 \u0921\u0947\u091f\u093e\u092c\u0947\u0938 \u0915\u0947 \u0932\u093f\u090f \u092a\u094d\u0930\u093e\u0938\u0902\u0917\u093f\u0915 \u092e\u093e\u0907\u0917\u094d\u0930\u0947\u0936\u0928 \u092c\u0928\u093e\u092f\u0947\u0902 \u0914\u0930 \u0932\u094b\u0921 \u0915\u0930\u0947\u0902",
+            "options": [
+                {
+                    "name": "db-type",
+                    "description": "Drupal \u0921\u0947\u091f\u093e\u092c\u0947\u0938 \u092a\u094d\u0930\u0915\u093e\u0930"
+                },
+                {
+                    "name": "db-host",
+                    "description": "\u092e\u0947\u091c\u092c\u093e\u0928 \u0921\u0947\u091f\u093e\u092c\u0947\u0938"
+                },
+                {
+                    "name": "db-name",
+                    "description": "\u0921\u0947\u091f\u093e\u092c\u0947\u0938 \u0915\u093e \u0928\u093e\u092e"
+                },
+                {
+                    "name": "db-user",
+                    "description": "\u0921\u0947\u091f\u093e\u092c\u0947\u0938 \u0909\u092a\u092f\u094b\u0917\u0915\u0930\u094d\u0924\u093e"
+                },
+                {
+                    "name": "db-pass",
+                    "description": "\u0921\u0947\u091f\u093e\u092c\u0947\u0938 \u092a\u093e\u0938\u0935\u0930\u094d\u0921"
+                },
+                {
+                    "name": "db-prefix",
+                    "description": "\u0921\u0947\u091f\u093e\u092c\u0947\u0938 \u0909\u092a\u0938\u0930\u094d\u0917"
+                },
+                {
+                    "name": "db-port",
+                    "description": "\u0921\u0947\u091f\u093e\u092c\u0947\u0938 \u092a\u094b\u0930\u094d\u091f"
+                },
+                {
+                    "name": "source-base_path",
+                    "description": "commands.migrate.setup.options.source-base-path"
+                }
+            ],
+            "arguments": [],
+            "examples": [],
+            "aliases": [
+                "mis"
+            ],
+            "key": "migrate.setup",
+            "dashed": "migrate-setup",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
             "name": "module:dependency:install",
             "description": "Install dependencies module in the application",
             "options": [],
@@ -6217,6 +6069,58 @@
             "aliases": [],
             "key": "quick.start",
             "dashed": "quick-start",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "rest:disable",
+            "description": "\u0905\u0928\u0941\u092a\u094d\u0930\u092f\u094b\u0917 \u092e\u0947\u0902 REST \u0938\u0902\u0938\u093e\u0927\u0928 \u0905\u0915\u094d\u0937\u092e \u0915\u0930\u0947\u0902|",
+            "options": [],
+            "arguments": [
+                {
+                    "name": "resource-id",
+                    "description": "Rest ID"
+                }
+            ],
+            "examples": [],
+            "aliases": [
+                "red"
+            ],
+            "key": "rest.disable",
+            "dashed": "rest-disable",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "rest:enable",
+            "description": "\u0905\u0928\u0941\u092a\u094d\u0930\u092f\u094b\u0917 \u0915\u0947 \u0930\u0947\u0938\u094d\u091f \u0938\u093e\u0927\u0928 \u0915\u094b \u091a\u093e\u0932\u0942 \u0915\u0930\u0947",
+            "options": [],
+            "arguments": [
+                {
+                    "name": "resource-id",
+                    "description": "Rest \u0906\u0908\u0921\u0940"
+                }
+            ],
+            "examples": [],
+            "aliases": [
+                "ree"
+            ],
+            "key": "rest.enable",
+            "dashed": "rest-enable",
             "messages": {
                 "usage": "Usage",
                 "options": "Available options",
@@ -7217,54 +7121,6 @@
             }
         },
         {
-            "name": "version:new",
-            "description": "Create new Drupal Console version",
-            "options": [
-                {
-                    "name": "file",
-                    "description": ""
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [],
-            "key": "version.new",
-            "dashed": "version-new",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "version:tag:release",
-            "description": "Create new Drupal Console tag and release",
-            "options": [
-                {
-                    "name": "file",
-                    "description": ""
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [],
-            "key": "version.tag.release",
-            "dashed": "version-tag-release",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
             "name": "views:disable",
             "description": "\u090f\u0915 \u0935\u094d\u092f\u0942 \u092c\u0902\u0926 \u0915\u0930\u0947\u0902",
             "options": [],
@@ -7334,6 +7190,104 @@
                 "argument": "Argument",
                 "examples": "Examples"
             }
+        }
+    ],
+    "namespaces": [
+        {
+            "name": "cache"
+        },
+        {
+            "name": "config"
+        },
+        {
+            "name": "create"
+        },
+        {
+            "name": "cron"
+        },
+        {
+            "name": "database"
+        },
+        {
+            "name": "debug"
+        },
+        {
+            "name": "devel"
+        },
+        {
+            "name": "docker"
+        },
+        {
+            "name": "dotenv"
+        },
+        {
+            "name": "entity"
+        },
+        {
+            "name": "features"
+        },
+        {
+            "name": "field"
+        },
+        {
+            "name": "generate"
+        },
+        {
+            "name": "image"
+        },
+        {
+            "name": "locale"
+        },
+        {
+            "name": "migrate"
+        },
+        {
+            "name": "module"
+        },
+        {
+            "name": "multisite"
+        },
+        {
+            "name": "node"
+        },
+        {
+            "name": "queue"
+        },
+        {
+            "name": "quick"
+        },
+        {
+            "name": "rest"
+        },
+        {
+            "name": "role"
+        },
+        {
+            "name": "router"
+        },
+        {
+            "name": "settings"
+        },
+        {
+            "name": "site"
+        },
+        {
+            "name": "state"
+        },
+        {
+            "name": "taxonomy"
+        },
+        {
+            "name": "theme"
+        },
+        {
+            "name": "update"
+        },
+        {
+            "name": "user"
+        },
+        {
+            "name": "views"
         }
     ]
 }

@@ -2113,6 +2113,30 @@
             }
         },
         {
+            "name": "debug:features",
+            "description": "List registered features.",
+            "options": [],
+            "arguments": [
+                {
+                    "name": "bundle",
+                    "description": "Bundle name"
+                }
+            ],
+            "examples": [],
+            "aliases": [],
+            "key": "debug.features",
+            "dashed": "debug-features",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
             "name": "debug:hook",
             "description": "commands.debug.hook.description",
             "options": [],
@@ -2184,6 +2208,37 @@
             ],
             "key": "debug.libraries",
             "dashed": "debug-libraries",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "debug:migrate",
+            "description": "Hi\u1ec3n th\u1ecb ph\u1ea7n chuy\u1ec3n \u0111\u1ed5i d\u1eef li\u1ec7u hi\u1ec7n c\u00f3 cho \u1ee9ng d\u1ef1ng",
+            "options": [],
+            "arguments": [
+                {
+                    "name": "tag",
+                    "description": "Migrate tag"
+                }
+            ],
+            "examples": [
+                {
+                    "description": "Displays current migration",
+                    "execution": "drupal debug:migrate\n"
+                }
+            ],
+            "aliases": [
+                "mid"
+            ],
+            "key": "debug.migrate",
+            "dashed": "debug-migrate",
             "messages": {
                 "usage": "Usage",
                 "options": "Available options",
@@ -2355,6 +2410,42 @@
             ],
             "key": "debug.queue",
             "dashed": "debug-queue",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "debug:rest",
+            "description": "Hi\u1ec3n th\u1ecb rest resource hi\u1ec7n c\u00f3 cho \u1ee9ng d\u1ee5ng",
+            "options": [
+                {
+                    "name": "authorization",
+                    "description": " Tr\u1ea1ng th\u00e1i rest resource b\u1eadt | t\u1eaft"
+                }
+            ],
+            "arguments": [
+                {
+                    "name": "resource-id",
+                    "description": "Rest ID"
+                }
+            ],
+            "examples": [
+                {
+                    "description": "Displays rest hooks",
+                    "execution": "drupal debug:rest\n"
+                }
+            ],
+            "aliases": [
+                "rede"
+            ],
+            "key": "debug.rest",
+            "dashed": "debug-rest",
             "messages": {
                 "usage": "Usage",
                 "options": "Available options",
@@ -2757,30 +2848,6 @@
             }
         },
         {
-            "name": "demo:harold",
-            "description": "Download Drupal + Drupal Console to contribute.",
-            "options": [
-                {
-                    "name": "file",
-                    "description": ""
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [],
-            "key": "demo.harold",
-            "dashed": "demo-harold",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
             "name": "devel:dumper",
             "description": "commands.devel.dumper.messages.change-devel-dumper-plugin",
             "options": [],
@@ -2796,476 +2863,6 @@
             ],
             "key": "devel.dumper",
             "dashed": "devel-dumper",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:contribute",
-            "description": "Download Drupal + Drupal Console to contribute.",
-            "options": [
-                {
-                    "name": "file",
-                    "description": ""
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [],
-            "key": "develop.contribute",
-            "dashed": "develop-contribute",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:create:symlinks",
-            "description": "Create symlinks between Drupal site and cloned repositories.",
-            "options": [
-                {
-                    "name": "code-directory",
-                    "description": "The directory where the projects were cloned"
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [],
-            "key": "develop.create.symlinks",
-            "dashed": "develop-create-symlinks",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:doc:cheatsheet",
-            "description": "Generate a printable cheatsheet for Commands",
-            "options": [
-                {
-                    "name": "path",
-                    "description": "The path to generate the pdf for the documentation"
-                },
-                {
-                    "name": "wkhtmltopdf",
-                    "description": "The path for the wkhtmltopdf binary in your system"
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [
-                "gdc"
-            ],
-            "key": "develop.doc.cheatsheet",
-            "dashed": "develop-doc-cheatsheet",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:doc:dash",
-            "description": "T\u1ea1o g\u00f3i DrupalConsole.docset cho Dash",
-            "options": [
-                {
-                    "name": "path",
-                    "description": "\u0110\u01b0\u1eddng d\u1eabn \u0111\u1ebfn th\u01b0 m\u1ee5c m\u00e0 docset s\u1ebd \u0111\u01b0\u1ee3c l\u01b0u."
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [
-                "gdd"
-            ],
-            "key": "develop.doc.dash",
-            "dashed": "develop-doc-dash",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:doc:data",
-            "description": "Generate documentations for Commands.",
-            "options": [
-                {
-                    "name": "file",
-                    "description": "The file to render the command data"
-                },
-                {
-                    "name": "help",
-                    "description": "Display this help message"
-                },
-                {
-                    "name": "quiet",
-                    "description": "Do not output any message"
-                },
-                {
-                    "name": "verbose",
-                    "description": "Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug"
-                },
-                {
-                    "name": "version",
-                    "description": "Display this application version"
-                },
-                {
-                    "name": "ansi",
-                    "description": "Force ANSI output"
-                },
-                {
-                    "name": "no-ansi",
-                    "description": "Disable ANSI output"
-                },
-                {
-                    "name": "no-interaction",
-                    "description": "Do not ask any interactive question"
-                },
-                {
-                    "name": "env",
-                    "description": "T\u00ean m\u00f4i tr\u01b0\u1eddng"
-                },
-                {
-                    "name": "root",
-                    "description": "\u0110\u1ecbnh ngh\u0129a Drupal root d\u00f9ng \u0111\u1ec3 th\u1ef1c thi l\u1ec7nh"
-                },
-                {
-                    "name": "debug",
-                    "description": "application.options.debug"
-                },
-                {
-                    "name": "learning",
-                    "description": "Sinh ra chi ti\u1ebft m\u00e3 th\u1ef1c thi"
-                },
-                {
-                    "name": "generate-chain",
-                    "description": "In c\u00e1c l\u1ef1a ch\u1ecdn thi h\u00e0nh v\u00e0 c\u00e1c \u0111\u1ed1i s\u1ed1 d\u1ea1ng yaml, \u0111\u1ec3 s\u1eed d\u1ee5ng trong chu\u1ed7i l\u1ec7nh"
-                },
-                {
-                    "name": "generate-inline",
-                    "description": "In c\u00e1c l\u1ef1a ch\u1ecdn thi h\u00e0nh v\u00e0 c\u00e1c \u0111\u1ed1i s\u1ed1 d\u1ea1ng inline, \u0111\u1ec3 s\u1eed d\u1ee5ng sau"
-                },
-                {
-                    "name": "generate-doc",
-                    "description": "Shows command options and arguments as markdown"
-                },
-                {
-                    "name": "target",
-                    "description": "Site name you want to interact with (for local or remote sites)"
-                },
-                {
-                    "name": "uri",
-                    "description": "\u0110\u01b0\u1eddng d\u1eabn site Drupal \u0111\u01b0\u1ee3c d\u00f9ng (cho m\u00f4i tr\u01b0\u1eddng multisite ho\u1eb7c khi ch\u1ea1y tr\u00ean m\u1ed9t c\u1ed5ng thay th\u1ebf)"
-                },
-                {
-                    "name": "yes",
-                    "description": "Skip confirmation and proceed"
-                }
-            ],
-            "arguments": [
-                {
-                    "name": "command",
-                    "description": "The command to execute"
-                }
-            ],
-            "examples": [],
-            "aliases": [
-                "gdda"
-            ],
-            "key": "develop.doc.data",
-            "dashed": "develop-doc-data",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:doc:gitbook",
-            "description": "T\u1ea1o documentations cho c\u00e1c l\u1ec7nh",
-            "options": [
-                {
-                    "name": "path",
-                    "description": "\u0110\u01b0\u1eddng d\u1eabn \u0111\u1ec3 render documentation"
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [
-                "gdg"
-            ],
-            "key": "develop.doc.gitbook",
-            "dashed": "develop-doc-gitbook",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:example",
-            "description": null,
-            "options": [],
-            "arguments": [],
-            "examples": [],
-            "aliases": [],
-            "key": "develop.example",
-            "dashed": "develop-example",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:example:container:aware",
-            "description": null,
-            "options": [],
-            "arguments": [],
-            "examples": [],
-            "aliases": [],
-            "key": "develop.example.container.aware",
-            "dashed": "develop-example-container-aware",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:translation:cleanup",
-            "description": "Clean up translation files",
-            "options": [],
-            "arguments": [
-                {
-                    "name": "language",
-                    "description": "Language to clean up files against English"
-                },
-                {
-                    "name": "library",
-                    "description": "Library to clean up files against English i.e console-yaml"
-                }
-            ],
-            "examples": [
-                {
-                    "description": "Delete all unnecessary files in all languages.",
-                    "execution": "drupal translation:cleanup"
-                },
-                {
-                    "description": "Delete all unnecessary files in Spanish language",
-                    "execution": "drupal translation:cleanup es"
-                },
-                {
-                    "description": "Delete all unnecessary files in all languages in console-develop library",
-                    "execution": "drupal translation:cleanup all console-develop"
-                },
-                {
-                    "description": "Delete all unnecessary files in Spanish language in console-develop library",
-                    "execution": "drupal translation:cleanup es console-develop"
-                }
-            ],
-            "aliases": [
-                "tc"
-            ],
-            "key": "develop.translation.cleanup",
-            "dashed": "develop-translation-cleanup",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:translation:pending",
-            "description": "Determine pending translation string in a language or a specific file in a language",
-            "options": [
-                {
-                    "name": "file",
-                    "description": "Specific file to determine pending translations against English"
-                }
-            ],
-            "arguments": [
-                {
-                    "name": "language",
-                    "description": "Language to determine pending translations against English"
-                },
-                {
-                    "name": "library",
-                    "description": "Library to determine pending translations against English i.e console-yaml"
-                }
-            ],
-            "examples": [
-                {
-                    "description": "Determine pending translation strings in all languages.",
-                    "execution": "drupal translation:pending"
-                },
-                {
-                    "description": "Determine pending translation strings in Spanish language",
-                    "execution": "drupal translation:pending es"
-                },
-                {
-                    "description": "Determine pending translation strings in all languages in console-develop library",
-                    "execution": "drupal translation:pending all console-develop"
-                },
-                {
-                    "description": "Determine pending translation strings in Spanish language in console-develop library",
-                    "execution": "drupal translation:pending es console-develop"
-                }
-            ],
-            "aliases": [
-                "tp"
-            ],
-            "key": "develop.translation.pending",
-            "dashed": "develop-translation-pending",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:translation:stats",
-            "description": "Generate translate stats",
-            "options": [
-                {
-                    "name": "format",
-                    "description": "Define output format table|markdown"
-                }
-            ],
-            "arguments": [
-                {
-                    "name": "language",
-                    "description": "Language to generate translation stats against English"
-                },
-                {
-                    "name": "library",
-                    "description": "Library to calculate translation stats against English i.e console-yaml"
-                }
-            ],
-            "examples": [
-                {
-                    "description": "Calculate translation stats in all languages.",
-                    "execution": "drupal translation:stats"
-                },
-                {
-                    "description": "Calculate translation stats in Spanish language",
-                    "execution": "drupal translation:stats es"
-                },
-                {
-                    "description": "Calculate translation stats in all languages in console-develop library",
-                    "execution": "drupal translation:stats all console-develop"
-                },
-                {
-                    "description": "Calculate translation stats in Spanish language in console-develop library",
-                    "execution": "drupal translation:stats es console-develop"
-                }
-            ],
-            "aliases": [
-                "ts"
-            ],
-            "key": "develop.translation.stats",
-            "dashed": "develop-translation-stats",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:translation:sync",
-            "description": "Sync translation files",
-            "options": [
-                {
-                    "name": "file",
-                    "description": "commands.develop.translation.stats.options.file"
-                }
-            ],
-            "arguments": [
-                {
-                    "name": "language",
-                    "description": "Language to syncronize against English source files"
-                },
-                {
-                    "name": "library",
-                    "description": "Library to syncronize against English i.e console-yaml"
-                }
-            ],
-            "examples": [
-                {
-                    "description": "Syncronize translation files in all languages.",
-                    "execution": "drupal translation:sync"
-                },
-                {
-                    "description": "Syncronize translation files in Spanish language",
-                    "execution": "drupal translation:sync es"
-                },
-                {
-                    "description": "Syncronize translation files in all languages in console-develop library",
-                    "execution": "drupal translation:sync all console-develop"
-                },
-                {
-                    "description": "Syncronize translation files in Spanish language in console-develop library",
-                    "execution": "drupal translation:sync es console-develop"
-                }
-            ],
-            "aliases": [
-                "tsy"
-            ],
-            "key": "develop.translation.sync",
-            "dashed": "develop-translation-sync",
             "messages": {
                 "usage": "Usage",
                 "options": "Available options",
@@ -3353,6 +2950,37 @@
             ],
             "key": "entity.delete",
             "dashed": "entity-delete",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "features:import",
+            "description": "Import module config.",
+            "options": [
+                {
+                    "name": "bundle",
+                    "description": "Bundle name"
+                }
+            ],
+            "arguments": [
+                {
+                    "name": "packages",
+                    "description": "Package name"
+                }
+            ],
+            "examples": [],
+            "aliases": [
+                "fei"
+            ],
+            "key": "features.import",
+            "dashed": "features-import",
             "messages": {
                 "usage": "Usage",
                 "options": "Available options",
@@ -5845,6 +5473,230 @@
             }
         },
         {
+            "name": "locale:language:add",
+            "description": "Th\u00eam m\u1ed9t ng\u00f4n ng\u1eef \u0111\u01b0\u1ee3c h\u1ed7 tr\u1ee3 b\u1edfi site c\u1ee7a b\u1ea1n",
+            "options": [],
+            "arguments": [
+                {
+                    "name": "language",
+                    "description": "Ng\u00f4n ng\u1eef v\u00ed s\u1ee5 nh\u01b0 es ho\u1eb7c Spanish"
+                }
+            ],
+            "examples": [],
+            "aliases": [],
+            "key": "locale.language.add",
+            "dashed": "locale-language-add",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "locale:language:delete",
+            "description": "X\u00f3a m\u1ed9t ng\u00f4n ng\u1eef \u0111\u01b0\u1ee3c h\u1ed7 tr\u1ee3 b\u1edfi site cuuar b\u1ea1n",
+            "options": [],
+            "arguments": [
+                {
+                    "name": "language",
+                    "description": "Ng\u00f4n ng\u1eef v\u00ed s\u1ee5 nh\u01b0 es ho\u1eb7c Spanish"
+                }
+            ],
+            "examples": [],
+            "aliases": [],
+            "key": "locale.language.delete",
+            "dashed": "locale-language-delete",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "locale:translation:status",
+            "description": "Danh s\u00e1ch c\u1eadp nh\u1eadt b\u1ea3n d\u1ecbch c\u00f3 s\u1eb5n",
+            "options": [],
+            "arguments": [
+                {
+                    "name": "language",
+                    "description": "Ng\u00f4n ng\u1eef v\u00ed s\u1ee5 nh\u01b0 es ho\u1eb7c Spanish"
+                }
+            ],
+            "examples": [],
+            "aliases": [],
+            "key": "locale.translation.status",
+            "dashed": "locale-translation-status",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "migrate:execute",
+            "description": "Ti\u1ebfn h\u00e0nh m\u1ed9t ph\u1ea7n chuy\u1ec3n \u0111\u1ed5i d\u1eef li\u1ec7u c\u00f3 s\u1eb5n trong \u1ee9ng d\u1ee5ng",
+            "options": [
+                {
+                    "name": "site-url",
+                    "description": "Ngu\u1ed3n URL"
+                },
+                {
+                    "name": "db-type",
+                    "description": "commands.migrate.execute.migrations.options.db-type"
+                },
+                {
+                    "name": "db-host",
+                    "description": "M\u00e1y ch\u1ee7 c\u01a1 s\u1edf d\u1eef li\u1ec7u"
+                },
+                {
+                    "name": "db-name",
+                    "description": "T\u00ean c\u01a1 s\u1edf d\u1eef li\u1ec7u"
+                },
+                {
+                    "name": "db-user",
+                    "description": "Ng\u01b0\u1eddi d\u00f9ng c\u01a1 s\u1edf d\u1eef li\u1ec7u"
+                },
+                {
+                    "name": "db-pass",
+                    "description": "M\u1eadt kh\u1ea9u c\u01a1 s\u1edf d\u1eef li\u1ec7u"
+                },
+                {
+                    "name": "db-prefix",
+                    "description": "Ti\u1ec1n t\u1ed1 c\u01a1 s\u1edf d\u1eef li\u1ec7u"
+                },
+                {
+                    "name": "db-port",
+                    "description": "C\u1ed5ng v\u00e0o c\u01a1 s\u1edf d\u1eef li\u1ec7u"
+                },
+                {
+                    "name": "exclude",
+                    "description": "C\u00e1c ID c\u1ee7a ph\u1ea7n chuy\u1ec3n \u0111\u1ed5i d\u1eef li\u1ec7u \u0111\u1ec3 lo\u1ea1i tr\u1eeb"
+                },
+                {
+                    "name": "source-base_path",
+                    "description": "Local file directory containing your source site (e.g. \/var\/www\/docroot), or your site address (for example http:\/\/example.com)"
+                }
+            ],
+            "arguments": [
+                {
+                    "name": "migration-ids",
+                    "description": "C\u00e1c ID c\u1ee7a ph\u1ea7n chuy\u1ec3n \u0111\u1ed5i d\u1eef li\u1ec7u"
+                }
+            ],
+            "examples": [],
+            "aliases": [
+                "mie"
+            ],
+            "key": "migrate.execute",
+            "dashed": "migrate-execute",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "migrate:rollback",
+            "description": "Rollback one or multiple migrations",
+            "options": [
+                {
+                    "name": "source-base_path",
+                    "description": "commands.migrate.setup.options.source-base-path"
+                }
+            ],
+            "arguments": [
+                {
+                    "name": "migration-ids",
+                    "description": "Migration id(s)"
+                }
+            ],
+            "examples": [],
+            "aliases": [
+                "mir"
+            ],
+            "key": "migrate.rollback",
+            "dashed": "migrate-rollback",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "migrate:setup",
+            "description": "Load and create the relevant migrations for a provided legacy database",
+            "options": [
+                {
+                    "name": "db-type",
+                    "description": "Drupal Database type"
+                },
+                {
+                    "name": "db-host",
+                    "description": "M\u00e1y ch\u1ee7 c\u01a1 s\u1edf d\u1eef li\u1ec7u"
+                },
+                {
+                    "name": "db-name",
+                    "description": "T\u00ean c\u01a1 s\u1edf d\u1eef li\u1ec7u"
+                },
+                {
+                    "name": "db-user",
+                    "description": "Ng\u01b0\u1eddi d\u00f9ng c\u01a1 s\u1edf d\u1eef li\u1ec7u"
+                },
+                {
+                    "name": "db-pass",
+                    "description": "M\u1eadt kh\u1ea9u c\u01a1 s\u1edf d\u1eef li\u1ec7u"
+                },
+                {
+                    "name": "db-prefix",
+                    "description": "Ti\u1ec1n t\u1ed1 c\u01a1 s\u1edf d\u1eef li\u1ec7u"
+                },
+                {
+                    "name": "db-port",
+                    "description": "C\u1ed5ng v\u00e0o c\u01a1 s\u1edf d\u1eef li\u1ec7u"
+                },
+                {
+                    "name": "source-base_path",
+                    "description": "commands.migrate.setup.options.source-base-path"
+                }
+            ],
+            "arguments": [],
+            "examples": [],
+            "aliases": [
+                "mis"
+            ],
+            "key": "migrate.setup",
+            "dashed": "migrate-setup",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
             "name": "module:dependency:install",
             "description": "Install dependencies module in the application",
             "options": [],
@@ -6217,6 +6069,58 @@
             "aliases": [],
             "key": "quick.start",
             "dashed": "quick-start",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "rest:disable",
+            "description": "T\u1eaft m\u1ed9t t\u00e0i nguy\u00ean rest cho \u1ee9ng d\u1ee5ng",
+            "options": [],
+            "arguments": [
+                {
+                    "name": "resource-id",
+                    "description": "Rest ID"
+                }
+            ],
+            "examples": [],
+            "aliases": [
+                "red"
+            ],
+            "key": "rest.disable",
+            "dashed": "rest-disable",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "rest:enable",
+            "description": "B\u1eadt m\u1ed9t rest resource cho \u1ee9ng d\u1ee5ng",
+            "options": [],
+            "arguments": [
+                {
+                    "name": "resource-id",
+                    "description": "Rest ID"
+                }
+            ],
+            "examples": [],
+            "aliases": [
+                "ree"
+            ],
+            "key": "rest.enable",
+            "dashed": "rest-enable",
             "messages": {
                 "usage": "Usage",
                 "options": "Available options",
@@ -7217,54 +7121,6 @@
             }
         },
         {
-            "name": "version:new",
-            "description": "Create new Drupal Console version",
-            "options": [
-                {
-                    "name": "file",
-                    "description": ""
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [],
-            "key": "version.new",
-            "dashed": "version-new",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "version:tag:release",
-            "description": "Create new Drupal Console tag and release",
-            "options": [
-                {
-                    "name": "file",
-                    "description": ""
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [],
-            "key": "version.tag.release",
-            "dashed": "version-tag-release",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
             "name": "views:disable",
             "description": "T\u1eaft m\u1ed9t View",
             "options": [],
@@ -7334,6 +7190,104 @@
                 "argument": "Argument",
                 "examples": "Examples"
             }
+        }
+    ],
+    "namespaces": [
+        {
+            "name": "cache"
+        },
+        {
+            "name": "config"
+        },
+        {
+            "name": "create"
+        },
+        {
+            "name": "cron"
+        },
+        {
+            "name": "database"
+        },
+        {
+            "name": "debug"
+        },
+        {
+            "name": "devel"
+        },
+        {
+            "name": "docker"
+        },
+        {
+            "name": "dotenv"
+        },
+        {
+            "name": "entity"
+        },
+        {
+            "name": "features"
+        },
+        {
+            "name": "field"
+        },
+        {
+            "name": "generate"
+        },
+        {
+            "name": "image"
+        },
+        {
+            "name": "locale"
+        },
+        {
+            "name": "migrate"
+        },
+        {
+            "name": "module"
+        },
+        {
+            "name": "multisite"
+        },
+        {
+            "name": "node"
+        },
+        {
+            "name": "queue"
+        },
+        {
+            "name": "quick"
+        },
+        {
+            "name": "rest"
+        },
+        {
+            "name": "role"
+        },
+        {
+            "name": "router"
+        },
+        {
+            "name": "settings"
+        },
+        {
+            "name": "site"
+        },
+        {
+            "name": "state"
+        },
+        {
+            "name": "taxonomy"
+        },
+        {
+            "name": "theme"
+        },
+        {
+            "name": "update"
+        },
+        {
+            "name": "user"
+        },
+        {
+            "name": "views"
         }
     ]
 }

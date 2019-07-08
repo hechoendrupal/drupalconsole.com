@@ -1847,6 +1847,30 @@
             }
         },
         {
+            "name": "debug:features",
+            "description": "commands.debug.features.description",
+            "options": [],
+            "arguments": [
+                {
+                    "name": "bundle",
+                    "description": "commands.debug.features.arguments.bundle"
+                }
+            ],
+            "examples": [],
+            "aliases": [],
+            "key": "debug.features",
+            "dashed": "debug-features",
+            "messages": {
+                "usage": "application.gitbook.messages.usage",
+                "options": "application.gitbook.messages.options",
+                "option": "application.gitbook.messages.option",
+                "details": "application.gitbook.messages.details",
+                "arguments": "application.gitbook.messages.arguments",
+                "argument": "application.gitbook.messages.argument",
+                "examples": "application.gitbook.messages.examples"
+            }
+        },
+        {
             "name": "debug:hook",
             "description": "commands.debug.hook.description",
             "options": [],
@@ -1904,6 +1928,32 @@
             ],
             "key": "debug.libraries",
             "dashed": "debug-libraries",
+            "messages": {
+                "usage": "application.gitbook.messages.usage",
+                "options": "application.gitbook.messages.options",
+                "option": "application.gitbook.messages.option",
+                "details": "application.gitbook.messages.details",
+                "arguments": "application.gitbook.messages.arguments",
+                "argument": "application.gitbook.messages.argument",
+                "examples": "application.gitbook.messages.examples"
+            }
+        },
+        {
+            "name": "debug:migrate",
+            "description": "commands.debug.migrate.description",
+            "options": [],
+            "arguments": [
+                {
+                    "name": "tag",
+                    "description": "commands.debug.migrate.arguments.tag"
+                }
+            ],
+            "examples": [],
+            "aliases": [
+                "mid"
+            ],
+            "key": "debug.migrate",
+            "dashed": "debug-migrate",
             "messages": {
                 "usage": "application.gitbook.messages.usage",
                 "options": "application.gitbook.messages.options",
@@ -2038,6 +2088,37 @@
             ],
             "key": "debug.queue",
             "dashed": "debug-queue",
+            "messages": {
+                "usage": "application.gitbook.messages.usage",
+                "options": "application.gitbook.messages.options",
+                "option": "application.gitbook.messages.option",
+                "details": "application.gitbook.messages.details",
+                "arguments": "application.gitbook.messages.arguments",
+                "argument": "application.gitbook.messages.argument",
+                "examples": "application.gitbook.messages.examples"
+            }
+        },
+        {
+            "name": "debug:rest",
+            "description": "commands.debug.rest.description",
+            "options": [
+                {
+                    "name": "authorization",
+                    "description": "commands.debug.rest.options.status"
+                }
+            ],
+            "arguments": [
+                {
+                    "name": "resource-id",
+                    "description": "commands.debug.rest.arguments.resource-id"
+                }
+            ],
+            "examples": [],
+            "aliases": [
+                "rede"
+            ],
+            "key": "debug.rest",
+            "dashed": "debug-rest",
             "messages": {
                 "usage": "application.gitbook.messages.usage",
                 "options": "application.gitbook.messages.options",
@@ -2383,30 +2464,6 @@
             }
         },
         {
-            "name": "demo:harold",
-            "description": "Download Drupal + Drupal Console to contribute.",
-            "options": [
-                {
-                    "name": "file",
-                    "description": ""
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [],
-            "key": "demo.harold",
-            "dashed": "demo-harold",
-            "messages": {
-                "usage": "application.gitbook.messages.usage",
-                "options": "application.gitbook.messages.options",
-                "option": "application.gitbook.messages.option",
-                "details": "application.gitbook.messages.details",
-                "arguments": "application.gitbook.messages.arguments",
-                "argument": "application.gitbook.messages.argument",
-                "examples": "application.gitbook.messages.examples"
-            }
-        },
-        {
             "name": "devel:dumper",
             "description": "commands.devel.dumper.messages.change-devel-dumper-plugin",
             "options": [],
@@ -2422,476 +2479,6 @@
             ],
             "key": "devel.dumper",
             "dashed": "devel-dumper",
-            "messages": {
-                "usage": "application.gitbook.messages.usage",
-                "options": "application.gitbook.messages.options",
-                "option": "application.gitbook.messages.option",
-                "details": "application.gitbook.messages.details",
-                "arguments": "application.gitbook.messages.arguments",
-                "argument": "application.gitbook.messages.argument",
-                "examples": "application.gitbook.messages.examples"
-            }
-        },
-        {
-            "name": "develop:contribute",
-            "description": "Download Drupal + Drupal Console to contribute.",
-            "options": [
-                {
-                    "name": "file",
-                    "description": ""
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [],
-            "key": "develop.contribute",
-            "dashed": "develop-contribute",
-            "messages": {
-                "usage": "application.gitbook.messages.usage",
-                "options": "application.gitbook.messages.options",
-                "option": "application.gitbook.messages.option",
-                "details": "application.gitbook.messages.details",
-                "arguments": "application.gitbook.messages.arguments",
-                "argument": "application.gitbook.messages.argument",
-                "examples": "application.gitbook.messages.examples"
-            }
-        },
-        {
-            "name": "develop:create:symlinks",
-            "description": "Create symlinks between Drupal site and cloned repositories.",
-            "options": [
-                {
-                    "name": "code-directory",
-                    "description": "The directory where the projects were cloned"
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [],
-            "key": "develop.create.symlinks",
-            "dashed": "develop-create-symlinks",
-            "messages": {
-                "usage": "application.gitbook.messages.usage",
-                "options": "application.gitbook.messages.options",
-                "option": "application.gitbook.messages.option",
-                "details": "application.gitbook.messages.details",
-                "arguments": "application.gitbook.messages.arguments",
-                "argument": "application.gitbook.messages.argument",
-                "examples": "application.gitbook.messages.examples"
-            }
-        },
-        {
-            "name": "develop:doc:cheatsheet",
-            "description": "G\u00e9n\u00e9rer une antis\u00e8che imprimable des commandes",
-            "options": [
-                {
-                    "name": "path",
-                    "description": "Le chemin o\u00f9 g\u00e9n\u00e9rer le pdf de documentation"
-                },
-                {
-                    "name": "wkhtmltopdf",
-                    "description": "Le chemin vers le fichier binaire de la librairie wkhtmltopdf dans votre syst\u00e8me"
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [
-                "gdc"
-            ],
-            "key": "develop.doc.cheatsheet",
-            "dashed": "develop-doc-cheatsheet",
-            "messages": {
-                "usage": "application.gitbook.messages.usage",
-                "options": "application.gitbook.messages.options",
-                "option": "application.gitbook.messages.option",
-                "details": "application.gitbook.messages.details",
-                "arguments": "application.gitbook.messages.arguments",
-                "argument": "application.gitbook.messages.argument",
-                "examples": "application.gitbook.messages.examples"
-            }
-        },
-        {
-            "name": "develop:doc:dash",
-            "description": "G\u00e9n\u00e9rer le paquet DrupalConsole.docset pour Dash",
-            "options": [
-                {
-                    "name": "path",
-                    "description": "Le chemin vers le dossier dans lequel le docset sera sauvegard\u00e9."
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [
-                "gdd"
-            ],
-            "key": "develop.doc.dash",
-            "dashed": "develop-doc-dash",
-            "messages": {
-                "usage": "application.gitbook.messages.usage",
-                "options": "application.gitbook.messages.options",
-                "option": "application.gitbook.messages.option",
-                "details": "application.gitbook.messages.details",
-                "arguments": "application.gitbook.messages.arguments",
-                "argument": "application.gitbook.messages.argument",
-                "examples": "application.gitbook.messages.examples"
-            }
-        },
-        {
-            "name": "develop:doc:data",
-            "description": "G\u00e9n\u00e8re des documentations de Commandes.",
-            "options": [
-                {
-                    "name": "file",
-                    "description": "Le fichier o\u00f9 g\u00e9n\u00e9rer le code de la commande"
-                },
-                {
-                    "name": "help",
-                    "description": "Display this help message"
-                },
-                {
-                    "name": "quiet",
-                    "description": "Do not output any message"
-                },
-                {
-                    "name": "verbose",
-                    "description": "Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug"
-                },
-                {
-                    "name": "version",
-                    "description": "Display this application version"
-                },
-                {
-                    "name": "ansi",
-                    "description": "Force ANSI output"
-                },
-                {
-                    "name": "no-ansi",
-                    "description": "Disable ANSI output"
-                },
-                {
-                    "name": "no-interaction",
-                    "description": "Do not ask any interactive question"
-                },
-                {
-                    "name": "env",
-                    "description": "Nom de l'environnement."
-                },
-                {
-                    "name": "root",
-                    "description": "D\u00e9finir la racine de l'instance de drupal \u00e0 utiliser"
-                },
-                {
-                    "name": "debug",
-                    "description": "application.options.debug"
-                },
-                {
-                    "name": "learning",
-                    "description": "Affiche plus d'informations."
-                },
-                {
-                    "name": "generate-chain",
-                    "description": "Affiche les commandes ainsi que leurs param\u00e8tres sous le format yaml pour \u00eatre r\u00e9utilis\u00e9 dans une commande cha\u00een\u00e9e"
-                },
-                {
-                    "name": "generate-inline",
-                    "description": "Affiche les commandes ainsi que leurs param\u00e8tres sur une ligne pour une r\u00e9utilisation future"
-                },
-                {
-                    "name": "generate-doc",
-                    "description": "Affiche les options et param\u00e8tres de la commande sous le format markdown"
-                },
-                {
-                    "name": "target",
-                    "description": "Nom du site avec lequel vous voulez interagir (Pour les sites locaux ou distants)"
-                },
-                {
-                    "name": "uri",
-                    "description": "D\u00e9finir l'URI du site Drupal \u00e0 utiliser (dans le cas d'un environnement multisite ou lors de l'usage d'un port non standard)"
-                },
-                {
-                    "name": "yes",
-                    "description": "Passe la confirmation et lance le processus"
-                }
-            ],
-            "arguments": [
-                {
-                    "name": "command",
-                    "description": "The command to execute"
-                }
-            ],
-            "examples": [],
-            "aliases": [
-                "gdda"
-            ],
-            "key": "develop.doc.data",
-            "dashed": "develop-doc-data",
-            "messages": {
-                "usage": "application.gitbook.messages.usage",
-                "options": "application.gitbook.messages.options",
-                "option": "application.gitbook.messages.option",
-                "details": "application.gitbook.messages.details",
-                "arguments": "application.gitbook.messages.arguments",
-                "argument": "application.gitbook.messages.argument",
-                "examples": "application.gitbook.messages.examples"
-            }
-        },
-        {
-            "name": "develop:doc:gitbook",
-            "description": "G\u00e9n\u00e9rer des documentations de Commandes",
-            "options": [
-                {
-                    "name": "path",
-                    "description": "Le chemin o\u00f9 g\u00e9n\u00e9rer la documentation"
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [
-                "gdg"
-            ],
-            "key": "develop.doc.gitbook",
-            "dashed": "develop-doc-gitbook",
-            "messages": {
-                "usage": "application.gitbook.messages.usage",
-                "options": "application.gitbook.messages.options",
-                "option": "application.gitbook.messages.option",
-                "details": "application.gitbook.messages.details",
-                "arguments": "application.gitbook.messages.arguments",
-                "argument": "application.gitbook.messages.argument",
-                "examples": "application.gitbook.messages.examples"
-            }
-        },
-        {
-            "name": "develop:example",
-            "description": null,
-            "options": [],
-            "arguments": [],
-            "examples": [],
-            "aliases": [],
-            "key": "develop.example",
-            "dashed": "develop-example",
-            "messages": {
-                "usage": "application.gitbook.messages.usage",
-                "options": "application.gitbook.messages.options",
-                "option": "application.gitbook.messages.option",
-                "details": "application.gitbook.messages.details",
-                "arguments": "application.gitbook.messages.arguments",
-                "argument": "application.gitbook.messages.argument",
-                "examples": "application.gitbook.messages.examples"
-            }
-        },
-        {
-            "name": "develop:example:container:aware",
-            "description": null,
-            "options": [],
-            "arguments": [],
-            "examples": [],
-            "aliases": [],
-            "key": "develop.example.container.aware",
-            "dashed": "develop-example-container-aware",
-            "messages": {
-                "usage": "application.gitbook.messages.usage",
-                "options": "application.gitbook.messages.options",
-                "option": "application.gitbook.messages.option",
-                "details": "application.gitbook.messages.details",
-                "arguments": "application.gitbook.messages.arguments",
-                "argument": "application.gitbook.messages.argument",
-                "examples": "application.gitbook.messages.examples"
-            }
-        },
-        {
-            "name": "develop:translation:cleanup",
-            "description": "Nettoie les fichiers de traduction",
-            "options": [],
-            "arguments": [
-                {
-                    "name": "language",
-                    "description": "Langue pour laquelle nettoyer les fichiers, \u00e0 partir de l'anglais"
-                },
-                {
-                    "name": "library",
-                    "description": "Library to clean up files against English i.e console-yaml"
-                }
-            ],
-            "examples": [
-                {
-                    "description": "Delete all unnecessary files in all languages.",
-                    "execution": "drupal translation:cleanup"
-                },
-                {
-                    "description": "Delete all unnecessary files in Spanish language",
-                    "execution": "drupal translation:cleanup es"
-                },
-                {
-                    "description": "Delete all unnecessary files in all languages in console-develop library",
-                    "execution": "drupal translation:cleanup all console-develop"
-                },
-                {
-                    "description": "Delete all unnecessary files in Spanish language in console-develop library",
-                    "execution": "drupal translation:cleanup es console-develop"
-                }
-            ],
-            "aliases": [
-                "tc"
-            ],
-            "key": "develop.translation.cleanup",
-            "dashed": "develop-translation-cleanup",
-            "messages": {
-                "usage": "application.gitbook.messages.usage",
-                "options": "application.gitbook.messages.options",
-                "option": "application.gitbook.messages.option",
-                "details": "application.gitbook.messages.details",
-                "arguments": "application.gitbook.messages.arguments",
-                "argument": "application.gitbook.messages.argument",
-                "examples": "application.gitbook.messages.examples"
-            }
-        },
-        {
-            "name": "develop:translation:pending",
-            "description": "D\u00e9termine les cha\u00eenes de caract\u00e8re en attente de traduction dans une langue ou un fichier sp\u00e9cifique de langue",
-            "options": [
-                {
-                    "name": "file",
-                    "description": "Fichier sp\u00e9cifique pour lequel d\u00e9terminer les traductions en attente \u00e0 partir de l'anglais"
-                }
-            ],
-            "arguments": [
-                {
-                    "name": "language",
-                    "description": "Langue pour laquelle d\u00e9terminer les traductions en attente \u00e0 partir de l'anglais"
-                },
-                {
-                    "name": "library",
-                    "description": "Library to determine pending translations against English i.e console-yaml"
-                }
-            ],
-            "examples": [
-                {
-                    "description": "Determine pending translation strings in all languages.",
-                    "execution": "drupal translation:pending"
-                },
-                {
-                    "description": "Determine pending translation strings in Spanish language",
-                    "execution": "drupal translation:pending es"
-                },
-                {
-                    "description": "Determine pending translation strings in all languages in console-develop library",
-                    "execution": "drupal translation:pending all console-develop"
-                },
-                {
-                    "description": "Determine pending translation strings in Spanish language in console-develop library",
-                    "execution": "drupal translation:pending es console-develop"
-                }
-            ],
-            "aliases": [
-                "tp"
-            ],
-            "key": "develop.translation.pending",
-            "dashed": "develop-translation-pending",
-            "messages": {
-                "usage": "application.gitbook.messages.usage",
-                "options": "application.gitbook.messages.options",
-                "option": "application.gitbook.messages.option",
-                "details": "application.gitbook.messages.details",
-                "arguments": "application.gitbook.messages.arguments",
-                "argument": "application.gitbook.messages.argument",
-                "examples": "application.gitbook.messages.examples"
-            }
-        },
-        {
-            "name": "develop:translation:stats",
-            "description": "G\u00e9n\u00e8re des statistiques de traduction",
-            "options": [
-                {
-                    "name": "format",
-                    "description": "D\u00e9finit le format de sortie table|markdown"
-                }
-            ],
-            "arguments": [
-                {
-                    "name": "language",
-                    "description": "Langue pour laquelle g\u00e9n\u00e9rer des statistiques de traduction \u00e0 partir de l'anglais"
-                },
-                {
-                    "name": "library",
-                    "description": "Library to calculate translation stats against English i.e console-yaml"
-                }
-            ],
-            "examples": [
-                {
-                    "description": "Calculate translation stats in all languages.",
-                    "execution": "drupal translation:stats"
-                },
-                {
-                    "description": "Calculate translation stats in Spanish language",
-                    "execution": "drupal translation:stats es"
-                },
-                {
-                    "description": "Calculate translation stats in all languages in console-develop library",
-                    "execution": "drupal translation:stats all console-develop"
-                },
-                {
-                    "description": "Calculate translation stats in Spanish language in console-develop library",
-                    "execution": "drupal translation:stats es console-develop"
-                }
-            ],
-            "aliases": [
-                "ts"
-            ],
-            "key": "develop.translation.stats",
-            "dashed": "develop-translation-stats",
-            "messages": {
-                "usage": "application.gitbook.messages.usage",
-                "options": "application.gitbook.messages.options",
-                "option": "application.gitbook.messages.option",
-                "details": "application.gitbook.messages.details",
-                "arguments": "application.gitbook.messages.arguments",
-                "argument": "application.gitbook.messages.argument",
-                "examples": "application.gitbook.messages.examples"
-            }
-        },
-        {
-            "name": "develop:translation:sync",
-            "description": "Synchronise les fichiers de traduction",
-            "options": [
-                {
-                    "name": "file",
-                    "description": "commands.develop.translation.stats.options.file"
-                }
-            ],
-            "arguments": [
-                {
-                    "name": "language",
-                    "description": "Langue pour laquelle synchroniser les fichiers \u00e0 partir de l'anglais"
-                },
-                {
-                    "name": "library",
-                    "description": "Library to syncronize against English i.e console-yaml"
-                }
-            ],
-            "examples": [
-                {
-                    "description": "Syncronize translation files in all languages.",
-                    "execution": "drupal translation:sync"
-                },
-                {
-                    "description": "Syncronize translation files in Spanish language",
-                    "execution": "drupal translation:sync es"
-                },
-                {
-                    "description": "Syncronize translation files in all languages in console-develop library",
-                    "execution": "drupal translation:sync all console-develop"
-                },
-                {
-                    "description": "Syncronize translation files in Spanish language in console-develop library",
-                    "execution": "drupal translation:sync es console-develop"
-                }
-            ],
-            "aliases": [
-                "tsy"
-            ],
-            "key": "develop.translation.sync",
-            "dashed": "develop-translation-sync",
             "messages": {
                 "usage": "application.gitbook.messages.usage",
                 "options": "application.gitbook.messages.options",
@@ -2974,6 +2561,37 @@
             ],
             "key": "entity.delete",
             "dashed": "entity-delete",
+            "messages": {
+                "usage": "application.gitbook.messages.usage",
+                "options": "application.gitbook.messages.options",
+                "option": "application.gitbook.messages.option",
+                "details": "application.gitbook.messages.details",
+                "arguments": "application.gitbook.messages.arguments",
+                "argument": "application.gitbook.messages.argument",
+                "examples": "application.gitbook.messages.examples"
+            }
+        },
+        {
+            "name": "features:import",
+            "description": "commands.features.import.description",
+            "options": [
+                {
+                    "name": "bundle",
+                    "description": "commands.features.import.options.bundle"
+                }
+            ],
+            "arguments": [
+                {
+                    "name": "packages",
+                    "description": "commands.features.import.arguments.packages"
+                }
+            ],
+            "examples": [],
+            "aliases": [
+                "fei"
+            ],
+            "key": "features.import",
+            "dashed": "features-import",
             "messages": {
                 "usage": "application.gitbook.messages.usage",
                 "options": "application.gitbook.messages.options",
@@ -5231,6 +4849,230 @@
             }
         },
         {
+            "name": "locale:language:add",
+            "description": "Ajoute une langue \u00e0 votre site",
+            "options": [],
+            "arguments": [
+                {
+                    "name": "language",
+                    "description": "Langue, par exemple : es ou Espagnol"
+                }
+            ],
+            "examples": [],
+            "aliases": [],
+            "key": "locale.language.add",
+            "dashed": "locale-language-add",
+            "messages": {
+                "usage": "application.gitbook.messages.usage",
+                "options": "application.gitbook.messages.options",
+                "option": "application.gitbook.messages.option",
+                "details": "application.gitbook.messages.details",
+                "arguments": "application.gitbook.messages.arguments",
+                "argument": "application.gitbook.messages.argument",
+                "examples": "application.gitbook.messages.examples"
+            }
+        },
+        {
+            "name": "locale:language:delete",
+            "description": "Supprime une langue de votre site",
+            "options": [],
+            "arguments": [
+                {
+                    "name": "language",
+                    "description": "Langue, par exemple : es ou Espagnol"
+                }
+            ],
+            "examples": [],
+            "aliases": [],
+            "key": "locale.language.delete",
+            "dashed": "locale-language-delete",
+            "messages": {
+                "usage": "application.gitbook.messages.usage",
+                "options": "application.gitbook.messages.options",
+                "option": "application.gitbook.messages.option",
+                "details": "application.gitbook.messages.details",
+                "arguments": "application.gitbook.messages.arguments",
+                "argument": "application.gitbook.messages.argument",
+                "examples": "application.gitbook.messages.examples"
+            }
+        },
+        {
+            "name": "locale:translation:status",
+            "description": "Liste des mises \u00e0 jour de traduction disponibles",
+            "options": [],
+            "arguments": [
+                {
+                    "name": "language",
+                    "description": "Langue, par exemple : es ou Espagnol"
+                }
+            ],
+            "examples": [],
+            "aliases": [],
+            "key": "locale.translation.status",
+            "dashed": "locale-translation-status",
+            "messages": {
+                "usage": "application.gitbook.messages.usage",
+                "options": "application.gitbook.messages.options",
+                "option": "application.gitbook.messages.option",
+                "details": "application.gitbook.messages.details",
+                "arguments": "application.gitbook.messages.arguments",
+                "argument": "application.gitbook.messages.argument",
+                "examples": "application.gitbook.messages.examples"
+            }
+        },
+        {
+            "name": "migrate:execute",
+            "description": "Execute a migration available for application",
+            "options": [
+                {
+                    "name": "site-url",
+                    "description": "Site Source URL"
+                },
+                {
+                    "name": "db-type",
+                    "description": "commands.migrate.execute.migrations.options.db-type"
+                },
+                {
+                    "name": "db-host",
+                    "description": "Database Host"
+                },
+                {
+                    "name": "db-name",
+                    "description": "Database Name"
+                },
+                {
+                    "name": "db-user",
+                    "description": "Database User"
+                },
+                {
+                    "name": "db-pass",
+                    "description": "Database Pass"
+                },
+                {
+                    "name": "db-prefix",
+                    "description": "Database Prefix"
+                },
+                {
+                    "name": "db-port",
+                    "description": "Database Port"
+                },
+                {
+                    "name": "exclude",
+                    "description": "Migration id(s) to exclude"
+                },
+                {
+                    "name": "source-base_path",
+                    "description": "commands.migrate.execute.options.source-base-path"
+                }
+            ],
+            "arguments": [
+                {
+                    "name": "migration-ids",
+                    "description": "Migration Id"
+                }
+            ],
+            "examples": [],
+            "aliases": [
+                "mie"
+            ],
+            "key": "migrate.execute",
+            "dashed": "migrate-execute",
+            "messages": {
+                "usage": "application.gitbook.messages.usage",
+                "options": "application.gitbook.messages.options",
+                "option": "application.gitbook.messages.option",
+                "details": "application.gitbook.messages.details",
+                "arguments": "application.gitbook.messages.arguments",
+                "argument": "application.gitbook.messages.argument",
+                "examples": "application.gitbook.messages.examples"
+            }
+        },
+        {
+            "name": "migrate:rollback",
+            "description": "commands.migrate.rollback.description",
+            "options": [
+                {
+                    "name": "source-base_path",
+                    "description": "commands.migrate.setup.options.source-base-path"
+                }
+            ],
+            "arguments": [
+                {
+                    "name": "migration-ids",
+                    "description": "commands.migrate.rollback.arguments.id"
+                }
+            ],
+            "examples": [],
+            "aliases": [
+                "mir"
+            ],
+            "key": "migrate.rollback",
+            "dashed": "migrate-rollback",
+            "messages": {
+                "usage": "application.gitbook.messages.usage",
+                "options": "application.gitbook.messages.options",
+                "option": "application.gitbook.messages.option",
+                "details": "application.gitbook.messages.details",
+                "arguments": "application.gitbook.messages.arguments",
+                "argument": "application.gitbook.messages.argument",
+                "examples": "application.gitbook.messages.examples"
+            }
+        },
+        {
+            "name": "migrate:setup",
+            "description": "Load and create the relevant migrations for a provided legacy database",
+            "options": [
+                {
+                    "name": "db-type",
+                    "description": "Drupal Database type"
+                },
+                {
+                    "name": "db-host",
+                    "description": "Database Host"
+                },
+                {
+                    "name": "db-name",
+                    "description": "Database Name"
+                },
+                {
+                    "name": "db-user",
+                    "description": "Database User"
+                },
+                {
+                    "name": "db-pass",
+                    "description": "Database Pass"
+                },
+                {
+                    "name": "db-prefix",
+                    "description": "Database Prefix"
+                },
+                {
+                    "name": "db-port",
+                    "description": "Database Port"
+                },
+                {
+                    "name": "source-base_path",
+                    "description": "commands.migrate.setup.options.source-base-path"
+                }
+            ],
+            "arguments": [],
+            "examples": [],
+            "aliases": [
+                "mis"
+            ],
+            "key": "migrate.setup",
+            "dashed": "migrate-setup",
+            "messages": {
+                "usage": "application.gitbook.messages.usage",
+                "options": "application.gitbook.messages.options",
+                "option": "application.gitbook.messages.option",
+                "details": "application.gitbook.messages.details",
+                "arguments": "application.gitbook.messages.arguments",
+                "argument": "application.gitbook.messages.argument",
+                "examples": "application.gitbook.messages.examples"
+            }
+        },
+        {
             "name": "module:dependency:install",
             "description": "commands.module.dependency.install.description",
             "options": [],
@@ -5568,6 +5410,58 @@
             "aliases": [],
             "key": "quick.start",
             "dashed": "quick-start",
+            "messages": {
+                "usage": "application.gitbook.messages.usage",
+                "options": "application.gitbook.messages.options",
+                "option": "application.gitbook.messages.option",
+                "details": "application.gitbook.messages.details",
+                "arguments": "application.gitbook.messages.arguments",
+                "argument": "application.gitbook.messages.argument",
+                "examples": "application.gitbook.messages.examples"
+            }
+        },
+        {
+            "name": "rest:disable",
+            "description": "Disable a rest resource for the application",
+            "options": [],
+            "arguments": [
+                {
+                    "name": "resource-id",
+                    "description": "Rest ID"
+                }
+            ],
+            "examples": [],
+            "aliases": [
+                "red"
+            ],
+            "key": "rest.disable",
+            "dashed": "rest-disable",
+            "messages": {
+                "usage": "application.gitbook.messages.usage",
+                "options": "application.gitbook.messages.options",
+                "option": "application.gitbook.messages.option",
+                "details": "application.gitbook.messages.details",
+                "arguments": "application.gitbook.messages.arguments",
+                "argument": "application.gitbook.messages.argument",
+                "examples": "application.gitbook.messages.examples"
+            }
+        },
+        {
+            "name": "rest:enable",
+            "description": "Enable a rest resource for the application",
+            "options": [],
+            "arguments": [
+                {
+                    "name": "resource-id",
+                    "description": "Rest ID"
+                }
+            ],
+            "examples": [],
+            "aliases": [
+                "ree"
+            ],
+            "key": "rest.enable",
+            "dashed": "rest-enable",
             "messages": {
                 "usage": "application.gitbook.messages.usage",
                 "options": "application.gitbook.messages.options",
@@ -6438,54 +6332,6 @@
             }
         },
         {
-            "name": "version:new",
-            "description": "Create new Drupal Console version",
-            "options": [
-                {
-                    "name": "file",
-                    "description": ""
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [],
-            "key": "version.new",
-            "dashed": "version-new",
-            "messages": {
-                "usage": "application.gitbook.messages.usage",
-                "options": "application.gitbook.messages.options",
-                "option": "application.gitbook.messages.option",
-                "details": "application.gitbook.messages.details",
-                "arguments": "application.gitbook.messages.arguments",
-                "argument": "application.gitbook.messages.argument",
-                "examples": "application.gitbook.messages.examples"
-            }
-        },
-        {
-            "name": "version:tag:release",
-            "description": "Create new Drupal Console tag and release",
-            "options": [
-                {
-                    "name": "file",
-                    "description": ""
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [],
-            "key": "version.tag.release",
-            "dashed": "version-tag-release",
-            "messages": {
-                "usage": "application.gitbook.messages.usage",
-                "options": "application.gitbook.messages.options",
-                "option": "application.gitbook.messages.option",
-                "details": "application.gitbook.messages.details",
-                "arguments": "application.gitbook.messages.arguments",
-                "argument": "application.gitbook.messages.argument",
-                "examples": "application.gitbook.messages.examples"
-            }
-        },
-        {
             "name": "views:disable",
             "description": "D\u00e9sactiver une vue",
             "options": [],
@@ -6537,6 +6383,104 @@
                 "argument": "application.gitbook.messages.argument",
                 "examples": "application.gitbook.messages.examples"
             }
+        }
+    ],
+    "namespaces": [
+        {
+            "name": "cache"
+        },
+        {
+            "name": "config"
+        },
+        {
+            "name": "create"
+        },
+        {
+            "name": "cron"
+        },
+        {
+            "name": "database"
+        },
+        {
+            "name": "debug"
+        },
+        {
+            "name": "devel"
+        },
+        {
+            "name": "docker"
+        },
+        {
+            "name": "dotenv"
+        },
+        {
+            "name": "entity"
+        },
+        {
+            "name": "features"
+        },
+        {
+            "name": "field"
+        },
+        {
+            "name": "generate"
+        },
+        {
+            "name": "image"
+        },
+        {
+            "name": "locale"
+        },
+        {
+            "name": "migrate"
+        },
+        {
+            "name": "module"
+        },
+        {
+            "name": "multisite"
+        },
+        {
+            "name": "node"
+        },
+        {
+            "name": "queue"
+        },
+        {
+            "name": "quick"
+        },
+        {
+            "name": "rest"
+        },
+        {
+            "name": "role"
+        },
+        {
+            "name": "router"
+        },
+        {
+            "name": "settings"
+        },
+        {
+            "name": "site"
+        },
+        {
+            "name": "state"
+        },
+        {
+            "name": "taxonomy"
+        },
+        {
+            "name": "theme"
+        },
+        {
+            "name": "update"
+        },
+        {
+            "name": "user"
+        },
+        {
+            "name": "views"
         }
     ]
 }

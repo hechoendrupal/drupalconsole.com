@@ -3,14 +3,13 @@ import './style.css';
 import {Link} from "gatsby";
 import Autosuggest from "../autosuggest"
 
-const Commands = ({ data, language }) => {
-
+const Commands = ({ data, namespaces, language }) => {
   const [search, setSearch] = useState("")
 
   return (
     <div>
       <div className="form-group">
-          <Autosuggest commands={data} setSearch={setSearch} />
+          <Autosuggest commands={namespaces.concat(data)} setSearch={setSearch} />
       </div>
 
       <div className="form-group">

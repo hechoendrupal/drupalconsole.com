@@ -14,7 +14,7 @@ body {
   font-family: Helvetica, sans-serif;
   font-weight: 300;
   font-size: 16px;
-  border: 1px solid #aaa;
+  border: 1px solid #F1F2F3;
   border-radius: 4px;
 }
 
@@ -36,11 +36,11 @@ body {
   position: absolute;
   top: 51px;
   width: 100%;
-  border: 1px solid #aaa;
+  border: 1px solid #F1F2F3;
   background-color: #fff;
   font-family: Helvetica, sans-serif;
   font-weight: 300;
-  font-size: 16px;
+  font-size: 15px;
   border-bottom-left-radius: 4px;
   border-bottom-right-radius: 4px;
   z-index: 2;
@@ -63,5 +63,4 @@ body {
 
 .react-autosuggest__suggestion-match {
   color: #50A1FF;
-  font-weight: bold;
 }

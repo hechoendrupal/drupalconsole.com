@@ -2113,6 +2113,30 @@
             }
         },
         {
+            "name": "debug:features",
+            "description": "List registered features.",
+            "options": [],
+            "arguments": [
+                {
+                    "name": "bundle",
+                    "description": "Bundle name"
+                }
+            ],
+            "examples": [],
+            "aliases": [],
+            "key": "debug.features",
+            "dashed": "debug-features",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
             "name": "debug:hook",
             "description": "commands.debug.hook.description",
             "options": [],
@@ -2184,6 +2208,37 @@
             ],
             "key": "debug.libraries",
             "dashed": "debug-libraries",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "debug:migrate",
+            "description": "Afiseaz\u0103 migra\u021biunea curent\u0103 accesibil\u0103 pentru aplica\u021bie",
+            "options": [],
+            "arguments": [
+                {
+                    "name": "tag",
+                    "description": "Tag-ul migra\u021biunii"
+                }
+            ],
+            "examples": [
+                {
+                    "description": "Displays current migration",
+                    "execution": "drupal debug:migrate\n"
+                }
+            ],
+            "aliases": [
+                "mid"
+            ],
+            "key": "debug.migrate",
+            "dashed": "debug-migrate",
             "messages": {
                 "usage": "Usage",
                 "options": "Available options",
@@ -2355,6 +2410,42 @@
             ],
             "key": "debug.queue",
             "dashed": "debug-queue",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "debug:rest",
+            "description": "Afi\u015feaz\u0103 resursele REST curente.",
+            "options": [
+                {
+                    "name": "authorization",
+                    "description": "Starea resursei REST activat | dezactivat"
+                }
+            ],
+            "arguments": [
+                {
+                    "name": "resource-id",
+                    "description": "ID-ul resursei"
+                }
+            ],
+            "examples": [
+                {
+                    "description": "Displays rest hooks",
+                    "execution": "drupal debug:rest\n"
+                }
+            ],
+            "aliases": [
+                "rede"
+            ],
+            "key": "debug.rest",
+            "dashed": "debug-rest",
             "messages": {
                 "usage": "Usage",
                 "options": "Available options",
@@ -2757,30 +2848,6 @@
             }
         },
         {
-            "name": "demo:harold",
-            "description": "Download Drupal + Drupal Console to contribute.",
-            "options": [
-                {
-                    "name": "file",
-                    "description": ""
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [],
-            "key": "demo.harold",
-            "dashed": "demo-harold",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
             "name": "devel:dumper",
             "description": "commands.devel.dumper.messages.change-devel-dumper-plugin",
             "options": [],
@@ -2796,476 +2863,6 @@
             ],
             "key": "devel.dumper",
             "dashed": "devel-dumper",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:contribute",
-            "description": "Download Drupal + Drupal Console to contribute.",
-            "options": [
-                {
-                    "name": "file",
-                    "description": ""
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [],
-            "key": "develop.contribute",
-            "dashed": "develop-contribute",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:create:symlinks",
-            "description": "Create symlinks between Drupal site and cloned repositories.",
-            "options": [
-                {
-                    "name": "code-directory",
-                    "description": "The directory where the projects were cloned"
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [],
-            "key": "develop.create.symlinks",
-            "dashed": "develop-create-symlinks",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:doc:cheatsheet",
-            "description": "Generate a printable cheatsheet for Commands",
-            "options": [
-                {
-                    "name": "path",
-                    "description": "The path to generate the pdf for the documentation"
-                },
-                {
-                    "name": "wkhtmltopdf",
-                    "description": "The path for the wkhtmltopdf binary in your system"
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [
-                "gdc"
-            ],
-            "key": "develop.doc.cheatsheet",
-            "dashed": "develop-doc-cheatsheet",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:doc:dash",
-            "description": "Genera\u021bi pachetul DrupalConsole.docset pentru Dash",
-            "options": [
-                {
-                    "name": "path",
-                    "description": "Calea c\u0103tre directorul unde docset-ul va fi salvat."
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [
-                "gdd"
-            ],
-            "key": "develop.doc.dash",
-            "dashed": "develop-doc-dash",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:doc:data",
-            "description": "Generate documentations for Commands.",
-            "options": [
-                {
-                    "name": "file",
-                    "description": "The file to render the command data"
-                },
-                {
-                    "name": "help",
-                    "description": "Display this help message"
-                },
-                {
-                    "name": "quiet",
-                    "description": "Do not output any message"
-                },
-                {
-                    "name": "verbose",
-                    "description": "Increase the verbosity of messages: 1 for normal output, 2 for more verbose output and 3 for debug"
-                },
-                {
-                    "name": "version",
-                    "description": "Display this application version"
-                },
-                {
-                    "name": "ansi",
-                    "description": "Force ANSI output"
-                },
-                {
-                    "name": "no-ansi",
-                    "description": "Disable ANSI output"
-                },
-                {
-                    "name": "no-interaction",
-                    "description": "Do not ask any interactive question"
-                },
-                {
-                    "name": "env",
-                    "description": "Numele mediului de lucru."
-                },
-                {
-                    "name": "root",
-                    "description": "Defini\u021bi r\u0103d\u0103cina Drupal care va fi folosit\u0103 la executarea comenzilor"
-                },
-                {
-                    "name": "debug",
-                    "description": "application.options.debug"
-                },
-                {
-                    "name": "learning",
-                    "description": "Generarea unui cod verbal."
-                },
-                {
-                    "name": "generate-chain",
-                    "description": "Printeaz\u0103 op\u021biunile \u0219i argumentele de execu\u021bie \u00een format yaml pentru a fi folosit \u00een comand\u0103 \u00eenl\u0103n\u021buit\u0103"
-                },
-                {
-                    "name": "generate-inline",
-                    "description": "Printeaz\u0103 op\u021biunile \u0219i argumentele de execu\u021bie \u00een apel inline pentru a fi folosit pe viitor"
-                },
-                {
-                    "name": "generate-doc",
-                    "description": "Shows command options and arguments as markdown"
-                },
-                {
-                    "name": "target",
-                    "description": "Site name you want to interact with (for local or remote sites)"
-                },
-                {
-                    "name": "uri",
-                    "description": "URI-ul sitului Drupal care va fi folosit (pentru medii multi-sit sau c\u00e2nd ruleaz\u0103 pe un port alternativ)"
-                },
-                {
-                    "name": "yes",
-                    "description": "Skip confirmation and proceed"
-                }
-            ],
-            "arguments": [
-                {
-                    "name": "command",
-                    "description": "The command to execute"
-                }
-            ],
-            "examples": [],
-            "aliases": [
-                "gdda"
-            ],
-            "key": "develop.doc.data",
-            "dashed": "develop-doc-data",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:doc:gitbook",
-            "description": "Genereaz\u0103 documenta\u021biile pentru Comenzi",
-            "options": [
-                {
-                    "name": "path",
-                    "description": "Calea de randare a documenta\u021biei"
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [
-                "gdg"
-            ],
-            "key": "develop.doc.gitbook",
-            "dashed": "develop-doc-gitbook",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:example",
-            "description": null,
-            "options": [],
-            "arguments": [],
-            "examples": [],
-            "aliases": [],
-            "key": "develop.example",
-            "dashed": "develop-example",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:example:container:aware",
-            "description": null,
-            "options": [],
-            "arguments": [],
-            "examples": [],
-            "aliases": [],
-            "key": "develop.example.container.aware",
-            "dashed": "develop-example-container-aware",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:translation:cleanup",
-            "description": "Clean up translation files",
-            "options": [],
-            "arguments": [
-                {
-                    "name": "language",
-                    "description": "Language to clean up files against English"
-                },
-                {
-                    "name": "library",
-                    "description": "Library to clean up files against English i.e console-yaml"
-                }
-            ],
-            "examples": [
-                {
-                    "description": "Delete all unnecessary files in all languages.",
-                    "execution": "drupal translation:cleanup"
-                },
-                {
-                    "description": "Delete all unnecessary files in Spanish language",
-                    "execution": "drupal translation:cleanup es"
-                },
-                {
-                    "description": "Delete all unnecessary files in all languages in console-develop library",
-                    "execution": "drupal translation:cleanup all console-develop"
-                },
-                {
-                    "description": "Delete all unnecessary files in Spanish language in console-develop library",
-                    "execution": "drupal translation:cleanup es console-develop"
-                }
-            ],
-            "aliases": [
-                "tc"
-            ],
-            "key": "develop.translation.cleanup",
-            "dashed": "develop-translation-cleanup",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:translation:pending",
-            "description": "Determine pending translation string in a language or a specific file in a language",
-            "options": [
-                {
-                    "name": "file",
-                    "description": "Specific file to determine pending translations against English"
-                }
-            ],
-            "arguments": [
-                {
-                    "name": "language",
-                    "description": "Language to determine pending translations against English"
-                },
-                {
-                    "name": "library",
-                    "description": "Library to determine pending translations against English i.e console-yaml"
-                }
-            ],
-            "examples": [
-                {
-                    "description": "Determine pending translation strings in all languages.",
-                    "execution": "drupal translation:pending"
-                },
-                {
-                    "description": "Determine pending translation strings in Spanish language",
-                    "execution": "drupal translation:pending es"
-                },
-                {
-                    "description": "Determine pending translation strings in all languages in console-develop library",
-                    "execution": "drupal translation:pending all console-develop"
-                },
-                {
-                    "description": "Determine pending translation strings in Spanish language in console-develop library",
-                    "execution": "drupal translation:pending es console-develop"
-                }
-            ],
-            "aliases": [
-                "tp"
-            ],
-            "key": "develop.translation.pending",
-            "dashed": "develop-translation-pending",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:translation:stats",
-            "description": "Generate translate stats",
-            "options": [
-                {
-                    "name": "format",
-                    "description": "Define output format table|markdown"
-                }
-            ],
-            "arguments": [
-                {
-                    "name": "language",
-                    "description": "Language to generate translation stats against English"
-                },
-                {
-                    "name": "library",
-                    "description": "Library to calculate translation stats against English i.e console-yaml"
-                }
-            ],
-            "examples": [
-                {
-                    "description": "Calculate translation stats in all languages.",
-                    "execution": "drupal translation:stats"
-                },
-                {
-                    "description": "Calculate translation stats in Spanish language",
-                    "execution": "drupal translation:stats es"
-                },
-                {
-                    "description": "Calculate translation stats in all languages in console-develop library",
-                    "execution": "drupal translation:stats all console-develop"
-                },
-                {
-                    "description": "Calculate translation stats in Spanish language in console-develop library",
-                    "execution": "drupal translation:stats es console-develop"
-                }
-            ],
-            "aliases": [
-                "ts"
-            ],
-            "key": "develop.translation.stats",
-            "dashed": "develop-translation-stats",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "develop:translation:sync",
-            "description": "Sync translation files",
-            "options": [
-                {
-                    "name": "file",
-                    "description": "commands.develop.translation.stats.options.file"
-                }
-            ],
-            "arguments": [
-                {
-                    "name": "language",
-                    "description": "Language to syncronize against English source files"
-                },
-                {
-                    "name": "library",
-                    "description": "Library to syncronize against English i.e console-yaml"
-                }
-            ],
-            "examples": [
-                {
-                    "description": "Syncronize translation files in all languages.",
-                    "execution": "drupal translation:sync"
-                },
-                {
-                    "description": "Syncronize translation files in Spanish language",
-                    "execution": "drupal translation:sync es"
-                },
-                {
-                    "description": "Syncronize translation files in all languages in console-develop library",
-                    "execution": "drupal translation:sync all console-develop"
-                },
-                {
-                    "description": "Syncronize translation files in Spanish language in console-develop library",
-                    "execution": "drupal translation:sync es console-develop"
-                }
-            ],
-            "aliases": [
-                "tsy"
-            ],
-            "key": "develop.translation.sync",
-            "dashed": "develop-translation-sync",
             "messages": {
                 "usage": "Usage",
                 "options": "Available options",
@@ -3353,6 +2950,37 @@
             ],
             "key": "entity.delete",
             "dashed": "entity-delete",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "features:import",
+            "description": "Import module config.",
+            "options": [
+                {
+                    "name": "bundle",
+                    "description": "Bundle name"
+                }
+            ],
+            "arguments": [
+                {
+                    "name": "packages",
+                    "description": "Package name"
+                }
+            ],
+            "examples": [],
+            "aliases": [
+                "fei"
+            ],
+            "key": "features.import",
+            "dashed": "features-import",
             "messages": {
                 "usage": "Usage",
                 "options": "Available options",
@@ -5845,6 +5473,230 @@
             }
         },
         {
+            "name": "locale:language:add",
+            "description": "Adaug\u0103 o limb\u0103 ce va avea suport pe situl dvs.",
+            "options": [],
+            "arguments": [
+                {
+                    "name": "language",
+                    "description": "Limba, de exemplu, es sau Spanish"
+                }
+            ],
+            "examples": [],
+            "aliases": [],
+            "key": "locale.language.add",
+            "dashed": "locale-language-add",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "locale:language:delete",
+            "description": "\u0218terge\u021bi o limb\u0103 ce are suport pe situl dvs.",
+            "options": [],
+            "arguments": [
+                {
+                    "name": "language",
+                    "description": "Limba, de exemplu, es sau Spanish"
+                }
+            ],
+            "examples": [],
+            "aliases": [],
+            "key": "locale.language.delete",
+            "dashed": "locale-language-delete",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "locale:translation:status",
+            "description": "Listeaz\u0103 actualiz\u0103rile de traducere disponibile",
+            "options": [],
+            "arguments": [
+                {
+                    "name": "language",
+                    "description": "Limba, de exemplu, es sau Spanish"
+                }
+            ],
+            "examples": [],
+            "aliases": [],
+            "key": "locale.translation.status",
+            "dashed": "locale-translation-status",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "migrate:execute",
+            "description": "Execut\u0103 o migra\u0163ie disponibil\u0103 pentru aplica\u0163ie",
+            "options": [
+                {
+                    "name": "site-url",
+                    "description": "URL-ul sitului"
+                },
+                {
+                    "name": "db-type",
+                    "description": "commands.migrate.execute.migrations.options.db-type"
+                },
+                {
+                    "name": "db-host",
+                    "description": "Gazda bazei de date"
+                },
+                {
+                    "name": "db-name",
+                    "description": "Numele bazei de date"
+                },
+                {
+                    "name": "db-user",
+                    "description": "Utilizatorul bazei de date"
+                },
+                {
+                    "name": "db-pass",
+                    "description": "Parola bazei de date"
+                },
+                {
+                    "name": "db-prefix",
+                    "description": "Prefixul bazei de date"
+                },
+                {
+                    "name": "db-port",
+                    "description": "Portul bazei de date"
+                },
+                {
+                    "name": "exclude",
+                    "description": "ID-urile migra\u0163iilor care vor fi excluse."
+                },
+                {
+                    "name": "source-base_path",
+                    "description": "Local file directory containing your source site (e.g. \/var\/www\/docroot), or your site address (for example http:\/\/example.com)"
+                }
+            ],
+            "arguments": [
+                {
+                    "name": "migration-ids",
+                    "description": "Id-ul migra\u0163iei"
+                }
+            ],
+            "examples": [],
+            "aliases": [
+                "mie"
+            ],
+            "key": "migrate.execute",
+            "dashed": "migrate-execute",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "migrate:rollback",
+            "description": "Rollback one or multiple migrations",
+            "options": [
+                {
+                    "name": "source-base_path",
+                    "description": "commands.migrate.setup.options.source-base-path"
+                }
+            ],
+            "arguments": [
+                {
+                    "name": "migration-ids",
+                    "description": "Migration id(s)"
+                }
+            ],
+            "examples": [],
+            "aliases": [
+                "mir"
+            ],
+            "key": "migrate.rollback",
+            "dashed": "migrate-rollback",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "migrate:setup",
+            "description": "\u00cenc\u0103rca\u021bi \u0219i crea\u021bi migra\u021biunile relevante pentru o baz\u0103 de date furnizat\u0103",
+            "options": [
+                {
+                    "name": "db-type",
+                    "description": "Tipul bazei de date Drupal"
+                },
+                {
+                    "name": "db-host",
+                    "description": "Gazda bazei de date"
+                },
+                {
+                    "name": "db-name",
+                    "description": "Numele bazei de date"
+                },
+                {
+                    "name": "db-user",
+                    "description": "Utilizatorul bazei de date"
+                },
+                {
+                    "name": "db-pass",
+                    "description": "Parola bazei de date"
+                },
+                {
+                    "name": "db-prefix",
+                    "description": "Prefixul bazei de date"
+                },
+                {
+                    "name": "db-port",
+                    "description": "Portul bazei de date"
+                },
+                {
+                    "name": "source-base_path",
+                    "description": "commands.migrate.setup.options.source-base-path"
+                }
+            ],
+            "arguments": [],
+            "examples": [],
+            "aliases": [
+                "mis"
+            ],
+            "key": "migrate.setup",
+            "dashed": "migrate-setup",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
             "name": "module:dependency:install",
             "description": "Install dependencies module in the application",
             "options": [],
@@ -6217,6 +6069,58 @@
             "aliases": [],
             "key": "quick.start",
             "dashed": "quick-start",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "rest:disable",
+            "description": "Dezactiveaza o resurs\u0103 REST",
+            "options": [],
+            "arguments": [
+                {
+                    "name": "resource-id",
+                    "description": "Rest ID"
+                }
+            ],
+            "examples": [],
+            "aliases": [
+                "red"
+            ],
+            "key": "rest.disable",
+            "dashed": "rest-disable",
+            "messages": {
+                "usage": "Usage",
+                "options": "Available options",
+                "option": "Option",
+                "details": "Details",
+                "arguments": "Available arguments",
+                "argument": "Argument",
+                "examples": "Examples"
+            }
+        },
+        {
+            "name": "rest:enable",
+            "description": "Activeaz\u0103 o resurs\u0103 REST pentru aplica\u0163ie.",
+            "options": [],
+            "arguments": [
+                {
+                    "name": "resource-id",
+                    "description": "ID-ul resursei."
+                }
+            ],
+            "examples": [],
+            "aliases": [
+                "ree"
+            ],
+            "key": "rest.enable",
+            "dashed": "rest-enable",
             "messages": {
                 "usage": "Usage",
                 "options": "Available options",
@@ -7217,54 +7121,6 @@
             }
         },
         {
-            "name": "version:new",
-            "description": "Create new Drupal Console version",
-            "options": [
-                {
-                    "name": "file",
-                    "description": ""
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [],
-            "key": "version.new",
-            "dashed": "version-new",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
-            "name": "version:tag:release",
-            "description": "Create new Drupal Console tag and release",
-            "options": [
-                {
-                    "name": "file",
-                    "description": ""
-                }
-            ],
-            "arguments": [],
-            "examples": [],
-            "aliases": [],
-            "key": "version.tag.release",
-            "dashed": "version-tag-release",
-            "messages": {
-                "usage": "Usage",
-                "options": "Available options",
-                "option": "Option",
-                "details": "Details",
-                "arguments": "Available arguments",
-                "argument": "Argument",
-                "examples": "Examples"
-            }
-        },
-        {
             "name": "views:disable",
             "description": "Dezactiveaz\u0103 un View",
             "options": [],
@@ -7334,6 +7190,104 @@
                 "argument": "Argument",
                 "examples": "Examples"
             }
+        }
+    ],
+    "namespaces": [
+        {
+            "name": "cache"
+        },
+        {
+            "name": "config"
+        },
+        {
+            "name": "create"
+        },
+        {
+            "name": "cron"
+        },
+        {
+            "name": "database"
+        },
+        {
+            "name": "debug"
+        },
+        {
+            "name": "devel"
+        },
+        {
+            "name": "docker"
+        },
+        {
+            "name": "dotenv"
+        },
+        {
+            "name": "entity"
+        },
+        {
+            "name": "features"
+        },
+        {
+            "name": "field"
+        },
+        {
+            "name": "generate"
+        },
+        {
+            "name": "image"
+        },
+        {
+            "name": "locale"
+        },
+        {
+            "name": "migrate"
+        },
+        {
+            "name": "module"
+        },
+        {
+            "name": "multisite"
+        },
+        {
+            "name": "node"
+        },
+        {
+            "name": "queue"
+        },
+        {
+            "name": "quick"
+        },
+        {
+            "name": "rest"
+        },
+        {
+            "name": "role"
+        },
+        {
+            "name": "router"
+        },
+        {
+            "name": "settings"
+        },
+        {
+            "name": "site"
+        },
+        {
+            "name": "state"
+        },
+        {
+            "name": "taxonomy"
+        },
+        {
+            "name": "theme"
+        },
+        {
+            "name": "update"
+        },
+        {
+            "name": "user"
+        },
+        {
+            "name": "views"
         }
     ]
 }
