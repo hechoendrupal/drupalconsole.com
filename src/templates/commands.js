@@ -54,6 +54,10 @@ export const pageQuery = graphql`
             examples {
               execution
             }
+            messages {
+              usage
+              examples
+            }
           }
           namespaces {
             name
