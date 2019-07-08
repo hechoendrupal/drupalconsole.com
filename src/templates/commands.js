@@ -9,6 +9,7 @@ import LanguageSwitcher from "../components/languageSwitcher"
 const CommandsTemplate = (props) =>  {
   const commands = props.data.allCommands.edges[0] ? props.data.allCommands.edges[0].node.commands : []
   const items = props.data.allNavigationItems.edges[0] ? props.data.allNavigationItems.edges[0].node.items : []
+  const namespaces = props.data.allCommands.edges[0] ? props.data.allCommands.edges[0].node.namespaces : []
 
   return (
     <Layout>
@@ -30,7 +31,7 @@ const CommandsTemplate = (props) =>  {
             </div>
             <div className="col-md-7 col-xl-8 ml-md-auto py-8">
               <h1>Available Commands</h1>
-              <Commands data={commands} language={props.pageContext.language}/>
+              <Commands data={commands} namespaces={namespaces} language={props.pageContext.language}/>
             </div>
           </div>
         </div>
@@ -53,6 +54,9 @@ export const pageQuery = graphql`
             examples {
               execution
             }
+          }
+          namespaces {
+            name
           }
         }
       }
