@@ -29,8 +29,8 @@
       "title": "Obteniendo el proyecto",
       "items": [
         {
-          "link": "getting/installer",
-          "title": "Utilizando el Instalador"
+          "link": "getting/launcher",
+          "title": "Ejecutable global también conocido como Launcher"
         },
         {
           "link": "getting/composer",
@@ -161,6 +161,10 @@
         {
           "link": "contributing/documentation",
           "title": "Contribuir a esta documentación"
+        },
+        {
+          "link": "contributing/contributing-to-the-book",
+          "title": "Contribute to DrupalConsoleBook"
         }
       ]
     },

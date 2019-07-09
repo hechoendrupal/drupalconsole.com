@@ -105,6 +105,14 @@
       "title": "Создание новых комманд",
       "items": [
         {
+          "link": "extending/the-command-class",
+          "title": "The Command Class"
+        },
+        {
+          "link": "extending/registering-commands",
+          "title": "Автоматическая регистрация комманды"
+        },
+        {
           "link": "extending/configuring-the-command",
           "title": "Конфигурация комманды"
         },
@@ -117,8 +125,8 @@
           "title": "Использование сервисов из сервисного контейнера"
         },
         {
-          "link": "extending/registering-commands-automatically",
-          "title": "Автоматическая регистрация комманды"
+          "link": "extending/generating-code",
+          "title": "Generating Code with a Command"
         }
       ]
     },
@@ -149,6 +157,10 @@
         {
           "link": "contributing/documentation",
           "title": "Как помочь в переводе документации?"
+        },
+        {
+          "link": "contributing/contributing-to-the-book",
+          "title": "Contribute to DrupalConsoleBook"
         }
       ]
     },

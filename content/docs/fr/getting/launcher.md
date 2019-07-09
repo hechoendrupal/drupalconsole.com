@@ -1,4 +1,4 @@
-# Install Drupal Console Launcher
+# Install Drupal Console Launcher using the phar
 
 ```
 curl https://drupalconsole.com/installer -L -o drupal.phar

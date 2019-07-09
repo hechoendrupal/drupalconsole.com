@@ -29,7 +29,7 @@
       "title": "安装 Drupal Console",
       "items": [
         {
-          "link": "getting/installer",
+          "link": "getting/launcher",
           "title": "使用 Drupal Console 安装器"
         },
         {
@@ -113,6 +113,14 @@
       "title": "Creating custom Commands",
       "items": [
         {
+          "link": "extending/the-command-class",
+          "title": "The Command Class"
+        },
+        {
+          "link": "extending/registering-commands",
+          "title": "Registering Commands"
+        },
+        {
           "link": "extending/configuring-the-command",
           "title": "Configuring the Command"
         },
@@ -127,10 +135,6 @@
         {
           "link": "extending/generating-code",
           "title": "Generating Code with a Command"
-        },
-        {
-          "link": "extending/registering-commands-automatically",
-          "title": "Registering Commands Automatically"
         }
       ]
     },
@@ -161,6 +165,10 @@
         {
           "link": "contributing/documentation",
           "title": "文档编写"
+        },
+        {
+          "link": "contributing/contributing-to-the-book",
+          "title": "Contribute to DrupalConsoleBook"
         }
       ]
     },

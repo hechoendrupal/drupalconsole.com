@@ -153,6 +153,10 @@
         {
           "link": "contributing/documentation",
           "title": "Contribute to this documentation"
+        },
+        {
+          "link": "contributing/contributing-to-the-book",
+          "title": "Contribute to DrupalConsoleBook"
         }
       ]
     },

@@ -153,6 +153,10 @@
           {
             "link": "contributing/documentation",
             "title": "مشارکت در مستندسازی"
+          },
+          {
+            "link": "contributing/contributing-to-the-book",
+            "title": "Contribute to DrupalConsoleBook"
           }
         ]
       },
