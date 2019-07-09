@@ -29,20 +29,16 @@
       "title": "Obtendo o projeto",
       "items": [
         {
-          "link": "getting/launcher",
-          "title": "Utilizando o instalador"
-        },
-        {
           "link": "getting/composer",
           "title": "Utilizando o Composer"
         },
         {
-          "link": "getting/download",
-          "title": "Baixar o arquivo phar"
+          "link": "getting/launcher",
+          "title": "Utilizando o instalador"
         },
         {
-          "link": "getting/update",
-          "title": "Atualizar o projeto"
+          "link": "getting/windows",
+          "title": "Installing on Windows"
         }
       ]
     },
@@ -61,10 +57,6 @@
         {
           "link": "using/how-to-use-drupal-console-in-a-multisite-installation",
           "title": "Como usar o Drupal Console em uma instalação multi-site"
-        },
-        {
-          "link": "using/how-to-use-drupal-console-in-a-remote-installation",
-          "title": "Como usar o Drupal Console em uma instalação remota"
         }
       ]
     },
