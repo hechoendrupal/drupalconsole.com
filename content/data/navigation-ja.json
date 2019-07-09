@@ -29,20 +29,12 @@
       "title": "プロジェクトを取得する",
       "items": [
         {
-          "link": "getting/launcher",
-          "title": "インストーラーを使う"
-        },
-        {
           "link": "getting/composer",
           "title": "Composerを使う"
         },
         {
-          "link": "getting/download",
-          "title": "pharファイルをダウンロードする"
-        },
-        {
-          "link": "getting/update",
-          "title": "プロジェクトを更新する"
+          "link": "getting/launcher",
+          "title": "インストーラーを使う"
         },
         {
           "link": "getting/windows",
@@ -65,10 +57,6 @@
         {
           "link": "using/how-to-use-drupal-console-in-a-multisite-installation",
           "title": "Drupal Consoleをマルチサイト環境で使う"
-        },
-        {
-          "link": "using/how-to-use-drupal-console-in-a-remote-installation",
-          "title": "Drupal Consoleでリモートサイトに接続する"
         }
       ]
     },

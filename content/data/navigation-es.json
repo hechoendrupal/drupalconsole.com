@@ -29,24 +29,16 @@
       "title": "Obteniendo el proyecto",
       "items": [
         {
-          "link": "getting/launcher",
-          "title": "Ejecutable global también conocido como Launcher"
-        },
-        {
           "link": "getting/composer",
           "title": "Utilizando Composer"
         },
         {
-          "link": "getting/download",
-          "title": "Descargando el archivo phar"
+          "link": "getting/launcher",
+          "title": "Ejecutable global también conocido como Launcher"
         },
         {
           "link": "getting/windows",
           "title": "Instalación en Windows"
-        },
-        {
-          "link": "getting/update",
-          "title": "Actualizar la Drupal Console"
         }
       ]
     },

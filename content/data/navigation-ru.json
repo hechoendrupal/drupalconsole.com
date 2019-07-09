@@ -57,10 +57,6 @@
         {
           "link": "using/how-to-use-drupal-console-in-a-multisite-installation",
           "title": "Использование в мульти-сайтовом режиме"
-        },
-        {
-          "link": "using/how-to-use-drupal-console-in-a-remote-installation",
-          "title": "Использование при удаленной установке"
         }
       ]
     },

@@ -37,14 +37,6 @@
           "title": "使用 Composer"
         },
         {
-          "link": "getting/download",
-          "title": "下载 phar 文件"
-        },
-        {
-          "link": "getting/update",
-          "title": "如何更新"
-        },
-        {
           "link": "getting/windows",
           "title": "Installing on Windows"
         }
@@ -65,10 +57,6 @@
         {
           "link": "using/how-to-use-drupal-console-in-a-multisite-installation",
           "title": "如何在多站点环境下使用 Drupal Console"
-        },
-        {
-          "link": "using/how-to-use-drupal-console-in-a-remote-installation",
-          "title": "Drupal Console 用于非本地网站"
         }
       ]
     },

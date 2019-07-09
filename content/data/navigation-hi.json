@@ -29,20 +29,12 @@
       "title": "Getting the project",
       "items": [
         {
-          "link": "getting/launcher",
-          "title": "Global executable aka Launcher"
-        },
-        {
           "link": "getting/composer",
           "title": "Using Composer"
         },
         {
-          "link": "getting/download",
-          "title": "Download phar file"
-        },
-        {
-          "link": "getting/update",
-          "title": "Update project"
+          "link": "getting/launcher",
+          "title": "Global executable aka Launcher"
         },
         {
           "link": "getting/windows",
@@ -65,10 +57,6 @@
         {
           "link": "using/how-to-use-drupal-console-in-a-multisite-installation",
           "title": "How to use Drupal Console in a multi-site installation"
-        },
-        {
-          "link": "using/how-to-use-drupal-console-in-a-remote-installation",
-          "title": "How to use Drupal Console in a remote installation"
         }
       ]
     },
