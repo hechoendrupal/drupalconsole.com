@@ -1,0 +1,186 @@
+{
+    "language": "fa-ir",
+    "type": "navigation",
+    "items": [
+      {
+        "link": "/",
+        "title": "Welcome"
+      },
+      {
+        "link": "about/what-is-the-drupal-console",
+        "title": "کنسول دروپال چیست",
+        "items": [
+          {
+            "link": "about/why-should-you-care-about",
+            "title": "چرا باید به آن اهمیت بدهید؟"
+          },
+          {
+            "link": "about/how-does-drupal-console-help",
+            "title": "کنسول دروپال چطور به شما یاری می‌رساند؟"
+          },
+          {
+            "link": "about/where-do-i-find-the-project",
+            "title": "از کجا به دنبال پروژه بگردم؟"
+          }
+        ]
+      },
+      {
+        "link": "getting/project",
+        "title": "دریافت پروژه",
+        "items": [
+          {
+            "link": "getting/composer",
+            "title": "استفاده از Composer"
+          },
+          {
+            "link": "getting/launcher",
+            "title": "فایل اجرایی اصلی یا همان راه‌انداز"
+          },
+          {
+            "link": "getting/windows",
+            "title": "نصب در ویندوز"
+          }
+        ]
+      },
+      {
+        "link": "using/project",
+        "title": "استفاده از پروژه",
+        "items": [
+          {
+            "link": "using/how-to-copy-configuration-files",
+            "title": "چگونگی رونوشت‌گیری از فایل‌های پیکربندی"
+          },
+          {
+            "link": "using/how-to-download-install-and-serve-drupal8",
+            "title": "چگونگی دانلود، نصب و راه‌اندازی دروپال ۸"
+          },
+          {
+            "link": "using/how-to-use-drupal-console-in-a-multisite-installation",
+            "title": "چگونگی استفاده از کنسول دروپال در یک محیط چند-سایته"
+          }
+        ]
+      },
+      {
+        "link": "commands/",
+        "title": "Available commands"
+      },
+      {
+        "link": "alias/using-site-alias",
+        "title": "استفاده از نام مستعار سایت",
+        "items": [
+          {
+            "link": "alias/setting-up-your-local-machine",
+            "title": "راه‌اندازی ماشین محلی خود"
+          },
+          {
+            "link": "alias/how-to-use-drupal-console-in-a-remote-installation",
+            "title": "چگونگی استفاده از کنسول دروپال در یک سرور راه‌دور"
+          },
+          {
+            "link": "alias/connecting-to-a-virtual-environment",
+            "title": "اتصال به یک محیط مجازی"
+          }
+        ]
+      },
+      {
+        "link": "chains/what-is-a-chain-command",
+        "title": "دستور زنجیره‌ای چیست",
+        "items": [
+          {
+            "link": "chains/registering",
+            "title": "ثبت دستورات زنجیره‌ای به عنوان دستورات معمولی"
+          },
+          {
+            "link": "chains/listing-registered-commands",
+            "title": "فهرست دستوات ثبت شده"
+          }
+        ]
+      },
+      {
+        "link": "extending/creating-custom-commands",
+        "title": "ایجاد دستورات سفارشی",
+        "items": [
+          {
+            "link": "extending/the-command-class",
+            "title": "کلاس Command"
+          },
+          {
+            "link": "extending/registering-commands",
+            "title": "ثبت دستورات"
+          },
+          {
+            "link": "extending/configuring-the-command",
+            "title": "پیکربندی دستور"
+          },
+          {
+            "link": "extending/command-lifecycle",
+            "title": "چرخه حیات دستور"
+          },
+          {
+            "link": "extending/getting-services-from-the-service-container",
+            "title": "دریافت سرویس‌ها از Service Container"
+          },
+          {
+            "link": "extending/generating-code",
+            "title": "تولید کد با یک دستور"
+          }
+        ]
+      },
+      {
+        "link": "contributing/new-features",
+        "title": "مشارکت در ویژگی‌های جدید",
+        "items": [
+          {
+            "link": "contributing/project-requirements",
+            "title": "پیشنیازهای پروژه"
+          },
+          {
+            "link": "contributing/getting-the-project",
+            "title": "دریافت پروژه"
+          },
+          {
+            "link": "contributing/running-the-project",
+            "title": "اجرای پروژه"
+          },
+          {
+            "link": "contributing/keeping-your-fork-up-to-date",
+            "title": "بروزنگهداری fork از پروژه"
+          },
+          {
+            "link": "contributing/creating-issues-and-pull-requests",
+            "title": "ایجاد issue و PR"
+          },
+          {
+            "link": "contributing/documentation",
+            "title": "مشارکت در مستندسازی"
+          }
+        ]
+      },
+      {
+        "link": "drupal_console_faq/faq",
+        "title": "پرسش‌های متداول درباره کنسول دروپال",
+        "items": [
+          {
+            "link": "drupal_console_faq/installation-problems",
+            "title": "مشکلات نصب"
+          },
+          {
+            "link": "drupal_console_faq/permissions",
+            "title": "مجوزها"
+          },
+          {
+            "link": "drupal_console_faq/commands-not-listed",
+            "title": "دستوراتی که فهرست نشده‌اند"
+          },
+          {
+            "link": "drupal_console_faq/interactive-mode",
+            "title": "حالت تعاملی"
+          }
+        ]
+      },
+      {
+        "link": "references/links",
+        "title": "مراجع"
+      }
+    ]
+  }

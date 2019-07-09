@@ -49,7 +49,7 @@ const Commands = ({ data, namespaces, language }) => {
                             >
                               <span className="badge badge-secondary">
                                 <i className="fa fa-expand" aria-hidden="true"></i>
-                                {command.messages.examples}
+                                <small>{` ${command.messages.examples}`}</small>
                                 </span>
                             </button>
                           )}
