@@ -29,20 +29,12 @@
       "title": "Getting the project",
       "items": [
         {
-          "link": "getting/installer",
-          "title": "Using the Installer"
-        },
-        {
           "link": "getting/composer",
           "title": "Using Composer"
         },
         {
-          "link": "getting/download",
-          "title": "Download phar file"
-        },
-        {
-          "link": "getting/update",
-          "title": "Update project"
+          "link": "getting/launcher",
+          "title": "Global executable aka Launcher"
         },
         {
           "link": "getting/windows",
@@ -65,10 +57,6 @@
         {
           "link": "using/how-to-use-drupal-console-in-a-multisite-installation",
           "title": "How to use Drupal Console in a multi-site installation"
-        },
-        {
-          "link": "using/how-to-use-drupal-console-in-a-remote-installation",
-          "title": "How to use Drupal Console in a remote installation"
         }
       ]
     },
@@ -113,6 +101,14 @@
       "title": "Creating custom Commands",
       "items": [
         {
+          "link": "extending/the-command-class",
+          "title": "The Command Class"
+        },
+        {
+          "link": "extending/registering-commands",
+          "title": "Registering Commands"
+        },
+        {
           "link": "extending/configuring-the-command",
           "title": "Configuring the Command"
         },
@@ -125,8 +121,8 @@
           "title": "Getting Services from the Service Container"
         },
         {
-          "link": "extending/registering-commands-automatically",
-          "title": "Registering Commands Automatically"
+          "link": "extending/generating-code",
+          "title": "Generating Code with a Command"
         }
       ]
     },
