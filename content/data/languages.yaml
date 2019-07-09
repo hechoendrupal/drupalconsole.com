@@ -9,6 +9,10 @@
 - id: ca
   slug: catalan
   name: Català
+- id: fa-ir
+  slug: persian
+  name: فارسی
+  authors: [novid]
 - id: fr
   slug: french
   name: Français
