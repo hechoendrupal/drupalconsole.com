@@ -1,23 +1,22 @@
 /* eslint-disable */
 
 import React from "react"
-
 import SidebarItem from "./sidebarItem";
 import {Link} from "gatsby";
 
 import _split from "lodash/split";
 import _isEqual from "lodash/isEqual";
+import _includes from "lodash/includes";
 
 // @TODO 
-// Set active class from activePage
 // Remove eslint-disable
-// Add useEffect and update state and expand / collapse elements
 const Sidebar = ({ items, activePage, language }) => {
   const activePageItems = _split(activePage, '/');
+  const rtlLanguages = ["fa-ir"];
 
   return (
     <>
-      <aside className="sidebar sidebar-sticky sidebar-stick-shadow pr-md-5 br-1">
+      <aside className={`sidebar sidebar-sticky sidebar-stick-shadow pr-md-5 br-1 ${_includes(rtlLanguages, language) && 'rtl'}`}>
         <ul className="nav nav-sidebar nav-sidebar-hero" data-accordion="true">
           {items && (
             items.map(item => {
