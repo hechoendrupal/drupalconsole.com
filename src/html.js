@@ -12,8 +12,8 @@ export default function HTML(props) {
           content="width=device-width, initial-scale=1, shrink-to-fit=no"
         />
         {props.headComponents}
-        <link href="/assets/css/page.min.css" rel="stylesheet" />
-        <link href="/assets/css/style.css" rel="stylesheet" />
+        <link href="/css/page.min.css" rel="stylesheet" />
+        <link href="/css/style.css" rel="stylesheet" />
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}
