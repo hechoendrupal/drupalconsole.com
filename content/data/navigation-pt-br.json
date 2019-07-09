@@ -29,7 +29,7 @@
       "title": "Obtendo o projeto",
       "items": [
         {
-          "link": "getting/installer",
+          "link": "getting/launcher",
           "title": "Utilizando o instalador"
         },
         {
@@ -109,6 +109,14 @@
       "title": "Creating custom Commands",
       "items": [
         {
+          "link": "extending/the-command-class",
+          "title": "The Command Class"
+        },
+        {
+          "link": "extending/registering-commands",
+          "title": "Registering Commands"
+        },
+        {
           "link": "extending/configuring-the-command",
           "title": "Configuring the Command"
         },
@@ -121,8 +129,8 @@
           "title": "Getting Services from the Service Container"
         },
         {
-          "link": "extending/registering-commands-automatically",
-          "title": "Registering Commands Automatically"
+          "link": "extending/generating-code",
+          "title": "Generating Code with a Command"
         }
       ]
     },
@@ -153,6 +161,10 @@
         {
           "link": "contributing/documentation",
           "title": "Contribuir para essa documentação"
+        },
+        {
+          "link": "contributing/contributing-to-the-book",
+          "title": "Contribute to DrupalConsoleBook"
         }
       ]
     },
