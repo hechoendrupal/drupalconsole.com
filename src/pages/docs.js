@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Layout from "../components/layout"
+import Layout from "../layout/layout"
 import LanguageCard from "../components/languageCard"
 
 const DocsPage = () => {

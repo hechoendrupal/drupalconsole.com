@@ -1,6 +1,6 @@
 
 import React from "react"
-
+import "./style.css"
 // @TODO add render
 // - Header
 // - Footer 

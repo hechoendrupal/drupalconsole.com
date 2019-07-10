@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Layout from "../components/layout"
+import Layout from "../layout/layout"
 import Sidebar from "../components/sidebar"
 import Table from "../components/table"
 import LanguageSwitcher from "../components/languageSwitcher"
