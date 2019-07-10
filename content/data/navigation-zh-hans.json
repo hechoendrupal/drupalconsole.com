@@ -153,10 +153,6 @@
         {
           "link": "contributing/documentation",
           "title": "文档编写"
-        },
-        {
-          "link": "contributing/contributing-to-the-book",
-          "title": "Contribute to DrupalConsoleBook"
         }
       ]
     },
