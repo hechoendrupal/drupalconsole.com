@@ -153,10 +153,6 @@
         {
           "link": "contributing/documentation",
           "title": "Как помочь в переводе документации?"
-        },
-        {
-          "link": "contributing/contributing-to-the-book",
-          "title": "Contribute to DrupalConsoleBook"
         }
       ]
     },
