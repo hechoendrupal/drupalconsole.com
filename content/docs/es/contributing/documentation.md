@@ -11,7 +11,7 @@ Si usted desea ayudar en la traducción de este libro sea bienvenido. Por favor 
 * «Introduzca» suena mal en hispanoamérica e «ingrese» suena mal en España. Por ello, preferimos utilizar «proporcione» o «escriba».
 * Preferimos usar «archivo» en lugar de «fichero».
 
-Nota: Los archivos estan ubicado en ```/path/directorio/drupalconsole.com/content/docs/es```
+Nota: Los archivos estan ubicado en `/path/directory/drupalconsole.com/content/docs/es`
 
 # Generar traducidos todos los comandos disponibles
 *Con el paso del tiempo, los programadores de DrupalConsole van añadiendo cada vez más comandos, por lo que faltarán algunos comandos disponibles en este libro si no se van generando conforme se van añadiendo. Para solucionar este problema, con sólo un comando es posible generar (ya traducidos) todos los archivos .md pertenecientes a todos los comandos disponibles en un momento dado*
@@ -20,7 +20,7 @@ Nota: Los archivos estan ubicado en ```/path/directorio/drupalconsole.com/conten
 Suponiendo que tenga en su máquina local clonados los dos proyectos (DrupalConsole y este libro), debe tener este repositorio [console-develop](https://github.com/weknowinc/drupal-console-develop) y ejecutar el siguiente comando desde un directorio donde esté Drupal instalado (o utilizando la opción *--root*):
 
 ``` 
-drupal develop:doc:data --path=/path/directorio/drupalconsole.com/content/data/commands-es.json 
+drupal develop:doc:data --path=/path/directory/drupalconsole.com/content/data/commands-es.json 
 ```
 
 (Por favor, compruebe que tiene DrupalConsole configurado previamente en su máquina en español para obtener todos los comandos en dicho idioma

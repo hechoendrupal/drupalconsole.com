@@ -10,7 +10,7 @@ If you would like to help in the translation of this book, consider yourself wel
 * Code and examples should not be translated.
 * Use a formal style. We prefer a formal tone.
 
-Note: The files are located in ```/path/directorio/drupalconsole.com/content/docs/hi```
+Note: The files are located in `/path/directory/drupalconsole.com/content/docs/hi`
 
 # Generate translated all available commands
 *Over time, DrupalConsole programmers add more and more commands, so it's possible some available commands weren't present in this book if they are not added to the book as they are added.
@@ -20,7 +20,7 @@ In order to solve this problem, with a single command is possible to generate (a
 If you have cloned in your local machine both projects, DrupalConsole and this book, you should have this [console-develop](https://github.com/weknowinc/drupal-console-develop) repository and execute the following command from a directory where Drupal were installed (or using the *--root* option):
 
 ``` 
-drupal develop:doc:data --path=/path/directorio/drupalconsole.com/content/data/commands-hi.json 
+drupal develop:doc:data --path=/path/directory/drupalconsole.com/content/data/commands-hi.json 
 ```
 
 (Please, check you have DrupalConsole correctly configured previously in your local machine in your desired language in order to get all the commands in your language.

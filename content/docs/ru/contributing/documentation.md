@@ -11,7 +11,7 @@
 * Код и примеры не должны переводиться.
 * Используйте формальный стиль. Мы предпочитаем формальный тон.
 
-Note: The files are located in ```/path/directorio/drupalconsole.com/content/docs/ru```
+Note: The files are located in `/path/directory/drupalconsole.com/content/docs/ru`
 
 # Перевод всех доступных команд
 *Со временем, программисты DrupalConsole добавляют все больше и больше команд, вполне возможно, что некоторые команды не были представлены в этой книге, если они были не добавлены по мере их появления.
@@ -21,7 +21,7 @@ Note: The files are located in ```/path/directorio/drupalconsole.com/content/doc
 If you have cloned in your local machine both projects, DrupalConsole and this book, you should have this [console-develop](https://github.com/weknowinc/drupal-console-develop) repository and execute the following command from a directory where Drupal were installed (or using the *--root* option):
 
 ``` 
-drupal develop:doc:data --path=/path/directorio/drupalconsole.com/content/data/commands-ru.json 
+drupal develop:doc:data --path=/path/directory/drupalconsole.com/content/data/commands-ru.json 
 ```
 
 (Пожалуйста, проверьте, что DrupalConsole корректно сконфигурирован локально для предпочитаемого языка, чтобы получить все команды на вашем языке.
