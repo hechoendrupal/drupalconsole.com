@@ -6,7 +6,7 @@ import Image from "../../layout/image"
 import _find from "lodash/find"
 import _isEqual from "lodash/isEqual"
 
-const LanguageSwitcher = ({ language, activePage }) => {
+const LanguageSwitcher = ({ language, activePage, rtl }) => {
 
   if (!activePage || !language) {
     return (<></>)
@@ -36,7 +36,7 @@ const LanguageSwitcher = ({ language, activePage }) => {
 
   return (
     <div className="container">
-      <div className="dropdown float-right">
+      <div className={`dropdown float-${rtl ? 'left': 'right'}`}>
         {defaultLangaugeName &&
           <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <Image path={`flags/${defaultLangaugeName.node.slug}.png`} className="rounded-circle w-20px" alt={defaultLangaugeName.node.slug} /> {` ${defaultLangaugeName.node.slug} (${defaultLangaugeName.node.id})`}
