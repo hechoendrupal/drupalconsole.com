@@ -6,17 +6,15 @@ import {Link} from "gatsby";
 
 import _split from "lodash/split";
 import _isEqual from "lodash/isEqual";
-import _includes from "lodash/includes";
 
 // @TODO 
 // Remove eslint-disable
-const Sidebar = ({ items, activePage, language }) => {
+const Sidebar = ({ items, activePage, language, rtl }) => {
   const activePageItems = _split(activePage, '/');
-  const rtlLanguages = ["fa-ir"];
 
   return (
     <>
-      <aside className={`sidebar sidebar-sticky sidebar-stick-shadow pr-md-5 br-1 ${_includes(rtlLanguages, language) && 'rtl'}`}>
+      <aside className={`sidebar sidebar-sticky sidebar-stick-shadow pr-md-5 br-1 ${rtl && 'rtl'}`}>
         <ul className="nav nav-sidebar nav-sidebar-hero" data-accordion="true">
           {items && (
             items.map(item => {

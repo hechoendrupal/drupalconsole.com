@@ -2,52 +2,66 @@
   slug: english
   name: English
   authors: [enzo]
+  direction: ltr
 - id: es
   slug: spanish
   name: Español
   authors: [leandro]
+  direction: ltr
 - id: ca
   slug: catalan
   name: Català
+  direction: ltr
 - id: fa-ir
   slug: persian
   name: فارسی
   authors: [novid]
+  direction: rtl
 - id: fr
   slug: french
   name: Français
+  direction: ltr
 - id: hi
   slug: hindi
   name: हिन्दी
   authors: [durgeshs, davinder]
+  direction: ltr
 - id: hu
   slug: hungarian
   name: Magyar
   authors: [znagy]
+  direction: ltr
 - id: ja
   slug: japanese
   name: 日本語
   authors: [blauerberg]
+  direction: ltr
 - id: mr
   slug: marathi
   name: मराठी
   authors: [yogeshmpawar]
+  direction: ltr
 - id: pt-br
   slug: portuguese
   name: Português brasileiro
   authors: [vmartins, lnunesbr]
+  direction: ltr
 - id: ro
   slug: romanian
   name: Romanian
   authors: [aniela]
+  direction: ltr
 - id:  ru
   slug: russian
   name: pусский язык
   authors: [nikolay]
+  direction: ltr
 - id: vn 
   slug: vietnamese
   name: Vietnamese
+  direction: ltr
 - id: zh-hans
   slug: chinese
   name: 简体中文
   authors: [jungle]
+  direction: ltr
