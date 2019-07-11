@@ -33,6 +33,7 @@ exports.createPages = ({ graphql, actions }) => {
               slug
               language
             }
+            rawBody
           }
         }
       }

@@ -717,6 +717,13 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
+"@babel/runtime@^7.4.3":
+  version "7.5.4"
+  resolved "https://registry.yarnpkg.com/@babel/runtime/-/runtime-7.5.4.tgz#cb7d1ad7c6d65676e66b47186577930465b5271b"
+  integrity sha512-Na84uwyImZZc3FKf4aUF1tysApzwf3p2yuFBIyBfbzT5glzKTdvYI4KVW4kcgjrzoGUjC7w3YyCHcJKaRxsr2Q==
+  dependencies:
+    regenerator-runtime "^0.13.2"
+
 "@babel/template@^7.1.0", "@babel/template@^7.4.4":
   version "7.4.4"
   resolved "https://registry.yarnpkg.com/@babel/template/-/template-7.4.4.tgz#f4b88d1225689a08f5bc3a17483545be9e4ed237"
@@ -5196,6 +5203,15 @@ gatsby-page-utils@^0.0.2:
     micromatch "^3.1.10"
     slash "^1.0.0"
 
+gatsby-plugin-lunr@^1.5.1:
+  version "1.5.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-lunr/-/gatsby-plugin-lunr-1.5.1.tgz#33f9511a2f35a847b0416f133ae706d7dc450a56"
+  integrity sha512-L4PRyI2+cBwJMuWD2XHP498zosuMwjfgsMy7tNihC5HfUbZZn0Lh8PrO8XDgNHRXiIIh4YP5ps9BH9xgSGdyQQ==
+  dependencies:
+    "@babel/runtime" "^7.4.3"
+    lunr "^2.3.6"
+    lunr-languages "^1.1.0"
+
 gatsby-plugin-manifest@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-manifest/-/gatsby-plugin-manifest-2.2.0.tgz#e16d39bd415026594465e1763cc2abd43729a7d1"
@@ -7757,6 +7773,16 @@ ltcdr@^2.2.1:
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/ltcdr/-/ltcdr-2.2.1.tgz#5ab87ad1d4c1dab8e8c08bbf037ee0c1902287cf"
   integrity sha1-Wrh60dTB2rjowIu/A37gwZAih88=
+
+lunr-languages@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/lunr-languages/-/lunr-languages-1.1.0.tgz#d4debe5cccc00aa373fac4051127a2a5ea0ce0ca"
+  integrity sha512-53pTQX8jkjZBWSPJa/+3UJyIPcGmeWWwqS4RRr5GxhRilqL9tv/Vuj7Vb1Nz3Dtz2HTK2Pdmrf3zevHS/ZycjQ==
+
+lunr@^2.3.6:
+  version "2.3.6"
+  resolved "https://registry.yarnpkg.com/lunr/-/lunr-2.3.6.tgz#f278beee7ffd56ad86e6e478ce02ab2b98c78dd5"
+  integrity sha512-swStvEyDqQ85MGpABCMBclZcLI/pBIlu8FFDtmX197+oEgKloJ67QnB+Tidh0340HmLMs39c4GrkPY3cmkXp6Q==
 
 make-dir@^1.0.0, make-dir@^1.2.0:
   version "1.3.0"

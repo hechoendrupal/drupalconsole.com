@@ -1,3 +1,9 @@
+const { isNil } = require('lodash')
+
+const mapPagesUrls = {
+  index: '/',
+}
+
 module.exports = {
   siteMetadata: {
     title: `DrupalConsole site`,
@@ -41,6 +47,40 @@ module.exports = {
             options: {
               target: "_blank",
               rel: "nofollow noopener noreferrer external",
+            },
+          },
+          {
+            resolve: 'gatsby-plugin-lunr',
+            options: {
+              // ISO 639-1 language codes. See https://lunrjs.com/guides/language_support.html for details
+              languages: [
+                {
+                  name: 'en',
+                  filterNodes: (node) => !isNil(node.fields)
+                },
+                {
+                  name: 'fr',
+                  filterNodes: node => !isNil(node.fields),
+                },
+              ],
+              // Fields to index. If store === true value will be stored in index file. 
+              // Attributes for custom indexing logic. See https://lunrjs.com/docs/lunr.Builder.html for details
+              fields: [
+                // { name: 'title', store: true, attributes: { boost: 20 } },
+                { name: 'content', store: true },
+                { name: 'url', store: true },
+              ],
+              // A function for filtering nodes. () => true by default
+              // filterNodes: (node) => !isNil(node.frontmatter),
+              // How to resolve each field's value for a supported node type 
+              resolvers: {
+                // For any node of type MarkdownRemark, list how to resolve the fields' values
+                allMdx: {
+                  // title: (node) => node.frontmatter.title,
+                  content: (node) => node.rawBody,
+                  url: (node) => node.fields.slug,
+                },
+              },
             },
           },
         ]

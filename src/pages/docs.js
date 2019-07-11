@@ -3,6 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 import Layout from "../layout/layout"
 import LanguageCard from "../components/languageCard"
 
+import SearchComponent from "../components/lunrSearch";
 const DocsPage = () => {
 
   const { allLanguagesYaml } = useStaticQuery(
@@ -36,6 +37,9 @@ const DocsPage = () => {
     <Layout>
       <main className="main-content">
           <div className="container">
+            <div className="row">
+              <SearchComponent />
+            </div>
             <div className="row">
               <div className="col-md-12 col-xl-12">
                 <h1 className="text-center" >Documentation</h1>
