@@ -8,7 +8,7 @@ const DocsPage = () => {
   const { allLanguagesYaml } = useStaticQuery(
     graphql`
       query {
-        allLanguagesYaml {
+        allLanguagesYaml(sort: {order: ASC, fields: id}) {
           edges {
             node {
               id
