@@ -52,7 +52,8 @@ const LanguageSwitcher = ({ language, activePage, rtl }) => {
             const toPage = activePage.replace(`/${defaultLangaugeName.node.id}/`, `/${item.node.id}/`)
 
             return (
-              <Link key={item.node.id} className="dropdown-item" to={`/${toPage}`}>
+              // <Link key={item.node.id} className="dropdown-item" to={`${toPage}`}>
+              <Link key={item.node.id} className="dropdown-item" to={`${toPage.replace('docs/', '')}`}>
                 {item.node.name} ({item.node.id})
               </Link>
             )

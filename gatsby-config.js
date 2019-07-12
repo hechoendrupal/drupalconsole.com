@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `/docs`,
   siteMetadata: {
     title: `DrupalConsole site`,
     description: `DrupalConsole site, docs, cheatsheet`,

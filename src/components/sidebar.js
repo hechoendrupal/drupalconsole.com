@@ -20,10 +20,11 @@ const Sidebar = ({ items, activePage, language, rtl }) => {
             items.map(item => {
               const linkItems = _split(item.link, '/');
               const isActive = _isEqual(activePageItems[2], linkItems[0]);
-              const link = `docs/${language}/${item.link}`;
+              // const link = `docs/${language}/${item.link}`;
+              const link = `${language}/${item.link}`;
               return (
                 <li key={`${item.link}-li}`} className="nav-item">
-                  <Link className={`nav-link ${isActive && 'active'} font-size-16`} to={`/${link}`}>
+                  <Link className={`nav-link ${isActive && 'active'} font-size-16`} to={`${link}`}>
                     {
                       activePage === link ? <strong>{item.title}</strong> : item.title
                     }
