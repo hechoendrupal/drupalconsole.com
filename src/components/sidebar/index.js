@@ -1,8 +1,9 @@
 /* eslint-disable */
 
 import React from "react"
-import SidebarItem from "./sidebarItem";
+import SidebarItem from "../sidebarItem";
 import {Link} from "gatsby";
+import "./style.css";
 
 import _split from "lodash/split";
 import _isEqual from "lodash/isEqual";
@@ -10,12 +11,36 @@ import _isEqual from "lodash/isEqual";
 // @TODO 
 // Remove eslint-disable
 const Sidebar = ({ items, activePage, language, rtl }) => {
+  return (
+    <>
+      <nav className="navbar sidebar-toggle">
+        <button 
+          className={`navbar-toggler float-${rtl ? 'left' : 'right'}`}
+          type="button" 
+          data-toggle="collapse" 
+          data-target="#navbarSupportedContent1"
+          aria-controls="navbarSupportedContent1" 
+          aria-expanded="false" 
+          aria-label="Toggle navigation"
+        >
+          <i className="fa fa-bars" aria-hidden="true"></i>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarSupportedContent1">
+          <SidebarContent items={items} activePage={activePage} language={language}/>
+        </div>
+      </nav>
+      <aside className={`sidebar sidebar-sticky sidebar-stick-shadow pr-md-5 br-1 ${rtl && 'rtl'}`}>
+        <SidebarContent items={items} activePage={activePage} language={language}/>
+      </aside>
+    </>
+  )
+}
+
+const SidebarContent = ({items, activePage, language}) => {
   const activePageItems = _split(activePage, '/');
 
   return (
-    <>
-      <aside className={`sidebar sidebar-sticky sidebar-stick-shadow pr-md-5 br-1 ${rtl && 'rtl'}`}>
-        <ul className="nav nav-sidebar nav-sidebar-hero" data-accordion="true">
+    <ul className="nav nav-sidebar nav-sidebar-hero" data-accordion="true">
           {items && (
             items.map(item => {
               const linkItems = _split(item.link, '/');
@@ -43,9 +68,9 @@ const Sidebar = ({ items, activePage, language, rtl }) => {
             })
           )}
         </ul>
-      </aside>
-    </>
   )
 }
 
 export default Sidebar
+
+

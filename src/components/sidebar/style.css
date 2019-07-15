@@ -1,0 +1,20 @@
+.sidebar-toggle {
+  display: none;
+}
+
+@media (max-width: 767px) {
+    .sidebar {
+      display: none;
+    }
+    .sidebar-toggle {
+      display: initial; /* display the toggle, previously hidden */
+    }
+
+    .sidebar-toggle > button {
+      margin-top: 35px;
+    }
+
+    .sidebar-toggle > div {
+      margin-top: 35px;
+    }
+  }
