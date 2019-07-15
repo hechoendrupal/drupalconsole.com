@@ -14,6 +14,8 @@ export default function HTML(props) {
         {props.headComponents}
         <link href="/css/page.min.css" rel="stylesheet" />
         <link href="/css/style.css" rel="stylesheet" />
+        <link href="/docs/css/page.min.css" rel="stylesheet" />
+        <link href="/docs/css/style.css" rel="stylesheet" />
       </head>
       <body {...props.bodyAttributes}>
         {props.preBodyComponents}

@@ -11,7 +11,7 @@ const LanguageCard = ({ data }) => {
         {data.map(item => {
           return (
             <div key={item.node.id} className="card bl-1 br-1 bt-1 bb-1 hover-shadow-9">
-              <Link to={`/docs/${item.node.id}/`}>
+              <Link to={`/${item.node.id}/`}>
                 <div className="card-body text-center">
                   <div className="card-image">
                     <Image path={`flags/${item.node.slug}.png`} className="card-title rounded-circle w-100px" alt={item.node.slug} />

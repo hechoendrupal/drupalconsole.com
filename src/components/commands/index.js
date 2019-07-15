@@ -30,7 +30,7 @@ const Commands = ({ data, namespaces, language }) => {
                   <tr className="d-flex" key={i}>
                     <td className="col-md-6 col-xl-6">
                       <strong className="command-name">
-                        <Link to={`/docs/${language}/commands/${command.dashed}`}>{command.name}</Link>
+                        <Link to={`/${language}/commands/${command.dashed}`}>{command.name}</Link>
                       </strong>
                       <br />
                       <small>{command.description}</small>
