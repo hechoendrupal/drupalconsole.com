@@ -5,11 +5,11 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   // MDX content
   if (node.internal.type === `Mdx`) {
     // Add slug field
-    const slug = getNode(node.parent).relativePath.replace("/README.md", "").replace(".md", "").toLowerCase()
+    const slug = getNode(node.parent).relativePath.replace("docs", "").replace("/README.md", "").replace(".md", "").toLowerCase()
     createNodeField({
       name: `slug`,
       node,
-      value: slug.startsWith("docs")?slug:`docs/${slug}`
+      value: slug.startsWith("docs")?slug:`${slug}`
     })
 
     // Add language field
@@ -105,7 +105,7 @@ exports.createPages = ({ graphql, actions }) => {
       const languages = result.data.allLanguagesYaml.edges
       languages.forEach(item => {
         const language = item.node.id
-        const slug = `docs/${language}/commands/`
+        const slug = `${language}/commands/`
         createPage({
           path: slug,
           component: path.resolve(`./src/templates/commands.js`),
@@ -121,7 +121,7 @@ exports.createPages = ({ graphql, actions }) => {
       commands.forEach(item => {
         const language = item.node.language
         item.node.commands.forEach(command => {
-          const slug = `docs/${language}/commands/${command.dashed}`
+          const slug = `${language}/commands/${command.dashed}`
           createPage({
             path: slug,
             component: path.resolve(`./src/templates/command.js`),
