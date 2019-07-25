@@ -3260,11 +3260,11 @@
             "options": [
                 {
                     "name": "extension",
-                    "description": "The extension name."
+                    "description": "The name of the Extension (modules, profiles or themes name)."
                 },
                 {
                     "name": "extension-type",
-                    "description": "The extension type."
+                    "description": "The type of the Extension (can be module, profile or theme)."
                 },
                 {
                     "name": "class",
@@ -5452,6 +5452,10 @@
                     "description": "Base theme (i.e. classy, stable)"
                 },
                 {
+                    "name": "base-theme-regions",
+                    "description": "Add the default regions of the chosen base theme"
+                },
+                {
                     "name": "regions",
                     "description": "Regions"
                 },
@@ -6080,7 +6084,7 @@
             "examples": [
                 {
                     "description": "Set up files for a multisite install specifying destination path and uri",
-                    "execution": "drupal multisite:new  vendor\/newsite http:\/\/mysite.example.com\n"
+                    "execution": "drupal multisite:new  newsite http:\/\/newsite.com\n"
                 }
             ],
             "aliases": [

@@ -71,15 +71,15 @@
         },
         {
             "name": "composerize",
-            "description": "commands.composerize.description",
+            "description": "Converts Drupal codebase to composer.",
             "options": [
                 {
                     "name": "show-packages",
-                    "description": "commands.composerize.options.show-packages"
+                    "description": "Show list of packages."
                 },
                 {
                     "name": "include-version",
-                    "description": "commands.composerize.options.include-version"
+                    "description": "Include version on suggested result command."
                 }
             ],
             "arguments": [],
@@ -173,7 +173,7 @@
                 },
                 {
                     "name": "site",
-                    "description": "commands.init.options.site"
+                    "description": "Use local site as destination."
                 },
                 {
                     "name": "override",
@@ -297,23 +297,36 @@
         },
         {
             "name": "snippet",
-            "description": "commands.snippet.description",
+            "description": "Runs PHP code",
             "options": [
                 {
                     "name": "file",
-                    "description": "commands.snippet.options.file"
+                    "description": "Path to the file"
                 },
                 {
                     "name": "code",
-                    "description": "commands.snippet.options.code"
+                    "description": "Code to execute"
                 },
                 {
                     "name": "show-code",
-                    "description": "commands.snippet.options.show-code"
+                    "description": "Show code after execute"
                 }
             ],
             "arguments": [],
-            "examples": [],
+            "examples": [
+                {
+                    "description": "Run using a file.",
+                    "execution": "drupal snippet --file=\/path\/to\/file"
+                },
+                {
+                    "description": "Passing code as option.",
+                    "execution": "drupal snippet --code=codeToExecute"
+                },
+                {
+                    "description": "Show code executed",
+                    "execution": "drupal snippet --show-code --file=\/path\/to\/file"
+                }
+            ],
             "aliases": [],
             "key": "snippet",
             "dashed": "snippet",
@@ -365,15 +378,24 @@
         },
         {
             "name": "cache:tag:invalidate",
-            "description": "commands.cache.tag.invalidate.description",
+            "description": "Invalidate cache tags.",
             "options": [],
             "arguments": [
                 {
                     "name": "tag",
-                    "description": "commands.cache.tag.invalidate.options.tag"
+                    "description": "One or more tags to invalidate."
                 }
             ],
-            "examples": [],
+            "examples": [
+                {
+                    "description": "Invalidate routes",
+                    "execution": "drupal cti routes"
+                },
+                {
+                    "description": "Invalidate a specific node",
+                    "execution": "drupal cti node:1 node_list"
+                }
+            ],
             "aliases": [
                 "cti"
             ],
@@ -561,15 +583,15 @@
                 },
                 {
                     "name": "remove-uuid",
-                    "description": "commands.config.export.content.type.options.remove-uuid"
+                    "description": "If set, the configuration will be exported without uuid key."
                 },
                 {
                     "name": "remove-config-hash",
-                    "description": "commands.config.export.content.type.options.remove-config-hash"
+                    "description": "If set, the configuration will be exported without the default site hash key."
                 },
                 {
                     "name": "include-module-dependencies",
-                    "description": "commands.config.export.content.type.options.include-module-dependencies"
+                    "description": "Include content type module dependencies in module info YAML file"
                 }
             ],
             "arguments": [
@@ -605,7 +627,7 @@
         },
         {
             "name": "config:export:entity",
-            "description": "commands.config.export.entity.description",
+            "description": "Export a specific config entity and their fields.",
             "options": [
                 {
                     "name": "module",
@@ -613,32 +635,41 @@
                 },
                 {
                     "name": "optional-config",
-                    "description": "commands.config.export.entity.options.optional-config"
+                    "description": "Export bundle as an optional YAML configuration in your module"
                 },
                 {
                     "name": "remove-uuid",
-                    "description": "commands.config.export.entity.options.remove-uuid"
+                    "description": "If set, the configuration will be exported without uuid key."
                 },
                 {
                     "name": "remove-config-hash",
-                    "description": "commands.config.export.entity.options.remove-config-hash"
+                    "description": "If set, the configuration will be exported without the default site hash key."
                 },
                 {
                     "name": "include-module-dependencies",
-                    "description": "commands.config.export.entity.options.include-module-dependencies"
+                    "description": "Include bundle module dependencies in module info YAML file"
                 }
             ],
             "arguments": [
                 {
                     "name": "entity-type",
-                    "description": "commands.config.export.entity.arguments.entity-type"
+                    "description": "An entity type (node_type, taxonomy_vocabulary, paragraphs_type) to be exported"
                 },
                 {
                     "name": "bundle",
-                    "description": "commands.config.export.entity.arguments.bundle"
+                    "description": "A bundle to be exported"
                 }
             ],
-            "examples": [],
+            "examples": [
+                {
+                    "description": "Provide an entity type, a bundle and a module name",
+                    "execution": "drupal config:export:entity node_type page \\\n  --module=\"demo\""
+                },
+                {
+                    "description": "If you want export a bundle as an optional config",
+                    "execution": "drupal config:export:entity node_type page \\\n  --module=\"demo\" \\\n  --optional-config \\\n  --remove-uuid \\\n  --remove-config-hash\n"
+                }
+            ],
             "aliases": [
                 "cee"
             ],
@@ -660,7 +691,7 @@
             "options": [
                 {
                     "name": "name",
-                    "description": "commands.config.export.single.options.name"
+                    "description": "Configuration name."
                 },
                 {
                     "name": "directory",
@@ -731,11 +762,11 @@
                 },
                 {
                     "name": "remove-uuid",
-                    "description": "commands.config.export.entity.options.remove-uuid"
+                    "description": "If set, the configuration will be exported without uuid key."
                 },
                 {
                     "name": "remove-config-hash",
-                    "description": "commands.config.export.entity.options.remove-config-hash"
+                    "description": "If set, the configuration will be exported without the default site hash key."
                 }
             ],
             "arguments": [
@@ -752,6 +783,10 @@
                 {
                     "description": "You can provide the interactive values like parameter.",
                     "execution": "drupal config:export:view viewid \\\n  --module=\"modulename\" \\\n  --optional-config \\\n  --include-module-dependencies\n"
+                },
+                {
+                    "description": "Export as config for the provided module, updating the module's info.yml with any module dependencies from the view.",
+                    "execution": "drupal config:export:view viewid \\\n  --module=\"modulename\" \\\n  --optional-config \\\n  --include-module-dependencies"
                 }
             ],
             "aliases": [
@@ -787,7 +822,7 @@
                 },
                 {
                     "name": "skip-uuid",
-                    "description": "commands.config.import.options.skip-uuid"
+                    "description": "Skip uuid from files"
                 }
             ],
             "arguments": [],
@@ -861,11 +896,11 @@
             "options": [
                 {
                     "name": "key",
-                    "description": "commands.config.override.options.key"
+                    "description": "Key"
                 },
                 {
                     "name": "value",
-                    "description": "commands.config.override.options.value"
+                    "description": "Value"
                 }
             ],
             "arguments": [
@@ -992,7 +1027,7 @@
                 },
                 {
                     "name": "revision",
-                    "description": "commands.create.nodes.options.revision"
+                    "description": "Create revisions"
                 },
                 {
                     "name": "language",
@@ -1032,15 +1067,24 @@
         },
         {
             "name": "create:roles",
-            "description": "commands.create.roles.description",
+            "description": "Create dummy roles for your Drupal 8 application.",
             "options": [
                 {
                     "name": "limit",
-                    "description": "commands.create.roles.options.limit"
+                    "description": "How many roles would you like to create"
                 }
             ],
             "arguments": [],
-            "examples": [],
+            "examples": [
+                {
+                    "description": "Provide roles.",
+                    "execution": "drupal create:roles"
+                },
+                {
+                    "description": "Provide the number of roles to create",
+                    "execution": "drupal create:roles\n"
+                }
+            ],
             "aliases": [
                 "crr"
             ],
@@ -1311,7 +1355,7 @@
                 },
                 {
                     "name": "target",
-                    "description": "commands.database.client.arguments.target"
+                    "description": "Database target from settings.php"
                 }
             ],
             "examples": [
@@ -1342,11 +1386,11 @@
             "arguments": [
                 {
                     "name": "key",
-                    "description": "commands.database.connect.arguments.key"
+                    "description": "Database key from settings.php"
                 },
                 {
                     "name": "target",
-                    "description": "commands.database.connect.arguments.target"
+                    "description": "Database target from settings.php"
                 }
             ],
             "examples": [
@@ -1382,7 +1426,7 @@
                 },
                 {
                     "name": "target",
-                    "description": "commands.database.drop.arguments.target"
+                    "description": "Database target from settings.php"
                 }
             ],
             "examples": [
@@ -1430,7 +1474,7 @@
                 },
                 {
                     "name": "target",
-                    "description": "commands.database.dump.arguments.target"
+                    "description": "Database target from settings.php"
                 }
             ],
             "examples": [
@@ -1594,7 +1638,7 @@
                 },
                 {
                     "name": "target",
-                    "description": "commands.database.connect.arguments.target"
+                    "description": "Database target from settings.php"
                 }
             ],
             "examples": [
@@ -1635,7 +1679,7 @@
                 },
                 {
                     "name": "target",
-                    "description": "commands.database.restore.arguments.target"
+                    "description": "Database target from settings.php"
                 }
             ],
             "examples": [
@@ -1743,7 +1787,7 @@
             "options": [
                 {
                     "name": "show-overridden",
-                    "description": "commands.debug.config.options.show-overridden"
+                    "description": "Show overridden configurations."
                 }
             ],
             "arguments": [
@@ -1764,6 +1808,10 @@
                 {
                     "description": "List all system configuration names.",
                     "execution": "drupal config:debug | grep system"
+                },
+                {
+                    "description": "List all configuration including overridden values.",
+                    "execution": "drupal debug:config --show-overridden"
                 }
             ],
             "aliases": [
@@ -1857,7 +1905,7 @@
                 },
                 {
                     "name": "tag",
-                    "description": "commands.debug.container.options.tag"
+                    "description": "Service tag "
                 }
             ],
             "arguments": [
@@ -2201,6 +2249,10 @@
                 {
                     "description": "List block library information",
                     "execution": "drupal debug:libraries block\n"
+                },
+                {
+                    "description": "List block\/drupal.block library",
+                    "execution": "drupal debug:libraries block\/drupal.block\n"
                 }
             ],
             "aliases": [
@@ -2458,10 +2510,15 @@
         },
         {
             "name": "debug:roles",
-            "description": "commands.debug.roles.description",
+            "description": "Displays current roles for the application",
             "options": [],
             "arguments": [],
-            "examples": [],
+            "examples": [
+                {
+                    "description": "Roles list on the site",
+                    "execution": "drupal debug:roles\n"
+                }
+            ],
             "aliases": [
                 "dusr"
             ],
@@ -2483,7 +2540,7 @@
             "options": [
                 {
                     "name": "pattern",
-                    "description": "commands.debug.router.options.pattern"
+                    "description": "Route pattern"
                 }
             ],
             "arguments": [
@@ -2500,6 +2557,18 @@
                 {
                     "description": "Displays details for the route user.page (\/user)",
                     "execution": "drupal rod user.page"
+                },
+                {
+                    "description": "Shows the routes list on the site",
+                    "execution": "drupal debug:router"
+                },
+                {
+                    "description": "Display information on the user.login",
+                    "execution": "drupal debug:router user.login"
+                },
+                {
+                    "description": "Display information for the routes by pattern (\/user\/login)",
+                    "execution": "drupal debug:router --pattern=\/user\/login"
                 }
             ],
             "aliases": [
@@ -2652,12 +2721,12 @@
         },
         {
             "name": "debug:theme:keys",
-            "description": "commands.debug.theme.keys.description",
+            "description": "Displays all theme keys provided by hook_theme functions",
             "options": [],
             "arguments": [
                 {
                     "name": "key",
-                    "description": "commands.debug.theme.keys.arguments.key"
+                    "description": "Key"
                 }
             ],
             "examples": [],
@@ -2705,15 +2774,20 @@
         },
         {
             "name": "debug:update:composer",
-            "description": "commands.debug.update.composer.description",
+            "description": "Displays current updates available from the composer file",
             "options": [
                 {
                     "name": "only-drupal",
-                    "description": "commands.debug.update.composer.options.only-drupal"
+                    "description": "Show only drupal (modules\/themes) updates"
                 }
             ],
             "arguments": [],
-            "examples": [],
+            "examples": [
+                {
+                    "description": "List of pending updates from composer",
+                    "execution": "drupal debug:update:composer\n"
+                }
+            ],
             "aliases": [
                 "duc"
             ],
@@ -2854,7 +2928,7 @@
             "arguments": [
                 {
                     "name": "dumper",
-                    "description": "commands.devel.dumper.messages.name-devel-dumper-plugin"
+                    "description": "Name of the devel dumper plugin"
                 }
             ],
             "examples": [],
@@ -2875,7 +2949,7 @@
         },
         {
             "name": "docker:init",
-            "description": "commands.docker.init.description",
+            "description": "Create a docker-compose.yml file",
             "options": [],
             "arguments": [],
             "examples": [],
@@ -2894,7 +2968,7 @@
         },
         {
             "name": "dotenv:init",
-            "description": "commands.dotenv.init.description",
+            "description": "Add support and required config to work with an .env file",
             "options": [
                 {
                     "name": "load-from-env",
@@ -2926,7 +3000,7 @@
             "options": [
                 {
                     "name": "all",
-                    "description": "commands.entity.delete.options.all"
+                    "description": "Delete all entities of the given type."
                 }
             ],
             "arguments": [
@@ -3027,7 +3101,7 @@
         },
         {
             "name": "generate:ajax:command",
-            "description": "commands.generate.ajax.command.description",
+            "description": "Generate & Register a custom ajax command",
             "options": [
                 {
                     "name": "module",
@@ -3035,15 +3109,15 @@
                 },
                 {
                     "name": "class",
-                    "description": "commands.generate.ajax.command.options.class"
+                    "description": "Ajax Class name"
                 },
                 {
                     "name": "method",
-                    "description": "commands.generate.ajax.command.options.method"
+                    "description": "Custom ajax method"
                 },
                 {
                     "name": "js-name",
-                    "description": "commands.generate.ajax.command.options.js-name"
+                    "description": "Custom javascript name"
                 }
             ],
             "arguments": [],
@@ -3147,11 +3221,11 @@
                 },
                 {
                     "name": "cache-context",
-                    "description": "commands.generate.cache.context.options.name"
+                    "description": "The cache context name"
                 },
                 {
                     "name": "class",
-                    "description": "commands.generate.cache.context.options.class"
+                    "description": "Cache context class name"
                 },
                 {
                     "name": "services",
@@ -3202,11 +3276,11 @@
                 },
                 {
                     "name": "initialize",
-                    "description": "commands.generate.command.options.initialize"
+                    "description": "Add initialize method."
                 },
                 {
                     "name": "interact",
-                    "description": "commands.generate.command.options.interact"
+                    "description": "Add interact method."
                 },
                 {
                     "name": "container-aware",
@@ -3218,7 +3292,7 @@
                 },
                 {
                     "name": "generator",
-                    "description": "commands.generate.command.options.generator"
+                    "description": "Add a Generator class for this command."
                 }
             ],
             "arguments": [],
@@ -3245,7 +3319,7 @@
         },
         {
             "name": "generate:composer",
-            "description": "commands.generate.composer.description",
+            "description": "Generate a composer.json file",
             "options": [
                 {
                     "name": "module",
@@ -3253,47 +3327,52 @@
                 },
                 {
                     "name": "name",
-                    "description": "commands.generate.composer.options.name"
+                    "description": "Package name"
                 },
                 {
                     "name": "type",
-                    "description": "commands.generate.composer.options.type"
+                    "description": "Package type"
                 },
                 {
                     "name": "description",
-                    "description": "commands.generate.composer.options.description"
+                    "description": "Package description"
                 },
                 {
                     "name": "keywords",
-                    "description": "commands.generate.composer.options.keywords"
+                    "description": "Package keywords"
                 },
                 {
                     "name": "license",
-                    "description": "commands.generate.composer.options.license"
+                    "description": "License"
                 },
                 {
                     "name": "homepage",
-                    "description": "commands.generate.composer.options.homepage"
+                    "description": "Project homepage"
                 },
                 {
                     "name": "minimum-stability",
-                    "description": "commands.generate.composer.options.minimum-stability"
+                    "description": "Mininmal stability"
                 },
                 {
                     "name": "authors",
-                    "description": "commands.generate.composer.options.authors"
+                    "description": "Authors of the project"
                 },
                 {
                     "name": "support",
-                    "description": "commands.generate.composer.options.support"
+                    "description": "Support channels"
                 },
                 {
                     "name": "required",
-                    "description": "commands.generate.composer.options.required"
+                    "description": "Required packages"
                 }
             ],
             "arguments": [],
-            "examples": [],
+            "examples": [
+                {
+                    "description": "Generate composer file specifying the module machine name, package name, package type, package description, keywords, lincense, homepage, minimum stability, authors, support channels and required packages",
+                    "execution": "drupal generate:composer \\\n  --module=\"module_name\" \\\n  --name=\"drupal\/module_name\" \\\n  --type=\"drupal-module\" \\\n  --description=\"Package description\" \\\n  --keywords='Drupal' --keywords='logging' \\\n  --license=\"GPL-2.0+\" \\\n  --homepage=\"https:\/\/www.drupal.org\/project\/module_name\" \\\n  --minimum-stability=\"stable\" \\\n  --authors='\"name\":\"Author name\", \"email\":\"author@email.com\", \"homepage\":\"http:\/\/website.com\", \"role\":\"Developer\"' \\\n  --support='\"channel\":\"email\", \"url\":\"author@email.com\"' \\\n  --support='\"channel\":\"source\", \"url\":\"http:\/\/github.com\"' \\\n  --required='\"name\":\"drupal\/views\", \"version\":\"^1.0\"' \\\n  --required='\"name\":\"drupal\/token\", \"version\":\"^2.0\"'\n"
+                }
+            ],
             "aliases": [
                 "gcom"
             ],
@@ -3484,11 +3563,11 @@
                 },
                 {
                     "name": "has-forms",
-                    "description": "commands.generate.entity.content.options.has-forms"
+                    "description": "Entity has forms"
                 },
                 {
                     "name": "has-owner",
-                    "description": "commands.generate.entity.content.options.has-owner"
+                    "description": "Entity has owner"
                 }
             ],
             "arguments": [],
@@ -3527,11 +3606,11 @@
                 },
                 {
                     "name": "name",
-                    "description": "commands.generate.event.subscriber.options.name"
+                    "description": "Service name"
                 },
                 {
                     "name": "class",
-                    "description": "commands.generate.event.subscriber.options.class"
+                    "description": "Class name"
                 },
                 {
                     "name": "events",
@@ -3732,7 +3811,16 @@
                 }
             ],
             "arguments": [],
-            "examples": [],
+            "examples": [
+                {
+                    "description": "Generate an empty form with config file specifying the module name, the class, a form id and the path",
+                    "execution": "drupal generate:form:config  \\\n  --module=\"modulename\"  \\\n  --class=\"DefaultForm\"  \\\n  --form-id=\"default_form\"  \\\n  --config-file  \\\n  --path=\"\/modulename\/form\/default\""
+                },
+                {
+                    "description": "Generate a form with 2 fields and a config file specifying the module name, the class, a form id, the inputs and the path",
+                    "execution": "drupal generate:form:config  \\\n  --module=\"modulename\"  \\\n  --class=\"DefaultForm\"  \\\n  --form-id=\"default_form\"  \\\n  --config-file  \\\n  --inputs='\"name\":\"inputname\", \"type\":\"text_format\", \"label\":\"InputName\", \"options\":\"\", \"description\":\"Just a text input\", \"maxlength\":\"\", \"size\":\"\", \"default_value\":\"\", \"weight\":\"0\", \"fieldset\":\"\"'  \\\n  --inputs='\"name\":\"email\", \"type\":\"email\", \"label\":\"Email\", \"options\":\"\", \"description\":\"Just an email input\", \"maxlength\":\"\", \"size\":\"\", \"default_value\":\"\", \"weight\":\"0\", \"fieldset\":\"\"'  \\\n  --path=\"\/modulename\/form\/default\"\n"
+                }
+            ],
             "aliases": [
                 "gfc"
             ],
@@ -3785,7 +3873,7 @@
         },
         {
             "name": "generate:jstest",
-            "description": "commands.generate.jstest.description",
+            "description": "Generate a JavaScript test.",
             "options": [
                 {
                     "name": "module",
@@ -3793,11 +3881,16 @@
                 },
                 {
                     "name": "class",
-                    "description": "commands.generate.jstest.options.class"
+                    "description": "JavaScript test Class name"
                 }
             ],
             "arguments": [],
-            "examples": [],
+            "examples": [
+                {
+                    "description": "Generate a module specifying the module name, machine name, the path, its description, drupal core and the package name. In this example the composer file, the unit test and twig template are generated too",
+                    "execution": "drupal generate:module  \\\n  --module=\"modulename\"  \\\n  --machine-name=\"modulename\"  \\\n  --module-path=\"\/modules\/custom\"  \\\n  --description=\"My Awesome Module\"  \\\n  --core=\"8.x\"  \\\n  --package=\"Custom\"  \\\n  --module-file  \\\n  --composer  \\\n  --test  \\\n  --twigtemplate\n"
+                }
+            ],
             "aliases": [
                 "gjt"
             ],
@@ -3921,7 +4014,7 @@
         },
         {
             "name": "generate:permissions",
-            "description": "commands.generate.permissions.description",
+            "description": "Generate module permissions",
             "options": [
                 {
                     "name": "module",
@@ -3963,7 +4056,7 @@
                 },
                 {
                     "name": "plugin-label",
-                    "description": "commands.generate.plugin.block.options.plugin-label"
+                    "description": "Plugin label"
                 },
                 {
                     "name": "plugin-id",
@@ -3983,7 +4076,7 @@
                 },
                 {
                     "name": "twigtemplate",
-                    "description": "commands.generate.plugin.block.options.twigtemplate"
+                    "description": "Generate theme template"
                 }
             ],
             "arguments": [],
@@ -4030,7 +4123,7 @@
                 },
                 {
                     "name": "buttons",
-                    "description": "commands.generate.plugin.ckeditorbutton.options.buttons"
+                    "description": "CKEditor buttons."
                 }
             ],
             "arguments": [],
@@ -4493,7 +4586,7 @@
         },
         {
             "name": "generate:plugin:migrate:dataparser",
-            "description": "commands.generate.plugin.migrate.dataparser.description",
+            "description": "Generate a migrate data parser",
             "options": [
                 {
                     "name": "module",
@@ -4501,19 +4594,24 @@
                 },
                 {
                     "name": "class",
-                    "description": "commands.generate.plugin.migrate.dataparser.options.class"
+                    "description": "Plugin class name"
                 },
                 {
                     "name": "plugin-id",
-                    "description": "commands.generate.plugin.migrate.dataparser.options.plugin-id"
+                    "description": "Plugin id"
                 },
                 {
                     "name": "plugin-title",
-                    "description": "commands.generate.plugin.migrate.dataparser.options.plugin-title"
+                    "description": "Plugin title"
                 }
             ],
             "arguments": [],
-            "examples": [],
+            "examples": [
+                {
+                    "description": "Generate a migration data parser specifying the module name, the class, the plugin id and the plugin title",
+                    "execution": "drupal generate:plugin:migrate:source  \\\n  --module=\"modulename\"  \\\n  --class=\"PluginClassName\"  \\\n  --plugin-id=\"plugin_class_name\"  \\\n  --plugin-title=\"Data parser\"\n"
+                }
+            ],
             "aliases": [
                 "gpmdp"
             ],
@@ -4629,31 +4727,36 @@
         },
         {
             "name": "generate:plugin:queue",
-            "description": "commands.generate.plugin.queue.description",
+            "description": "Drupal Console Queueworker generator.",
             "options": [
                 {
                     "name": "module",
-                    "description": "commands.generate.plugin.queue.options.module"
+                    "description": "The module name"
                 },
                 {
                     "name": "class",
-                    "description": "commands.generate.plugin.queue.options.class"
+                    "description": "QueueWorker file name"
                 },
                 {
                     "name": "plugin-id",
-                    "description": "commands.generate.plugin.queue.options.plugin-id"
+                    "description": "Plugin QueueWorker id"
                 },
                 {
                     "name": "cron-time",
-                    "description": "commands.generate.plugin.queue.options.cron-time"
+                    "description": "Cron time"
                 },
                 {
                     "name": "label",
-                    "description": "commands.generate.plugin.queue.options.label"
+                    "description": "Queue description"
                 }
             ],
             "arguments": [],
-            "examples": [],
+            "examples": [
+                {
+                    "description": "Generate a queue worker plugin specifying the module name, the class and its plugin id",
+                    "execution": "drupal generate:plugin:queue  \\\n  --module=\"modulename\"  \\\n  --class=\"PluginClassName\"  \\\n  --plugin-id=\"plugin_class_name\"  \\\n  --cron-time=\"30\"  \\\n  --label=\"Example QueueWorker\""
+                }
+            ],
             "aliases": [
                 "gpqueue"
             ],
@@ -4722,7 +4825,7 @@
         },
         {
             "name": "generate:plugin:rules:action",
-            "description": "commands.generate.plugin.rules.action.description",
+            "description": "Generate a plugin rule action",
             "options": [
                 {
                     "name": "module",
@@ -4730,27 +4833,36 @@
                 },
                 {
                     "name": "class",
-                    "description": "commands.generate.plugin.rules.action.options.class"
+                    "description": "Plugin class"
                 },
                 {
                     "name": "label",
-                    "description": "commands.generate.plugin.rules.action.options.label"
+                    "description": "Plugin label"
                 },
                 {
                     "name": "plugin-id",
-                    "description": "commands.generate.plugin.rules.action.options.plugin-id"
+                    "description": "Plugin id"
                 },
                 {
                     "name": "category",
-                    "description": "commands.generate.plugin.rules.action.options.category"
+                    "description": "Plugin category"
                 },
                 {
                     "name": "context",
-                    "description": "commands.generate.plugin.rules.action.options.context"
+                    "description": "Plugin context"
                 }
             ],
             "arguments": [],
-            "examples": [],
+            "examples": [
+                {
+                    "description": "Generate a user rule action plugin specifying the module name, the class, its label, the plugin id, the type, the category and its context",
+                    "execution": "drupal generate:plugin:rules:action \\\n  --module=\"modulename\" \\\n  --class=\"DefaultAction\" \\\n  --label=\"Default Action\" \\\n  --plugin-id=\"default_action\" \\\n  --category=\"Action category\" \\\n  --context='\"name\":\"user\", \"type\":\"entity:user\", \"label\":\"Context label\", \"description\":\"Context description\"'"
+                },
+                {
+                    "description": "Generate a entity rule action plugin specifying the module name, the class, its label, the plugin id, the type, the category and its context",
+                    "execution": "drupal generate:plugin:rules:action \\\n  --module=\"modulename\" \\\n  --class=\"DefaultAction\" \\\n  --label=\"Default Action\" \\\n  --plugin-id=\"default_action\" \\\n  --category=\"Action category\" \\\n  --context='\"entity\":\"node\", \"type\":\"entity\", \"label\":\"Context label\", \"description\":\"Context description\"'\n"
+                }
+            ],
             "aliases": [
                 "gpra"
             ],
@@ -4768,7 +4880,7 @@
         },
         {
             "name": "generate:plugin:rules:dataprocessor",
-            "description": "commands.generate.plugin.rules.dataprocessor.description",
+            "description": "Generate a plugin rule dataprocessor",
             "options": [
                 {
                     "name": "module",
@@ -4776,19 +4888,24 @@
                 },
                 {
                     "name": "class",
-                    "description": "commands.generate.plugin.rules.dataprocessor.options.class"
+                    "description": "Plugin class name"
                 },
                 {
                     "name": "label",
-                    "description": "commands.generate.plugin.rules.dataprocessor.options.label"
+                    "description": "Plugin label"
                 },
                 {
                     "name": "plugin-id",
-                    "description": "commands.generate.plugin.rules.dataprocessor.options.plugin-id"
+                    "description": "Plugin id"
                 }
             ],
             "arguments": [],
-            "examples": [],
+            "examples": [
+                {
+                    "description": "Generate a user rule dataprocessor plugin specifying the module name, the class, its label, the plugin id, the type, the category and its context",
+                    "execution": "drupal generate:plugin:rules:dataprocessor  \\\n  --module=\"modulename\"  \\\n  --class=\"DefaultDataprocessor\"  \\\n  --label=\"Default dataprocessor\"  \\\n  --plugin-id=\"default_dataprocessor\"  \\\n"
+                }
+            ],
             "aliases": [
                 "gprd"
             ],
@@ -4935,7 +5052,7 @@
         },
         {
             "name": "generate:plugin:validationconstraint",
-            "description": "commands.generate.plugin.validationconstraint.description",
+            "description": "Generate a validation constraint plugin.",
             "options": [
                 {
                     "name": "module",
@@ -4943,31 +5060,36 @@
                 },
                 {
                     "name": "class",
-                    "description": "commands.generate.plugin.validationconstraint.options.class"
+                    "description": "Plugin class name"
                 },
                 {
                     "name": "label",
-                    "description": "commands.generate.plugin.validationconstraint.options.label"
+                    "description": "Plugin label"
                 },
                 {
                     "name": "plugin-id",
-                    "description": "commands.generate.plugin.validationconstraint.options.plugin-id"
+                    "description": "Plugin id"
                 },
                 {
                     "name": "hook",
-                    "description": "commands.generate.plugin.validationconstraint.options.hook"
+                    "description": "Generate hook to validate a field"
                 },
                 {
                     "name": "field-id",
-                    "description": "commands.generate.plugin.validationconstraint.options.field-id"
+                    "description": "Field id"
                 },
                 {
                     "name": "bundle",
-                    "description": "commands.generate.plugin.validationconstraint.options.bundle"
+                    "description": "Bundle"
                 }
             ],
             "arguments": [],
-            "examples": [],
+            "examples": [
+                {
+                    "description": "Generate a validation constraint plugin specifying the module name, the class, its label, the plugin id, the entity bundle and the field id",
+                    "execution": "drupal generate:plugin:validationconstraint  \\\n  --module=\"modulename\" \\\n  --class=\"ExampleConstraint\" \\\n  --label=\"Example validation constraint\" \\\n  -plugin-id=\"example_validation_constraint\" \\\n  --hook \\\n  --field-id=\"field_exmaple_id\" \\\n  --bundle=\"entity_example_bundle\" \\\n  --no-interaction\n"
+                }
+            ],
             "aliases": [
                 "gpvc"
             ],
@@ -4993,7 +5115,7 @@
                 },
                 {
                     "name": "fields",
-                    "description": "commands.generate.plugin.views.field.options.fields"
+                    "description": "Fields definition (class name, title and description)."
                 }
             ],
             "arguments": [],
@@ -5067,7 +5189,7 @@
                 },
                 {
                     "name": "profile-path",
-                    "description": "commands.generate.profile.options.profile-path"
+                    "description": "The path of the profile"
                 },
                 {
                     "name": "description",
@@ -5083,7 +5205,7 @@
                 },
                 {
                     "name": "themes",
-                    "description": "commands.generate.profile.options.themes"
+                    "description": "the theme name"
                 },
                 {
                     "name": "distribution",
@@ -5173,11 +5295,11 @@
                 },
                 {
                     "name": "interface-name",
-                    "description": "commands.generate.service.options.interface-name"
+                    "description": "Interface name"
                 },
                 {
                     "name": "logger-channel",
-                    "description": "commands.generate.service.options.logger-channel"
+                    "description": "Logger channel"
                 },
                 {
                     "name": "services",
@@ -5185,7 +5307,7 @@
                 },
                 {
                     "name": "path-service",
-                    "description": "commands.generate.service.options.path-service"
+                    "description": "Path"
                 }
             ],
             "arguments": [],
@@ -5216,59 +5338,64 @@
         },
         {
             "name": "generate:site:alias",
-            "description": "commands.generate.site.alias.description",
+            "description": "Generates a site alias.",
             "options": [
                 {
                     "name": "site",
-                    "description": "commands.generate.site.alias.options.site"
+                    "description": "Use local site as destination."
                 },
                 {
                     "name": "name",
-                    "description": "commands.generate.site.alias.options.name"
+                    "description": "Site name."
                 },
                 {
                     "name": "environment",
-                    "description": "commands.generate.site.alias.options.environment"
+                    "description": "Environment name."
                 },
                 {
                     "name": "type",
-                    "description": "commands.generate.site.alias.options.type"
+                    "description": "The site type."
                 },
                 {
                     "name": "composer-root",
-                    "description": "commands.generate.site.alias.options.composer-root"
+                    "description": "The Drupal root project directory."
                 },
                 {
                     "name": "site-uri",
-                    "description": "commands.generate.site.alias.options.site-uri"
+                    "description": "Drupal uri (for multi-sites)."
                 },
                 {
                     "name": "host",
-                    "description": "commands.generate.site.alias.options.host"
+                    "description": "The ip\/domain name of the remote system. Not required on local sites."
                 },
                 {
                     "name": "user",
-                    "description": "commands.generate.site.alias.options.user"
+                    "description": "The username to use when connecting via ssh."
                 },
                 {
                     "name": "port",
-                    "description": "commands.generate.site.alias.options.port"
+                    "description": "The port to use when connecting via ssh."
                 },
                 {
                     "name": "drupal-console-binary",
-                    "description": "commands.generate.site.alias.options.drupal-console-binary"
+                    "description": "The name of your drupal console binary. By default is \"drupal\""
                 },
                 {
                     "name": "extra-options",
-                    "description": "commands.generate.site.alias.options.extra-options"
+                    "description": "Used only when the target requires extra options, such as tty option and\/or alternative authentication method and\/or alternative identity file."
                 },
                 {
                     "name": "directory",
-                    "description": "commands.generate.site.alias.options.directory"
+                    "description": "Directory to store the generated site alias."
                 }
             ],
             "arguments": [],
-            "examples": [],
+            "examples": [
+                {
+                    "description": "Generate site alias to connect with ssh using tty as extra-option",
+                    "execution": "drupal generate:site:alias  \\\n  --name=\"demo\"  \\\n  --environment=\"dev\"  \\\n  --type=\"ssh\" \\\n  --composer-root=\"\/path\/to\/remote\/project\" \\\n  --site-uri=\"default\" \\\n  --host=\"hostName\/domain\" \\\n  --user=\"userName\" \\\n  --port=\"port\" \\\n  --drupal-console-binary=\"drupal\" \\\n  --extra-options=\"-tt\" \\\n  --directory=\"\/Users\/hjuarez\/drupalSq\/console\/\""
+                }
+            ],
             "aliases": [
                 "gsa"
             ],
@@ -5318,11 +5445,15 @@
                 },
                 {
                     "name": "libraries",
-                    "description": "commands.generate.theme.options.libraries"
+                    "description": "Libraries"
                 },
                 {
                     "name": "base-theme",
                     "description": "Base theme (i.e. classy, stable)"
+                },
+                {
+                    "name": "base-theme-regions",
+                    "description": "Add the default regions of the chosen base theme"
                 },
                 {
                     "name": "regions",
@@ -5617,7 +5748,7 @@
             "options": [
                 {
                     "name": "source-base_path",
-                    "description": "commands.migrate.setup.options.source-base-path"
+                    "description": "Local file directory containing your source site (e.g. \/var\/www\/docroot), or your site address (for example http:\/\/example.com)"
                 }
             ],
             "arguments": [
@@ -5676,7 +5807,7 @@
                 },
                 {
                     "name": "source-base_path",
-                    "description": "commands.migrate.setup.options.source-base-path"
+                    "description": "Local file directory containing your source site (e.g. \/var\/www\/docroot), or your site address (for example http:\/\/example.com)"
                 }
             ],
             "arguments": [],
@@ -5745,7 +5876,7 @@
                 },
                 {
                     "name": "unstable",
-                    "description": "commands.module.download.options.unstable"
+                    "description": "Module unstable"
                 }
             ],
             "arguments": [
@@ -5867,7 +5998,7 @@
             "arguments": [
                 {
                     "name": "module",
-                    "description": "commands.module.uninstall.arguments.module"
+                    "description": "Module or modules to be uninstalled should be separated by a space"
                 }
             ],
             "examples": [
@@ -5974,15 +6105,20 @@
         },
         {
             "name": "multisite:update",
-            "description": "commands.multisite.update.description",
+            "description": "Update the files for a multisite installed.",
             "options": [
                 {
                     "name": "directory",
-                    "description": "commands.multisite.update.options.directory"
+                    "description": "Name of new directory for multisite installed. (You could create subdir separated by '\/')"
                 }
             ],
             "arguments": [],
-            "examples": [],
+            "examples": [
+                {
+                    "description": "Update the files for a multisite installed specifying old path and new path",
+                    "execution": "drupal multisite:update\n"
+                }
+            ],
             "aliases": [
                 "muu"
             ],
@@ -6133,7 +6269,7 @@
         },
         {
             "name": "role:delete",
-            "description": "commands.role.delete.description",
+            "description": "Delete roles for the application",
             "options": [],
             "arguments": [
                 {
@@ -6141,7 +6277,12 @@
                     "description": "commands.role.delete.argument.roles"
                 }
             ],
-            "examples": [],
+            "examples": [
+                {
+                    "description": "Delete role specifying rolename",
+                    "execution": "drupal role:delete  moderator\n"
+                }
+            ],
             "aliases": [
                 "rd"
             ],
@@ -6159,7 +6300,7 @@
         },
         {
             "name": "role:new",
-            "description": "commands.role.new.description",
+            "description": "Create roles for the application",
             "options": [],
             "arguments": [
                 {
@@ -6171,7 +6312,12 @@
                     "description": "commands.role.new.argument.machine-name"
                 }
             ],
-            "examples": [],
+            "examples": [
+                {
+                    "description": "Create role specifying rolename and machine-name",
+                    "execution": "drupal role:new  moderator moderator\n"
+                }
+            ],
             "aliases": [
                 "rn"
             ],
@@ -6349,7 +6495,7 @@
                 },
                 {
                     "name": "force",
-                    "description": "commands.site.install.arguments.force"
+                    "description": "Force to reinstall the site"
                 }
             ],
             "arguments": [
@@ -6359,13 +6505,17 @@
                 },
                 {
                     "name": "db-url",
-                    "description": "commands.site.install.arguments.db-url"
+                    "description": "Use Database url to the installation instead of using the options. (Sqlite is not supported)"
                 }
             ],
             "examples": [
                 {
                     "description": "Install a drupal project specifying installation type, language code, database configuration, site name, site email and admin credential settings",
                     "execution": "drupal site:install  standard  \\\n  --langcode=\"en\"  \\\n  --db-type=\"mysql\"  \\\n  --db-host=\"127.0.0.1\"  \\\n  --db-name=\"drupal8\"  \\\n  --db-user=\"u53rn4m3\"  \\\n  --db-pass=\"dbp455\"  \\\n  --db-port=\"3306\"  \\\n  --site-name=\"Drupal 8\"  \\\n  --site-mail=\"admin@example.com\"  \\\n  --account-name=\"admin\"  \\\n  --account-mail=\"admin@example.com\"  \\\n  --account-pass=\"p455w0rd\"\n"
+                },
+                {
+                    "description": "Install a drupal project using a mysql url",
+                    "execution": "drupal site:install  standard  mysql:\/\/dbUser:dbPass@dbHost\/dbName \\\n  --langcode=\"en\"  \\\n  --site-name=\"Drupal 8\"  \\\n  --site-mail=\"admin@example.com\"  \\\n  --account-name=\"admin\"  \\\n  --account-mail=\"admin@example.com\"  \\\n  --account-pass=\"p455w0rd\"\n"
                 }
             ],
             "aliases": [
@@ -6807,13 +6957,17 @@
                 },
                 {
                     "name": "update-n",
-                    "description": "Especificar a fun\u00e7\u00e3o Update N a ser executada"
+                    "description": "commands.update.execute.options.update-n"
                 }
             ],
             "examples": [
                 {
                     "description": "Update all entities",
                     "execution": "drupal update:execute\n"
+                },
+                {
+                    "description": "Execute updates for system module",
+                    "execution": "drupal update:execute system\n"
                 }
             ],
             "aliases": [
@@ -6890,7 +7044,7 @@
             "options": [
                 {
                     "name": "user",
-                    "description": "commands.user.delete.options.user"
+                    "description": "User name\/id to be deleted"
                 },
                 {
                     "name": "roles",
@@ -6906,6 +7060,10 @@
                 {
                     "description": "Delete user specifying its id",
                     "execution": "drupal user:delete  \\\n  --user-id=\"3\"\n"
+                },
+                {
+                    "description": "Delete users with the role \"authenticated\"",
+                    "execution": "drupal user:delete  \\\n  --role=\"authenticated\"\n"
                 }
             ],
             "aliases": [
@@ -6930,7 +7088,7 @@
             "arguments": [
                 {
                     "name": "user",
-                    "description": "commands.user.login.clear.attempts.arguments.user"
+                    "description": "User name\/id."
                 }
             ],
             "examples": [],
@@ -6957,13 +7115,17 @@
             "arguments": [
                 {
                     "name": "user",
-                    "description": "commands.user.login.url.options.user"
+                    "description": "User name\/id."
                 }
             ],
             "examples": [
                 {
                     "description": "Get one time login url for user id 1",
                     "execution": "drupal user:login:url  1\n"
+                },
+                {
+                    "description": "Get one time login url for username jmolivas",
+                    "execution": "drupal user:login:url jmolivas"
                 }
             ],
             "aliases": [
@@ -7022,7 +7184,7 @@
             "arguments": [
                 {
                     "name": "user",
-                    "description": "commands.user.password.reset.options.user"
+                    "description": "User name\/id"
                 },
                 {
                     "name": "password",
@@ -7033,6 +7195,10 @@
                 {
                     "description": "Update password specifying the user id and the new password",
                     "execution": "drupal user:password:reset  2 p455w0rd\n"
+                },
+                {
+                    "description": "Update password specifying the user jmolivas and the new password",
+                    "execution": "drupal user:password:reset jmolivas p455w0rd\n"
                 }
             ],
             "aliases": [
@@ -7096,15 +7262,24 @@
         },
         {
             "name": "user:unblock",
-            "description": "commands.user.unblock.description",
+            "description": "Unblock a specific user.",
             "options": [],
             "arguments": [
                 {
                     "name": "user",
-                    "description": "commands.user.unblock.options.user"
+                    "description": "User name\/id"
                 }
             ],
-            "examples": [],
+            "examples": [
+                {
+                    "description": "Unblock user providing the user id",
+                    "execution": "drupal user:unblock 2"
+                },
+                {
+                    "description": "Unblock user providing the user name",
+                    "execution": "drupal user:unblock johndoe\n"
+                }
+            ],
             "aliases": [
                 "uu"
             ],

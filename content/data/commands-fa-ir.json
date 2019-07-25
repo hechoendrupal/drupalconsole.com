@@ -4,7 +4,7 @@
     "commands": [
         {
             "name": "about",
-            "description": "Displays basic information about Drupal Console project",
+            "description": "Display basic information about Drupal Console project",
             "options": [],
             "arguments": [],
             "examples": [],
@@ -484,16 +484,16 @@
         },
         {
             "name": "config:edit",
-            "description": "Change a configuration object with a text editor.",
+            "description": "Edit the selected configuration.",
             "options": [],
             "arguments": [
                 {
                     "name": "config-name",
-                    "description": "Configuration object name, for example \"user.settings\"."
+                    "description": "Configuration name."
                 },
                 {
                     "name": "editor",
-                    "description": "Editor, for example \"vim\" or \"gedit\"."
+                    "description": "Editor."
                 }
             ],
             "examples": [
@@ -746,7 +746,7 @@
         },
         {
             "name": "config:export:view",
-            "description": "Export a view in YAML format inside a provided module to reuse in another website.",
+            "description": "Export a view in YAML format inside a provided module to reuse in other website.",
             "options": [
                 {
                     "name": "module",
@@ -758,7 +758,7 @@
                 },
                 {
                     "name": "include-module-dependencies",
-                    "description": "Include view module dependencies in module info YAML file"
+                    "description": "Include module dependencies in module info YAML file"
                 },
                 {
                     "name": "remove-uuid",
@@ -853,7 +853,7 @@
         },
         {
             "name": "config:import:single",
-            "description": "Import a single configuration or a list of configurations.",
+            "description": "Import a single configurations or a list of configurations.",
             "options": [
                 {
                     "name": "file",
@@ -911,8 +911,8 @@
             ],
             "examples": [
                 {
-                    "description": "Override options from the Who's new view",
-                    "execution": "drupal config:override views.view.who_s_new \\\n  --key='langcode' \\\n  --key='label' \\\n  --key='display.default.position' \\\n  --value='es' \\\n  --value='New label' \\\n  --value='1'\n"
+                    "description": "Set the Contact module flood limit to 10.",
+                    "execution": "drupal config:override contact.settings flood.limit 10"
                 }
             ],
             "aliases": [
@@ -1669,7 +1669,7 @@
             "options": [
                 {
                     "name": "file",
-                    "description": "The filename for your database backup file (absolute path) . If using a .sql.gz file, the gunzip command needs to be installed."
+                    "description": "The filename for your database backup file"
                 }
             ],
             "arguments": [
@@ -2996,7 +2996,7 @@
         },
         {
             "name": "entity:delete",
-            "description": "Delete a specific entity",
+            "description": "Delete an specific entity",
             "options": [
                 {
                     "name": "all",
@@ -3284,7 +3284,7 @@
                 },
                 {
                     "name": "container-aware",
-                    "description": "Is the command aware of the drupal site installation when executed?"
+                    "description": "Is the command aware of the drupal site installation when executed"
                 },
                 {
                     "name": "services",
@@ -3846,7 +3846,7 @@
                 },
                 {
                     "name": "description",
-                    "description": "Module description"
+                    "description": "commands.generate.help.options.description"
                 }
             ],
             "arguments": [],
@@ -5452,6 +5452,10 @@
                     "description": "Base theme (i.e. classy, stable)"
                 },
                 {
+                    "name": "base-theme-regions",
+                    "description": "Add the default regions of the chosen base theme"
+                },
+                {
                     "name": "regions",
                     "description": "Regions"
                 },
@@ -5601,7 +5605,7 @@
         },
         {
             "name": "locale:language:add",
-            "description": "Add languages to be supported by your site",
+            "description": "Add a language to be supported by your site",
             "options": [],
             "arguments": [
                 {
@@ -6080,7 +6084,7 @@
             "examples": [
                 {
                     "description": "Set up files for a multisite install specifying destination path and uri",
-                    "execution": "drupal multisite:new  vendor\/newsite http:\/\/mysite.example.com\n"
+                    "execution": "drupal multisite:new  newsite http:\/\/newsite.com\n"
                 }
             ],
             "aliases": [
@@ -6536,7 +6540,7 @@
             "arguments": [
                 {
                     "name": "mode",
-                    "description": "Site maintenance mode [on\/off]"
+                    "description": "Site maintenance mode"
                 }
             ],
             "examples": [
@@ -6825,7 +6829,7 @@
             "arguments": [
                 {
                     "name": "theme",
-                    "description": "theme or themes to be installed should be separated by a space"
+                    "description": "theme or themes to be installed should be separated by a comma"
                 }
             ],
             "examples": [
@@ -6892,7 +6896,7 @@
             "arguments": [
                 {
                     "name": "theme",
-                    "description": "theme or themes to be uninstalled should be separated by a space"
+                    "description": "theme or themes to be uninstalled should be separated by a comma"
                 }
             ],
             "examples": [
@@ -7036,7 +7040,7 @@
         },
         {
             "name": "user:delete",
-            "description": "Delete users from the application",
+            "description": "Delete users for the application",
             "options": [
                 {
                     "name": "user",
@@ -7044,7 +7048,7 @@
                 },
                 {
                     "name": "roles",
-                    "description": "Users with the listed roles to be deleted"
+                    "description": "Roles associated to users to be deleted"
                 }
             ],
             "arguments": [],

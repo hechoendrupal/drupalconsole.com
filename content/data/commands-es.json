@@ -297,23 +297,36 @@
         },
         {
             "name": "snippet",
-            "description": "commands.snippet.description",
+            "description": "Runs PHP code",
             "options": [
                 {
                     "name": "file",
-                    "description": "commands.snippet.options.file"
+                    "description": "Path to the file"
                 },
                 {
                     "name": "code",
-                    "description": "commands.snippet.options.code"
+                    "description": "Code to execute"
                 },
                 {
                     "name": "show-code",
-                    "description": "commands.snippet.options.show-code"
+                    "description": "Show code after execute"
                 }
             ],
             "arguments": [],
-            "examples": [],
+            "examples": [
+                {
+                    "description": "Run using a file.",
+                    "execution": "drupal snippet --file=\/path\/to\/file"
+                },
+                {
+                    "description": "Passing code as option.",
+                    "execution": "drupal snippet --code=codeToExecute"
+                },
+                {
+                    "description": "Show code executed",
+                    "execution": "drupal snippet --show-code --file=\/path\/to\/file"
+                }
+            ],
             "aliases": [],
             "key": "snippet",
             "dashed": "snippet",
@@ -678,7 +691,7 @@
             "options": [
                 {
                     "name": "name",
-                    "description": "commands.config.export.single.options.name"
+                    "description": "Configuration name."
                 },
                 {
                     "name": "directory",
@@ -770,6 +783,10 @@
                 {
                     "description": "Puede facilitar valores interactivos como par\u00e1metro.",
                     "execution": "drupal config:export:view viewid \\\n  --module=\"modulename\" \\\n  --optional-config \\\n  --include-module-dependencies\n"
+                },
+                {
+                    "description": "Export as config for the provided module, updating the module's info.yml with any module dependencies from the view.",
+                    "execution": "drupal config:export:view viewid \\\n  --module=\"modulename\" \\\n  --optional-config \\\n  --include-module-dependencies"
                 }
             ],
             "aliases": [
@@ -805,7 +822,7 @@
                 },
                 {
                     "name": "skip-uuid",
-                    "description": "commands.config.import.options.skip-uuid"
+                    "description": "Skip uuid from files"
                 }
             ],
             "arguments": [],
@@ -1010,7 +1027,7 @@
                 },
                 {
                     "name": "revision",
-                    "description": "commands.create.nodes.options.revision"
+                    "description": "Create revisions"
                 },
                 {
                     "name": "language",
@@ -2757,15 +2774,20 @@
         },
         {
             "name": "debug:update:composer",
-            "description": "commands.debug.update.composer.description",
+            "description": "Displays current updates available from the composer file",
             "options": [
                 {
                     "name": "only-drupal",
-                    "description": "commands.debug.update.composer.options.only-drupal"
+                    "description": "Show only drupal (modules\/themes) updates"
                 }
             ],
             "arguments": [],
-            "examples": [],
+            "examples": [
+                {
+                    "description": "List of pending updates from composer",
+                    "execution": "drupal debug:update:composer\n"
+                }
+            ],
             "aliases": [
                 "duc"
             ],
@@ -3545,7 +3567,7 @@
                 },
                 {
                     "name": "has-owner",
-                    "description": "commands.generate.entity.content.options.has-owner"
+                    "description": "Entity has owner"
                 }
             ],
             "arguments": [],
@@ -4054,7 +4076,7 @@
                 },
                 {
                     "name": "twigtemplate",
-                    "description": "commands.generate.plugin.block.options.twigtemplate"
+                    "description": "Generate theme template"
                 }
             ],
             "arguments": [],
@@ -5428,6 +5450,10 @@
                 {
                     "name": "base-theme",
                     "description": "Tema base (por ejemplo: classy, stable)"
+                },
+                {
+                    "name": "base-theme-regions",
+                    "description": "Add the default regions of the chosen base theme"
                 },
                 {
                     "name": "regions",
