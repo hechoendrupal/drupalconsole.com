@@ -126,8 +126,9 @@ exports.createPages = ({ graphql, actions }) => {
             path: slug,
             component: path.resolve(`./src/templates/command.js`),
             context: {
-              command: command,
-              language: language
+              slug: slug,
+              language: language,
+              command: command
             },
           })
         })
