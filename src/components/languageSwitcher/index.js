@@ -24,15 +24,15 @@ const LanguageSwitcher = ({ language, activePage, rtl }) => {
     `
   )
 
-  const defaultLangaugeName = _find(allLanguagesYaml.edges, (item) => {return _isEqual(item.node.id, language)})
-
-  if (!activePage || !language) {
+  if (!activePage || !language || !allLanguagesYaml) {
     return (<></>)
   }
 
   if (activePage.charAt(activePage.length-1) !== '/') {
     activePage = activePage + '/'
   }
+
+  const defaultLangaugeName = _find(allLanguagesYaml.edges, (item) => {return _isEqual(item.node.id, language)})
 
   return (
     <div className="container">
