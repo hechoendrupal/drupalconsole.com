@@ -1,0 +1,21 @@
+img.author-avatar {
+  /* width: 30px;
+  height: 30px; */
+  margin-top: 15px;
+  margin-left: 5px;
+}
+
+div.card-contributor {
+  width: 140px;
+  height: 180px !important;
+  background-color: #ffffff;
+  background-size: cover;
+  margin-bottom: 40px;
+  margin-left: 40px;
+}
+
+div.card-text{
+  margin-top: 5px;
+  color: #666666;
+  text-decoration: none solid rgb(102, 102, 102);
+}
