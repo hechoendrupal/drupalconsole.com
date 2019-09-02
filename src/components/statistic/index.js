@@ -48,7 +48,7 @@ const Statistics = () => {
           <p>
             <i className="fas fa-cloud-download-alt highlight__icon"></i>
           </p>
-          <h2 className="fw-500 my-4">{statistic.downloads_total}</h2>
+          <h2 className="fw-500 my-4">{statistic.downloads_total.toLocaleString()}</h2>
           <h4 className="mb-0">Downloads</h4>
         </div>
 
@@ -56,8 +56,8 @@ const Statistics = () => {
           <p>
             <i className="fas fa-birthday-cake highlight__icon"></i>
           </p>
-          <h2 className="fw-500 my-4">1.9.2</h2>
-          <h4 className="mb-0">{statistic.latest_release}</h4>
+          <h2 className="fw-500 my-4">{statistic.latest_release}</h2>
+          <h4 className="mb-0">Release</h4>
         </div>
       </div>
     </div>

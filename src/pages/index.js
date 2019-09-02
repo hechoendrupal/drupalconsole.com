@@ -9,7 +9,14 @@ import Hero from '../components/hero';
 
 const IndexPage = () => (
   <Layout>
-    <Hero />
+    <Hero innerSize="py-9">
+      <h1>Drupal Console</h1>
+      <p className="lead">The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.</p>
+      <br />
+      <div>
+        <Link to="/docs" className="btn btn-md btn-primary mr-3" href="#">Download <i className="fas fa-download"></i></Link>
+      </div>
+    </Hero>
     <Statistics />
     <main className="main-content">
         <div className="container">
@@ -24,7 +31,7 @@ const IndexPage = () => (
               <div className="col-md-8"><p>The Drupal Console is being maintained by 3 team leaders and a great community of volunteers that help with anything from bug reporting, translating, documentation and improving the codebase.</p></div> 
             </section>
             <section>
-              <Maintainers />
+              <Maintainers showLinkList />
             </section>
           </div>
         </div>
