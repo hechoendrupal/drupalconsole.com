@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { Link } from "gatsby"
 import './style.css';
 
 const Maintainers = () => {
@@ -37,7 +38,7 @@ const Maintainers = () => {
                     <img src={item.node.avatar_url} className="card-title rounded-circle w-200px" alt={item.node.login} />
                   </div>
                   <div className="card-text fs-15 lh-1">
-                    <i class="fa fa-github"></i>
+                    <i className="fa fa-github"></i>
                     <span>{` ${item.node.login} `}</span>
                   </div>
                 </div>
@@ -45,6 +46,11 @@ const Maintainers = () => {
             </div>
           )
         })}
+      </div>
+      <div className="row text-center justify-content-center py-4">
+        <Link className="btn btn-md btn-primary" to="/contributors">
+          <i class="fas fa-users"></i>  See full list of contributors
+        </Link>
       </div>
     </div>
   )
