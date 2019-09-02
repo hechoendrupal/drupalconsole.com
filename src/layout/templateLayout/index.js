@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Layout from "../layout"
 import Sidebar from "../../components/sidebar"
-// import LanguageSwitcher from "../../components/languageSwitcher"
+import LanguageSwitcher from "../../components/languageSwitcher"
 
 import _find from "lodash/find"
 import _isEqual from "lodash/isEqual"
@@ -34,11 +34,11 @@ const TemplateLayout = ({children, items, context, addRTL}) =>  {
       <main className="main-content">
         <div className="container">
           <div className="row">
-            {/* <LanguageSwitcher
+            <LanguageSwitcher
               language={context.language}
               activePage={context.slug}
               rtl={rtl}
-            /> */}
+            />
           </div>
           <div className="row">
           {rtl ?
@@ -66,7 +66,7 @@ const TemplateLayout = ({children, items, context, addRTL}) =>  {
                   />
                 </div>
                 <div className="col-md-7 col-xl-8 ml-md-auto py-8">
-                  {[children, ...rtl]}
+                  {[children]}
                 </div>
             </React.Fragment>
           }
