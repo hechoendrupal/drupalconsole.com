@@ -5,11 +5,10 @@ import { MDXRenderer } from "gatsby-plugin-mdx"
 
 import Layout from "../layout/layout";
 
-const ArticleTemplate = (props) =>  {
+const ChangelogTemplate = (props) =>  {
   const node = props.data.mdx
   return (
     <Layout context={props.pageContext}>
-
       <main className="main-content">
           <div className="container">
             <div className="col-md-1 col-xl-12">
@@ -28,7 +27,7 @@ const ArticleTemplate = (props) =>  {
   )
 }
 
-export default ArticleTemplate
+export default ChangelogTemplate
 
 export const pageQuery = graphql`
   query($slug: String!) {
