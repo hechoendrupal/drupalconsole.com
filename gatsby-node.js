@@ -125,15 +125,15 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   // MDX content
   if (node.internal.type === `Mdx`) {
     const sourceInstanceName = getNode(node.parent).sourceInstanceName;
+
     if (sourceInstanceName===`docs`) {
       const slug = getNode(node.parent).relativePath.replace("/README.md", "").replace(".md", "").toLowerCase()
-      const prefix = `${getNode(node.parent).sourceInstanceName}/`
 
       // Add slug field
       createNodeField({
         name: `slug`,
         node,
-        value: `/${prefix}${slug}`
+        value: `/${sourceInstanceName}/${slug}`
       })
 
       // Add language field
@@ -141,6 +141,16 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
         name: `language`,
         node,
         value: slug.indexOf('/') > 0 ? slug.substring(0, slug.indexOf('/')) : slug
+      })
+    }
+
+    if (sourceInstanceName===`articles`) {
+      const slug = node.frontmatter.path
+            // Add slug field
+      createNodeField({
+        name: `slug`,
+        node,
+        value: slug
       })
     }
   }
@@ -157,6 +167,16 @@ exports.createPages = ({ graphql, actions }) => {
             fields {
               slug
               language
+            }
+          }
+        }
+      }
+
+      allArticles: allMdx(filter: {fileInfo: {sourceInstanceName: {eq: "articles"}}}) {
+        edges {
+          node {
+            fields {
+              slug
             }
           }
         }
@@ -222,6 +242,18 @@ exports.createPages = ({ graphql, actions }) => {
           context: {
             slug: doc.node.fields.slug,
             language: doc.node.fields.language
+          },
+        })
+      })
+
+      // Create article pages.
+      const articles = result.data.allArticles.edges
+      articles.forEach(article => {
+        createPage({
+          path: article.node.fields.slug,
+          component: path.resolve(`./src/templates/article.js`),
+          context: {
+            slug: article.node.fields.slug,
           },
         })
       })
