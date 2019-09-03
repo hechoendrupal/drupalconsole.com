@@ -11,6 +11,14 @@ const repos = [
 
 const GITHUB_API_ARI = 'https://us-central1-drupal-console.cloudfunctions.net';
 
+exports.createSchemaCustomization = ({ actions }) => {
+  actions.createTypes(`
+    type Mdx implements Node {
+      fileInfo: File @link(from: "parent")
+    }
+  `)
+}
+
 exports.sourceNodes = async ({ actions }) => {
   const {createNode} = actions;
 
@@ -116,21 +124,25 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
   const { createNodeField } = actions
   // MDX content
   if (node.internal.type === `Mdx`) {
-    const slug = getNode(node.parent).relativePath.replace("/README.md", "").replace(".md", "").toLowerCase()
-    const prefix = getNode(node.parent).sourceInstanceName==='docs'?`${getNode(node.parent).sourceInstanceName}/`:``
+    const sourceInstanceName = getNode(node.parent).sourceInstanceName;
+    if (sourceInstanceName===`docs`) {
+      const slug = getNode(node.parent).relativePath.replace("/README.md", "").replace(".md", "").toLowerCase()
+      const prefix = `${getNode(node.parent).sourceInstanceName}/`
 
-    createNodeField({
-      name: `slug`,
-      node,
-      value: `/${prefix}${slug}`
-    })
+      // Add slug field
+      createNodeField({
+        name: `slug`,
+        node,
+        value: `/${prefix}${slug}`
+      })
 
-    // Add language field
-    createNodeField({
-      name: `language`,
-      node,
-      value: slug.indexOf('/') > 0 ? slug.substring(0, slug.indexOf('/')) : slug
-    })
+      // Add language field
+      createNodeField({
+        name: `language`,
+        node,
+        value: slug.indexOf('/') > 0 ? slug.substring(0, slug.indexOf('/')) : slug
+      })
+    }
   }
 }
 
@@ -139,7 +151,7 @@ exports.createPages = ({ graphql, actions }) => {
 
   return graphql(`
     {
-      allDocs: allMdx {
+      allDocs: allMdx(filter: {fileInfo: {sourceInstanceName: {eq: "docs"}}}) {
         edges {
           node {
             fields {
