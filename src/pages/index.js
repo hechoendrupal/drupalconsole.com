@@ -6,6 +6,7 @@ import Layout from "../layout/layout"
 import Statistics from "../components/statistic"
 import Maintainers from "../components/maintainers"
 import Hero from '../components/hero';
+import ChangelogPreview from '../components/changelogPreview';
 
 const IndexPage = () => (
   <Layout>
@@ -34,6 +35,7 @@ const IndexPage = () => (
               <Maintainers showLinkList />
             </section>
           </div>
+          <ChangelogPreview />
         </div>
     </main>
   </Layout>
