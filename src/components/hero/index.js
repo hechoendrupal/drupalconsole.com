@@ -1,6 +1,5 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
-import { Link } from "gatsby";
 import './style.css';
 
 const Hero = props => {
@@ -14,7 +13,7 @@ const Hero = props => {
 };
 
 Hero.propTypes = {
-  
+
 };
 
 export default Hero;
