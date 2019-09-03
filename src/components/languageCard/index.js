@@ -10,7 +10,7 @@ const LanguageCard = ({ data }) => {
       <div className="row justify-content-center">
         {data.map(item => {
           return (
-            <div key={item.node.id} className="card bl-1 br-1 bt-1 bb-1 hover-shadow-9">
+            <div key={item.node.id} className="language-card card bl-1 br-1 bt-1 bb-1 hover-shadow-9">
               <Link to={`/docs/${item.node.id}/`}>
                 <div className="card-body text-center">
                   <div className="card-image">

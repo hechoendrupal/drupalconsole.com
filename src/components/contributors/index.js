@@ -37,7 +37,7 @@ const Contributors = () => {
                     <img src={item.node.avatar_url} className="card-title rounded-circle w-100px" alt={item.node.login} />
                   </div>
                   <div className="card-text fs-15 lh-1">
-                    <i class="fa fa-github"></i>
+                    <i class="fab fa-github"></i>
                     <span>{` ${item.node.login} `}</span>
                   </div>
                 </div>

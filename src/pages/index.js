@@ -5,36 +5,33 @@ import Layout from "../layout/layout"
 
 import Statistics from "../components/statistic"
 import Maintainers from "../components/maintainers"
+import Hero from '../components/hero';
 
 const IndexPage = () => (
   <Layout>
+    <Hero innerSize="py-9">
+      <h1>Drupal Console</h1>
+      <p className="lead">The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.</p>
+      <br />
+      <div>
+        <Link to="/docs" className="btn btn-md btn-primary mr-3" href="#">Download <i className="fas fa-download"></i></Link>
+      </div>
+    </Hero>
+    <Statistics />
     <main className="main-content">
         <div className="container">
           <div className="col-md-1 col-xl-12">
-            <h1>DrupalConsole.com</h1>
-            <ul>
-              <li>
-                <Link to="/docs">Docs</Link>
-              </li>
-              <li>
-                <Link to="/contributors">Contributors</Link>
-              </li>
-            </ul>
-            <Statistics />
-            <hr />
-            <section>
-              <h2>Work Faster and Smarter.</h2>
-              Drupal Console takes advantage of the Symfony Console and other well-known third-party components like Twig, Guzzle, and Dependency Injection among others. ​​​​​​​​​​​​​​
+            <section className="row text-center justify-content-center py-4">
+              <h2 className="col-md-12">Work Faster and Smarter.</h2>
+              <div className="col-md-8"><p>Drupal Console takes advantage of the Symfony Console and other well-known third-party components like Twig, Guzzle, and Dependency Injection among others. ​​​​​​​​​​​​​​</p></div> 
             </section>
             <hr />
-            <section>
-              The Drupal Console is being maintained by 3 team leaders and a great community of volunteers that help with anything from bug reporting, translating, documentation and improving the codebase.
+
+            <section className="row text-center justify-content-center py-4">
+              <div className="col-md-8"><p>The Drupal Console is being maintained by 3 team leaders and a great community of volunteers that help with anything from bug reporting, translating, documentation and improving the codebase.</p></div> 
             </section>
             <section>
-              <Maintainers />
-              <Link to="/contributors">
-                See full list of contributors
-              </Link>
+              <Maintainers showLinkList />
             </section>
           </div>
         </div>
