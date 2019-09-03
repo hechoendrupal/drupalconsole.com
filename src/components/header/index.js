@@ -18,9 +18,9 @@ const Header = ({ siteTitle }) => (
           <nav className="nav nav-navbar ml-auto">
             <Link className="nav-link" to="/docs">Documentation</Link>
             <Link className="nav-link" to="/contributors">Contributors</Link>
-            <Link className="nav-link" to="/support">Support</Link>
-            <Link className="nav-link" to="/changelog">Changelog</Link>
             <Link className="nav-link" to="/articles">Articles</Link>
+            <Link className="nav-link" to="/changelog">Changelog</Link>
+            <Link className="nav-link" to="/support">Support</Link>
           </nav>
         </section>
       </div>
