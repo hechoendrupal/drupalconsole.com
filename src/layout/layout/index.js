@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
         <center>
           © {new Date().getFullYear()}, Built with
           {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <a href="https://www.gatsbyjs.org" target="_blank" rel="noopener noreferrer">Gatsby</a>
           <hr/>
         </center>
       </footer>
