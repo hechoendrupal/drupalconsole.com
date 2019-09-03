@@ -7,6 +7,7 @@ module.exports = {
   },
   mapping: {
     "LanguagesYaml.authors": `AuthorsYaml`,
+    "ResourcesYaml.author": `AuthorsYaml`,
   },
   plugins: [
     {
@@ -14,6 +15,13 @@ module.exports = {
       options: {
         name: "articles",
         path: `${__dirname}/content/articles/`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "changelog",
+        path: `${__dirname}/content/changelog/`,
       },
     },
     {
@@ -40,7 +48,7 @@ module.exports = {
     `gatsby-transformer-yaml`,
     `gatsby-transformer-json`,
     {
-      resolve: `gatsby-mdx`,
+      resolve: `gatsby-plugin-mdx`,
       options: {
         extensions: [".mdx", ".md"],
         gatsbyRemarkPlugins: [

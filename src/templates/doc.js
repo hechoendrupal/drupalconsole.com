@@ -1,7 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
-import MDXRenderer from "gatsby-mdx/mdx-renderer"
 import { MDXProvider } from "@mdx-js/react"
+import { MDXRenderer } from "gatsby-plugin-mdx"
 
 import TemplateLayout from "../layout/templateLayout"
 
@@ -12,7 +12,7 @@ const DocTemplate = (props) =>  {
   return (
     <TemplateLayout items={items} context={props.pageContext}>
         <MDXProvider>
-          <MDXRenderer>{post.code.body}</MDXRenderer>
+          <MDXRenderer>{post.body}</MDXRenderer>
         </MDXProvider>
     </TemplateLayout>
   )
@@ -23,9 +23,7 @@ export default DocTemplate
 export const pageQuery = graphql`
   query($slug: String!, $language: String!) {
     mdx(fields: { slug: { eq: $slug } }) {
-      code {
-        body
-      }
+      body
     }
 
     allNavigationItems: allDataJson(filter: {language: {eq: $language}, type: {eq: "navigation"}}) {
