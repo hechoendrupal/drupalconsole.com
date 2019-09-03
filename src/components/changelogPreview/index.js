@@ -1,5 +1,5 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 
 const changelogPreview = props => {
   return (
@@ -7,7 +7,7 @@ const changelogPreview = props => {
       <h2>Changelog</h2>
       <div className="row">
         <div className="last-entry col-8">
-          <h4 id="v2-0-1">Version 2.0.1<a class="anchor" href="#v2-0-1"></a></h4>
+          <h4 id="v2-0-1"><a class="anchor" href="#v2-0-1">Version 2.0.1s</a></h4>
           <p class="text-light"><small>Released on August 01, 2018</small></p>
           <pre>{`- Add    : Layout general-3
 - Add    : Dark styled code (See /docs/uikit.html)
@@ -34,7 +34,7 @@ const changelogPreview = props => {
 };
 
 changelogPreview.propTypes = {
-  
+
 };
 
 export default changelogPreview;
