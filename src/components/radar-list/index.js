@@ -26,7 +26,7 @@ const RadarList = props => {
       {allResourcesYaml.edges.map( (resource, key) => {
         return (
           <li className="nav-item" key={resource.node.id}>
-            <a className="nav-link" href={resource.node.link}>{resource.node.title}</a>
+            <a className="nav-link" href={resource.node.link} target="_blank" rel="noopener noreferrer">{resource.node.title}</a>
             <span className="source">{resource.node.source}</span>
           </li>
         )

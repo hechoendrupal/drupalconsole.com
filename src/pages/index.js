@@ -38,13 +38,13 @@ const IndexPage = () => (
           </div>
           <hr/>
           <div className="my-4">
-            <h2>Changelog</h2>
             <div className="row">
               <div className="last-entry col-8">
+                <h2>Changelog</h2>
                 <ChangelogPreview />
               </div>
               <aside className=" col-4" >
-                <h6 className="sidebar-title">Drupal Consol radar</h6>
+                <h3>Drupal Consol Radar</h3>
                 <RadarList />
               </aside>
             </div>
