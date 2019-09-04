@@ -13,8 +13,6 @@ tags:
 
 The latest RC-7 is out with several bug fixes and a new experimental logger.
 
----
-
 Drupal Console will start recording errors at `path/to/drupal8/console/log/`.
 
 Release information:

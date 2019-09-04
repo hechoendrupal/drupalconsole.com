@@ -2,6 +2,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Header from '../../components/header';
+import Footer from '../../components/footer';
 import "./style.css"
 // @TODO add render
 // - Header
@@ -22,16 +23,9 @@ const Layout = ({ children }) => {
   )
   return (
     <>
-    <Header siteTitle={site.siteMetadata.title}/>
+      <Header siteTitle={site.siteMetadata.title}/>
       {children}
-      <footer className="container">
-        <center>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org" target="_blank" rel="noopener noreferrer">Gatsby</a>
-          <hr/>
-        </center>
-      </footer>
+      <Footer />
     </>
   )
 }

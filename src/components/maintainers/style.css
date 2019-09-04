@@ -16,3 +16,7 @@
   color: #666666;
   text-decoration: none solid rgb(102, 102, 102);
 }
+
+.maintainer__icon{
+  font-size: 20px;
+}

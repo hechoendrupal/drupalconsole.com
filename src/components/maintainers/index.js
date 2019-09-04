@@ -41,7 +41,7 @@ const Maintainers = (props) => {
                   <span>{` ${item.node.login} `}</span>
                 </div>
                 <div className="card-text row">
-                  <a href={item.node.html_url} target="_blank" rel="noopener noreferrer" className="col"><i class="fab fa-github"></i></a>
+                  <a href={item.node.html_url} target="_blank" rel="noopener noreferrer" className="col"><i class="fab fa-github maintainer__icon"></i></a>
                 </div>
               </div>
             </div>

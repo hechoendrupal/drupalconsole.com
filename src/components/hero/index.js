@@ -4,7 +4,7 @@ import './style.css';
 
 const Hero = props => {
   return (
-    <header className={`header text-center ${props.innerSize} hero`} >
+    <header className={`py-2 text-center ${props.innerSize} hero`} >
       <div className="container-sm">
         {props.children}
       </div>

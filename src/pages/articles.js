@@ -20,6 +20,7 @@ const ArticlesPage = () => {
               }
               frontmatter {
                 title
+                date(formatString: "MMMM DD, YYYY")
               }
             }
           }
@@ -32,22 +33,25 @@ const ArticlesPage = () => {
     <Layout>
       <main className="main-content">
         <div className="container">
-          <div className="col-md-12 col-xl-12">
-            <h1 className="text-center py-5" >Articles</h1>
-            {allArticles.edges.map( article => {
-                return(
-                  <React.Fragment key={article.node.id}>
-                    <p>
+          <div className="row justify-content-center">
+            <div className="col-md-8 col-xl-8">
+              <h1 className="text-center py-5" >Articles</h1>
+              {allArticles.edges.map( article => {
+                  return(
+                    <div key={article.node.id} className="mb-4">
                       <Link to={article.node.fields.slug}>
                         <h3>{article.node.frontmatter.title}</h3>
-                        <p className="text">
-                          {article.node.excerpt}
-                        </p>
                       </Link>
-                    </p>
-                  </React.Fragment>
-                )
-            })}
+                      <p className="text-light">{article.node.frontmatter.date}</p>
+                      <p className="text">
+                        {article.node.excerpt}
+                      </p>
+                      <Link to={article.node.fields.slug}>Read more</Link>
+                      <hr/>
+                    </div>
+                  )
+              })}
+            </div>
           </div>
         </div>
       </main>
