@@ -1,8 +1,8 @@
-.header{
+.main-header{
   padding: 5px;
 }
 
-.custom-navbar {
+.navbar.custom-navbar {
   position: relative;
   top:0;
 }
