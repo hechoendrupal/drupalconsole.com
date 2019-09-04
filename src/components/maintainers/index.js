@@ -41,7 +41,7 @@ const Maintainers = (props) => {
                   <span>{` ${item.node.login} `}</span>
                 </div>
                 <div className="card-text row">
-                  <a href={item.node.html_url} target="_blank" rel="noopener noreferrer" className="col"><i class="fab fa-github maintainer__icon"></i></a>
+                  <a href={item.node.html_url} target="_blank" rel="noopener noreferrer" className="col"><i className="fab fa-github maintainer__icon"></i></a>
                 </div>
               </div>
             </div>
@@ -50,7 +50,7 @@ const Maintainers = (props) => {
       </div>
       {props.showListLink && <div className="row text-center justify-content-center py-4">
         <Link className="btn btn-md btn-primary" to="/contributors">
-          <i class="fas fa-users"></i>  See full list of contributors
+          <i className="fas fa-users"></i>  See full list of contributors
         </Link>
       </div>}
     </div>

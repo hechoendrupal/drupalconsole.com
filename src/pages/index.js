@@ -15,7 +15,7 @@ const IndexPage = () => (
       <p className="lead">The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.</p>
       <br />
       <div>
-        <Link to="/docs" className="btn btn-md btn-primary mr-3" href="#">Download <i className="fas fa-download"></i></Link>
+        <Link to="/docs" className="btn btn-md btn-primary mr-3" href="#">Read the docs <i className="fas fa-book"></i></Link>
       </div>
     </Hero>
     <Statistics />
