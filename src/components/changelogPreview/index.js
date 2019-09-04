@@ -5,7 +5,7 @@ import slugify from "slugify";
 import RadarList from '../radar-list';
 
 const ChangelogPreview = props => {
-  const { allChangelog, allResourcesYaml } = useStaticQuery(
+  const { allChangelog } = useStaticQuery(
     graphql`
       query {
         allChangelog: allMdx(
@@ -26,16 +26,6 @@ const ChangelogPreview = props => {
             }
           }
         }
-        allResourcesYaml {
-          edges {
-            node {
-              id
-              link
-              source
-              title
-            }
-          }
-        }
       }
     `
   );
@@ -53,7 +43,7 @@ const ChangelogPreview = props => {
         </div>
         <aside className=" col-4" >
           <h6 className="sidebar-title">Drupal Consol radar</h6>
-          <RadarList list={allResourcesYaml} />
+          <RadarList />
         </aside>
       </div>
     </div>
