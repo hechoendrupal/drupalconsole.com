@@ -4,3 +4,7 @@
 .footer a:hover{
   color: #50a1ff;
 }
+.footer .nav a{
+  text-transform: uppercase;
+  font-size: 12px;
+}

@@ -7,6 +7,7 @@ import Statistics from "../components/statistic"
 import Maintainers from "../components/maintainers"
 import Hero from '../components/hero';
 import ChangelogPreview from '../components/changelogPreview';
+import RadarList from '../components/radar-list';
 
 const IndexPage = () => (
   <Layout>
@@ -36,7 +37,18 @@ const IndexPage = () => (
             </section>
           </div>
           <hr/>
-          <ChangelogPreview />
+          <div className="my-4">
+            <h2>Changelog</h2>
+            <div className="row">
+              <div className="last-entry col-8">
+                <ChangelogPreview />
+              </div>
+              <aside className=" col-4" >
+                <h6 className="sidebar-title">Drupal Consol radar</h6>
+                <RadarList />
+              </aside>
+            </div>
+          </div>
         </div>
     </main>
   </Layout>
