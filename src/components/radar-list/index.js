@@ -27,7 +27,7 @@ const RadarList = props => {
         return (
           <li className="nav-item" key={resource.node.id}>
             <a className="nav-link" href={resource.node.link}>{resource.node.title}</a>
-            <p className="source">{resource.node.source}</p>
+            <span className="source">{resource.node.source}</span>
           </li>
         )
       })}
