@@ -4,7 +4,7 @@ import React from "react"
 import './style.css';
 
 const Header = ({ siteTitle }) => (
-  <header className="header">
+  <header className="main-header">
     <nav className="navbar navbar-expand-lg navbar-dark custom-navbar">
       <div className="container">
         <div className="navbar-left">

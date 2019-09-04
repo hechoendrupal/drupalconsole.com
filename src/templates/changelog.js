@@ -11,7 +11,7 @@ const ChangelogTemplate = (props) =>  {
     <Layout context={props.pageContext}>
       <main className="main-content">
           <div className="container">
-            <div className="col-md-1 col-xl-12">
+            <div className="col-md-12 col-xl-12">
               <section className="row text-center justify-content-center py-4">
               <h1>{node.frontmatter.title}</h1>
               </section>

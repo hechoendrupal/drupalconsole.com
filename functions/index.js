@@ -37,6 +37,13 @@ exports.getReleases = functions.https.onRequest((request, response) => {
   response.set("Access-Control-Allow-Origin", `${allowOrigin}/`);
   response.set("Access-Control-Allow-Credentials", "true");
   (async () => {
+
+    if (request.method !== 'POST') {
+      return response.status(400).json({ message: 'Method not Allowed' });
+    }
+
+    const owner = request.body.owner;
+    const repo = request.body.repo;
     
     const releases = await octokit.paginate(`GET /repos/${owner}/${repo}/releases`, (response) => {
       return response.data
@@ -86,6 +93,19 @@ exports.installer = functions.https.onRequest((request, response) => {
     response.set('Content-disposition', 'attachment; filename=drupal.phar');
 
     file.data.pipe(response);
+  })();
+});
+
+exports.getLatestRelease = functions.https.onRequest((request, response) => {
+  response.set("Access-Control-Allow-Origin", `${allowOrigin}/`);
+  response.set("Access-Control-Allow-Credentials", "true");
+
+  (async () => {
+    const latestVersion = await getLatestVersion();
+
+    response.send({
+      version: latestVersion
+    });
   })();
 });
 

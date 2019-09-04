@@ -12,10 +12,11 @@ const ArticleTemplate = (props) =>  {
 
       <main className="main-content">
           <div className="container">
-            <div className="col-md-1 col-xl-12">
+            <div className="col-md-12 col-xl-12">
               <section className="row text-center justify-content-center py-4">
               <h1>{node.frontmatter.title}</h1>
               </section>
+              <div><p className="text-light">{node.frontmatter.date}</p></div>
               <section>
                 <MDXProvider>
                   <MDXRenderer>{node.body}</MDXRenderer>
@@ -36,6 +37,7 @@ export const pageQuery = graphql`
       body
       frontmatter {
         title
+        date(formatString: "MMMM DD, YYYY")
       }
     }
   }
