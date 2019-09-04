@@ -2,9 +2,10 @@ import React from 'react';
 import { useStaticQuery, graphql, Link } from "gatsby";
 import slugify from "slugify";
 // import PropTypes from 'prop-types';
+import RadarList from '../radar-list';
 
 const ChangelogPreview = props => {
-  const { allChangelog } = useStaticQuery(
+  const { allChangelog, allResourcesYaml } = useStaticQuery(
     graphql`
       query {
         allChangelog: allMdx(
@@ -25,6 +26,16 @@ const ChangelogPreview = props => {
             }
           }
         }
+        allResourcesYaml {
+          edges {
+            node {
+              id
+              link
+              source
+              title
+            }
+          }
+        }
       }
     `
   );
@@ -41,17 +52,8 @@ const ChangelogPreview = props => {
           <Link to={`/changelog/#${slugLastEntry}`}>Read more</Link>
         </div>
         <aside className=" col-4" >
-          <h6 className="sidebar-title">Changelogs</h6>
-          <ul className="nav nav-sidebar nav-sidebar-pill">
-            {allChangelog.edges.map( (changelog, key) => {
-              const slug = slugify(changelog.node.frontmatter.title);
-              return (key<4)?(
-                <li className="nav-item" key={changelog.node.id}>
-                  <a className="nav-link" href={`/changelog#${slug}`}>{changelog.node.frontmatter.title}</a>
-                </li>
-              ):null
-            })}
-          </ul>
+          <h6 className="sidebar-title">Drupal Consol radar</h6>
+          <RadarList list={allResourcesYaml} />
         </aside>
       </div>
     </div>

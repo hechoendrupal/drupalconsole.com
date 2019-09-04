@@ -21,7 +21,7 @@ const footer = props => {
           </div>
         </div>
         <div className="row gap-y align-items-center">
-          <div className="col-md-6">
+          <div className="col-md-7">
             <div className="nav justify-content-center justify-content-md-start">
               <Link className="nav-link" to="/docs">Documentation</Link>
               <Link className="nav-link" to="/contributors">Contributors</Link>
@@ -30,7 +30,7 @@ const footer = props => {
               <Link className="nav-link" to="/support">Support</Link>
             </div>
           </div>
-          <div className="col-md-6 text-md-right">
+          <div className="col-md-5 text-md-right">
           © {new Date().getFullYear()}, Made by <a className="text-primary" href="https://www.weknowinc.com" target="_blank" rel="noopener noreferrer">WeKnow</a> using <a href="http://gatsbyjs.org" target="_blank" rel="noopener noreferrer" className="text-primary">GatsbyJS</a>
           </div>
         </div>
