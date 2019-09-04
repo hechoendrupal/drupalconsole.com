@@ -32,15 +32,15 @@ const SupportPage = () => {
                     </div>
                     <div className="card-text row">
                       <a href="https://app.slack.com/client/T06GX3JTS/C20LD4Z8S" target="_blank" rel="noopener noreferrer" className="col">
-                        <i class="fab fa-slack footer__social"></i><br/>
+                        <i className="fab fa-slack footer__social"></i><br/>
                         <span>Slack</span>
                       </a>
                       <a href="https://github.com/hechoendrupal/drupal-console/issues" target="_blank" rel="noopener noreferrer" className="col">
-                        <i class="fab fa-github footer__social"></i><br/>
+                        <i className="fab fa-github footer__social"></i><br/>
                         <span>Github</span>
                       </a>
                       <a href="https://gitter.im/hechoendrupal/DrupalConsole" target="_blank" rel="noopener noreferrer" className="col">
-                        <i class="fab fa-gitter footer__social"></i><br/>
+                        <i className="fab fa-gitter footer__social"></i><br/>
                         <span>Gitter</span>
                       </a>
                     </div>
