@@ -1,5 +1,5 @@
 ---
-title: 'Help us improve the Drupal Console project.'
+title: 'Help us improve the Drupal Console project  '
 date: 2019-06-06
 author: druprompt
 path: /articles/help-us-improve-drupal-console-project
@@ -12,7 +12,8 @@ tags:
 ---
 
 Like any other open source project, the Drupal Console team defines the vision and roadmap of the project based on their own needs and their vision about that would be useful or helpful to have.
-___
+
+---
 
 Also, we (the drupal console team) receive a lot of feedback from users through our participation in events such as DrupalCons, DrupalCamps, and meetups around the world, however, this type of communication has a bottleneck that prevents us from getting as close to the community as we would like.
 
@@ -24,7 +25,7 @@ The Drupal Console project is divided into four groups of features: Code Generat
 
 This week we are launching a campaign to try to determine how many hours of development are saved by using Drupal Console generators.
 
-If you would like to participate, go ahead and access the poll through [Facebook](https://www.facebook.com/317073868632727/posts/941809122825862?s=584110186&sfns=mo), [Twitter](https://twitter.com/weknowinc/status/1136378139398066181) or only by vote using the Drupal Console site. [https://drupalconsole.com/poll/1](https://drupalconsole.com/poll/1)
+~~If you would like to participate, go ahead and access the poll through [Facebook](https://www.facebook.com/317073868632727/posts/941809122825862?s=584110186&sfns=mo), [Twitter](https://twitter.com/weknowinc/status/1136378139398066181) or only by vote using the Drupal Console site. [https://drupalconsole.com/poll/1](https://drupalconsole.com/poll/1)~~
 
 ### Learning about our customers
 
@@ -42,9 +43,9 @@ We only need and will be going to collect very high-level information.
 
 * What commands are executed?
 * Which language you use to run Drupal Console, i.e., English, Spanish, Japanese.
-* If you run a generator command, how many lines of code were generated    
+* If you run a generator command, how many lines of code were generated.
 
-You can read the privacy policy at [https://drupalconsole.com/privacy-policy](https://drupalconsole.com/privacy-policy)
+You can read the [privacy policy](/privacy-policy) page.
 
 ### Where is this information stored?
 

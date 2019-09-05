@@ -1,6 +1,6 @@
 ---
 title: Privacy Policy
-date: 2018-01-08
+date: 2019-05-29
 author: enzolutions
 path: /privacy-policy
 ---
