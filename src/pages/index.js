@@ -44,7 +44,7 @@ const IndexPage = () => (
                 <ChangelogPreview />
               </div>
               <aside className=" col-4" >
-                <h3>Drupal Consol Radar</h3>
+                <h3>Drupal Console Radar</h3>
                 <RadarList />
               </aside>
             </div>
