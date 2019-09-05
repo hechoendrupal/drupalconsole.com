@@ -128,7 +128,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
       })
     }
 
-    if (sourceInstanceName===`articles` || sourceInstanceName===`changelog`) {
+    if (sourceInstanceName===`articles` || sourceInstanceName===`changelog` || sourceInstanceName===`pages`) {
       const slug = node.frontmatter.path
       // Add slug field
       createNodeField({
@@ -157,6 +157,16 @@ exports.createPages = ({ graphql, actions }) => {
       }
 
       allArticles: allMdx(filter: {fileInfo: {sourceInstanceName: {eq: "articles"}}}) {
+        edges {
+          node {
+            fields {
+              slug
+            }
+          }
+        }
+      }
+
+      allPages: allMdx(filter: {fileInfo: {sourceInstanceName: {eq: "pages"}}}) {
         edges {
           node {
             fields {
@@ -248,6 +258,18 @@ exports.createPages = ({ graphql, actions }) => {
           component: path.resolve(`./src/templates/article.js`),
           context: {
             slug: article.node.fields.slug,
+          },
+        })
+      })
+
+      // Create page pages.
+      const pages = result.data.allPages.edges
+      pages.forEach(page => {
+        createPage({
+          path: page.node.fields.slug,
+          component: path.resolve(`./src/templates/page.js`),
+          context: {
+            slug: page.node.fields.slug,
           },
         })
       })

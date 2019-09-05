@@ -13,6 +13,13 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
+        name: "assets",
+        path: `${__dirname}/content/assets/`,
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
         name: "articles",
         path: `${__dirname}/content/articles/`,
       },
@@ -34,15 +41,15 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "data",
-        path: `${__dirname}/content/data/`,
+        name: "pages",
+        path: `${__dirname}/content/pages/`,
       },
     },
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "assets",
-        path: `${__dirname}/content/assets/`,
+        name: "data",
+        path: `${__dirname}/content/data/`,
       },
     },
     `gatsby-transformer-yaml`,
