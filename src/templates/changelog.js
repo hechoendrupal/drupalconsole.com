@@ -4,6 +4,7 @@ import { MDXProvider } from "@mdx-js/react"
 import { MDXRenderer } from "gatsby-plugin-mdx"
 
 import Layout from "../layout/layout";
+import Releases from "../components/releases";
 
 const ChangelogTemplate = (props) =>  {
   const node = props.data.mdx
@@ -19,6 +20,8 @@ const ChangelogTemplate = (props) =>  {
                 <MDXProvider>
                   <MDXRenderer>{node.body}</MDXRenderer>
                 </MDXProvider>
+                <h3>Commits</h3>
+                <Releases version={node.frontmatter.version} />
               </section>
             </div>
           </div>
@@ -35,6 +38,7 @@ export const pageQuery = graphql`
       body
       frontmatter {
         title
+        version
       }
     }
   }

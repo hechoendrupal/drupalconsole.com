@@ -30,8 +30,3 @@ No need to stay at site root directory. You can now switch to any directory as m
 #### Improvements on the `init` command 
 
 The interactive mode for the init command now ask you and show a list of directories where to copy the configuration files.
-
-
-**Update instructions:**
-
-\[gist-embed data-gist-id="a0970e1ea252ecb852fe8c7182d85d3e" data-gist-file="instructions.md" data-gist-hide-footer="true" data-gist-hide-line-numbers="true" data-gist-show-loading="false"\]
