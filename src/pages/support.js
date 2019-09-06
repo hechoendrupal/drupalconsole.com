@@ -7,7 +7,7 @@ const SupportPage = () => {
 
   return (
     <Layout>
-      <Hero innerSize="py-7">
+      <Hero innerSize="py-8">
         <h1>Need help or support?</h1>
         <p className="lead">
           Community and dedicated expert help is available for Drupal Console.

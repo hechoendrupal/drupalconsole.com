@@ -11,7 +11,7 @@ import RadarList from '../components/radar-list';
 
 const IndexPage = () => (
   <Layout>
-    <Hero innerSize="py-9">
+    <Hero innerSize="py-6">
       <h1>Drupal Console</h1>
       <p className="lead">The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.</p>
       <br />
