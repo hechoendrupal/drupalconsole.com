@@ -1,0 +1,45 @@
+.sidebar-mobile{
+  padding: 1rem;
+  position: fixed;
+  z-index: 30;
+  width: 90%;
+  height: 100vh;
+  background: #f7f7f7;
+  color: #333;
+  box-shadow: 2px 2px 11px rgba(0, 0, 0, 0.14);
+  left: -110%;
+  transition: left 0.5s,
+}
+
+.sidebar-mobile.active{
+  left: 0%;
+}
+
+.sidebar-mobile nav a{
+  display: block;
+  padding: 1rem 1.5rem;
+  font-size: 25px;
+  line-height: 30px;
+  color: #333;
+}
+.sidebar-mobile nav a:hover{
+  text-decoration: underline;
+  color: #50a1ff;
+}
+
+.sidebar-mobile .close-menu{
+  background: transparent;
+  border: none;
+  margin-bottom: 2rem;
+}
+
+.sidebar-mobile .close-menu span{
+  color: transparent;
+  height: 0;
+  line-height: 0;
+  width: 0;
+  display: block;
+}
+.sidebar-mobile .close-menu svg{
+  width: 36px;
+}
