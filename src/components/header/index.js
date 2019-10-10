@@ -3,12 +3,12 @@ import PropTypes from "prop-types"
 import React from "react"
 import './style.css';
 
-const Header = ({ siteTitle }) => (
+const Header = ({ siteTitle, handleShowSidebar }) => (
   <header className="main-header">
     <nav className="navbar navbar-expand-lg navbar-dark custom-navbar">
       <div className="container">
         <div className="navbar-left">
-          <button className="navbar-toggler" type="button">☰</button>
+          <button className="navbar-toggler" type="button" onClick={handleShowSidebar}>☰</button>
           <Link className="navbar-brand" to="/">
             <img className="logo-dark" alt={siteTitle} src="/images/drupal-console-logo.png" />
             <img className="logo-light" alt={siteTitle} src="/images/drupal-console-logo.png" />

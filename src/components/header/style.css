@@ -1,5 +1,7 @@
 .main-header{
   padding: 5px;
+  position: relative;
+  z-index: 5;
 }
 
 .navbar.custom-navbar {
