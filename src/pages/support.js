@@ -20,7 +20,7 @@ const SupportPage = () => {
             <div className="container">
               <div className="row justify-content-center pt-6 ">
 
-                <div className="card-support col card mx-2 my-2 shadow-11 hover-shadow-9 shadow-9 text-default border">
+                <div className="card-support col-12 col-md-5 card mx-2 my-2 shadow-11 hover-shadow-9 shadow-9 text-default border">
                   <div className="card-body text-center">
                     
                     <div className="card-title">
@@ -47,7 +47,7 @@ const SupportPage = () => {
                   </div>
                 </div>
 
-                <div className="card-support col card mx-2 my-2 shadow-11 hover-shadow-9 shadow-9 text-default border">
+                <div className="card-support col-12 col-md-5 card mx-2 my-2 shadow-11 hover-shadow-9 shadow-9 text-default border">
                   <div className="card-body text-center">
                     
                     <div className="card-title">

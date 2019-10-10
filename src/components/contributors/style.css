@@ -10,12 +10,17 @@ div.card-contributor {
   height: 180px !important;
   background-color: #ffffff;
   background-size: cover;
-  margin-bottom: 40px;
-  margin-left: 40px;
+  margin: 0 15px 30px;
 }
 
 div.card-text{
   margin-top: 5px;
   color: #666666;
   text-decoration: none solid rgb(102, 102, 102);
+}
+
+@media only screen and (max-width: 480px) {
+  .card-maintainer {
+    margin-bottom: 30px;
+  }
 }
