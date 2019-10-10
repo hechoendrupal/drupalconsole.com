@@ -43,7 +43,7 @@ const TemplateLayout = ({children, items, context, addRTL}) =>  {
           <div className="row">
           {rtl ?
             <React.Fragment>
-                <div className={`col-md-7 col-xl-8 ml-md-auto py-8 ${(rtl && _isUndefined(addRTL)) && 'rtl'}`}>
+                <div className={`col-md-8 col-xl-8 ml-md-auto py-8 ${(rtl && _isUndefined(addRTL)) && 'rtl'}`}>
                   {children}
                 </div>
                 <div className="col-md-4 col-xl-3">
@@ -65,7 +65,7 @@ const TemplateLayout = ({children, items, context, addRTL}) =>  {
                     rtl={rtl}
                   />
                 </div>
-                <div className="col-md-7 col-xl-8 ml-md-auto py-8">
+                <div className="col-md-8 col-xl-8 ml-md-auto py-8">
                   {[children]}
                 </div>
             </React.Fragment>

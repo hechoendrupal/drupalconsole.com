@@ -32,7 +32,7 @@ const Maintainers = (props) => {
       <div className="row justify-content-center pt-6">
         {maintainers.edges.map(item => {
           return (
-            <div key={item.node.id} className="card-maintainer col-3 card px-2 py-2 shadow-11 hover-shadow-9 text-default border">
+            <div key={item.node.id} className="card-maintainer col-md-3 card px-2 py-2 shadow-11 hover-shadow-9 text-default border">
               <div className="card-body text-center">
                 <div className="card-image">
                   <img src={item.node.avatar_url} className="card-title rounded-circle w-200px" alt={item.node.login} />
