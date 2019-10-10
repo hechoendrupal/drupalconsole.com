@@ -16,6 +16,7 @@ const Header = ({ siteTitle, handleShowSidebar }) => (
         </div>
         <section className="navbar-mobile">
           <nav className="nav nav-navbar ml-auto">
+            <Link className="nav-link" to="/">Home</Link>
             <Link className="nav-link" to="/docs">Documentation</Link>
             <Link className="nav-link" to="/contributors">Contributors</Link>
             <Link className="nav-link" to="/articles">Articles</Link>

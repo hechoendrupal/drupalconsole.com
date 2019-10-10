@@ -23,6 +23,7 @@ const footer = props => {
         <div className="row gap-y align-items-center">
           <div className="col-md-7">
             <div className="nav justify-content-center justify-content-md-start">
+              <Link className="nav-link" to="/">Home</Link>
               <Link className="nav-link" to="/docs">Documentation</Link>
               <Link className="nav-link" to="/contributors">Contributors</Link>
               <Link className="nav-link" to="/articles">Articles</Link>
