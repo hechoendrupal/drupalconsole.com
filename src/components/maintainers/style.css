@@ -24,5 +24,8 @@
 @media only screen and (max-width: 480px) {
   .card-maintainer {
     margin-bottom: 30px;
+    max-width: 250px;
+    margin-right: auto;
+    margin-left: auto;
   }
 }
