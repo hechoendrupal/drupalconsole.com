@@ -6,7 +6,7 @@ import Layout from "../layout/layout"
 import Statistics from "../components/statistic"
 import Maintainers from "../components/maintainers"
 import Hero from '../components/hero';
-import ChangelogPreview from '../components/changelogPreview';
+import ChangelogPreview from '../components/changelog-preview';
 import RadarList from '../components/radar-list';
 
 const IndexPage = () => (
