@@ -10,10 +10,10 @@ const footer = props => {
         <div className="row justify-content-center">
           <div className=" row my-5 justify-content-center">
             <div className="col-3 justify-content-center">
-              <Link to="/support"><i className="footer__social fab fa-github"></i></Link>
+              <Link to="/support"><i className="footer__social far fa-life-ring"></i></Link>
             </div>
             <div className="col-3 justify-content-center">
-              <a href="https://github.com/hechoendrupal/DrupalConsole" target="_blank" rel="noopener noreferrer"><i className="footer__social far fa-life-ring"></i></a>
+              <a href="https://github.com/hechoendrupal/DrupalConsole" target="_blank" rel="noopener noreferrer"><i className="footer__social fab fa-github"></i></a>
             </div>
             <div className="col-3 justify-content-center">
               <a href="https://twitter.com/drupalconsole" target="_blank" rel="noopener noreferrer"><i className="footer__social fab fa-twitter"></i></a>
