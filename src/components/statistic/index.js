@@ -28,7 +28,7 @@ const Statistics = () => {
   return (
     <div className="container py-9">
       <div className="row text-center">
-        <div className="col-md-3">
+        <div className="statistic col-md-3">
           <p>
             <i className="fas fa-code-branch highlight__icon"></i>
           </p>
@@ -36,7 +36,7 @@ const Statistics = () => {
           <h4 className="mb-0">Forks</h4>
         </div>
 
-        <div className="col-md-3">
+        <div className="statistic col-md-3">
           <p>
             <i className="fas fa-user-friends highlight__icon"></i>
           </p>
@@ -44,7 +44,7 @@ const Statistics = () => {
           <h4 className="mb-0">Contributors</h4>
         </div>
 
-        <div className="col-md-3">
+        <div className="statistic col-md-3">
           <p>
             <i className="fas fa-cloud-download-alt highlight__icon"></i>
           </p>
@@ -52,7 +52,7 @@ const Statistics = () => {
           <h4 className="mb-0">Downloads</h4>
         </div>
 
-        <div className="col-md-3">
+        <div className="statistic col-md-3">
           <p>
             <i className="fas fa-birthday-cake highlight__icon"></i>
           </p>

@@ -39,11 +39,11 @@ const IndexPage = () => (
           <hr/>
           <div className="my-4">
             <div className="row">
-              <div className="last-entry col-md-8">
+              <div className="last-entry col-lg-8">
                 <h2>Changelog</h2>
                 <ChangelogPreview />
               </div>
-              <aside className=" col-md-4" >
+              <aside className=" col-lg-4" >
                 <h3>Drupal Console Radar</h3>
                 <RadarList />
               </aside>

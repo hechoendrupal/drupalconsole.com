@@ -2,3 +2,22 @@
   font-size: 40px;
   color: #0293D3;
 }
+
+@media only screen and (max-width: 768px) {
+  .statistic {
+    background: #f7f7f7;
+    padding: 25px;
+    margin: 10px auto;
+    max-width: 250px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, .10);
+  }
+  .statistic h2{
+    margin-bottom: 5px !important;
+    margin-top: 5px !important;
+  }
+  .statistic p{
+    margin-bottom: 0px !important;
+    margin-top: 0px !important;
+  }
+}
