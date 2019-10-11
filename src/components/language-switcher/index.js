@@ -35,29 +35,27 @@ const LanguageSwitcher = ({ language, activePage, rtl }) => {
   const defaultLangaugeName = _find(allLanguagesYaml.edges, (item) => {return _isEqual(item.node.id, language)})
 
   return (
-    <div className="container">
-      <div className={`dropdown float-${rtl ? 'left': 'right'}`}>
-        {defaultLangaugeName &&
-          <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            <Image path={`flags/${defaultLangaugeName.node.slug}.png`} className="rounded-circle w-20px" alt={defaultLangaugeName.node.slug} /> {` ${defaultLangaugeName.node.slug} (${defaultLangaugeName.node.id})`}
-          </button>
-        }
-        <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
-          {defaultLangaugeName && allLanguagesYaml.edges && allLanguagesYaml.edges.map(item => {
+    <div className={`dropdown float-${rtl ? 'left': 'right'}`}>
+      {defaultLangaugeName &&
+        <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <Image path={`flags/${defaultLangaugeName.node.slug}.png`} className="rounded-circle w-20px" alt={defaultLangaugeName.node.slug} /> {` ${defaultLangaugeName.node.slug} (${defaultLangaugeName.node.id})`}
+        </button>
+      }
+      <div className="dropdown-menu" aria-labelledby="dropdownMenu2">
+        {defaultLangaugeName && allLanguagesYaml.edges && allLanguagesYaml.edges.map(item => {
 
-            if (!item) {
-              return <></>
-            }
+          if (!item) {
+            return <></>
+          }
 
-            const toPage = activePage.replace(`${defaultLangaugeName.node.id}/`, `${item.node.id}/`)
+          const toPage = activePage.replace(`${defaultLangaugeName.node.id}/`, `${item.node.id}/`)
 
-            return (
-              <Link key={item.node.id} className="dropdown-item" to={`${toPage}`}>
-                {item.node.name} ({item.node.id})
-              </Link>
-            )
-          })}
-        </div>
+          return (
+            <Link key={item.node.id} className="dropdown-item" to={`${toPage}`}>
+              {item.node.name} ({item.node.id})
+            </Link>
+          )
+        })}
       </div>
     </div>
   )

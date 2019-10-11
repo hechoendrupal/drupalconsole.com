@@ -1,3 +1,11 @@
 div.dropdown {
   margin-top: 10px;
 }
+.dropdown-sidebar {
+  /* position: relative; */
+  width: 300px;
+}
+.dropdown-sidebar .sidebar{
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
