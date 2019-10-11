@@ -29,11 +29,11 @@ const Sidebar = ({ items, activePage, language, rtl, toDropDown }) => {
 
                 return (
                   <li key={`${item.link}-li}`} className="nav-item">
-                    <Link className={`nav-link ${isActive && 'active'} font-size-16`} to={link}>
+                    <Link className={`nav-link ${isActive && 'active'} ${toDropDown?'active':''} font-size-16`} to={link}>
                       {
                         activePage === link || isActive ? <strong>{item.title}</strong> : item.title
                       }
-                      <i className="nav-angle"></i>
+                      {item.items&&item.items.length>0&&<i className="nav-angle"></i>}
                     </Link>
                     {item.items && (
                       <div key={`${item.link}-div-item}`} className="nav">
