@@ -28,6 +28,7 @@ const Sidebar = ({showSidebar, handleShowSidebar}) => {
         <div className="">
           
           <nav className="">
+            <Link className="" to="/">Home</Link>
             <Link className="" to="/docs">Documentation</Link>
             <Link className="" to="/contributors">Contributors</Link>
             <Link className="" to="/articles">Articles</Link>
