@@ -1,7 +1,7 @@
 /* eslint-disable */
 
 import React from "react"
-import SidebarItem from "./sidebarItem";
+import SidebarItem from "./sidebar-item";
 import {Link} from "gatsby";
 
 import _split from "lodash/split";

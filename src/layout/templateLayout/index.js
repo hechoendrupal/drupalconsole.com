@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from "gatsby"
 
 import Layout from "../layout"
 import Sidebar from "../../components/sidebar"
-import LanguageSwitcher from "../../components/languageSwitcher"
+import LanguageSwitcher from "../../components/language-switcher"
 
 import _find from "lodash/find"
 import _isEqual from "lodash/isEqual"
