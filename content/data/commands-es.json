@@ -1320,6 +1320,10 @@
                 {
                     "name": "driver",
                     "description": "El driver de la base de datos"
+                },
+                {
+                    "name": "default",
+                    "description": "commands.database.query.options.default"
                 }
             ],
             "arguments": [],
@@ -2161,30 +2165,6 @@
             }
         },
         {
-            "name": "debug:features",
-            "description": "Lista las features registradas.",
-            "options": [],
-            "arguments": [
-                {
-                    "name": "bundle",
-                    "description": "Nombre del bundle"
-                }
-            ],
-            "examples": [],
-            "aliases": [],
-            "key": "debug.features",
-            "dashed": "debug-features",
-            "messages": {
-                "usage": "Uso",
-                "options": "Opciones disponibles",
-                "option": "Opci\u00f3n",
-                "details": "Detalles",
-                "arguments": "Argumentos disponibles",
-                "argument": "Argumento",
-                "examples": "Ejemplos"
-            }
-        },
-        {
             "name": "debug:hook",
             "description": "commands.debug.hook.description",
             "options": [],
@@ -2684,6 +2664,42 @@
             }
         },
         {
+            "name": "debug:test",
+            "description": "Ofrece un listado de Tests Unitarios disponibles en la aplicaci\u00f3n.",
+            "options": [
+                {
+                    "name": "test-class",
+                    "description": "Clase de Test"
+                }
+            ],
+            "arguments": [
+                {
+                    "name": "group",
+                    "description": "Grupo"
+                }
+            ],
+            "examples": [
+                {
+                    "description": "",
+                    "execution": "drupal debug:test\n"
+                }
+            ],
+            "aliases": [
+                "td"
+            ],
+            "key": "debug.test",
+            "dashed": "debug-test",
+            "messages": {
+                "usage": "Uso",
+                "options": "Opciones disponibles",
+                "option": "Opci\u00f3n",
+                "details": "Detalles",
+                "arguments": "Argumentos disponibles",
+                "argument": "Argumento",
+                "examples": "Ejemplos"
+            }
+        },
+        {
             "name": "debug:theme",
             "description": "Muestra los temas actuales en la aplicaci\u00f3n.",
             "options": [],
@@ -3024,37 +3040,6 @@
             ],
             "key": "entity.delete",
             "dashed": "entity-delete",
-            "messages": {
-                "usage": "Uso",
-                "options": "Opciones disponibles",
-                "option": "Opci\u00f3n",
-                "details": "Detalles",
-                "arguments": "Argumentos disponibles",
-                "argument": "Argumento",
-                "examples": "Ejemplos"
-            }
-        },
-        {
-            "name": "features:import",
-            "description": "Importar m\u00f3dulo de configuraci\u00f3n.",
-            "options": [
-                {
-                    "name": "bundle",
-                    "description": "Nombre del bundle"
-                }
-            ],
-            "arguments": [
-                {
-                    "name": "packages",
-                    "description": "Nombre del paquete"
-                }
-            ],
-            "examples": [],
-            "aliases": [
-                "fei"
-            ],
-            "key": "features.import",
-            "dashed": "features-import",
             "messages": {
                 "usage": "Uso",
                 "options": "Opciones disponibles",
@@ -3568,6 +3553,10 @@
                 {
                     "name": "has-owner",
                     "description": "Entity has owner"
+                },
+                {
+                    "name": "has-bundle-permissions",
+                    "description": "commands.generate.entity.content.options.has-bundle-permissions"
                 }
             ],
             "arguments": [],
@@ -5869,14 +5858,6 @@
                 {
                     "name": "latest",
                     "description": "Valor por defecto que descarga la versi\u00f3n m\u00e1s reciente"
-                },
-                {
-                    "name": "composer",
-                    "description": "Descarga el m\u00f3dulo usando Composer"
-                },
-                {
-                    "name": "unstable",
-                    "description": "M\u00f3dulo inestable (versi\u00f3n de desarrollo)"
                 }
             ],
             "arguments": [
@@ -6361,6 +6342,41 @@
             }
         },
         {
+            "name": "service:override",
+            "description": "commands.service.override.description",
+            "options": [
+                {
+                    "name": "key",
+                    "description": "commands.service.override.options.key"
+                },
+                {
+                    "name": "value",
+                    "description": "commands.service.override.options.value"
+                }
+            ],
+            "arguments": [
+                {
+                    "name": "name",
+                    "description": "commands.service.override.arguments.name"
+                }
+            ],
+            "examples": [],
+            "aliases": [
+                "so"
+            ],
+            "key": "service.override",
+            "dashed": "service-override",
+            "messages": {
+                "usage": "Uso",
+                "options": "Opciones disponibles",
+                "option": "Opci\u00f3n",
+                "details": "Detalles",
+                "arguments": "Argumentos disponibles",
+                "argument": "Argumento",
+                "examples": "Ejemplos"
+            }
+        },
+        {
             "name": "settings:set",
             "description": "Cambia un valor de configuraci\u00f3n espec\u00edfico en el archivo de configuraci\u00f3n de DrupalConsole",
             "options": [],
@@ -6778,14 +6794,44 @@
             }
         },
         {
-            "name": "theme:download",
-            "description": "Descarga un tema para la aplicaci\u00f3n",
+            "name": "test:run",
+            "description": "Ejecuta un test unitario de los disponibles en la aplicaci\u00f3n",
             "options": [
                 {
-                    "name": "composer",
-                    "description": "Use la opci\u00f3n --composer para llevar a cabo la descarga del tema con Composer"
+                    "name": "url",
+                    "description": "URL del test"
                 }
             ],
+            "arguments": [
+                {
+                    "name": "test-class",
+                    "description": "Clase del test"
+                },
+                {
+                    "name": "test-methods",
+                    "description": "M\u00e9todos de prueba a ejecutar"
+                }
+            ],
+            "examples": [],
+            "aliases": [
+                "ter"
+            ],
+            "key": "test.run",
+            "dashed": "test-run",
+            "messages": {
+                "usage": "Uso",
+                "options": "Opciones disponibles",
+                "option": "Opci\u00f3n",
+                "details": "Detalles",
+                "arguments": "Argumentos disponibles",
+                "argument": "Argumento",
+                "examples": "Ejemplos"
+            }
+        },
+        {
+            "name": "theme:download",
+            "description": "Descarga un tema para la aplicaci\u00f3n",
+            "options": [],
             "arguments": [
                 {
                     "name": "theme",
@@ -6921,6 +6967,30 @@
             }
         },
         {
+            "name": "update:command:data",
+            "description": "Update gitbook",
+            "options": [
+                {
+                    "name": "file",
+                    "description": ""
+                }
+            ],
+            "arguments": [],
+            "examples": [],
+            "aliases": [],
+            "key": "update.command.data",
+            "dashed": "update-command-data",
+            "messages": {
+                "usage": "Uso",
+                "options": "Opciones disponibles",
+                "option": "Opci\u00f3n",
+                "details": "Detalles",
+                "arguments": "Argumentos disponibles",
+                "argument": "Argumento",
+                "examples": "Ejemplos"
+            }
+        },
+        {
             "name": "update:entities",
             "description": "Aplicar actualizaciones a entidades",
             "options": [],
@@ -6976,6 +7046,30 @@
             ],
             "key": "update.execute",
             "dashed": "update-execute",
+            "messages": {
+                "usage": "Uso",
+                "options": "Opciones disponibles",
+                "option": "Opci\u00f3n",
+                "details": "Detalles",
+                "arguments": "Argumentos disponibles",
+                "argument": "Argumento",
+                "examples": "Ejemplos"
+            }
+        },
+        {
+            "name": "update:gitbook",
+            "description": "Update gitbook",
+            "options": [
+                {
+                    "name": "file",
+                    "description": ""
+                }
+            ],
+            "arguments": [],
+            "examples": [],
+            "aliases": [],
+            "key": "update.gitbook",
+            "dashed": "update-gitbook",
             "messages": {
                 "usage": "Uso",
                 "options": "Opciones disponibles",
@@ -7399,9 +7493,6 @@
             "name": "entity"
         },
         {
-            "name": "features"
-        },
-        {
             "name": "field"
         },
         {
@@ -7441,6 +7532,9 @@
             "name": "router"
         },
         {
+            "name": "service"
+        },
+        {
             "name": "settings"
         },
         {
@@ -7451,6 +7545,9 @@
         },
         {
             "name": "taxonomy"
+        },
+        {
+            "name": "test"
         },
         {
             "name": "theme"
