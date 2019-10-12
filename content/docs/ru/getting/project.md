@@ -12,13 +12,13 @@ DrupalConsole состоит из:
 
 К примеру, если Drupal находится в папке `/app/web`, а файл `composer.json` и папка `vendor` в папке `/app`, команду `drupal` можно будет успешно запустить из папки `/app` или из любой папки внутри `/app`.
 
-[Установка файла запуска для DrupalConsole, так называемый глобально запускаемый](./launcher.md)
+[Установка файла запуска для DrupalConsole, так называемый глобально запускаемый](launcher)
 
 ## Установка DrupalConsole отдельно для каждого проекта с помощью приложения Composer
 
 В каждом проекте с Drupal сайтом должна быть своя DrupalConsole. Установить ее можно с помощью Composer.
 
-[Установка DrupalConsole с помощью Composer](./composer.md) 
+[Установка DrupalConsole с помощью Composer](composer) 
 
 **ВНИМАНИЕ:** Начиная с версии RC DrupalConsole должна быть установлена в каждом проекте отдельно. Глобальная установка Drupal Console командой `composer global require` больше не поддерживается.
 
