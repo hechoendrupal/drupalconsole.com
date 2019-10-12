@@ -87,7 +87,7 @@ Now the command for automagically translate it is:
 drupal develop:doc:data --file=/Users/leandro/git/drupalconsole.com/content/data/commands-es.json
 ```
 
-giving with the `--file` parameter the absolute path to the file `commands-es.json`
+giving with the `--file` parameter the absolute path to the file `commands-LANGUAGE_CODE.json`
 
 ### Contribute your work
 You're all done!!
