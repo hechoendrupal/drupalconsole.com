@@ -11,7 +11,8 @@
         "source": "**",
         "destination": "/index.html"
       }
-    ]
+    ],
+    "trailingSlash": true
   },
   "functions": {
     "predeploy": [

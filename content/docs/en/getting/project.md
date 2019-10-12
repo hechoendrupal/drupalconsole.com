@@ -9,12 +9,12 @@ Without it you will be inconvenienced by having to run the command only from you
 
 For example, if you have Drupal root in a /web directory, and a composer.json and your vendor directory in the directory above that, you will be able to run the `drupal` command from the same directory as the composer.json file. Even better, you can run it from any subdirectory under that as many levels deep as you would like to go.
 
-[Install Drupal Console Launcher aka Global executable](./launcher.md)
+[Install Drupal Console Launcher aka Global executable](launcher)
 
 ## Install DrupalConsole in each one of your projects using Composer
 Each one of your site projects should have it's own DrupalConsole installed. This is done using Composer.
 
-[Install Drupal Console Using Composer](./composer.md) 
+[Install Drupal Console Using Composer](composer)
 
 **Notes:** Starting on RC releases DrupalConsole must be installed per site. Install Drupal Console using `composer global require` is no longer supported.
 
