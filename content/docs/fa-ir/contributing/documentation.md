@@ -1,38 +1,94 @@
-# مشارکت در مستندسازی
-این مستندات به صورت یک سند زنده ارائه می‌شوند و از *حضور شما به منظور کمک‌رسانی* به آن استقبال بعمل می‌آید. تنها کافی است [کتاب کنسول دروپال](https://github.com/hechoendrupal/drupalconsole.com) را از روی گیت‌هاب fork کنید. اگر تاکنون در پروژه‌ای از گیت‌هاب مشارکت نکرده‌اید، یا اطمینان ندارید که با این گردشگار آشنا هستید، شاید اول بخواهید نگاهی به مستندات درباره [pull requests](https://help.github.com/articles/using-pull-requests/) بیندازید. شاید تمایل داشته باشید که برنامه رومیزی گیت‌هاب ([Mac](https://mac.github.com) یا [Windows](https://windows.github.com)) را نصب کنید، که اندکی این گردشکار را آسان کرده و از ظاهر گرافیکی بهتری برخوردار است.
+# How to translate Drupal Console (app & documentation)
 
-*This page is a meeting point for translators. If you're one, consider yourself invited to edit this page and state constancy of your opinions and your work*
+In order to translate the book, first you need to translate the app strings. 
+The book translates itself afterwards with a simple command.
 
-# Guide for translators
-If you would like to help in the translation of this book, consider yourself welcome. Please, keep in mind the following guidelines:
+### Cloning the required repos
 
-* Be gender neutral.
-* Code and examples should not be translated.
-* Use a formal style. We prefer a formal tone.
+You need to clone the following repos under the same parent folder (whatever it be)
 
-Note: The files are located in `/path/directory/drupalconsole.com/content/docs/fa-ir`
+- drupal-console-core
+- drupal-console-develop
+- drupal-console-en
+- drupal-console-es _[or your language to translate]_
+- drupal-console-launcher
+- drupalconsole.com
 
-# Generate translated all available commands
-*Over time, DrupalConsole programmers add more and more commands, so it's possible some available commands weren't present in this book if they are not added to the book as they are added.
-In order to solve this problem, with a single command is possible to generate (already translated) all the .json files belonging to all the available commands*
+### Create a new site ready to contribute
+_(do this only the first time)_
 
-### Comand for generating documentation of all available commands currently
-If you have cloned in your local machine both projects, DrupalConsole and this book, you should have this [console-develop](https://github.com/weknowinc/drupal-console-develop) repository and execute the following command from a directory where Drupal were installed (or using the *--root* option):
+```
+$ drupal develop:contribute \
+--drupal=/Users/leandro/Sites/translator \
+--code=/Users/leandro/git/
+```
 
-``` 
-drupal develop:doc:data --path=/path/directory/drupalconsole.com/content/data/commands-fa-ir.json
- ```
+Here we point out the site path with `--drupal` parameter and your cloned repositories path with parameter `--code`
 
-(Please, check you have DrupalConsole correctly configured previously in your local machine in your desired language in order to get all the commands in your language.
+### Link the repositories
+_(do this only the first time)_
 
- You must have the following modules that activate the hidden commands to avoid overriding existing commands:
-* [migrate](https://www.drupal.org/project/migrate)
-* [features](https://www.drupal.org/project/features)
-* rest (core module)
-* locale (core module)
-* taxonomy (core module)
+```
+$ drupal develop:create:symlinks \
+--code-directory=/Users/leandro/git/
+```
 
-[Files will be generated in the language you have DrupalConsole configured])
+`--code` parameter points out your repositories path
 
-___
-*Please, in case of doubt, dissent or just if you want to make a proposal, please file an issue on this repository or edit directly this page.*
+### Set Drupal Console in your language
+`drupal settings:set language es`
+
+### Go to your Drupal Console `config.yml` and set `develop:true`
+_(do this only the first time)_
+
+
+### Let's translate those strings
+
+Ok, now you got an environment ready to translate, so first of all let's synchronize new string with the following command:
+
+```
+drupal develop:translation:sync
+```
+
+Then you want to remove not already necessary strings with:
+
+```
+drupal develop:translation:cleanup
+```
+
+Now, lets check what needs to be translated with:
+
+```
+drupal develop:translation:pending es
+```
+
+_`es` means spanish, change it according your language_
+
+Right now, you can translate your strings, the .yml files live in `/config/translations`
+
+Please, keep in mind the following guidelines:
+
+- Be gender neutral.
+- Code and examples should not be translated.
+- Use a formal style. We prefer a formal tone.
+
+Ok, so you translated all the app to your language, right? Now you want to know that the Documentation Book is translated automagically :-)
+
+### Auto-generating the docs
+Let's go for the documentation: you should have a repo called `drupalconsole.com` if not, clone it yourself:
+
+```
+git clone git@github.com:hechoendrupal/drupalconsole.com.git
+```
+
+Now the command for automagically translate it is:
+
+```
+drupal develop:doc:data --file=/Users/leandro/git/drupalconsole.com/content/data/commands-es.json
+```
+
+giving with the `--file` parameter the absolute path to the file `commands-es.json`
+
+### Contribute your work
+You're all done!!
+Don't forget to make a pull request to the Drupal Console repos at Github including your language repo and the documentation repo!!
