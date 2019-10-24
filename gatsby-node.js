@@ -127,6 +127,14 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
         value: slug.indexOf('/') > 0 ? slug.substring(0, slug.indexOf('/')) : slug
       })
     }
+    else{
+      // Add language field
+      createNodeField({
+        name: `language`,
+        node,
+        value: 'en'
+      })
+    }
 
     if (sourceInstanceName===`articles` || sourceInstanceName===`changelog` || sourceInstanceName===`pages`) {
       const slug = node.frontmatter.path
@@ -136,6 +144,12 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
         node,
         value: slug
       })
+      // Add language field
+      // createNodeField({
+      //   name: `language`,
+      //   node,
+      //   value: 'en'
+      // })
     }
   }
 }
@@ -152,6 +166,8 @@ exports.createPages = ({ graphql, actions }) => {
               slug
               language
             }
+            rawBody
+            excerpt
           }
         }
       }
@@ -161,7 +177,9 @@ exports.createPages = ({ graphql, actions }) => {
           node {
             fields {
               slug
+              language
             }
+            rawBody
           }
         }
       }
@@ -171,7 +189,9 @@ exports.createPages = ({ graphql, actions }) => {
           node {
             fields {
               slug
+              language
             }
+            rawBody
           }
         }
       }
@@ -181,6 +201,7 @@ exports.createPages = ({ graphql, actions }) => {
           node {
             fields {
               slug
+              language
             }
           }
         }
@@ -258,6 +279,7 @@ exports.createPages = ({ graphql, actions }) => {
           component: path.resolve(`./src/templates/article.js`),
           context: {
             slug: article.node.fields.slug,
+            language: article.node.fields.language
           },
         })
       })
@@ -270,6 +292,7 @@ exports.createPages = ({ graphql, actions }) => {
           component: path.resolve(`./src/templates/page.js`),
           context: {
             slug: page.node.fields.slug,
+            language: page.node.fields.language
           },
         })
       })
@@ -282,6 +305,7 @@ exports.createPages = ({ graphql, actions }) => {
           component: path.resolve(`./src/templates/changelog.js`),
           context: {
             slug: changelog.node.fields.slug,
+            language: changelog.node.fields.language
           },
         })
       })

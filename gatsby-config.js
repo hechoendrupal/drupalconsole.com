@@ -98,6 +98,88 @@ module.exports = {
         respectDNT: true,
       },
     },
+    {
+      resolve: 'gatsby-plugin-lunr',
+      options: {
+        // ISO 639-1 language codes. See https://lunrjs.com/guides/language_support.html for details
+        languages: [
+          {
+            name: 'en',
+            filterNodes: node => node.fields && node.fields.language === 'en',
+          },
+          {
+            name: 'es',
+            filterNodes: node => node.fields && node.fields.language === 'es',
+          },
+          // {
+          //   name: 'ca',
+          //   filterNodes: node => node.fields && node.fields.language === 'ca',
+          // },
+          // {
+          //   name: 'fa-ir',
+          //   filterNodes: node => node.fields && node.fields.language === 'fa-ir',
+          // },
+          {
+            name: 'fr',
+            filterNodes: node => node.fields && node.fields.language === 'fr',
+          },
+          // {
+          //   name: 'hi',
+          //   filterNodes: node => node.fields && node.fields.language === 'hi',
+          // },
+          {
+            name: 'hu',
+            filterNodes: node => node.fields && node.fields.language === 'hu',
+          },
+          {
+            name: 'ja',
+            filterNodes: node => node.fields && node.fields.language === 'ja',
+          },
+          // {
+          //   name: 'mr',
+          //   filterNodes: node => node.fields && node.fields.language === 'mr',
+          // },
+          // {
+          //   name: 'pt-br',
+          //   filterNodes: node => node.fields && node.fields.language === 'pt-br',
+          // },
+          {
+            name: 'ro',
+            filterNodes: node => node.fields && node.fields.language === 'ro',
+          },
+          {
+            name: 'ru',
+            filterNodes: node => node.fields && node.fields.language === 'ru',
+          },
+          // {
+          //   name: 'vn',
+          //   filterNodes: node => node.fields && node.fields.language === 'vn',
+          // },
+          // {
+          //   name: 'zh-hans',
+          //   filterNodes: node => node.fields && node.fields.language === 'zh-hans',
+          // },
+      ],
+        // Fields to index. If store === true value will be stored in index file. 
+        // Attributes for custom indexing logic. See https://lunrjs.com/docs/lunr.Builder.html for details
+        fields: [
+          { name: 'content', store: true },
+          { name: 'url', store: true },
+        ],
+        // A function for filtering nodes. () => true by default
+        // filterNodes: (node) => !isNil(node.rawBody),
+        // How to resolve each field's value for a supported node type 
+        resolvers: {
+          // For any node of type MarkdownRemark, list how to resolve the fields' values
+          Mdx: {
+            content: (node) => node.rawBody,
+            url: (node) => node.fields.slug,
+            language:(node) => node.fields.language,
+            excerpt:(node) => node.excerpt,
+          },
+        },
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

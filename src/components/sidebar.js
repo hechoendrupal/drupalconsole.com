@@ -13,7 +13,7 @@ const Sidebar = ({ items, activePage, language, rtl, toDropDown }) => {
   const activePageItems = _split(activePage, '/');
 
   return (
-    <div className={`${toDropDown&&'dropdown'} float-${rtl ? 'right': 'left'}`}>
+    <div className={`docs-sidebar position-relative ${toDropDown?'dropdown':''} float-${rtl ? 'right': 'left'}`}>
       {toDropDown&&
         <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuDocs" data-flip="true" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           Menu

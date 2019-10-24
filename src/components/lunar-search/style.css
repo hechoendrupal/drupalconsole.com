@@ -1,0 +1,26 @@
+.search-docs {
+  position: relative;
+  width: 100%;
+}
+
+.search-docs__input{
+  /* border: 1px solid #999;
+  border-radius: 40px;
+  width: 100%;
+  background: #f7f7f7;
+  color: #333;
+  padding: 6px 10px;
+  box-shadow: 0 0 3px inset rgba(0, 0, 0, .4); */
+}
+
+.search-docs__results{
+  z-index: 50;
+  position: absolute;
+  list-style: none;
+  background: #f7f7f7;
+  width: 350px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .03);
+}
+.search-docs__results:before{
+  display: none;
+}

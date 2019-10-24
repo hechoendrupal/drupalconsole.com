@@ -7,3 +7,7 @@ pre {
   direction: ltr;
   text-align: left !important;
 }
+
+.docs-sidebar{
+  z-index: 30;
+}
