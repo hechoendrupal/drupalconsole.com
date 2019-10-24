@@ -1,21 +1,22 @@
-# How to translate Drupal Console (app & documentation)
+# Cómo traducir Drupal Console (app y documentación)
 
-In order to translate the book, first you need to translate the app strings. 
-The book translates itself afterwards with a simple command.
+Para poder traducir la documentación, primero debe traducir las cadenas de texto de la aplicación.
 
-### Cloning the required repos
+El libro se traduce después por si mismo con un simple comando.
 
-You need to clone the following repos under the same parent folder (whatever it be)
+### Clonar los repositorios necesarios
+
+Necesita clonar los siguientes repositorios, todos bajo un mismo directorio (sea éste el que usted elija).
 
 - drupal-console-core
 - drupal-console-develop
 - drupal-console-en
-- drupal-console-es _[or your language to translate]_
+- drupal-console-_CODIGO-IDIOMA-A-TRADUCIR_
 - drupal-console-launcher
 - drupalconsole.com
 
-### Create a new site ready to contribute
-_(do this only the first time)_
+### Crear un nuevo sitio dedicado a traducir
+_(haga esto sólo la primera vez)_
 
 ```
 $ drupal develop:contribute \
@@ -23,72 +24,74 @@ $ drupal develop:contribute \
 --code=/Users/leandro/git/
 ```
 
-Here we point out the site path with `--drupal` parameter and your cloned repositories path with parameter `--code`
+En este comando indicamos la ruta al sitio con el parámetro `--drupal` y la ruta a sus repositorios clonados con el parámetro `--code`
 
-### Link the repositories
-_(do this only the first time)_
+### Enlazar los repositorios
+_(haga esto sólo la primera vez)_
 
 ```
 $ drupal develop:create:symlinks \
 --code-directory=/Users/leandro/git/
 ```
 
-`--code` parameter points out your repositories path
+el parámetro `--code` indica la ruta a sus repositorios
 
-### Set Drupal Console in your language
+### Configure Drupal Console en su idioma
 `drupal settings:set language es`
 
-### Go to your Drupal Console `config.yml` and set `develop:true`
-_(do this only the first time)_
+### Vaya a su archivo `config.yml` de Drupal Console y configure el siguiente valor `develop:true`
+_(haga esto sólo la primera vez)_
 
 
-### Let's translate those strings
+### ¡Traduzcamos esas cadenas!
 
-Ok, now you got an environment ready to translate, so first of all let's synchronize new string with the following command:
+Ahora usted cuenta con un entorno listo para traducir; lo primero que necesita es sincronizar las cadenas nuevas con el siguiente comando:
 
 ```
 drupal develop:translation:sync
 ```
 
-Then you want to remove not already necessary strings with:
+Después conviene eliminar las cadenas que ya no son necesarias con:
 
 ```
 drupal develop:translation:cleanup
 ```
 
-Now, lets check what needs to be translated with:
+Ahora vamos a examinar lo que necesita ser traducido con:
 
 ```
 drupal develop:translation:pending es
 ```
 
-_`es` means spanish, change it according your language_
+_`es` significa idioma español, cámbielo según su idioma_
 
-Right now, you can translate your strings, the .yml files live in `/config/translations`
+Llegados a este punto, usted ya puede traducir sus cadenas. Los archivos .yml se encuentran en `/config/translations`
 
-Please, keep in mind the following guidelines:
+A la hora de traducir, por favor, tenga en cuenta las siguientes consideraciones:
 
-- Be gender neutral.
-- Code and examples should not be translated.
-- Use a formal style. We prefer a formal tone.
+- Utilice un género neutral.
+- El código y los ejemplos no se traducen.
+- Utilice un estilo formal. Se prefiere un tono serio y preferimos el "usted" al "tu".
 
-Ok, so you translated all the app to your language, right? Now you want to know that the Documentation Book is translated automagically :-)
+En este momento usted debería haber traducido la aplicación por completo a su idioma. Ahora debe saber que la documentación se traduce sola :-)
 
-### Auto-generating the docs
-Let's go for the documentation: you should have a repo called `drupalconsole.com` if not, clone it yourself:
+### Auto-generando la documentación
+Debería tener un repositorio correspondiente a  `drupalconsole.com` Si no lo tiene, clónelo usted mismo con el siguiente comando:
 
 ```
 git clone git@github.com:hechoendrupal/drupalconsole.com.git
 ```
 
-Now the command for automagically translate it is:
+Ahora el comando para traducir automágicamente es:
 
 ```
 drupal develop:doc:data --file=/Users/leandro/git/drupalconsole.com/content/data/commands-es.json
 ```
 
-giving with the `--file` parameter the absolute path to the file `commands-LANGUAGE_CODE.json`
+indicando en el parámetro `--file` la ruta absoluta al fichero `commands-LANGUAGE_CODE.json`
 
-### Contribute your work
-You're all done!!
-Don't forget to make a pull request to the Drupal Console repos at Github including your language repo and the documentation repo!!
+### Contribuya su trabajo
+
+Si ha tenido éxito hasta aquí, podemos decir que ha terminado!!
+
+No olvide realizar un Pull Request a los repositorios de Drupal Console en Github incluyendo el repositorio del idioma al que traduce y el repositorio de documentación!!
