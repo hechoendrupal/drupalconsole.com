@@ -1,5 +1,6 @@
 div.dropdown {
   margin-top: 10px;
+  z-index: 20;
 }
 .dropdown-sidebar {
   /* position: relative; */

@@ -8,7 +8,7 @@ import LanguageSwitcher from "../../components/language-switcher"
 import _find from "lodash/find"
 import _isEqual from "lodash/isEqual"
 import _isUndefined from "lodash/isUndefined"
-
+import LunarSearch from '../../components/lunar-search';
 const TemplateLayout = ({children, items, context, addRTL}) =>  {
 
   const { allLanguagesYaml } = useStaticQuery(
@@ -36,13 +36,13 @@ const TemplateLayout = ({children, items, context, addRTL}) =>  {
           <div className="row">
             <div className={`col-5 col-md-6 ${(rtl && _isUndefined(addRTL)) ? 'order-2 ':'order-1'}`}>
               <div className="d-block d-lg-none">
-              <Sidebar
-                items={items}
-                language={context.language}
-                activePage={context.slug}
-                rtl={rtl}
-                toDropDown
-              />
+                <Sidebar
+                  items={items}
+                  language={context.language}
+                  activePage={context.slug}
+                  rtl={rtl}
+                  toDropDown
+                />
               </div>
             </div>
             <div className={`col-7 col-md-6 ${(rtl && _isUndefined(addRTL)) ? 'order-1 ':'order-2'}`}>
@@ -54,7 +54,13 @@ const TemplateLayout = ({children, items, context, addRTL}) =>  {
             </div>
           </div>
           <div className="row">
+            <div className="d-lg-none p-4 col">
+              <LunarSearch lang={context.language} />
+            </div>
+          </div>
+          <div className="row">
             <div className={`col-lg-4 col-xl-3 d-none d-lg-block ${(rtl && _isUndefined(addRTL)) ? 'order-2 bl-1 pl-md-5':'br-1 pr-md-5'}`}>
+              <LunarSearch lang={context.language} />
               <Sidebar
                 items={items}
                 language={context.language}
