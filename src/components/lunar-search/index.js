@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import _isEmpty from 'lodash/isEmpty'
 import "./style.css"
@@ -6,29 +6,32 @@ import "./style.css"
 const SearchComponent = ({ lang }) => {
   const [query, setQuery] = useState("")
   const [results, setResults] = useState([])
+  const [langAvailable, setLangAvailable] = useState(true)
+
+  useEffect(()=>{
+    setLangAvailable(window.__LUNR__&&window.__LUNR__[lang])
+  },[lang])
 
   const getSearchResults = string => {
     if (!string || !window.__LUNR__) return []
       if(window.__LUNR__[lang]){
-      const results = window.__LUNR__[lang].index.search(string)
-      return results.map(({ ref }) => window.__LUNR__[lang].store[ref])
-    }
+        const results = window.__LUNR__[lang].index.search(string)
+        return results.map(({ ref }) => window.__LUNR__[lang].store[ref])
+      }
     return []
   }
 
   const search = (event, setQuery, setResults) => {
     let string = event.target.value
-
     setQuery(string)
     setResults(getSearchResults(string))
   }
 
-  return (
-    <div className="search-docs">
+  return langAvailable ? <div className="search-docs">
       <div className="input-group">
-        <div class="input-group-prepend">
-          <span class="input-group-text">
-            <i class="ti-search"></i>
+        <div className="input-group-prepend">
+          <span className="input-group-text">
+            <i className="ti-search"></i>
           </span>
         </div>
         <input
@@ -54,8 +57,8 @@ const SearchComponent = ({ lang }) => {
           )})
         }
       </ul>}
-    </div>
-  )
+    </div>:null
+  
 }
 
 export default SearchComponent
