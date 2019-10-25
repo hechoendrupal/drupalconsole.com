@@ -8,7 +8,7 @@ import Layout from "../layout/layout";
 const PageTemplate = (props) =>  {
   const node = props.data.mdx
   return (
-    <Layout context={props.pageContext}>
+    <Layout context={props.pageContext} title={node.frontmatter.title}>
 
       <main className="main-content">
           <div className="container">

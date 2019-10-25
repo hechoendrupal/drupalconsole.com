@@ -10,7 +10,7 @@ import ChangelogPreview from '../components/changelog-preview';
 import RadarList from '../components/radar-list';
 
 const IndexPage = () => (
-  <Layout>
+  <Layout title="Drupal Console">
     <Hero innerSize="py-6">
       <h1>Drupal Console</h1>
       <p className="lead">The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.</p>

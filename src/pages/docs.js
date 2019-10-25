@@ -32,7 +32,7 @@ const DocsPage = () => {
   )
 
   return (
-    <Layout>
+    <Layout title="Documentation">
       <main className="main-content">
         <div className="container">
           <div className="col-md-12 col-xl-12">

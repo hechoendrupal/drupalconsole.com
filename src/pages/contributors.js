@@ -7,7 +7,7 @@ import Hero from '../components/hero';
 const ContributorsPage = () => {
 
   return (
-    <Layout>
+    <Layout title="Contributors">
       <Hero innerSize="py-7">
         <h1>Contributors</h1>
         <p className="lead">

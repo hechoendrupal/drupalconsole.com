@@ -30,7 +30,7 @@ const ArticlesPage = () => {
   )
 
   return (
-    <Layout>
+    <Layout title="Articles">
       <main className="main-content">
         <div className="container">
           <div className="row justify-content-center">

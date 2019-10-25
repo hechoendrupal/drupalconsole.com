@@ -6,7 +6,7 @@ import Layout from "../layout/layout"
 const SupportPage = () => {
 
   return (
-    <Layout>
+    <Layout title="Need help or support?">
       <Hero innerSize="py-8">
         <h1>Need help or support?</h1>
         <p className="lead">

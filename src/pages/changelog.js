@@ -31,7 +31,7 @@ const ChangelogPage = () => {
   );
 
   return (
-    <Layout>
+    <Layout title="Changelog">
       <main className="main-content">
         <div className="container">
           <div className="row justify-content-center">

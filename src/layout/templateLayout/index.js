@@ -9,7 +9,7 @@ import _find from "lodash/find"
 import _isEqual from "lodash/isEqual"
 import _isUndefined from "lodash/isUndefined"
 import LunarSearch from '../../components/lunar-search';
-const TemplateLayout = ({children, items, context, addRTL}) =>  {
+const TemplateLayout = ({children, items, context, addRTL, title}) =>  {
 
   const { allLanguagesYaml } = useStaticQuery(
     graphql`
@@ -30,7 +30,7 @@ const TemplateLayout = ({children, items, context, addRTL}) =>  {
   const rtl = defaultLangauge && defaultLangauge.node.direction === "rtl";
 
   return (
-    <Layout>
+    <Layout title={title}>
       <main className="main-content">
         <div className="container">
           <div className="row">
