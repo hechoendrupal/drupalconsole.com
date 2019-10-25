@@ -1,8 +1,9 @@
 import React, { useState } from "react"
 import './style.css';
 import {Link} from "gatsby";
-import Autosuggest from "../autosuggest";
 import _isEmpty from "lodash/isEmpty";
+import { FaExpand } from "react-icons/fa";
+import Autosuggest from "../autosuggest";
 
 const Commands = ({ data, namespaces, language }) => {
   const [search, setSearch] = useState("")
@@ -48,7 +49,7 @@ const Commands = ({ data, namespaces, language }) => {
                               aria-controls={command.dashed}
                             >
                               <span className="badge badge-secondary">
-                                <i className="fa fa-expand" aria-hidden="true"></i>
+                                <FaExpand aria-hidden="true" />
                                 <small>{` ${command.messages.examples}`}</small>
                                 </span>
                             </button>

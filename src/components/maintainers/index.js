@@ -2,6 +2,7 @@ import React from "react"
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from "gatsby"
 import { Link } from "gatsby"
+import { FaGithub, FaUsers } from "react-icons/fa";
 import './style.css';
 
 const Maintainers = (props) => {
@@ -41,7 +42,7 @@ const Maintainers = (props) => {
                   <span>{` ${item.node.login} `}</span>
                 </div>
                 <div className="card-text row">
-                  <a href={item.node.html_url} target="_blank" rel="noopener noreferrer" className="col"><i className="fab fa-github maintainer__icon"></i></a>
+                  <a href={item.node.html_url} target="_blank" rel="noopener noreferrer" className="col"><FaGithub className="maintainer__icon" /></a>
                 </div>
               </div>
             </div>
@@ -50,7 +51,7 @@ const Maintainers = (props) => {
       </div>
       {props.showListLink && <div className="row text-center justify-content-center py-4">
         <Link className="btn btn-md btn-primary" to="/contributors">
-          <i className="fas fa-users"></i>  See full list of contributors
+          <FaUsers />  See full list of contributors
         </Link>
       </div>}
     </div>

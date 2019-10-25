@@ -1,6 +1,7 @@
 import React from 'react';
 // import PropTypes from 'prop-types';
 import { Link } from "gatsby"
+import { FaLifeRing, FaGithub, FaTwitter } from "react-icons/fa";
 import './style.css';
 
 const footer = props => {
@@ -10,13 +11,13 @@ const footer = props => {
         <div className="row justify-content-center">
           <div className=" row my-5 justify-content-center">
             <div className="col-3 justify-content-center">
-              <Link to="/support"><i className="footer__social far fa-life-ring"></i></Link>
+              <Link to="/support"><FaLifeRing className="footer__social"/></Link>
             </div>
             <div className="col-3 justify-content-center">
-              <a href="https://github.com/hechoendrupal/DrupalConsole" target="_blank" rel="noopener noreferrer"><i className="footer__social fab fa-github"></i></a>
+              <a href="https://github.com/hechoendrupal/DrupalConsole" target="_blank" rel="noopener noreferrer"><FaGithub className="footer__social"/></a>
             </div>
             <div className="col-3 justify-content-center">
-              <a href="https://twitter.com/drupalconsole" target="_blank" rel="noopener noreferrer"><i className="footer__social fab fa-twitter"></i></a>
+              <a href="https://twitter.com/drupalconsole" target="_blank" rel="noopener noreferrer"><FaTwitter className="footer__social"/></a>
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import React from "react"
 import { Link } from "gatsby"
-
+import { FaBook } from "react-icons/fa";
 import Layout from "../layout/layout"
 
 import Statistics from "../components/statistic"
@@ -16,7 +16,7 @@ const IndexPage = () => (
       <p className="lead">The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal.</p>
       <br />
       <div>
-        <Link to="/docs" className="btn btn-md btn-primary mr-3" href="#">Read the docs <i className="fas fa-book"></i></Link>
+        <Link to="/docs" className="btn btn-md btn-primary mr-3" href="#">Read the docs <FaBook /></Link>
       </div>
     </Hero>
     <Statistics />

@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { FaCodeBranch, FaUserFriends, FaCloudDownloadAlt, FaBirthdayCake } from "react-icons/fa";
 import './style.css';
 
 const Statistics = () => {
@@ -30,7 +31,7 @@ const Statistics = () => {
       <div className="row justify-content-center text-center">
         <div className="statistic col-12 col-md-3">
           <p>
-            <i className="fas fa-code-branch highlight__icon"></i>
+            <FaCodeBranch className="highlight__icon"/>
           </p>
           <h2 className="fw-500 my-4">{statistic.forks}</h2>
           <h4 className="mb-0">Forks</h4>
@@ -38,7 +39,7 @@ const Statistics = () => {
 
         <div className="statistic col-12 col-md-3">
           <p>
-            <i className="fas fa-user-friends highlight__icon"></i>
+            <FaUserFriends className="highlight__icon" />
           </p>
           <h2 className="fw-500 my-4">{statistic.contributors}</h2>
           <h4 className="mb-0">Contributors</h4>
@@ -46,7 +47,7 @@ const Statistics = () => {
 
         <div className="statistic col-12 col-md-3">
           <p>
-            <i className="fas fa-cloud-download-alt highlight__icon"></i>
+            <FaCloudDownloadAlt className="highlight__icon"/>
           </p>
           <h2 className="fw-500 my-4">{statistic.downloads_total.toLocaleString()}</h2>
           <h4 className="mb-0">Downloads</h4>
@@ -54,7 +55,7 @@ const Statistics = () => {
 
         <div className="statistic col-12 col-md-3">
           <p>
-            <i className="fas fa-birthday-cake highlight__icon"></i>
+            <FaBirthdayCake className="highlight__icon"/>
           </p>
           <h2 className="fw-500 my-4">{statistic.latest_release}</h2>
           <h4 className="mb-0">Release</h4>

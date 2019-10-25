@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "gatsby"
 import _isEmpty from 'lodash/isEmpty'
+import { FaSearch } from "react-icons/fa";
 import "./style.css"
 
 const SearchComponent = ({ lang }) => {
@@ -31,7 +32,7 @@ const SearchComponent = ({ lang }) => {
       <div className="input-group">
         <div className="input-group-prepend">
           <span className="input-group-text">
-            <i className="ti-search"></i>
+            <FaSearch />
           </span>
         </div>
         <input
