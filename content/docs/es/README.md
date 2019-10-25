@@ -1,7 +1,6 @@
 ---
 title: Documentación de Drupal Console 
 ---
-# Documentación de Drupal Console 
 
 > **Nota: Este proyecto esta en constante desarrollo.**
 

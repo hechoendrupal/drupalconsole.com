@@ -1,4 +1,6 @@
-# ¿Cómo descargar, instalar y servir Drupal 8?
+---
+title: ¿Cómo descargar, instalar y servir Drupal 8?
+---
 
 La forma más fácil de probar Drupal 8 en su entorno local es ejecutando el comando `chain` pasando la opción `--file=~/.console/chain/quick-start.yml` como se muestra en el siguiente ejemplo.
 

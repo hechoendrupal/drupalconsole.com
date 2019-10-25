@@ -4,10 +4,6 @@ import React from 'react'
  * Add global styles and scripts to ensure Bootstrap and jQuery JS is included
  */
 export const onRenderBody = ({ setHeadComponents, setPostBodyComponents }) => {
-  setHeadComponents([
-    <link key="page-min" href="/css/page.min.css" rel="stylesheet" />,
-    <link key="style" href="/css/style.css" rel="stylesheet" />,
-  ])
 
   setPostBodyComponents([
     <script key="jquery" src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>,

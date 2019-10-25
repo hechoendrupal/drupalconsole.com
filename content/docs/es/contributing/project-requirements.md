@@ -1,7 +1,6 @@
 ---
 title: Requerimientos del proyecto
 ---
-# Requerimientos del proyecto
 
 ## Descargar Git
 Recomendamos descargar Git de [http://git-scm.com/downloads](http://git-scm.com/downloads)

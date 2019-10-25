@@ -1,4 +1,7 @@
-# ¿Por qué debería interesarse por este proyecto?
+---
+title: ¿Por qué debería interesarse por este proyecto?
+---
+
 Drupal 8 es más avanzado técnicamente comparado con su predecesor. Manejar su mayor complejidad puede ser una tarea desalentadora para cualquiera. Drupal Console es una suite de herramientas cuyo objetivo es ayudarle a superar dicha complejidad. Escribir un módulo de Drupal 8 ahora requiere mucho más código repetitivo que antes. Es más, ahora necesita aprender y hacer muchas cosas nuevas sólo para *ponerse manos a la obra* a la hora de programar un nuevo módulo. Estas tareas pueden ser repetitivas y tediosas, y, por lo tanto, existe una mayor probabilidad de cometer errores. Afortunadamente, hay mucho código nuevo que puede ser generado automáticamente, usando Drupal Console, sin riesgo de cometer errores de «copiar y pegar», ahorrándole tiempo.
 
 ## Beneficios de Drupal Console:

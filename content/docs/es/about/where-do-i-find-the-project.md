@@ -1,4 +1,7 @@
-# ¿Dónde puedo encontrar el proyecto?
+---
+title: ¿Dónde puedo encontrar el proyecto?
+---
+
 
 ## Página web del proyecto
 http://drupalconsole.com

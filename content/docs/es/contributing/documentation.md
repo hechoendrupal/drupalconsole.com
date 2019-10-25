@@ -1,7 +1,6 @@
 ---
 title: How to translate Drupal Console (app & documentation)
 ---
-# How to translate Drupal Console (app & documentation)
 
 Para poder traducir la documentación, primero debe traducir las cadenas de texto de la aplicación.
 

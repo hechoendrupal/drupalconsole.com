@@ -1,7 +1,7 @@
 ---
 title: Ejecutando el proyecto
 ---
-# Ejecutando el proyecto
+
 Después de usar Composer para descargar las dependencias, puede ejecutar el proyecto con el siguiente comando:
 
 ```

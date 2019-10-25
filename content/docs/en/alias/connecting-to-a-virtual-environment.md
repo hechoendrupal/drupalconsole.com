@@ -1,7 +1,6 @@
 ---
 title: Connecting to a virtual environment
 ---
-# Connecting to a virtual environment
 
 You can connect to a virtual-machine/docker by providing the proper values for `extra-options` and `type`.
 

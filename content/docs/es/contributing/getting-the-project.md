@@ -1,4 +1,6 @@
-# ¿Cómo descargar el proyecto?
+---
+title: ¿Cómo descargar el proyecto?
+---
 
 ## Fork
 Cree un fork del repositorio del proyecto [Drupal Console](https://github.com/hechoendrupal/drupal-console/fork) en su cuenta.

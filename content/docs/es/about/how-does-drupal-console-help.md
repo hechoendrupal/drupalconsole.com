@@ -1,4 +1,6 @@
-# ¿Cómo ayuda la Drupal Console?
+---
+title: ¿Cómo ayuda la Drupal Console?
+---
 
 ## Generando el código y los archivos requeridos por un módulo de Drupal 8
 La Drupal Console proporciona una serie de comandos para la creación de módulos y código repetitivo. Para cualquier comando, se le hará una serie de preguntas acerca de lo que desea generar. Basado en esa interacción con el usuario, se generará el código requerido para construir el componente solicitado.

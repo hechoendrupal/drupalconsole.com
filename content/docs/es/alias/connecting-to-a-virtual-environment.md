@@ -1,7 +1,6 @@
 ---
 title: Conectando a un entorno virtual
 ---
-# Conectando a un entorno virtual
 
 Puede conectar a una máquina virtual o docker facilitando los valores adecuados para `extra-options` y `type`.
 

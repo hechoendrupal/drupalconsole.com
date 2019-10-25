@@ -1,7 +1,6 @@
 ---
 title: Problemas de instalación
 ---
-# Problemas de instalación
 
 Cuando ejecuta Drupal Console desde su directorio raíz de Drupal 8, puede obtener distintos mensajes de error. A continuación se listan algunos problemas reportados y cómo resolverlos.
 

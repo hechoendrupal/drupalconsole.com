@@ -1,7 +1,7 @@
 ---
 title: Contribuyendo con nuevas funcionalidades
 ---
-# Contribuyendo con nuevas funcionalidades
+
 Si usted crea un nuevo comando o cualquier cosa que pueda ser útil para *otras* instalaciones de Drupal, por favor considere [hacer un fork del proyecto Drupal Console en GitHub](getting-the-project "Fork the Drupal Console project and clone it locally to add your functionality").
 Después puede [crear un issue para solicitar un "feature request"](creating-issues-and-pull-requests "Add a new feature request as an “issue” and indicate you are working on it"), ponga su trabajo en una rama nueva de Git en su fork, publique su rama y añada el pull request en Github (incluyendo el ID del issue en el título del PR). Los mantenedores de Drupal Console estarán muy contentos de aceptar contribuciones útiles y normalmente lo hacen con prontitud.
 

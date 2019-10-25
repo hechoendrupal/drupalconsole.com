@@ -99,6 +99,20 @@ module.exports = {
         respectDNT: true,
       },
     },
+    { 
+      resolve: `gatsby-plugin-purgecss`,
+      options: {
+        printRejected: true, // Print removed selectors and processed file names
+        // develop: true, // Enable while using `gatsby develop`
+        // tailwind: true, // Enable tailwindcss support
+        whitelist: [
+          'nav-angle', 'ti-search', 'float-right', 'float-left', 'active', 'dropdown-menu-right', 
+          'dropdown-menu-left', 'dropdown-menu', 'dropdown-sidebar', 'rtl', 'bl-1', 'pl-md-5', 'br-1', 'pr-md-5'
+        ], // Don't remove this selector
+        // ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
+        // purgeOnly : ['static/css/'], // Purge only these files/folders
+      }
+    },
     {
       resolve: 'gatsby-plugin-lunr',
       options: {
@@ -106,59 +120,59 @@ module.exports = {
         languages: [
           {
             name: 'en',
-            filterNodes: node => node.fields && node.fields.language === 'en',
+            filterNodes: node => node.fields && node.__gatsby_resolved.fileInfo.sourceInstanceName==='docs' && node.fields.language === 'en',
           },
           {
             name: 'es',
-            filterNodes: node => node.fields && node.fields.language === 'es',
+            filterNodes: node => node.fields && node.__gatsby_resolved.fileInfo.sourceInstanceName==='docs' && node.fields.language === 'es',
           },
           // {
           //   name: 'ca',
-          //   filterNodes: node => node.fields && node.fields.language === 'ca',
+          //   filterNodes: node => node.fields && node.__gatsby_resolved.fileInfo.sourceInstanceName==='docs' && node.fields.language === 'ca',
           // },
           // {
           //   name: 'fa-ir',
-          //   filterNodes: node => node.fields && node.fields.language === 'fa-ir',
+          //   filterNodes: node => node.fields && node.__gatsby_resolved.fileInfo.sourceInstanceName==='docs' && node.fields.language === 'fa-ir',
           // },
           {
             name: 'fr',
-            filterNodes: node => node.fields && node.fields.language === 'fr',
+            filterNodes: node => node.fields && node.__gatsby_resolved.fileInfo.sourceInstanceName==='docs' && node.fields.language === 'fr',
           },
           // {
           //   name: 'hi',
-          //   filterNodes: node => node.fields && node.fields.language === 'hi',
+          //   filterNodes: node => node.fields && node.__gatsby_resolved.fileInfo.sourceInstanceName==='docs' && node.fields.language === 'hi',
           // },
           {
             name: 'hu',
-            filterNodes: node => node.fields && node.fields.language === 'hu',
+            filterNodes: node => node.fields && node.__gatsby_resolved.fileInfo.sourceInstanceName==='docs' && node.fields.language === 'hu',
           },
           {
             name: 'ja',
-            filterNodes: node => node.fields && node.fields.language === 'ja',
+            filterNodes: node => node.fields && node.__gatsby_resolved.fileInfo.sourceInstanceName==='docs' && node.fields.language === 'ja',
           },
           // {
           //   name: 'mr',
-          //   filterNodes: node => node.fields && node.fields.language === 'mr',
+          //   filterNodes: node => node.fields && node.__gatsby_resolved.fileInfo.sourceInstanceName==='docs' && node.fields.language === 'mr',
           // },
           // {
           //   name: 'pt-br',
-          //   filterNodes: node => node.fields && node.fields.language === 'pt-br',
+          //   filterNodes: node => node.fields && node.__gatsby_resolved.fileInfo.sourceInstanceName==='docs' && node.fields.language === 'pt-br',
           // },
           {
             name: 'ro',
-            filterNodes: node => node.fields && node.fields.language === 'ro',
+            filterNodes: node => node.fields && node.__gatsby_resolved.fileInfo.sourceInstanceName==='docs' && node.fields.language === 'ro',
           },
           {
             name: 'ru',
-            filterNodes: node => node.fields && node.fields.language === 'ru',
+            filterNodes: node => node.fields && node.__gatsby_resolved.fileInfo.sourceInstanceName==='docs' && node.fields.language === 'ru',
           },
           // {
           //   name: 'vn',
-          //   filterNodes: node => node.fields && node.fields.language === 'vn',
+          //   filterNodes: node => node.fields && node.__gatsby_resolved.fileInfo.sourceInstanceName==='docs' && node.fields.language === 'vn',
           // },
           // {
           //   name: 'zh-hans',
-          //   filterNodes: node => node.fields && node.fields.language === 'zh-hans',
+          //   filterNodes: node => node.fields && node.__gatsby_resolved.fileInfo.sourceInstanceName==='docs' && node.fields.language === 'zh-hans',
           // },
       ],
         // Fields to index. If store === true value will be stored in index file. 
