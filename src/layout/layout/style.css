@@ -27,3 +27,7 @@ pre {
 .docs-sidebar{
   z-index: 30;
 }
+
+.nav-link{
+  align-items: center;
+}

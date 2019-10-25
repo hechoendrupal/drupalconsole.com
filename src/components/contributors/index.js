@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import { FaGithub } from "react-icons/fa";
 import './style.css';
 
 const Contributors = () => {
@@ -37,7 +38,7 @@ const Contributors = () => {
                     <img src={item.node.avatar_url} className="card-title rounded-circle w-100px" alt={item.node.login} />
                   </div>
                   <div className="card-text fs-15 lh-1">
-                    <i className="fab fa-github"></i>
+                    <FaGithub />
                     <span>{` ${item.node.login} `}</span>
                   </div>
                 </div>

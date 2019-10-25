@@ -6,7 +6,7 @@ import {Link} from "gatsby";
 
 import _split from "lodash/split";
 import _isEqual from "lodash/isEqual";
-
+import { FaChevronRight } from "react-icons/fa";
 // @TODO 
 // Remove eslint-disable
 const Sidebar = ({ items, activePage, language, rtl, toDropDown }) => {
@@ -33,7 +33,7 @@ const Sidebar = ({ items, activePage, language, rtl, toDropDown }) => {
                       {
                         activePage === link || isActive ? <strong>{item.title}</strong> : item.title
                       }
-                      {item.items&&item.items.length>0&&<i className="nav-angle"></i>}
+                      {item.items&&item.items.length>0&&<FaChevronRight className="nav-angle" />}
                     </Link>
                     {item.items && (
                       <div key={`${item.link}-div-item}`} className="nav">
