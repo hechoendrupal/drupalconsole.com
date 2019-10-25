@@ -1,16 +1,16 @@
 ---
 title: How to download, install and serve Drupal 8
 ---
-# How to download, install and serve Drupal 8
 
 The easiest way to try Drupal 8 in your local machine is by executing the `quick:start` command.
 
-```
+```bash
 drupal quick:start
 ```
 
 This is a chain command provided by DrupalConsole core project, the content of this file is:
-```
+
+```yaml
 # How to use
 # quick:start --directory="/path/to/drupal-project/"
 # quick:start --directory="/path/to/drupal-project/" --profile="minimal"

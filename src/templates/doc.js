@@ -11,6 +11,7 @@ const DocTemplate = (props) =>  {
 
   return (
     <TemplateLayout items={items} context={props.pageContext} title={post.frontmatter.title}>
+        <h1>{post.frontmatter.title}</h1>
         <MDXProvider>
           <MDXRenderer>{post.body}</MDXRenderer>
         </MDXProvider>

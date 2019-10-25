@@ -1,10 +1,10 @@
 ---
 title: Configuring the command.
 ---
-# Configuring the command.
 
 You must provide a`configure` method containing the configuration of the command as name, arguments, options, etc.
-```
+
+```php
     /**
      * {@inheritdoc}
      */

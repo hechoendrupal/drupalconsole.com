@@ -1,12 +1,12 @@
 ---
 title: Creating Custom Commands
 ---
-# Creating Custom Commands
 
 The easiest way to create a custom Command Class is to execute the `generate:command` command.
 
 Executing the command using the interactive command questions: 
-```
+
+```bash
  // Welcome to the Drupal Command generator
  Enter the extension name [config_update]:
  > example
@@ -42,7 +42,8 @@ Generated or updated files
 ```
 
 Executing the `generate:command` passing inline options, make sure you adjust the following command based on your requirements.
-```
+
+```bash
 drupal generate:command \
 --extension="example" \
 --extension-type="module" \

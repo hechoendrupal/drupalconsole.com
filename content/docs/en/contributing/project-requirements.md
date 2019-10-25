@@ -1,7 +1,6 @@
 ---
 title: Project requirements
 ---
-# Project requirements
 
 ## Download Git
 We recommend downloading Git from [http://git-scm.com/downloads](http://git-scm.com/downloads)

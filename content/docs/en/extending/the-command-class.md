@@ -1,7 +1,6 @@
 ---
 title: The Command Class
 ---
-# The Command Class
 
 Custom Commands should extend any of the base Classes provided by the DrupalConsole Core project.
 
@@ -10,12 +9,14 @@ Custom Commands should extend any of the base Classes provided by the DrupalCons
 By extending the provided Base `Command` Class, your command will be able to take advantage of the multi-language feature provided by DrupalConsole.
 
 1.- Import the `Command` Class.
-```
+
+```php
 use Drupal\Console\Core\Command\Command;
 ```
 
 2.- Extend the imported `Command` Class.
-```
+
+```php
 class DefaultCommand extends Command
 ```
 
@@ -26,11 +27,13 @@ By extending the `ContainerAwareCommand` Class on your class for the command (in
 In other words, you can access any configured Drupal service using the provided `get` method.
 
 1.- Import the `ContainerAwareCommand` Class.
-```
+
+```php
 use Drupal\Console\Core\Command\ContainerAwareCommand;
 ```
 
 2.- Extend the imported `ContainerAwareCommand` Class.
-```
+
+```php
 class DefaultCommand extends ContainerAwareCommand
 ```

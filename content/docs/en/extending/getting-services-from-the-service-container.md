@@ -1,14 +1,14 @@
 ---
 title: Getting Services from the Service Container
 ---
-# Getting Services from the Service Container
 
 You can access services from the service container by:
 
 ### Injecting services to the command Class
 
 Using the `arguments` section when registering your Command class at the `console.services.yml` file.
-```
+
+```yaml
 services:
   example.example_default:
     class: Drupal\example\Command\DefaultCommand`
@@ -18,7 +18,8 @@ services:
 ```
 
 Adding a new protected property.
-```
+
+```php
   /**
    * The $entityTypeManager definition.
    *
@@ -28,7 +29,8 @@ Adding a new protected property.
 ```
 
 Passing the service using the `__construct` method.
-```
+
+```php
   /**
    * Constructs a new DefaultCommand object.
    */
@@ -42,7 +44,7 @@ Passing the service using the `__construct` method.
 
 By doing this you have access to the service container, in other words, you have access to any configured service using the provided `get` method.
 
-```
+```php
 protected function execute(InputInterface $input, OutputInterface $output)
 {
     $uid = $input->getArgument('uid');

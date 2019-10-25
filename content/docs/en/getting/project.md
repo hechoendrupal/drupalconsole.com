@@ -1,8 +1,9 @@
 ---
 title: Getting the project
 ---
-# Getting the project
+
 You need to install two things to get DrupalConsole working:
+
 1. The DrupalConsole Launcher
 2. DrupalConsole itself
 
