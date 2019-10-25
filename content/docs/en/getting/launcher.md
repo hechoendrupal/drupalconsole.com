@@ -1,25 +1,28 @@
 ---
 title: Install Drupal Console Launcher using the phar
 ---
-# Install Drupal Console Launcher using the phar
 
-```
+```bash
 curl https://drupalconsole.com/installer -L -o drupal.phar
 mv drupal.phar /usr/local/bin/drupal
 chmod +x /usr/local/bin/drupal
 ```
+
 NOTE: If you don't have curl you can try
-```
+
+```bash
 php -r "readfile('https://drupalconsole.com/installer');" > drupal.phar
 ```
 
 ## Update DrupalConsole Launcher 
-```
+
+```bash
 drupal self-update
 ```
 
 ## Run Drupal Console using the Launcher
-```
+
+```bash
 drupal
 ```
 

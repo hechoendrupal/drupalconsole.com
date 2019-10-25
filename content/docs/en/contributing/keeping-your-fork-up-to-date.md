@@ -1,7 +1,6 @@
 ---
 title: Keeping your fork up to date
 ---
-# Keeping your fork up to date
 
 After some time your forked repository and the original one (called upstream) will eventually get out of sync leaving you with an old, unsupported version.
 

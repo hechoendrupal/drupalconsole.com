@@ -2,27 +2,29 @@
 title: How to use Drupal Console in a remote site installation
 ---
 
-# How to use Drupal Console in a remote site installation
-
 Drupal Console allows you to run commands from your local server but actually execute them on a local, remote or virtual (VM, Docker) Drupal installation by using site aliases.
 
 Site aliases are used to provide a collection of predefined options and give them a name.
 
-Site aliases can be executed using the `--target` option and passing the site name you want to interact with.  
-```
+Site aliases can be executed using the `--target` option and passing the site name you want to interact with.
+
+```bash
 drupal --target=sample.dev cr all
 ```
 
 Site aliases can also be executed by using `@` as:
-```
+
+```bash
 drupal @sample.dev cr all
 ```  
 
 Setting up your local machine to use a site alias requires some configuration.
 
-### Global configuration 
+### Global configuration
+
 You can provide global configuration to remote connections at the copied file `~/.console/config.yml`. This information is grouped within the `remote` key.
-```
+
+```yaml
 application:
   ...
   remote:
@@ -34,12 +36,13 @@ application:
 ```
 
 ### Specific site configuration
+
 You can provide specific site configuration by providing a site alias file at the following paths:
 
 * Global `~/.console/sites/`.
 * Per site `/path/to/site/console/sites/`.
 
-```
+```yaml
 local:
   root: /var/www/drupal8.dev
   type: local
@@ -56,8 +59,10 @@ prod:
 ```
 
 ### Debug sites.
+
 You can list all known sites alias by executing the `debug:site` command.
-```
+
+```bash
 drupal debug:site
 
 +--------------------+-----------------+------------------------+
@@ -69,8 +74,9 @@ drupal debug:site
 +--------------------+-----------------+------------------------+
 ```
 
-You can show the site configuration details by passing the site name as argument to the `debug:site` command. 
-```
+You can show the site configuration details by passing the site name as argument to the `debug:site` command.
+
+```bash
 drupal debug:site sample.dev
 
 user: drupal
@@ -85,11 +91,13 @@ type: ssh
 **NOTE:** As you may notice the global configuration and the specific site configuration are merged when debugging a site. You can override any global configuration by adding those keys on the site specific configuration.
 
 ## Connecting to a virtual environment
+
 You can connect to a virtual-machine/docker by providing the proper values 
 for `extra-options` and `type`.
 
 DrupalVM Example
-```
+
+```yaml
 dev:
   root: /var/www/drupalvm/drupal
   host: 192.168.88.88
@@ -97,18 +105,22 @@ dev:
   extra-options: '-o PasswordAuthentication=no -i ~/.vagrant.d/insecure_private_key'
   type: ssh
 ```
+
 Drupal4Docker example
-```
+
+```yaml
 dev:
   root: /var/www/html
   extra-options: docker-compose exec --user=82 php
   type: container
 ```
+
 When connecting as `type: container` there is no need to provide `host` and `user` values.
- 
-# Site alias options
+
+## Site alias options
+
 Valid key/value options for site alias files.
- 
+
 * root: Drupal root project directory.
 * host: Domain name of the remote system. Not required on local sites.
 * port: The port to use when connecting via shh. The port 22 used by default. 

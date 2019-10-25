@@ -1,7 +1,6 @@
 ---
 title: Generating Code with a Command
 ---
-# Generating Code with a Command
 
 To generate code from a Command, there are three steps:
 
@@ -10,7 +9,6 @@ To generate code from a Command, there are three steps:
 the Twig template.](#generator-service)
 3. [Inject the custom Generator service into your Command.](#inject-service)
 
-<a name="twig-template"></a>
 ## Creating a Twig Template for the Generated Code
 
 All Twig templates should be placed inside a `templates` subdirectory 
@@ -18,7 +16,7 @@ of your module or extension. For example:
 
 `templates/module/info.yml.twig`
 
-```
+```yaml
 name: {{ module }}
 type: {{ type }}
 description: {{ description }}
@@ -31,7 +29,7 @@ dependencies:
 {% endfor %}
 {% endif %}
 ```
-<a name="generator-service"></a>
+
 ## Creating a Custom Generator Service
 
 To create a custom Generator service, first create a class that extends from 
@@ -39,7 +37,7 @@ To create a custom Generator service, first create a class that extends from
 
 `src/Generator/ModuleGenerator`
 
-```
+```php
 namespace Drupal\your_extension\Generator;
 
 use Drupal\Console\Core\Generator\Generator;
@@ -53,7 +51,7 @@ class ModuleGenerator extends Generator
 Use the `renderFile()` method inherited from the `Generator` class to render 
 your Twig template.
 
-```
+```php
 public function generate($module, $machineName, $output_dir, $description, $core, $package, $dependencies) {
 
   $parameters = [
@@ -75,7 +73,7 @@ public function generate($module, $machineName, $output_dir, $description, $core
 
 Finally, register your Generator class as a custom service in `console.services.yml`.
 
-```
+```yaml
 services:
   your_extension.module_generator:
     class: Drupal\your_extension\Generator\ModuleGenerator
@@ -86,13 +84,12 @@ services:
 Be sure to include the `drupal.generator` tag so that the Twig renderer is properly 
 initialized.
 
-<a name="inject-service"></a>
 ## Injecting Your Custom Generator Into Your Command
 
 In `console.services.yml`, add your custom Generator service as an argument for your 
 custom Command.
 
-```
+```yaml
 services:
   your_extension.generate_module:
     class: Drupal\your_extension\Command\Generate\ModuleCommand
@@ -103,7 +100,7 @@ services:
 
 And add your custom Generator to the constructor parameters for your Command class:
 
-```
+```php
 use Drupal\your_extension\Generator\ModuleGenerator;
 
 class ModuleCommand extends Command
@@ -117,7 +114,7 @@ class ModuleCommand extends Command
     $this->generator = $generator;
     parent::__construct();
   }
-   
+
   ...
 }
 ```
@@ -125,7 +122,7 @@ class ModuleCommand extends Command
 You can now call your Generator from the `execute()` method in your Command 
 to output rendered code files:
 
-```
+```php
 protected function execute(InputInterface $input, OutputInterface $output) {
   
   ...

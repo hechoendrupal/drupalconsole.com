@@ -133,7 +133,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
         value: title
       })
     }
-    else{
+    else {
       // Add language field
       createNodeField({
         name: `language`,
@@ -150,12 +150,6 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
         node,
         value: slug
       })
-      // Add language field
-      // createNodeField({
-      //   name: `language`,
-      //   node,
-      //   value: 'en'
-      // })
     }
   }
 }

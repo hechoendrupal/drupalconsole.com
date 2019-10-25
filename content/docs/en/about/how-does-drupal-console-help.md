@@ -1,7 +1,6 @@
 ---
 title: How does Drupal Console help?
 ---
-# How does Drupal Console help?
 
 ## Generating the code and files required by a Drupal 8 module
 Drupal Console provides a number of commands for creating module scaffolding and boilerplate code. For any command, you will be asked a series of questions about what you want to generate. Based on that user interaction, it will then generate the required boilerplate to build the requested component.

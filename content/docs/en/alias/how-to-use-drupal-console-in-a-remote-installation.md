@@ -1,7 +1,6 @@
 ---
 title: How to use Drupal Console in a remote installation
 ---
-# How to use Drupal Console in a remote installation
 
 Site aliases can be executed using the `--target` option and passing the site name you want to interact with.
   

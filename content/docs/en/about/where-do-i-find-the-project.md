@@ -1,7 +1,6 @@
 ---
 title: Where do I find the project?
 ---
-# Where do I find the project?
 
 ## Project landing page
 http://drupalconsole.com
