@@ -10,7 +10,7 @@ const DocTemplate = (props) =>  {
   const items = props.data.allNavigationItems.edges[0] ? props.data.allNavigationItems.edges[0].node.items : []
 
   return (
-    <TemplateLayout items={items} context={props.pageContext}>
+    <TemplateLayout items={items} context={props.pageContext} title={post.frontmatter.title}>
         <MDXProvider>
           <MDXRenderer>{post.body}</MDXRenderer>
         </MDXProvider>

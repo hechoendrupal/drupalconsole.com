@@ -37,6 +37,7 @@ const SearchComponent = ({ lang }) => {
         <input
           className="search-docs__input form-control"
           type="text"
+          aria-label="Search"
           value={query}
           onChange={event => search(event, setQuery, setResults)}
           placeholder={"Search"}
