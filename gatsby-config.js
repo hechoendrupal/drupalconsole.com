@@ -4,6 +4,7 @@ module.exports = {
     title: `DrupalConsole site`,
     description: `DrupalConsole site, docs, cheatsheet`,
     author: `@drupalconsole`,
+    siteUrl: 'https://drupalconsole.com'
   },
   mapping: {
     "LanguagesYaml.authors": `AuthorsYaml`,
@@ -68,6 +69,14 @@ module.exports = {
             },
           },
         ]
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.drupalconsole.com',
+        // sitemap: 'https://www.drupalconsole.com/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
       }
     },
     `gatsby-plugin-react-helmet`,
