@@ -1,3 +1,6 @@
+---
+title: Setting up your local machine
+---
 # Setting up your local machine
 
 Using a site alias requires some local configuration.

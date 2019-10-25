@@ -1,3 +1,6 @@
+---
+title: Drupal Consoleインストーラーを使う
+---
 # Drupal Consoleインストーラーを使う
 
 インストーラーをローカルマシン上で実行することで、Drupal Consoleをインストールすることができます。インストーラーはDrupal Consoleを動かすために必要なファイルをダウンロードします。

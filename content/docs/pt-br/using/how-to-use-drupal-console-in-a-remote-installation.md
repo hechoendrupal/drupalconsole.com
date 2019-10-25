@@ -1,3 +1,6 @@
+---
+title: Como usar o Drupal Console em uma instalação remota do site
+---
 # Como usar o Drupal Console em uma instalação remota do site
 
 O Console Drupal permite que você execute comandos em seu servidor local, mas execute-os em um servidor remoto.

@@ -1,3 +1,6 @@
+---
+title: Drupal Console कशी मदत करते?
+---
 # Drupal Console कशी मदत करते?
 
 ## Drupal 8 module द्वारे आवश्यक कोड आणि फाइल्स तयार करणे.

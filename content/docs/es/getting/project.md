@@ -1,3 +1,6 @@
+---
+title: Obtener Drupal Console
+---
 # Obtener Drupal Console
 Existen diferentes maneras de conseguir el proyecto en su computadora local.
 

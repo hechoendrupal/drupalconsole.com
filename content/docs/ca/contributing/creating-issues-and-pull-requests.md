@@ -1,3 +1,6 @@
+---
+title: Creating an Issue
+---
 # Creating an Issue
 If you found an issue or maybe you like to propose a new feature to the project, you need to access the following link:
 

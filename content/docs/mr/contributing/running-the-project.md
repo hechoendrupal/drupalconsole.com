@@ -1,3 +1,6 @@
+---
+title: Running the project
+---
 # Running the project
 After using Composer to download dependencies, you can run the project by executing:
 

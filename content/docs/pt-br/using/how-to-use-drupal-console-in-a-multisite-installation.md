@@ -1,3 +1,6 @@
+---
+title: Como usar o Drupal Console em uma instalação multi-site 
+---
 # Como usar o Drupal Console em uma instalação multi-site 
  
 O Console Drupal oferece suporte para instalações multi-site Drupal. Este projeto fornece o comando `multisite: debug` para depurar instalações multi-site e a opção` --uri 'para interagir com instalações multi-site

@@ -1,3 +1,6 @@
+---
+title: 如何运行 Drupal Console
+---
 # 如何运行 Drupal Console
 使用 Composer 下载完依赖后，你可以执行以下命令运行 Drupal Console：
 

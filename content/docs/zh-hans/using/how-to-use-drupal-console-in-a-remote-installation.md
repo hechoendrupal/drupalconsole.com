@@ -1,3 +1,6 @@
+---
+title: Drupal Console 用于非本地网站
+---
 # Drupal Console 用于非本地网站
 
 Drupal Console 允许在本地运行命令，但命令的实际执行却是在一个远程服务器上。

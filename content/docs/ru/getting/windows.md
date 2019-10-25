@@ -1,3 +1,6 @@
+---
+title: Установка на Windows ОС
+---
 # Установка на Windows ОС
 
 Существует два варианта установки Drupal Console на Windows ОС: 

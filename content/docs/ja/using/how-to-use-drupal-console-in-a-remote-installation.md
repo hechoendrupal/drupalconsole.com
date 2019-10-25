@@ -1,3 +1,6 @@
+---
+title: Drupal Consoleでリモートサイトに接続する
+---
 # Drupal Consoleでリモートサイトに接続する
 
 Drupal Consoleはローカルサーバー上だけでなく、リモートサーバーに対してもコマンドを実行できます。

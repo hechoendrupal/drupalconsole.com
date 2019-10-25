@@ -1,3 +1,6 @@
+---
+title: Utilizando o instalador do Drupal Console
+---
 # Utilizando o instalador do Drupal Console
 Você pode instalar o Drupal Console localmente executando o instalador em seu diretório de projeto, o instalador cuidará de baixar os arquivos necessários para executar o console drupal em seu computador.
 

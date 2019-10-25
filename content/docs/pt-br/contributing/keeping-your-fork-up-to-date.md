@@ -1,3 +1,6 @@
+---
+title: Mantendo seu fork atualizado
+---
 # Mantendo seu fork atualizado
 Depois de algum tempo, seu repositório bifurcado e o original (chamado upstream) acabará por sair da sincronização, deixando você com uma versão antiga e não suportada.
 

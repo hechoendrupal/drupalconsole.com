@@ -1,3 +1,6 @@
+---
+title: Getting Services from the Service Container
+---
 # Getting Services from the Service Container
 
 You can access services from the service container by:

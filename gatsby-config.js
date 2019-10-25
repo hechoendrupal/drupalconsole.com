@@ -54,6 +54,7 @@ module.exports = {
     },
     `gatsby-transformer-yaml`,
     `gatsby-transformer-json`,
+    'gatsby-transformer-remark',
     {
       resolve: `gatsby-plugin-mdx`,
       options: {
@@ -165,6 +166,7 @@ module.exports = {
         fields: [
           { name: 'content', store: true },
           { name: 'url', store: true },
+          { name: 'title', store: true },
         ],
         // A function for filtering nodes. () => true by default
         // filterNodes: (node) => !isNil(node.rawBody),
@@ -175,7 +177,7 @@ module.exports = {
             content: (node) => node.rawBody,
             url: (node) => node.fields.slug,
             language:(node) => node.fields.language,
-            excerpt:(node) => node.excerpt,
+            title:(node) => node.fields.title,
           },
         },
       },

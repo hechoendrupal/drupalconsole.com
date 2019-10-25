@@ -1,3 +1,6 @@
+---
+title: Drupal ConsoleをWindows上にインストール
+---
 # Drupal ConsoleをWindows上にインストール
 Drupal ConsoleをWindows上にインストールする方法は2つあります。Git Bashを使う方法とコマンドプロンプトを使う方法です。私達はGit for Windows (以前は msysgit と呼ばれていました)に含まれる Git Bashを使うことを推奨します。これは、phpコマンドを省略してDrupal Consoleを使うことができる唯一の方法だからです。
 

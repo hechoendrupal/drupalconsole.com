@@ -1,3 +1,6 @@
+---
+title: Getting the project
+---
 # Getting the project
 
 The Drupal Console is a modular project using multiple repositories.

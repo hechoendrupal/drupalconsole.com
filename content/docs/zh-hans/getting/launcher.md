@@ -1,3 +1,6 @@
+---
+title: 使用 Drupal Console 安装器
+---
 # 使用 Drupal Console 安装器
 你可以使用安装器安装 Drupal Console
 

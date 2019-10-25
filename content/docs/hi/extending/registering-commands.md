@@ -1,3 +1,6 @@
+---
+title: Registering Commands
+---
 # Registering Commands Automatically
 
 To make the console commands available automatically within a Drupal installation, you will need to:

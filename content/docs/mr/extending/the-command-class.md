@@ -1,3 +1,6 @@
+---
+title: The Command Class
+---
 # The Command Class
 
 Custom Commands should extend any of the base Classes provided by the DrupalConsole Core project.

@@ -1,3 +1,6 @@
+---
+title: Download phar file
+---
 # Download phar file
 
 Você pode baixar a última versão do Console da página de lançamentos do repositório em:

@@ -1,3 +1,6 @@
+---
+title: Drupal Consoleとは?
+---
 # Drupal Consoleとは?
 Drupal Consoleは、ボイラープレートコードの生成や対話的にDrupal 8 をインストールする機能を提供する、コマンドラインインターフェース(CLI) ツールです。
 

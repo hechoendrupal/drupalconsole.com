@@ -1,3 +1,6 @@
+---
+title: 如何下载，安装并运行 Drupal 8
+---
 # 如何下载，安装并运行 Drupal 8
 
 最简单的方式就是在本地执行 `chain` 命令，并且将 `--file=~/.console/chain/quick-start.yml` 选项传递给它。示例如下：

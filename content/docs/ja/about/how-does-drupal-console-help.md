@@ -1,3 +1,6 @@
+---
+title: Drupal Consoleでどんなことができますか？
+---
 # Drupal Consoleでどんなことができますか？
 
 ## Drupal 8のモジュールが要求するコードやファイルを生成する

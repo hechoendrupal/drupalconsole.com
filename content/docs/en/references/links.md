@@ -1,3 +1,6 @@
+---
+title: References
+---
 # References
 
 ## Drupal Console code repository

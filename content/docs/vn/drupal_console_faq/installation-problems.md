@@ -1,3 +1,6 @@
+---
+title: Installation problems
+---
 # Installation problems
 
 When you run DrupalConsole from your Drupal 8 root directory, you can get different error messages, we will try to compile the reported issues and how to have them fixed.

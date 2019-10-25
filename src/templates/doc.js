@@ -23,6 +23,9 @@ export default DocTemplate
 export const pageQuery = graphql`
   query($slug: String!, $language: String!) {
     mdx(fields: { slug: { eq: $slug } }) {
+      frontmatter{
+        title
+      }
       body
     }
 

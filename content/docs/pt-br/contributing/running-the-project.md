@@ -1,3 +1,6 @@
+---
+title: Executando o projeto
+---
 # Executando o projeto
 Depois de usar o Composer para baixar dependências, você pode executar o projeto executando:
 

@@ -1,3 +1,6 @@
+---
+title: Using site alias
+---
 # Using site alias
 
 Drupal Console allows you to run commands from your local server but actually execute them on a local, remote or virtual (VM, Docker) Drupal installation by using site aliases.

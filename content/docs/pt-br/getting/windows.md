@@ -1,3 +1,6 @@
+---
+title: Instalando o Drupal Console no Windows
+---
 # Instalando o Drupal Console no Windows
 No Windows existem duas maneiras de instalar o console drupal. Uma usa Git Bash, a outra usa um prompt de comando do Windows. Recomendo usar o utilitário Git Bash a partir do pacote de programas Git para Windows (anteriormente msysgit), uma vez que é a única maneira de usar o console drupal sem prefixá-lo com o php.
 

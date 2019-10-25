@@ -1,3 +1,6 @@
+---
+title: نصب کنسول دروپال در ویندوز
+---
 # نصب کنسول دروپال در ویندوز
 
 یک [مقاله](https://evolvingweb.ca/blog/installing-drupal-console-windows) خوب برای نصب کنسول دروپال در ویندوز وجود دارد که با استفاده از Acquia Dev Desktop انجام می‌شود.

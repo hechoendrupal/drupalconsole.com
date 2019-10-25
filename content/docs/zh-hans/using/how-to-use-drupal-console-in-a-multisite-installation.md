@@ -1,3 +1,6 @@
+---
+title: 如何在多站点环境下使用 Drupal Console
+---
 # 如何在多站点环境下使用 Drupal Console
 
 对 Drupal 的多站点（多个站点共用一个Drupal核心）Drupal Console 提供了支持。`multisite:debug` 命令和 `--uri` 选项被用于与多站点进行交互。

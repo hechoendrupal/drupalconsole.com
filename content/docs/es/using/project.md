@@ -1,3 +1,6 @@
+---
+title: Usando el proyecto
+---
 # Usando el proyecto
 
 Drupal Console ofrece dos tipos de comandos: `autónomos` y `conscientes del contenedor`.

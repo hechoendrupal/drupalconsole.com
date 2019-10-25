@@ -1,3 +1,6 @@
+---
+title: 安装 Drupal Console
+---
 # 安装 Drupal Console
 有不同的方式可以安装 Drupal Console
 

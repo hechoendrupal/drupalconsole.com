@@ -1,3 +1,6 @@
+---
+title: How to download, install and serve Drupal 8
+---
 # How to download, install and serve Drupal 8
 
 The easiest way to try Drupal 8 in your local machine is by executing the `quick:start` command.

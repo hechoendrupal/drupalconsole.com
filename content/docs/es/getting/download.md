@@ -1,3 +1,6 @@
+---
+title: Descargar el archivo phar
+---
 # Descargar el archivo phar
 
 Descarga la última versión de Drupal Console desde el repositorio: 

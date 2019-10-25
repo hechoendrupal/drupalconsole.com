@@ -1,3 +1,6 @@
+---
+title: دریافت سرویس‌ها از Service Container
+---
 # دریافت سرویس‌ها از Service Container
 
 به شیوه‌های زیر می‌توانید از service container درخواست سرویس کنید:

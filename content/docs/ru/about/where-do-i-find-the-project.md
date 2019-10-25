@@ -1,3 +1,6 @@
+---
+title: Где найти Drupal Console?
+---
 # Где найти Drupal Console?
 
 ## Страница проекта

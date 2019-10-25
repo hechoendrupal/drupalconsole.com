@@ -1,3 +1,6 @@
+---
+title: Obtendo o projeto
+---
 # Obtendo o projeto
 Existem diferentes maneiras de obter o projeto em sua máquina local.
 
