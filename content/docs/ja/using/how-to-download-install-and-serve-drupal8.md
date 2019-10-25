@@ -1,3 +1,6 @@
+---
+title: Drupal 8をダウンロード、インストールして起動する
+---
 # Drupal 8をダウンロード、インストールして起動する
 
 ローカルマシン上でDrupal 8を試す最も簡単な方法は、以下の例のように `--file=~/.console/chain/quick-start.yml` オプションと一緒に `chain` コマンドを使う方法です。

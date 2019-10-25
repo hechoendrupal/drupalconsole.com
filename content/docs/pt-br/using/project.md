@@ -1,3 +1,6 @@
+---
+title: Usando o projeto
+---
 # Usando o projeto
 
 O Drupal Console fornece dois tipos de comandos, comandos 'stand-alone' e `container aware`.

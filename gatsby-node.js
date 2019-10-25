@@ -112,7 +112,7 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
 
     if (sourceInstanceName===`docs`) {
       const slug = getNode(node.parent).relativePath.replace("/README.md", "").replace(".md", "").toLowerCase()
-
+      const title = node.frontmatter.title
       // Add slug field
       createNodeField({
         name: `slug`,
@@ -125,6 +125,12 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
         name: `language`,
         node,
         value: slug.indexOf('/') > 0 ? slug.substring(0, slug.indexOf('/')) : slug
+      })
+      // Add title field
+      createNodeField({
+        name: `title`,
+        node,
+        value: title
       })
     }
     else{

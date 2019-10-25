@@ -1,3 +1,7 @@
+---
+title: Using the project
+---
+
 # Using the project
 
 Drupal Console provides two types of commands.

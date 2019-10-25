@@ -1,3 +1,6 @@
+---
+title: FAQ (Preguntas Frecuentes) sobre DrupalConsole
+---
 # FAQ (Preguntas Frecuentes) sobre DrupalConsole
 
 ¿Tiene algún problema con DrupalConsole? Estas preguntas y respuestas son un buen lugar para empezar.

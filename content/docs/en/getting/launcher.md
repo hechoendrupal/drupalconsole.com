@@ -1,3 +1,6 @@
+---
+title: Install Drupal Console Launcher using the phar
+---
 # Install Drupal Console Launcher using the phar
 
 ```

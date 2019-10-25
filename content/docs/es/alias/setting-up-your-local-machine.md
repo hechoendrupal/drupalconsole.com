@@ -1,3 +1,6 @@
+---
+title: Configurando su máquina local
+---
 # Configurando su máquina local
 
 Para usar un alias de sitio se requiere algo de configuración local.

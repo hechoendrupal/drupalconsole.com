@@ -1,3 +1,6 @@
+---
+title: Criando um Issue
+---
 # Criando um Issue
 Se você encontrou um problema ou talvez você gostaria de propor um novo recurso para o projeto, você precisa acessar o seguinte link:
 

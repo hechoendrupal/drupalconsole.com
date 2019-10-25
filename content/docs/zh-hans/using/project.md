@@ -1,3 +1,6 @@
+---
+title: 使用 Drupal Console
+---
 # 使用 Drupal Console
 
 Drupal Console 提供两种类型的命令：`标准命令` 和 `容器相关命令`

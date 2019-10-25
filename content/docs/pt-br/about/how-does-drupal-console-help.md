@@ -1,3 +1,6 @@
+---
+title: Como o Drupal Console ajuda?
+---
 # Como o Drupal Console ajuda?
 
 ## Gerando o código e arquivos requeridos por um módulo Drupal 8

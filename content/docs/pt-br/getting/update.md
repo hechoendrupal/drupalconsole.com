@@ -1,3 +1,6 @@
+---
+title: Atualizar projeto
+---
 # Atualizar projeto
 O Drupal 8 está em desenvolvimento intenso, para manter a sincronia com as últimas mudanças. A maneira mais fácil e recomendável de atualizar o Drupal Console é usando o comando de atualização automática.
 

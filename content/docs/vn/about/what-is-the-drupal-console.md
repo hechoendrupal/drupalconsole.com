@@ -1,3 +1,6 @@
+---
+title: What is the Drupal Console?
+---
 # What is the Drupal Console?
 The Drupal CLI. A tool to generate boilerplate code, interact with and debug Drupal. From the ground up, it has been built to utilize the same modern PHP practices which were introduced in Drupal 8.
 

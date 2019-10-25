@@ -1,3 +1,6 @@
+---
+title: How to translate Drupal Console (app & documentation)
+---
 # How to translate Drupal Console (app & documentation)
 
 In order to translate the book, first you need to translate the app strings. 

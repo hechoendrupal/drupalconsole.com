@@ -1,3 +1,6 @@
+---
+title: Contribuindo com novos recursos
+---
 # Contribuindo com novos recursos
 Se você criar um novo comando personalizado ou algo mais que seja útil para *outras* instalações do Drupal, considere [bifurcar o projeto Drupal Console no GitHub](get-the-project.md "Fork no projeto Drupal Console e cloná-lo localmente para adicionar sua funcionalidade"). Então, apenas [crie uma issue ou "feature request"](create-issues-and-pull-requests.md "Adicionando uma nova feature como uma "issue" e indicando que você está trabalhando nela"), coloque seu trabalho em uma nova branch Git no seu fork, publique sua branch e adicione um pull request no GitHub (incluindo o ID do problema no título PR). Os mantenedores do Drupal Console estão muito felizes em aceitar contribuições úteis e geralmente o fazem com bastante prontidão.
 

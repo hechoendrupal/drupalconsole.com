@@ -1,3 +1,6 @@
+---
+title: 使用 Composer 安装 Drupal Console
+---
 # 使用 Composer 安装 Drupal Console
 你可以使用 composer 进行安装。
 

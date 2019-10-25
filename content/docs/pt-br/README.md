@@ -1,3 +1,6 @@
+---
+title: Documentação do Drupal Console
+---
 # Documentação do Drupal Console
 
 > **Observação: Esse projeto é um trabalho em andamento.**

@@ -1,3 +1,6 @@
+---
+title: Drupal Console 文档
+---
 # Drupal Console 文档
 
 > **注意: 该项目正在开发和完善中**

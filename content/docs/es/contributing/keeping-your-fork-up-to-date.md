@@ -1,3 +1,6 @@
+---
+title: Mantener su fork actualizado
+---
 # Mantener su fork actualizado
 
 Con el paso del tiempo su repositorio (fork) y el original (llamado upstream) se desincronizarán y usted se quedará con una versión del código antigua y no soportada.

@@ -1,3 +1,6 @@
+---
+title: Drupal Console ドキュメント
+---
 # Drupal Console ドキュメント
 
 > **備考: このプロジェクトは開発中です。**

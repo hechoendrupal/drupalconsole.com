@@ -1,3 +1,6 @@
+---
+title: How to use Drupal Console in a remote site installation
+---
 # How to use Drupal Console in a remote site installation
 
 Drupal Console allows you to run commands on your local server but actually execute them on a remote server.

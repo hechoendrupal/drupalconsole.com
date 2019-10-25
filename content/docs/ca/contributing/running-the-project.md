@@ -1,3 +1,6 @@
+---
+title: Running the project
+---
 # Running the project
 In order to contribute you will need a working Drupal site linked to the packages you cloned and forked.
 

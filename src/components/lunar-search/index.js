@@ -51,7 +51,7 @@ const SearchComponent = ({ lang }) => {
               className=""
             >
               <Link className="" to={page.url}>
-                {slug}
+                {page.title||slug}
               </Link>
             </li>
           )})

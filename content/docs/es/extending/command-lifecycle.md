@@ -1,3 +1,6 @@
+---
+title: Ciclo de Vida de un Comando
+---
 # Ciclo de Vida de un Comando
  
 Los comandos ejecutan tres métodos durante su ciclo de vida:

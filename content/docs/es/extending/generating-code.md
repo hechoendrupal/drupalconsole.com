@@ -1,3 +1,6 @@
+---
+title: Generando código con un comando
+---
 # Generando código con un comando
 
 Para generar código desde un comando, debe realizar tres pasos:

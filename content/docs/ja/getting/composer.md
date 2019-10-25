@@ -1,3 +1,6 @@
+---
+title: Composerを使ってDrupal Consoleをインストールする
+---
 # Composerを使ってDrupal Consoleをインストールする
 Composerを使ってプロジェクトをインストールすることができます。
 

@@ -1,3 +1,6 @@
+---
+title: Install Drupal Console Launcher
+---
 # Install Drupal Console Launcher
 
 ```

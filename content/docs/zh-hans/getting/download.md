@@ -1,3 +1,6 @@
+---
+title: 下载 phar 文件
+---
 # 下载 phar 文件
 
 你可以从 github 上的 releases 页面下载 Drupal Console 的最新版本：

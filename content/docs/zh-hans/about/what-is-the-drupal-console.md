@@ -1,3 +1,6 @@
+---
+title: 什么是 Drupal Console?
+---
 # 什么是 Drupal Console?
 Drupal Console 是用于生成 boilerplate 代码，以及和 Drupal 8 网站进行交互的一套命令行工具. 它是利用 Drupal 8 引入的现代 PHP 实践从头开始构建的。
 

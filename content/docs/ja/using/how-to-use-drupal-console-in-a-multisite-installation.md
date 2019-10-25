@@ -1,3 +1,6 @@
+---
+title: Drupal Consoleをマルチサイト環境で使う
+---
 # Drupal Consoleをマルチサイト環境で使う
 
 Drupal Consoleはマルチサイト環境をサポートします。`multisite:debug` コマンドでマルチサイトのデバッグを行うことができ、`--uri` オプションを使うと特定のサイトと対話することができます。

@@ -1,3 +1,6 @@
+---
+title:  Command Lifecycle
+---
 # Command Lifecycle
  
 Commands have three lifecycle methods:

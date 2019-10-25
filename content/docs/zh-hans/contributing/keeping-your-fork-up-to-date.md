@@ -1,3 +1,6 @@
+---
+title: 保持更新
+---
 # 保持更新
 
 过段时间，你 forked 的 repository 和原始的 repository (叫 upstream) 会不一致。

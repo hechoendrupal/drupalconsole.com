@@ -1,3 +1,6 @@
+---
+title: プロジェクトを使う
+---
 # プロジェクトを使う
 
 Drupal Consoleは `stand alone` コマンドと `container aware` コマンドの2種類のコマンドを提供します。

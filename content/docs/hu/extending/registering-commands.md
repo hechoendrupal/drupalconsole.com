@@ -1,3 +1,6 @@
+---
+title: Registering Commands
+---
 # Registering Commands
 
 To make the console commands available within a Drupal installation, you will need to register your Command Class as a service using the `console.services.yml` file at the root of your extension (module, theme, profile) and tag service definition as `drupal.command`.

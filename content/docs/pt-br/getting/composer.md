@@ -1,3 +1,6 @@
+---
+title: Instalar Drupal Console usando Composer
+---
 # Instalar Drupal Console usando Composer
 Você pode instalar esse projeto usando composer.
 

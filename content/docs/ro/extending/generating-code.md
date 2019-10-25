@@ -1,3 +1,6 @@
+---
+title: Generating Code with a Command
+---
 # Generating Code with a Command
 
 To generate code from a Command, there are three steps:

@@ -1,3 +1,6 @@
+---
+title: Install Drupal Console Using Composer
+---
 # Install Drupal Console Using Composer
 
 Change directory to Drupal site:

@@ -1,3 +1,6 @@
+---
+title: Installing Drupal Console on Windows
+---
 # Installing Drupal Console on Windows
 
 Here is a [link](https://evolvingweb.ca/blog/installing-drupal-console-windows) to an excellent article about Installing Drupal Console on Windows using Acquia Dev Desktop.

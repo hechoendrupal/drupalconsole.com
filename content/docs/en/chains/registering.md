@@ -1,3 +1,6 @@
+---
+title: Registering as regular commands
+---
 # Registering as regular commands
 
 Chains definition can contain metadata that make them discovered and registered by DrupalConsole so they can be executed as any other regular command.

@@ -1,3 +1,6 @@
+---
+title: Drupal Console Documentation
+---
 # Drupal Console Documentation
 
 > **Note: This project is a work-in-progress.**

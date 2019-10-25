@@ -1,3 +1,6 @@
+---
+title: Drupal Console 是怎样提供帮助的?
+---
 # Drupal Console 是怎样提供帮助的?
 
 ## 生成一个 Drupal 8 模块必须的代码和文件
