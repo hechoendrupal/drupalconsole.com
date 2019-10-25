@@ -1,7 +1,6 @@
 ---
 title: Configurando el comando.
 ---
-# Configurando el comando.
 
 Debes proveer un método `configure` que contenga la configuración del comando como nombre, argumentos, opciones, etc.
 ```

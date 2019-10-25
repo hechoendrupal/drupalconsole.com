@@ -1,7 +1,7 @@
 ---
 title: Creando un "Issue"
 ---
-# Creando un "Issue"
+
 Si usted encuentra un problema o tal vez le gustaría proponer una nueva funcionalidad para el proyecto, es necesario acceder al siguiente enlace:
 
 https://github.com/hechoendrupal/drupal-console/issues/new

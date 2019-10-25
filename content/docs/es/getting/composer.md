@@ -1,7 +1,7 @@
 ---
 title: Instala Drupal Console Usando Composer
 ---
-# Instala Drupal Console Usando Composer
+
 Puedes instalar este proyecto usando composer.
 
 ## Instalando Drupal Console globalmente usando composer:

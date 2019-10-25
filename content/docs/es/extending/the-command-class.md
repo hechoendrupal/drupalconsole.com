@@ -1,7 +1,7 @@
 ---
 title: La clase Command
 ---
-# La clase Command
+
 
 Los comandos personalizados deben extender cualquiera de las clases base provistas por el el proyecto DrupalConsole Core.
 

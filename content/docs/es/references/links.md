@@ -1,7 +1,6 @@
 ---
 title: Referencias
 ---
-# Referencias
 
 ## Repositorio de código de Drupal Console
 https://github.com/hechoendrupal/drupal-console

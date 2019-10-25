@@ -1,7 +1,6 @@
 ---
 title: Creating Custom Commands
 ---
-# Creating Custom Commands
 
 The simple way to create a custom Command Class is to execute the `generate:command` command.
 

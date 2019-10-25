@@ -1,4 +1,7 @@
-# ¿Cómo copiar archivos de configuración?
+---
+title: ¿Cómo copiar archivos de configuración?
+---
+
 La primera tarea que debería hacer tras instalar Drupal Console es ejecutar el comando `init`. Con ello copiará los archivos de configuración del proyecto al directorio `~/.console`. Puede modificar el comportamiento de Drupal Console sobreescribiendo los valores en estos archivos.
  
  ```

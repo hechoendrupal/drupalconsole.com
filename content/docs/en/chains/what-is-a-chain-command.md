@@ -1,7 +1,7 @@
 ---
 title: What is a chain command
 ---
-# What is a chain command
+
 
 A `chain` command is a custom command that help you automate multiple command execution, allowing you to define and read an external YAML file containing the definition name, options and arguments of multiple commands and execute that list based on the sequence defined in the file.
 

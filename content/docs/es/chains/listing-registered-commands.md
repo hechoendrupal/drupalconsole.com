@@ -1,7 +1,6 @@
 ---
 title: Listing registered commands
 ---
-# Listing registered commands
 
 You can debug the discovered chain commands using the `debug:chain` command.  
 ```
