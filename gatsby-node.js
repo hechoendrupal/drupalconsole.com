@@ -2,6 +2,7 @@ const path = require(`path`)
 const axios = require('axios');
 const crypto = require('crypto');
 const qs = require('qs');
+const dotenv = require('dotenv')
 
 const repos = [
   'drupal-console',
@@ -10,7 +11,9 @@ const repos = [
   'drupal-console-launcher',
 ];
 
-const GITHUB_API_ARI = 'https://us-central1-drupal-console.cloudfunctions.net';
+dotenv.config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
 
 exports.createSchemaCustomization = ({ actions }) => {
   actions.createTypes(`
@@ -26,7 +29,7 @@ exports.sourceNodes = async ({ actions }) => {
   for (repo of repos) {
     const releases = await axios({
       method: 'post',
-      url: `${GITHUB_API_ARI}/getReleases`,
+      url: `${process.env.CLOUD_FUNCTIONS_URL}/getReleases`,
       data: qs.stringify({
         owner: 'hechoendrupal',
         repo: repo,
@@ -56,7 +59,7 @@ exports.sourceNodes = async ({ actions }) => {
     }
   }
 
-  const contributors = await axios.get(`${GITHUB_API_ARI}/getContributors`);
+  const contributors = await axios.get(`${process.env.CLOUD_FUNCTIONS_URL}/getContributors`);
   for (const contributor of contributors.data) {
     const id = contributor.id.toString();
     delete contributor.id;
@@ -76,7 +79,7 @@ exports.sourceNodes = async ({ actions }) => {
   }
 
   const packagist = await axios.get(`https://packagist.org/packages/drupal/console.json`);
-  const latestRelease = await axios.get(`${GITHUB_API_ARI}/getLatestRelease`);
+  const latestRelease = await axios.get(`${process.env.CLOUD_FUNCTIONS_URL}/getLatestRelease`);
 
   await createNode({
     children: [],
