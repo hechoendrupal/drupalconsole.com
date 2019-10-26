@@ -71,3 +71,9 @@ yarn-error.log
 
 # firebase
 .firebase/
+
+# deployment-specific configs
+now.json
+.env
+.env.development
+.env.production
