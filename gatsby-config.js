@@ -115,7 +115,10 @@ module.exports = {
         // develop: true, // Enable while using `gatsby develop`
         // tailwind: true, // Enable tailwindcss support
         whitelist: [
-          'nav-angle', 'float-right', 'float-left', 'active', 'dropdown-menu-right', 
+          'nav-angle', 'float-right', 'float-left', 'active', 'dropdown-menu-right', 'react-autosuggest__suggestion', 
+          'react-autosuggest__input','react-autosuggest__input--open','react-autosuggest__input--focused',
+          'react-autosuggest__suggestions-list', 'react-autosuggest__suggestions-container', 'react-autosuggest__suggestions-container--open',
+          'react-autosuggest__container', 'react-autosuggest__container--open',
           'dropdown-menu-left', 'dropdown-menu', 'dropdown-sidebar', 'rtl', 'bl-1', 'pl-md-5', 'br-1', 'pr-md-5'
         ], // Don't remove this selector
         // ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
