@@ -8,7 +8,7 @@
   position: absolute !important;
   list-style: none;
   background: #f7f7f7;
-  width: 350px;
+  width: 270px;
   box-shadow: 1px 1px 5px rgba(0, 0, 0, .03);
   overflow: auto;
   max-height: 300px;
@@ -19,4 +19,10 @@
 
 .search-docs__results a:hover{
   text-decoration: underline;
+}
+
+
+.search-docs__results li.active-result{
+  text-decoration: underline;
+  background-color: #ddd;
 }
