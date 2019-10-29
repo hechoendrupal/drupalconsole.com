@@ -1,19 +1,22 @@
 
 const functions = require("firebase-functions");
-
+const axios = require('axios');
 const admin = require("firebase-admin");
+var isAfter = require('date-fns/isAfter')
+var parseISO = require('date-fns/parseISO')
+
 admin.initializeApp();
 const settings = {
-  timestampsInSnapshots: true
+  timestampsInSnapshots: true,
 };
 admin.firestore().settings(settings);
 
-const axios = require('axios');
-const allowOrigin = "https://drupalconsole.com/";
+// const allowOrigin = "https://drupalconsole.com/";
+const allowOrigin = "*";
 
 const Octokit = require('@octokit/rest')
 const octokit = new Octokit({
-  auth: functions.config().github.auth,
+  auth: ''//functions.config().github.auth,
 })
 
 const owner = 'hechoendrupal';
@@ -109,6 +112,49 @@ exports.getLatestRelease = functions.https.onRequest((request, response) => {
   })();
 });
 
+exports.addConsoleStatistic = functions.https.onRequest((request, response) => {
+  response.set("Access-Control-Allow-Origin", `${allowOrigin}/`);
+  response.set("Access-Control-Allow-Credentials", "true");
+  if (request.method !== 'POST') {
+    return response.status(400).json({ message: 'Method not Allowed' });
+  }
+
+  const userIp = request.headers['x-appengine-user-ip'] || '1.2.3'
+  const now = (new Date().toISOString()).split('T')[0];
+  const requestData = JSON.parse(request.body);
+  const commands = requestData.commands;
+  const languages = requestData.languages;
+  
+  (async () => {
+    const userLog = await admin
+      .firestore()
+      .doc(`usersLog/${userIp}`)
+      .get()
+      .then(doc => {
+        return Object.assign({ id: doc.id }, doc.data());
+      });
+    if((!userLog||!userLog.lastUpdate)||isAfter(parseISO(now), parseISO(userLog.lastUpdate))){
+      
+      await admin
+      .firestore()
+        .doc(`usersLog/${userIp}`)
+        .set({ip: userIp, lastUpdate: now}, { merge: true });
+
+      await _addConsoleStatistic(
+        'consoleStatistics',
+        {
+          commands: commands,
+          languages: languages,
+          createdAt: now
+        }
+      );
+    }
+  })();
+
+  response.sendStatus(200);
+});
+
+
 async function getLatestVersion() {
   const latestRelease = await octokit.repos.getLatestRelease({
     owner,
@@ -116,4 +162,21 @@ async function getLatestVersion() {
   });
 
   return latestRelease?latestRelease.data.tag_name:null;
+}
+
+
+async function _addConsoleStatistic(collection, input) {
+  return await admin
+    .firestore()
+    .collection(collection)
+    .add(input)
+    .then(docRef => {
+      // console.log(`Document written with ID: ${docRef.id}`);
+      return docRef.get();
+    }).then(doc => {
+      return Object.assign({ id: doc.id }, doc.data());
+    })
+    .catch(error => {
+      console.error("Error adding document: ", error);
+    });
 }
