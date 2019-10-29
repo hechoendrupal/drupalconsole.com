@@ -119,11 +119,10 @@ exports.addConsoleStatistic = functions.https.onRequest((request, response) => {
     return response.status(400).json({ message: 'Method not Allowed' });
   }
 
-  const userIp = request.headers['x-appengine-user-ip'] || '1.2.3'
+  const userIp = request.headers['x-appengine-user-ip'];
   const now = (new Date().toISOString()).split('T')[0];
-  const requestData = JSON.parse(request.body);
-  const commands = requestData.commands;
-  const languages = requestData.languages;
+  const commands = request.body.commands;
+  const languages = request.body.languages;
   
   (async () => {
     const userLog = await admin
