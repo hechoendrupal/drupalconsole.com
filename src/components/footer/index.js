@@ -33,7 +33,7 @@ const footer = props => {
             </div>
           </div>
           <div className="col-md-5 text-md-right">
-          © {new Date().getFullYear()}, Made by <a className="text-primary" href="https://www.weknowinc.com" target="_blank" rel="noopener noreferrer">WeKnow</a> using <a href="http://gatsbyjs.org" target="_blank" rel="noopener noreferrer" className="text-primary">GatsbyJS</a>
+          © {new Date().getFullYear()}, Built using <a href="http://gatsbyjs.org" target="_blank" rel="noopener noreferrer" className="text-primary">GatsbyJS</a>
           </div>
         </div>
       </div>
