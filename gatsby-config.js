@@ -119,8 +119,10 @@ module.exports = {
           'react-autosuggest__input','react-autosuggest__input--open','react-autosuggest__input--focused',
           'react-autosuggest__suggestions-list', 'react-autosuggest__suggestions-container', 'react-autosuggest__suggestions-container--open',
           'react-autosuggest__container', 'react-autosuggest__container--open',
-          'dropdown-menu-left', 'dropdown-menu', 'dropdown-sidebar', 'rtl', 'bl-1', 'pl-md-5', 'br-1', 'pr-md-5'
+          'dropdown-menu-left', 'dropdown-sidebar', 'rtl', 'bl-1', 'pl-md-5', 'br-1', 'pr-md-5',
+          'dropdown-item', 'dropdown-menu', 'btn', 'btn-secondary','dropdown-toggle'
         ], // Don't remove this selector
+        whitelistPatterns: [/^dropdown/ ],
         // ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
         // purgeOnly : ['static/css/'], // Purge only these files/folders
       }
