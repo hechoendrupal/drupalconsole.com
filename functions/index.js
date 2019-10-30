@@ -11,12 +11,12 @@ const settings = {
 };
 admin.firestore().settings(settings);
 
-// const allowOrigin = "https://drupalconsole.com/";
-const allowOrigin = "*";
+const allowOrigin = "https://new.drupalconsole.com/";
+// const allowOrigin = "*";
 
 const Octokit = require('@octokit/rest')
 const octokit = new Octokit({
-  auth: ''//functions.config().github.auth,
+  auth: functions.config().github.auth,
 })
 
 const owner = 'hechoendrupal';
@@ -132,6 +132,7 @@ exports.addConsoleStatistic = functions.https.onRequest((request, response) => {
       .then(doc => {
         return Object.assign({ id: doc.id }, doc.data());
       });
+      
     if((!userLog||!userLog.lastUpdate)||isAfter(parseISO(now), parseISO(userLog.lastUpdate))){
       
       await admin
@@ -148,9 +149,10 @@ exports.addConsoleStatistic = functions.https.onRequest((request, response) => {
         }
       );
     }
+
+    response.sendStatus(200);
   })();
 
-  response.sendStatus(200);
 });
 
 

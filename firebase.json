@@ -8,6 +8,10 @@
     ],
     "rewrites": [
       {
+        "source": "functions/addConsoleStatistic",
+        "function": "addConsoleStatistic"
+      },
+      {
         "source": "**",
         "destination": "/index.html"
       }
