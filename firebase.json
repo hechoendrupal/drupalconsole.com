@@ -8,12 +8,28 @@
     ],
     "rewrites": [
       {
-        "source": "functions/addConsoleStatistic",
-        "function": "addConsoleStatistic"
+        "source": "/contributors.json",
+        "function": "contributors"
       },
       {
-        "source": "**",
-        "destination": "/index.html"
+        "source": "/releases.json",
+        "function": "releases"
+      },
+      {
+        "source": "/latestRelease.json",
+        "function": "latestRelease"
+      },
+      {
+        "source": "/manifest.json",
+        "function": "manifest"
+      },
+      {
+        "source": "/installer",
+        "function": "installer"
+      },
+      {
+        "source": "/statistics",
+        "function": "statistics"
       }
     ],
     "trailingSlash": true
