@@ -11,20 +11,19 @@ const settings = {
 };
 admin.firestore().settings(settings);
 
-const allowOrigin = "https://new.drupalconsole.com/";
-// const allowOrigin = "*";
+const allowOrigin = functions.config().security.allow_origin;
 
 const Octokit = require('@octokit/rest')
 const octokit = new Octokit({
   auth: functions.config().github.auth,
 })
 
-const owner = 'hechoendrupal';
-const repo = 'drupal-console';
-const repoLauncher = 'drupal-console-launcher';
+const owner = functions.config().github.owner;
+const repo = functions.config().github.repo;
+const repoLauncher = functions.config().github.repo_launcher;
 
 exports.contributors = functions.https.onRequest((request, response) => {
-  response.set("Access-Control-Allow-Origin", `${allowOrigin}/`);
+  response.set("Access-Control-Allow-Origin", allowOrigin);
   response.set("Access-Control-Allow-Credentials", "true");
   (async () => {
     const contributors = await octokit.paginate(`GET /repos/${owner}/${repo}/contributors`, (response) => {
@@ -37,7 +36,7 @@ exports.contributors = functions.https.onRequest((request, response) => {
 });
 
 exports.releases = functions.https.onRequest((request, response) => {
-  response.set("Access-Control-Allow-Origin", `${allowOrigin}/`);
+  response.set("Access-Control-Allow-Origin", allowOrigin);
   response.set("Access-Control-Allow-Credentials", "true");
   (async () => {
 
@@ -57,7 +56,7 @@ exports.releases = functions.https.onRequest((request, response) => {
 });
 
 exports.manifest = functions.https.onRequest((request, response) => {
-  response.set("Access-Control-Allow-Origin", `${allowOrigin}/`);
+  response.set("Access-Control-Allow-Origin", allowOrigin);
   response.set("Access-Control-Allow-Credentials", "true");
 
   (async () => {
@@ -80,7 +79,7 @@ exports.manifest = functions.https.onRequest((request, response) => {
 });
 
 exports.installer = functions.https.onRequest((request, response) => {
-  response.set("Access-Control-Allow-Origin", `${allowOrigin}/`);
+  response.set("Access-Control-Allow-Origin", allowOrigin);
   response.set("Access-Control-Allow-Credentials", "true");
 
   (async () => {
@@ -100,7 +99,7 @@ exports.installer = functions.https.onRequest((request, response) => {
 });
 
 exports.latestRelease = functions.https.onRequest((request, response) => {
-  response.set("Access-Control-Allow-Origin", `${allowOrigin}/`);
+  response.set("Access-Control-Allow-Origin", allowOrigin);
   response.set("Access-Control-Allow-Credentials", "true");
 
   (async () => {
@@ -113,7 +112,7 @@ exports.latestRelease = functions.https.onRequest((request, response) => {
 });
 
 exports.statistics = functions.https.onRequest((request, response) => {
-  response.set("Access-Control-Allow-Origin", `${allowOrigin}/`);
+  response.set("Access-Control-Allow-Origin", allowOrigin);
   response.set("Access-Control-Allow-Credentials", "true");
   if (request.method !== 'POST') {
     return response.status(400).json({ message: 'Method not Allowed' });
