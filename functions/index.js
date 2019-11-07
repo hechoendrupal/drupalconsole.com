@@ -126,7 +126,7 @@ exports.statistics = functions.https.onRequest((request, response) => {
   (async () => {
     const log = await admin
       .firestore()
-      .doc(`log/${userIp}`)
+      .doc(`logs/${userIp}`)
       .get()
       .then(doc => {
         return Object.assign({ id: doc.id }, doc.data());
@@ -135,7 +135,7 @@ exports.statistics = functions.https.onRequest((request, response) => {
     if((!log||!log.lastUpdate)||isAfter(parseISO(now), parseISO(log.lastUpdate))){
       await admin
       .firestore()
-        .doc(`log/${userIp}`)
+        .doc(`logs/${userIp}`)
         .set({ip: userIp, lastUpdate: now}, { merge: true });
 
       await _addStatistic(
