@@ -23,7 +23,7 @@ const owner = 'hechoendrupal';
 const repo = 'drupal-console';
 const repoLauncher = 'drupal-console-launcher';
 
-exports.getContributors = functions.https.onRequest((request, response) => {
+exports.contributors = functions.https.onRequest((request, response) => {
   response.set("Access-Control-Allow-Origin", `${allowOrigin}/`);
   response.set("Access-Control-Allow-Credentials", "true");
   (async () => {
@@ -36,7 +36,7 @@ exports.getContributors = functions.https.onRequest((request, response) => {
   })();
 });
 
-exports.getReleases = functions.https.onRequest((request, response) => {
+exports.releases = functions.https.onRequest((request, response) => {
   response.set("Access-Control-Allow-Origin", `${allowOrigin}/`);
   response.set("Access-Control-Allow-Credentials", "true");
   (async () => {
@@ -99,7 +99,7 @@ exports.installer = functions.https.onRequest((request, response) => {
   })();
 });
 
-exports.getLatestRelease = functions.https.onRequest((request, response) => {
+exports.latestRelease = functions.https.onRequest((request, response) => {
   response.set("Access-Control-Allow-Origin", `${allowOrigin}/`);
   response.set("Access-Control-Allow-Credentials", "true");
 
@@ -112,7 +112,7 @@ exports.getLatestRelease = functions.https.onRequest((request, response) => {
   })();
 });
 
-exports.addConsoleStatistic = functions.https.onRequest((request, response) => {
+exports.statistics = functions.https.onRequest((request, response) => {
   response.set("Access-Control-Allow-Origin", `${allowOrigin}/`);
   response.set("Access-Control-Allow-Credentials", "true");
   if (request.method !== 'POST') {
@@ -125,23 +125,22 @@ exports.addConsoleStatistic = functions.https.onRequest((request, response) => {
   const languages = request.body.languages;
   
   (async () => {
-    const userLog = await admin
+    const log = await admin
       .firestore()
-      .doc(`usersLog/${userIp}`)
+      .doc(`log/${userIp}`)
       .get()
       .then(doc => {
         return Object.assign({ id: doc.id }, doc.data());
       });
       
-    if((!userLog||!userLog.lastUpdate)||isAfter(parseISO(now), parseISO(userLog.lastUpdate))){
-      
+    if((!log||!log.lastUpdate)||isAfter(parseISO(now), parseISO(log.lastUpdate))){
       await admin
       .firestore()
-        .doc(`usersLog/${userIp}`)
+        .doc(`log/${userIp}`)
         .set({ip: userIp, lastUpdate: now}, { merge: true });
 
-      await _addConsoleStatistic(
-        'consoleStatistics',
+      await _addStatistic(
+        'statistics',
         {
           commands: commands,
           languages: languages,
@@ -155,7 +154,6 @@ exports.addConsoleStatistic = functions.https.onRequest((request, response) => {
 
 });
 
-
 async function getLatestVersion() {
   const latestRelease = await octokit.repos.getLatestRelease({
     owner,
@@ -165,8 +163,7 @@ async function getLatestVersion() {
   return latestRelease?latestRelease.data.tag_name:null;
 }
 
-
-async function _addConsoleStatistic(collection, input) {
+async function _addStatistic(collection, input) {
   return await admin
     .firestore()
     .collection(collection)
