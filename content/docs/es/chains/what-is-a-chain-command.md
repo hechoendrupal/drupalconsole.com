@@ -1,38 +1,38 @@
 ---
-title: What is a chain command
+title: ¿Qué es un comando chain? 
 ---
 
-A `chain` command is a custom command that help you automate multiple command execution, allowing you to define and read an external YAML file containing the definition name, options and arguments of multiple commands and execute that list based on the sequence defined in the file.
+Un comando `chain` es un comando personalizado que le ayuda a automatizar la ejecución de comandos múltiples, permitiéndole definir y leer un archivo YAML externo que contiene el nombre de definición, las opciones y argumentos de múltiples comandos y ejecutar esa lista basándose en la secuencia definida en el archivo.
 
-## Chain command features:
+## Características de los comandos chain:
 
-### Discovery of YAML files
-Chains commands are discovered from the following path(s): 
-* **Globally** `~/.console/chain` 
-* **Per site** `path/to/site/console/chain`
+### Descubrimiento de los archivos YAML
+Los comandos chain son descubiertos si se encuentran en las siguientes rutas: 
+* Globalmente * `~/.console/chain` 
+* **Por sitio * ** `path/to/site/console/chain`
 
-### Define placeholders
-You can define placeholders using `{{name}}` and you can pass a --key=value from the CLI as command option `--name=[VALUE]` when executing the command.
+### Definir los comodines
+Puede definir los comodines usando `{{name}}` y puede pasar un `--clave=valor` desde la consola como una opción de comando `--nombre=[VALOR]` al ejecutar el comando.
 
-If you define placeholders and not pass a value for it using the CLI. This will be converted to a question during the interactive mode execution.
+Si define comodines y no le pasa un valor usando la consola, el comodín será convertido en una pregunta durante la ejecución del modo interactivo.
 ```
 commands:
-  # Create Drupal project using DrupalComposer
+  # Crear un proyecto Drupal usando DrupalComposer
   - command: exec
     arguments:
       bin: composer create-project {{repository}} {{directory}} --prefer-dist --no-progress --no-interaction
-  # Install Drupal
+  # Instalar Drupal
   - command: exec
     arguments:
       bin: drupal site:install {{profile}} --root={{directory}} --db-type="sqlite" --no-interaction
-  # Start PHP built-in server
+  # Iniciar el servidor incorporado de PHP
   - command: exec
     arguments:
       bin: drupal server --root={{directory}}
 ```
 
-### Set default values for placeholders
-You can use the `variables` section to define default values for placeholders.
+### Establecer valores por defecto para los comodines
+Se puede usar la sección `variables` para definir valores por defecto para los comodines.
 ```
 vars:
   repository:
@@ -42,16 +42,16 @@ vars:
   profile: standard
 ```
 
-You can define placeholders as single value or as an array. This definition will be used to decide the type of question generated when executing this command using the interactive mode.
+Puede definir comodines como un único valor o como un array. Esta definición será usada para decidir el tipo de pregunta que aparecerá al ejecutar este comando al usar el modo interactivo.
 
-### Read environment variables:
-You can read environment variables using `{{ env("ENVIRONMENT_VAR_NAME") }}`.
+### Leer variables de entorno:
+Puede leer variables de entorno usando `{{ env("ENVIRONMENT_VAR_NAME") }}`.
 ```
 command:
   name: site:install:env
   description: 'Install site using environment placeholders'
 commands:
-  # Install Drupal
+  # Instalar Drupal
   - command: site:install
     options:
       langcode: en
@@ -69,4 +69,4 @@ commands:
     arguments:
       profile: 'standard'
 ```
-All of the required environment variables used on a chain command definition are mandatory.
+Todas las variables de entorno usadas en la definición de un comando chain son obligatorias.
