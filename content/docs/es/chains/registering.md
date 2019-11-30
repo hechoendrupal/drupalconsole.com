@@ -1,10 +1,9 @@
 ---
-title: Registering as regular commands
+title: Registrando comandos _chain_ como comandos normales
 ---
+La definición de los comandos chain puede contener metadatos que los hagan ser descubiertos y registrados por DrupalConsole, de modo que puedan ser ejecutados como cualquier otro comando normal y corriente.
 
-Chains definition can contain metadata that make them discovered and registered by DrupalConsole so they can be executed as any other regular command.
-
-To register as regular command you need to add a `command` section containing `name` and `description`.
+Para registrarlos como un comando normal tiene que añadir una sección `command` que contenga un `name` y una `description`.
 
 ```
 command:
@@ -32,4 +31,4 @@ commands:
 
 ```
 
-After adding the command section you should see the new `build` command listed when running the `list` command.
+En el caso de este ejemplo, después de añadir la sección `command` debería ver un nuevo comando `build` listado al lanzar el comando `list`.

@@ -84,15 +84,15 @@
     },
     {
       "link": "chains/what-is-a-chain-command",
-      "title": "What is a chain command",
+      "title": "¿Qué es un comando chain?",
       "items": [
         {
           "link": "chains/registering",
-          "title": "Registering chain commands as regular commands"
+          "title": "Registrar comandos chain como comandos normales"
         },
         {
           "link": "chains/listing-registered-commands",
-          "title": "Listing registered commands"
+          "title": "Obtener un listado de los comandos registrados"
         }
       ]
     },
