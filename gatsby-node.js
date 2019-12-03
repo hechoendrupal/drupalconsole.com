@@ -29,7 +29,7 @@ exports.sourceNodes = async ({ actions }) => {
   for (repo of repos) {
     const releases = await axios({
       method: 'post',
-      url: `${process.env.CLOUD_FUNCTIONS_URL}/releases.json`,
+      url: `${process.env.CLOUD_FUNCTIONS_URL}/releases`,
       data: qs.stringify({
         owner: 'hechoendrupal',
         repo: repo,
@@ -59,7 +59,7 @@ exports.sourceNodes = async ({ actions }) => {
     }
   }
 
-  const contributors = await axios.get(`${process.env.CLOUD_FUNCTIONS_URL}/contributors.json`);
+  const contributors = await axios.get(`${process.env.CLOUD_FUNCTIONS_URL}/contributors`);
   for (const contributor of contributors.data) {
     const id = contributor.id.toString();
     delete contributor.id;
@@ -79,7 +79,7 @@ exports.sourceNodes = async ({ actions }) => {
   }
 
   const packagist = await axios.get(`https://packagist.org/packages/drupal/console.json`);
-  const latestRelease = await axios.get(`${process.env.CLOUD_FUNCTIONS_URL}/latestRelease.json`);
+  const latestRelease = await axios.get(`${process.env.CLOUD_FUNCTIONS_URL}/latestRelease`);
 
   await createNode({
     children: [],
