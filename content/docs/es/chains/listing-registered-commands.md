@@ -1,21 +1,22 @@
 ---
-title: Listing registered commands
+title: Listando todos los comandos registrados
 ---
 
-You can debug the discovered chain commands using the `debug:chain` command.  
+Para inspeccionar los comandos _chain_ descubiertos por la aplicación puede utilizar el comando `debug:chain`.
+
 ```
- Directory /path/to/drupal8.dev/vendor/drupal/console-core/config/chain/
+ Directorio /path/to/drupal8.dev/vendor/drupal/console-core/config/chain/
  ------------------------ --------------------
-  File name.               Command name.
+  Nombre de archivo.        Nombre de Comando.
  ------------------------ --------------------
   develop-contribute.yml   develop:contribute
   quick-start.yml          quick:start
   site-new.yml             site:new
  ------------------------ --------------------
-  
-  Directory /path/to/drupal8.dev/console/chain/
+
+  Directorio /path/to/drupal8.dev/console/chain/
  -------------------------- ----------------------
-  File name.                 Command name.
+  Nombre de archivo.            Nombre de Comando.
  -------------------------- ----------------------
   build.yml                  build
   cache-rebuild-custom.yml   cache:rebuild:custom
@@ -23,9 +24,10 @@ You can debug the discovered chain commands using the `debug:chain` command.
  -------------------------- ----------------------
 ```
 
-For any discovered chain non yet registered as regular command you will see a message like this.
+Si hubiera algún comando _chain_ descubierto pero aún no registrado como comando normal, debería ver un mensaje como el siguiente.
+
 ```
 /path/to/drupal8.dev/console/chain/custom-test.yml
- * You should register your chain file as command by providing metadata, more info at:
-   https://docs.drupalconsole.com/en/chains/registering.html
+ * Debería registrar su archivo chain como comando indicando sus metadatos; más información en:
+   https://docs.drupalconsole.com/es/chains/registering.html
 ```
