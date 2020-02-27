@@ -20,6 +20,8 @@ php -r "readfile('https://drupalconsole.com/installer');" > drupal.phar
 drupal self-update
 ```
 
+NOTE: The self-update command needs be run from outside a project directory.
+
 ## Run Drupal Console using the Launcher
 
 ```bash
