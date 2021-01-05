@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@octokit/rest": "^16.28.7",
-    "axios": "^0.18.1",
+    "axios": "^0.21.1",
     "date-fns": "^2.6.0",
     "firebase-admin": "^8.6.1",
     "firebase-functions": "^3.0.2",
